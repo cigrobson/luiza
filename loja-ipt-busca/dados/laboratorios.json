@@ -1,0 +1,116 @@
+[
+ {
+  "sigla": "LARI",
+  "nome": "LABORATÓRIO DE RISCOS, INVESTIGAÇÕES E GESTÃO AMBIENTAL",
+  "crd": "DJ15",
+  "total_servicos": 3
+ },
+ {
+  "sigla": "LBE",
+  "nome": "LABORATÓRIO DE BIOENERGIA E EFICIÊNCIA ENERGÉTICA",
+  "crd": "DD11",
+  "total_servicos": 36
+ },
+ {
+  "sigla": "LBI",
+  "nome": "LABORATÓRIO DE BIOTECNOLOGIA INDUSTRIAL",
+  "crd": "DN12",
+  "total_servicos": 11
+ },
+ {
+  "sigla": "LCAP",
+  "nome": "LABORATÓRIO DE CONFORTO AMBIENTAL, EFICIÊNCIA ENERGÉTICA E INSTALAÇÕES PREDIAIS",
+  "crd": "DL11",
+  "total_servicos": 31
+ },
+ {
+  "sigla": "LCP",
+  "nome": "LABORATÓRIO DE CORROSÃO E PROTEÇÃO",
+  "crd": "DO12",
+  "total_servicos": 1
+ },
+ {
+  "sigla": "LCPE",
+  "nome": "LABORATÓRIO DE CELULOSE, PAPEL E EMBALAGEM",
+  "crd": "DO13",
+  "total_servicos": 121
+ },
+ {
+  "sigla": "LEL",
+  "nome": "LABORATÓRIO DE ESTRUTURAS LEVES",
+  "crd": "DO14",
+  "total_servicos": 12
+ },
+ {
+  "sigla": "LGE",
+  "nome": "LABORATÓRIO DE USOS FINAIS E GESTÃO EM ENERGIA",
+  "crd": "DD14",
+  "total_servicos": 36
+ },
+ {
+  "sigla": "LME",
+  "nome": "LABORATÓRIO DE METROLOGIA ELÉTRICA",
+  "crd": "DH11",
+  "total_servicos": 56
+ },
+ {
+  "sigla": "LMM",
+  "nome": "LABORATÓRIO DE METROLOGIA MECÂNICA",
+  "crd": "DH12",
+  "total_servicos": 45
+ },
+ {
+  "sigla": "LMPC",
+  "nome": "LABORATÓRIO DE MATERIAIS PARA PRODUTOS DE CONSTRUÇÃO",
+  "crd": "DL14",
+  "total_servicos": 48
+ },
+ {
+  "sigla": "LPP",
+  "nome": "LABORATÓRIO DE PROCESSOS QUÍMICOS E TECNOLOGIA DE PARTÍCULAS",
+  "crd": "DN15",
+  "total_servicos": 19
+ },
+ {
+  "sigla": "LQM",
+  "nome": "Laboratório de Química e Manufaturados",
+  "crd": "DN11",
+  "total_servicos": 30
+ },
+ {
+  "sigla": "LRM",
+  "nome": "LABORATÓRIO DE REFERÊNCIAS METROLÓGICAS",
+  "crd": "DH13",
+  "total_servicos": 2
+ },
+ {
+  "sigla": "LSFEX",
+  "nome": "LABORATÓRIO DE SEGURANÇA AO FOGO E EXPLOSÕES",
+  "crd": "DL15",
+  "total_servicos": 28
+ },
+ {
+  "sigla": "LTDC",
+  "nome": "LABORATÓRIO DE TECNOLOGIA E DESEMPENHO DE SISTEMAS CONSTRUTIVOS",
+  "crd": "DL12",
+  "total_servicos": 39
+ },
+ {
+  "sigla": "LV",
+  "nome": "LABORATÓRIO DE VAZÃO",
+  "crd": "DH14",
+  "total_servicos": 34
+ },
+ {
+  "sigla": "NUTABES",
+  "nome": "Núcleo de Tecnologias Avançadas para Bem-Estar e Saúde Aplicados as Ciências da Vida",
+  "crd": "DK11",
+  "total_servicos": 16
+ },
+ {
+  "sigla": "SIRGA",
+  "nome": "SEÇÃO DE INVESTIGAÇÕES, RISCOS E GERENCIAMENTO AMBIENTAL",
+  "crd": "DJ15",
+  "total_servicos": 3
+ }
+]

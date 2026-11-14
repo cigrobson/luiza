@@ -1,0 +1,530 @@
+[
+ {
+  "termo": "ABSORÇÃO SONORA",
+  "use": "Absorção acústica"
+ },
+ {
+  "termo": "ADITIVO PARA RADIADOR",
+  "use": "Líquido para arrefecimento"
+ },
+ {
+  "termo": "AEAC - ÁLCOOL ETÍLICO ANIDRO",
+  "use": "Etanol"
+ },
+ {
+  "termo": "ARGAMASSA PARA REJUNTAMENTO",
+  "use": "Argamassa para rejunte"
+ },
+ {
+  "termo": "ARMÁRIO CORTA FOGO",
+  "use": "Equipamento de proteção contra fogo"
+ },
+ {
+  "termo": "ARMÁRIO CORTA FOGO PARA INFLAMÁVEIS",
+  "use": "Equipamento de proteção contra fogo"
+ },
+ {
+  "termo": "ARMÁRIO CORTA FOGO PARA LÍQUIDOS INFLAMÁVEIS",
+  "use": "Equipamento de proteção contra fogo"
+ },
+ {
+  "termo": "ASSENTO",
+  "use": "Cadeira"
+ },
+ {
+  "termo": "ASSENTO MÚLTIPLO",
+  "use": "Longarina"
+ },
+ {
+  "termo": "ASSENTO MÚLTIPLO CONJUGADO",
+  "use": "Longarina"
+ },
+ {
+  "termo": "AUTOCLISMO",
+  "use": "Descarga"
+ },
+ {
+  "termo": "B100",
+  "use": "Biodiesel"
+ },
+ {
+  "termo": "BAGAÇO DA CANA-DE-AÇÚCAR",
+  "use": "Resíduo agroindustrial"
+ },
+ {
+  "termo": "BEBIDA ALCÓOLICA",
+  "use": "Líquido inflamável"
+ },
+ {
+  "termo": "BIOCOMBUSTÍVEL",
+  "use": "Biodiesel"
+ },
+ {
+  "termo": "BIOMASSA",
+  "use": "Resíduo agroindustrial"
+ },
+ {
+  "termo": "BPF - BAIXO PONTO DE FLUIDEZ",
+  "use": "Óleo combustível"
+ },
+ {
+  "termo": "CADEIRA CONJUGADA",
+  "use": "Longarina"
+ },
+ {
+  "termo": "CADEIRA GIRATÓRIA DE MADEIRA",
+  "use": "Cadeira de madeira"
+ },
+ {
+  "termo": "CADEIRA GIRATÓRIA OPERACIONAL",
+  "use": "Cadeira de madeira"
+ },
+ {
+  "termo": "CADEIRAS DE MADEIRA",
+  "use": "Cadeira de madeira"
+ },
+ {
+  "termo": "CAPACIDADE DE EXTINÇÃO DE FOGO",
+  "use": "Capacidade extintora"
+ },
+ {
+  "termo": "CAPACIDADE DE EXTINÇÃO DE INCÊNDIO",
+  "use": "Capacidade extintora"
+ },
+ {
+  "termo": "CARÁTER ELÉTRICO DO MATERIAL",
+  "use": "Condutividade elétrica"
+ },
+ {
+  "termo": "CAVACO",
+  "use": "Madeira (combustível)"
+ },
+ {
+  "termo": "CHAPELLE",
+  "use": "Método Chapelle"
+ },
+ {
+  "termo": "CHUVEIRO AUTOMÁTICO",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "CLASSE DE INCÊNDIO A",
+  "use": "Classe de fogo A"
+ },
+ {
+  "termo": "CLASSE DE INCÊNDIO B",
+  "use": "Classe de fogo B"
+ },
+ {
+  "termo": "CLASSE DE INCÊNDIO C",
+  "use": "Classe de fogo C"
+ },
+ {
+  "termo": "CLOACA",
+  "use": "Bacia sanitária"
+ },
+ {
+  "termo": "COFRE ANTI CHAMAS",
+  "use": "Equipamento de proteção contra fogo"
+ },
+ {
+  "termo": "COFRE CONTRA CHAMAS",
+  "use": "Equipamento de proteção contra fogo"
+ },
+ {
+  "termo": "COFRE CORTA FOGO",
+  "use": "Equipamento de proteção contra fogo"
+ },
+ {
+  "termo": "COMBUSTÍVEL LÍQUIDO",
+  "use": "Etanol"
+ },
+ {
+  "termo": "COMBUSTÍVEL SÓLIDO",
+  "use": "Carvão mineral"
+ },
+ {
+  "termo": "COMPARTIMENTAÇÃO DE ÁREA",
+  "use": "Compartimentação de ambientes"
+ },
+ {
+  "termo": "CONDUTIBILIDADE ELÉTRICA",
+  "use": "Condutividade elétrica"
+ },
+ {
+  "termo": "CONDUÇÃO ELÉTRICA",
+  "use": "Condutividade elétrica"
+ },
+ {
+  "termo": "COQUE",
+  "use": "Carvão mineral"
+ },
+ {
+  "termo": "CVP  COQUE VERDE DE PETRÓLEO",
+  "use": "Carvão mineral"
+ },
+ {
+  "termo": "CÂMARA TROPICAL",
+  "use": "Câmara úmida"
+ },
+ {
+  "termo": "DETECTOR DE FUMAÇA",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "DETECTORES DE FUMAÇA",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "DETERGENTE",
+  "use": "Líquido inflamável"
+ },
+ {
+  "termo": "DETERMINAÇÃO DA EPU CONFORME ABNT NBR 13818",
+  "use": "Expansão por umiade"
+ },
+ {
+  "termo": "DETERMINAÇÃO DO SRI",
+  "use": "Determinação do índice de refletância solar"
+ },
+ {
+  "termo": "DISPERSANTE",
+  "use": "Solvente"
+ },
+ {
+  "termo": "DISPOSITIVOS POUPADORES",
+  "use": "Aparelhos economizadores de água"
+ },
+ {
+  "termo": "EDIFICAÇÕES",
+  "use": "Edificação"
+ },
+ {
+  "termo": "EPU - EXPANSÃO POR UMIDADE",
+  "use": "Expansão por umiade"
+ },
+ {
+  "termo": "EQUIPAMENTO ECONOMIZADOR",
+  "use": "Aparelhos economizadores de água"
+ },
+ {
+  "termo": "ESTOFADOS",
+  "use": "Sofá"
+ },
+ {
+  "termo": "ESTRUTURAS DE MADEIRA",
+  "use": "Estrutura de madeira"
+ },
+ {
+  "termo": "EXPANSÃO POR UMIDADE - EPU",
+  "use": "Expansão por umidade"
+ },
+ {
+  "termo": "EXTINTOR DE INCÊNDIO",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "EXTINTOR DE INCÊNDIO PORTÁTIL",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "EXTINTOR DE INCÊNDIO SOBRERRODAS (CARRETA)",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "EXTINTOR PORTÁTIL",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "EXTINTOR SOBRERRODAS",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "EXTINTOR SOBRERRODAS (CARRETA)",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "EXTINTORES DE INCÊNDIO",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "FLUÍDO DE ARREFECIMENTO",
+  "use": "Líquido para arrefecimento"
+ },
+ {
+  "termo": "FRX",
+  "use": "Fluorescência de raios X"
+ },
+ {
+  "termo": "GRADUAÇÃO ALCOÓLICA",
+  "use": "Teor alcoólico"
+ },
+ {
+  "termo": "HEHC - ÁLCOOL ETÍLICO HIDRATADO",
+  "use": "Etanol"
+ },
+ {
+  "termo": "INSTALAÇÃO HIDROSANITÁRIA",
+  "use": "Instalação sanitária"
+ },
+ {
+  "termo": "ISOLAMENTO SONORO",
+  "use": "Isolamento acústico"
+ },
+ {
+  "termo": "ISOLAÇÃO SONORA",
+  "use": "Isolamento acústico"
+ },
+ {
+  "termo": "LATRINA",
+  "use": "Bacia sanitária"
+ },
+ {
+  "termo": "LENHA",
+  "use": "Madeira (combustível)"
+ },
+ {
+  "termo": "LODO",
+  "use": "Resíduo agroindustrial"
+ },
+ {
+  "termo": "LUBRIFICANTE",
+  "use": "Óleo lubrificante"
+ },
+ {
+  "termo": "LÍQUIDO ISOLANTE",
+  "use": "Óleo mineral isolante"
+ },
+ {
+  "termo": "LÍQUIDO PARA FREIO",
+  "use": "Fluído de freio"
+ },
+ {
+  "termo": "MATERIAL INTERNO DE ACABAMENTO DE VEÍCULOS",
+  "use": "Revestimento interno automotivo"
+ },
+ {
+  "termo": "METAIS NA ÁGUA",
+  "use": "Metal na água"
+ },
+ {
+  "termo": "MEV",
+  "use": "Microscopia eletrônica de varredura"
+ },
+ {
+  "termo": "MICROSCOPIA ELETRÔNICA DE VARREDURA - MEV",
+  "use": "Microscopia eletrônica de varredura"
+ },
+ {
+  "termo": "MICROSÍLICA",
+  "use": "Sílica ativa"
+ },
+ {
+  "termo": "MOBILHA",
+  "use": "Mobiliário"
+ },
+ {
+  "termo": "MOBILHA CORPORATIVA",
+  "use": "Mobiliário para escritório"
+ },
+ {
+  "termo": "MOBILIÁRIO CORPORATIVO",
+  "use": "Mobiliário para escritório"
+ },
+ {
+  "termo": "MÓVEIS",
+  "use": "Mobiliário"
+ },
+ {
+  "termo": "MÓVEIS CORPORATIVOS",
+  "use": "Mobiliário para escritório"
+ },
+ {
+  "termo": "MÓVEIS PARA ESCRITÓRIO",
+  "use": "Mobiliário para escritório"
+ },
+ {
+  "termo": "MÓVEL",
+  "use": "Mobiliário"
+ },
+ {
+  "termo": "MÓVEL PARA ESCRITÓRIO",
+  "use": "Mobiliário para escritório"
+ },
+ {
+  "termo": "PALHA DA CANA-DE-AÇÚCAR",
+  "use": "Resíduo agroindustrial"
+ },
+ {
+  "termo": "PELLETS",
+  "use": "Madeira (combustível)"
+ },
+ {
+  "termo": "PERFUME",
+  "use": "Líquido inflamável"
+ },
+ {
+  "termo": "PLACAS CERÂMICAS",
+  "use": "Placa cerâmica"
+ },
+ {
+  "termo": "PODER DE EXTINÇÃO DE FOGO",
+  "use": "Capacidade extintora"
+ },
+ {
+  "termo": "PONTO DE EFERVESCÊNCIA",
+  "use": "Ponto de ebulição"
+ },
+ {
+  "termo": "PONTO DE FERVURA",
+  "use": "Ponto de ebulição"
+ },
+ {
+  "termo": "PONTO DE INFLAMABILIDADE",
+  "use": "Ponto de fulgor"
+ },
+ {
+  "termo": "PONTO DE INFLAMAÇÃO",
+  "use": "Ponto de fulgor"
+ },
+ {
+  "termo": "PORTA CORTA FOGO",
+  "use": "Equipamento de proteção contra fogo"
+ },
+ {
+  "termo": "PRIVADA",
+  "use": "Bacia sanitária"
+ },
+ {
+  "termo": "PRODUTO DE LIMPEZA",
+  "use": "Líquido inflamável"
+ },
+ {
+  "termo": "PRODUTOS PRESERVATIVOS",
+  "use": "Produto preservativo"
+ },
+ {
+  "termo": "QAV",
+  "use": "Querosene de aviação"
+ },
+ {
+  "termo": "REGISTRO DE ESFERA",
+  "use": "Registro esfera"
+ },
+ {
+  "termo": "REGISTRO DE GAVETA",
+  "use": "Registro gaveta"
+ },
+ {
+  "termo": "RESÍDUO DA AGRO-INDÚSTRIA OU AGRO-INDUSTRIAL",
+  "use": "Resíduo agroindustrial"
+ },
+ {
+  "termo": "REVESTIMENTO INTERNO DE AUTOMÓVEL",
+  "use": "Revestimento interno automotivo"
+ },
+ {
+  "termo": "REVESTIMENTO INTERNO DE VEÍCULOS RODOVIÁRIOS",
+  "use": "Revestimento interno automotivo"
+ },
+ {
+  "termo": "ROCIADOR DE INCÊNDIOS",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "S10",
+  "use": "Óleo diesel"
+ },
+ {
+  "termo": "S500",
+  "use": "Óleo diesel"
+ },
+ {
+  "termo": "SCANNING ELECTRON MICROSCOPY - SEM",
+  "use": "Microscopia eletrônica de varredura"
+ },
+ {
+  "termo": "SEGURANÇA CONTRA INCÊNDIO",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "SEM",
+  "use": "Microscopia eletrônica de varredura"
+ },
+ {
+  "termo": "SENSOR DE FUMAÇA",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "SERRAGEM",
+  "use": "Resíduo agroindustrial"
+ },
+ {
+  "termo": "SPRINKLERS",
+  "use": "Equipamento de segurança contra incêndio"
+ },
+ {
+  "termo": "SRI",
+  "use": "Determinação do índice de refletância solar"
+ },
+ {
+  "termo": "SÍLICA FUME",
+  "use": "Sílica ativa"
+ },
+ {
+  "termo": "TEXTURA ACRÍLICA",
+  "use": "Revestimento sintético texturizado"
+ },
+ {
+  "termo": "TINTA",
+  "use": "Líquido inflamável"
+ },
+ {
+  "termo": "TINTA IMOBILIÁRIA",
+  "use": "Tinta para construção civil"
+ },
+ {
+  "termo": "TORNEIRA AUTOMÁTICA",
+  "use": "Torneira de fechamento automático"
+ },
+ {
+  "termo": "TORNEIRA DE FECHAMENTO MANUAL",
+  "use": "Torneira"
+ },
+ {
+  "termo": "TURFA",
+  "use": "Resíduo agroindustrial"
+ },
+ {
+  "termo": "VASO SANITÁRIO",
+  "use": "Bacia sanitária"
+ },
+ {
+  "termo": "VENTANA",
+  "use": "Janela"
+ },
+ {
+  "termo": "ÍNDICE DE OCTANO",
+  "use": "Octanagem"
+ },
+ {
+  "termo": "ÍNDICE DE REFLETÂNCIA SOLAR",
+  "use": "Determinação do índice de refletância solar"
+ },
+ {
+  "termo": "ÓLEO DE FREIO",
+  "use": "Fluído de freio"
+ },
+ {
+  "termo": "ÓLEO DE TRANSFORMADOR",
+  "use": "Óleo mineral isolante"
+ },
+ {
+  "termo": "ÓLEO RESIDUAL",
+  "use": "Óleo combustível"
+ },
+ {
+  "termo": "ÓLEO VEGETAL",
+  "use": "Líquido inflamável"
+ }
+]
