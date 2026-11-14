@@ -11,9 +11,12 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 | `dados/laboratorios.json` | 19 laboratórios/seções com sigla, nome, código CRD e total de serviços |
 | `dados/vocabulario_use.json` | 132 remissivas do vocabulário controlado (termo não preferido → termo a usar) |
 | `bruto/escriba_busca_todos_2026-11-14.html` | Resposta HTML original (Windows-1252), para auditoria |
+| `AGENTS.md` | Instruções para o agente (Codex) integrar a busca na Loja IPT |
+| `publicar/index.html` + `publicar/busca-servicos.json` | Versão de produção: página e dados separados, mesmo domínio |
 | `prototipo/index.html` | Protótipo da nova busca, arquivo único que funciona offline |
 | `prototipo/template.html` | Código do protótipo sem os dados |
-| `scripts/montar_prototipo.py` | Embute `dados/` no template e gera `index.html` |
+| `scripts/montar_prototipo.py` | Gera `publicar/` e `prototipo/index.html` a partir do template e de `dados/` |
+| `scripts/testar_busca.js` | Teste de aceitação com Playwright (27 verificações), local ou na URL publicada |
 | `scripts/extrair_escriba.py` | Conversor do HTML bruto para os arquivos acima |
 
 Para atualizar: salvar uma nova resposta de `pesquisas.asp` com `TxtTermo=%` e rodar
@@ -38,7 +41,7 @@ Abrir `prototipo/index.html` no navegador. Não depende de servidor, iframe nem 
 | Leitura | Textos convertidos da caixa alta para caixa normal, preservando siglas, unidades (kV, °C, pH) e nomes de métodos; o conteúdo não é alterado |
 | Layout | Responsivo (celular sem rolagem lateral), modo claro e escuro |
 
-Testado no Chromium: 14 buscas de referência, filtros, detalhes, link direto, celular 390 px e modo escuro, sem erros de JavaScript.
+Teste automatizado: `node scripts/testar_busca.js` (27 verificações; passam nas versões `publicar/` e `prototipo/`).
 
 ## Diagnóstico técnico da busca atual
 
