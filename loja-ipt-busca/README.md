@@ -10,11 +10,35 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 | `dados/servicos.csv` | Mesmo conteúdo em tabela (UTF-8 com BOM, separador `;`, abre direto no Excel) |
 | `dados/laboratorios.json` | 19 laboratórios/seções com sigla, nome, código CRD e total de serviços |
 | `dados/vocabulario_use.json` | 132 remissivas do vocabulário controlado (termo não preferido → termo a usar) |
-| `bruto/escriba_busca_todos_2026-11-14.html` | Resposta HTML original (ISO-8859-1), para auditoria |
+| `bruto/escriba_busca_todos_2026-11-14.html` | Resposta HTML original (Windows-1252), para auditoria |
+| `prototipo/index.html` | Protótipo da nova busca, arquivo único que funciona offline |
+| `prototipo/template.html` | Código do protótipo sem os dados |
+| `scripts/montar_prototipo.py` | Embute `dados/` no template e gera `index.html` |
 | `scripts/extrair_escriba.py` | Conversor do HTML bruto para os arquivos acima |
 
 Para atualizar: salvar uma nova resposta de `pesquisas.asp` com `TxtTermo=%` e rodar
-`python3 -I scripts/extrair_escriba.py <arquivo.html> dados`.
+`python3 -I scripts/extrair_escriba.py <arquivo.html> dados` e depois `python3 -I scripts/montar_prototipo.py`.
+
+## Protótipo da nova busca
+
+Abrir `prototipo/index.html` no navegador. Não depende de servidor, iframe nem do Scriba.
+
+| Recurso | Comportamento |
+|---|---|
+| Busca | Ao digitar; ignora acentos e maiúsculas; aceita plural (“durezas”), início de palavra (“calibra”), código (“7422”), norma (“NBR 7190”), sigla de laboratório (“LTDC”) e frase entre aspas |
+| Várias palavras | Exige todas (E). Se nada atender, mostra os serviços com qualquer uma e avisa |
+| Erro de digitação | Corrige pelo vocabulário do próprio catálogo (“multímtero” → multímetro) e avisa |
+| Sinônimos | Usa as 132 remissivas do Scriba (“AEAC” → Etanol) |
+| Relevância | Nome pesa mais que palavras-chave, que pesam mais que laboratório e descrição |
+| Filtros | Laboratório, tipo de serviço e acreditação Cgcre, com contagem conforme a busca |
+| Cards | Código, selo Cgcre, nome, laboratório, descrição em 3 linhas, palavras-chave, “Ver detalhes” e “Solicitar serviço” |
+| Detalhes | Descrição completa, normas citadas (extraídas do texto), laboratórios, certificados em PDF, link copiável |
+| “Solicitar serviço” | Abre o Fale Conosco do IPT já com o registro e a unidade (`Ensaio=` e `CRD=`) |
+| URL | Guarda busca, filtros e serviço aberto (`?q=dureza&lab=LTDC&servico=7422`) |
+| Leitura | Textos convertidos da caixa alta para caixa normal, preservando siglas, unidades (kV, °C, pH) e nomes de métodos; o conteúdo não é alterado |
+| Layout | Responsivo (celular sem rolagem lateral), modo claro e escuro |
+
+Testado no Chromium: 14 buscas de referência, filtros, detalhes, link direto, celular 390 px e modo escuro, sem erros de JavaScript.
 
 ## Diagnóstico técnico da busca atual
 

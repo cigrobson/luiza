@@ -1,5 +1,5 @@
 """Converte o HTML da busca pública do Scriba (Busca_EAC/pesquisas.asp, TxtTermo=%)
-em dados estruturados. Uso: python3 -I extrair_escriba.py <html_latin1> <pasta_saida>"""
+em dados estruturados. Uso: python3 -I extrair_escriba.py <html_windows1252> <pasta_saida>"""
 import csv, html, json, re, sys, collections, datetime
 
 def limpa(s):
@@ -7,7 +7,7 @@ def limpa(s):
     return re.sub(r'\s+', ' ', html.unescape(s)).strip()
 
 def main(src, out):
-    t = open(src, encoding='latin-1').read()
+    t = open(src, encoding='cp1252', errors='replace').read()  # página declara nada; bytes 0x80-0x9F são Windows-1252
     # --- vocabulário controlado (termo não preferido -> USE termo preferido)
     use = []
     for nao_pref, pref in re.findall(
