@@ -4,11 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Busca de Serviços IPT</title>
-<meta name="description" content="Protótipo de busca do catálogo de ensaios, análises e calibrações do IPT para a Loja IPT.">
-<!-- Modo publicação: sem dados embutidos, a página carrega o JSON indicado aqui (caminho relativo ou absoluto, mesmo domínio). -->
-<meta name="busca-dados" content="busca-servicos.json">
+<meta name="description" content="Busca no catálogo de ensaios, análises e calibrações do IPT.">
 <style>
-:root{
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#f4f6fa}
+@media (prefers-color-scheme:dark){body{background:#0b1220}}
+#busca-ipt{--fonte:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;min-height:100vh}
+</style>
+<style>
+/* Busca de Serviços IPT: todo o estilo fica restrito a #busca-ipt. Para a identidade visual, altere só as variáveis. */
+#busca-ipt{
+  --fonte:inherit;        /* fonte do tema; troque se quiser outra */
+  --topo-fixo:12px;       /* altura do cabeçalho fixo do tema + folga */
   --bg:#f4f6fa; --surface:#ffffff; --surface-2:#eef2f8; --line:#dde3ee;
   --text:#14213d; --muted:#5a6680; --primary:#002458; --primary-ink:#ffffff;
   --accent:#01adef; --accent-soft:#e3f6fe; --mark:#fff1b8; --ok:#0f7b4f; --ok-soft:#e2f5ec;
@@ -17,7 +24,7 @@
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
+#busca-ipt:not([data-theme="light"]){
     --bg:#0b1220; --surface:#131c2e; --surface-2:#1a2540; --line:#26324d;
     --text:#e7ecf6; --muted:#9aa7c2; --primary:#5cc8f5; --primary-ink:#06192f;
     --accent:#5cc8f5; --accent-soft:#12324a; --mark:#5a4a0f; --ok:#5fd3a0; --ok-soft:#12352a;
@@ -25,188 +32,185 @@
     color-scheme:dark;
   }
 }
-:root[data-theme="dark"]{
+#busca-ipt[data-theme="dark"]{
   --bg:#0b1220; --surface:#131c2e; --surface-2:#1a2540; --line:#26324d;
   --text:#e7ecf6; --muted:#9aa7c2; --primary:#5cc8f5; --primary-ink:#06192f;
   --accent:#5cc8f5; --accent-soft:#12324a; --mark:#5a4a0f; --ok:#5fd3a0; --ok-soft:#12352a;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
   color-scheme:dark;
 }
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);
-  font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-a{color:inherit}
-button,input,select{font:inherit;color:inherit}
-.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
-
-/* topo */
-.topbar{background:var(--surface);border-bottom:1px solid var(--line)}
-.topbar .wrap{display:flex;align-items:center;gap:12px;height:56px}
-.brand{font-weight:700;letter-spacing:.2px;color:var(--text);text-decoration:none}
-.brand b{color:var(--accent)}
-.tag{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 10px}
-.spacer{flex:1}
-
-/* busca */
-.hero{padding:28px 0 18px}
-.hero h1{margin:0 0 4px;font-size:clamp(22px,3.2vw,30px);line-height:1.2}
-.hero p{margin:0 0 18px;color:var(--muted)}
-.searchbox{position:relative}
-.searchbox svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--muted);pointer-events:none}
-.searchbox input{width:100%;height:56px;border-radius:var(--radius);border:1.5px solid var(--line);
+/* Blindagem contra estilos do tema.
+   :where() mantém a especificidade em (1,0,0): vence seletores de elemento e de classe do tema
+   e perde para as regras da própria busca (#busca-ipt .bi-*), que vêm com (1,1,0). */
+#busca-ipt :where(div,section,aside,article,form,details,summary,span,p,h1,h2,h3,dl,dt,dd,mark,label,dialog,button,input,select,a,svg){float:none;transform:none;columns:auto;text-shadow:none;letter-spacing:normal;text-transform:none;min-width:0}
+#busca-ipt :where(h1,h2,h3,p,dl,dd,figure){margin:0;padding:0}
+#busca-ipt :where(button){margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;width:auto;max-width:none;height:auto;min-height:0;display:inline-block;font:inherit;color:inherit;line-height:inherit;text-decoration:none;cursor:pointer}
+#busca-ipt :where(input,select){margin:0;width:auto;max-width:100%;height:auto;min-height:0;box-shadow:none;font:inherit;color:inherit}
+#busca-ipt :where(input[type=checkbox]){padding:0;border:initial;width:auto;height:auto;appearance:auto;-webkit-appearance:checkbox}
+#busca-ipt :where(label){display:inline;margin:0;padding:0;font-weight:inherit}
+#busca-ipt :where(a){text-decoration:none;box-shadow:none;border:0}
+#busca-ipt :where(dialog){max-width:none;min-width:0;margin:auto;inset:0;position:fixed}
+#busca-ipt :where(img,svg){max-width:100%}
+#busca-ipt .bi-fonte{color:var(--muted);font-size:13px;padding:18px 0 8px;border-top:1px solid var(--line);margin-top:8px}
+#busca-ipt,#busca-ipt *,#busca-ipt *::before,#busca-ipt *::after{box-sizing:border-box}
+#busca-ipt{container:busca / inline-size;margin:0;background:var(--bg);color:var(--text);
+  font-size:15px;line-height:1.55;font-family:var(--fonte)}
+#busca-ipt a{color:inherit}
+#busca-ipt button,#busca-ipt input,#busca-ipt select{font:inherit;color:inherit}
+#busca-ipt .bi-wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+#busca-ipt .bi-hero{padding:28px 0 18px}
+#busca-ipt .bi-hero .bi-titulo{margin:0 0 4px;font-size:clamp(22px,3.2vw,30px);line-height:1.2}
+#busca-ipt .bi-hero p{margin:0 0 18px;color:var(--muted)}
+#busca-ipt .bi-searchbox{position:relative}
+#busca-ipt .bi-searchbox svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--muted);pointer-events:none}
+#busca-ipt .bi-searchbox input{width:100%;height:56px;border-radius:var(--radius);border:1.5px solid var(--line);
   background:var(--surface);padding:0 48px 0 48px;font-size:17px;box-shadow:var(--shadow);outline:none}
-.searchbox input:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
-input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}
-.clear{position:absolute;right:10px;top:50%;transform:translateY(-50%);border:0;background:transparent;
+#busca-ipt .bi-searchbox input:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+#busca-ipt input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}
+#busca-ipt .bi-clear{position:absolute;right:10px;top:50%;transform:translateY(-50%);border:0;background:transparent;
   width:36px;height:36px;border-radius:50%;cursor:pointer;color:var(--muted);display:none}
-.clear:hover{background:var(--surface-2)}
-.examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center;font-size:13px;color:var(--muted)}
-.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;cursor:pointer;font-size:13px}
-.chip:hover{border-color:var(--accent)}
-
-/* layout */
-.layout{display:grid;grid-template-columns:260px 1fr;gap:24px;padding-bottom:48px}
-@media (max-width:860px){.layout{grid-template-columns:1fr}}
-aside .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 14px 10px;position:sticky;top:12px}
-aside details>summary{list-style:none;cursor:pointer;font-weight:600;display:flex;justify-content:space-between;align-items:center}
-aside details>summary::-webkit-details-marker{display:none}
-aside h3{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:16px 0 8px}
-.opt{display:flex;align-items:flex-start;gap:8px;padding:5px 6px;border-radius:8px;cursor:pointer;font-size:14px}
-.opt:hover{background:var(--surface-2)}
-.opt input{margin-top:3px;accent-color:var(--accent)}
-.opt .n{margin-left:auto;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
-.opt .lbl{min-width:0}
-.opt .lbl small{display:block;color:var(--muted);font-size:12px;line-height:1.3}
-.opt.zero{opacity:.45}
-.linkbtn{border:0;background:none;color:var(--accent);cursor:pointer;padding:6px 0;font-size:13px}
-
-.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:12px}
-.count{font-size:14px;color:var(--muted)}
-.count strong{color:var(--text)}
-.bar select{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:6px 10px}
-.notice{background:var(--accent-soft);border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:14px}
-.notice button{border:0;background:none;padding:0;color:var(--accent);cursor:pointer;text-decoration:underline;font-weight:600}
-
-/* cards */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-@media (max-width:400px){.grid{grid-template-columns:1fr}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;
+#busca-ipt .bi-clear:hover{background:var(--surface-2)}
+#busca-ipt .bi-examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center;font-size:13px;color:var(--muted)}
+#busca-ipt .bi-chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;cursor:pointer;font-size:13px}
+#busca-ipt .bi-chip:hover{border-color:var(--accent)}
+#busca-ipt .bi-layout{display:grid;grid-template-columns:260px 1fr;gap:24px;padding-bottom:48px}
+@container busca (max-width:860px){
+#busca-ipt .bi-layout{grid-template-columns:1fr}
+}
+#busca-ipt aside .bi-panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 14px 10px;position:sticky;top:var(--topo-fixo,12px)}
+#busca-ipt aside details>summary{list-style:none;cursor:pointer;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+#busca-ipt aside details>summary::-webkit-details-marker{display:none}
+#busca-ipt aside h3{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:16px 0 8px}
+#busca-ipt .bi-opt{display:flex;align-items:flex-start;gap:8px;padding:5px 6px;border-radius:8px;cursor:pointer;font-size:14px}
+#busca-ipt .bi-opt:hover{background:var(--surface-2)}
+#busca-ipt .bi-opt input{margin-top:3px;accent-color:var(--accent)}
+#busca-ipt .bi-opt .bi-n{margin-left:auto;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+#busca-ipt .bi-opt .bi-lbl{min-width:0}
+#busca-ipt .bi-opt .bi-lbl small{display:block;color:var(--muted);font-size:12px;line-height:1.3}
+#busca-ipt .bi-opt.bi-zero{opacity:.45}
+#busca-ipt .bi-linkbtn{border:0;background:none;color:var(--accent);cursor:pointer;padding:6px 0;font-size:13px}
+#busca-ipt .bi-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:12px}
+#busca-ipt .bi-count{font-size:14px;color:var(--muted)}
+#busca-ipt .bi-count strong{color:var(--text)}
+#busca-ipt .bi-bar select{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:6px 10px}
+#busca-ipt .bi-notice{background:var(--accent-soft);border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:14px}
+#busca-ipt .bi-notice button{border:0;background:none;padding:0;color:var(--accent);cursor:pointer;text-decoration:underline;font-weight:600}
+#busca-ipt .bi-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+@container busca (max-width:400px){
+#busca-ipt .bi-grid{grid-template-columns:1fr}
+}
+#busca-ipt .bi-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;
   display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);min-width:0}
-.card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
-.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.code{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface-2);border-radius:6px;padding:5px 7px;color:var(--muted)}
-.badge{font-size:11.5px;font-weight:600;border-radius:999px;padding:3px 9px;background:var(--ok-soft);color:var(--ok)}
-.badge.type{background:var(--surface-2);color:var(--muted);font-weight:500}
-.card h2{font-size:16.5px;line-height:1.35;margin:0;overflow-wrap:anywhere}
-.lab{display:flex;gap:8px;align-items:baseline;font-size:13px;color:var(--muted);min-width:0}
-.sigla{flex:none;font-weight:700;color:var(--primary);font-size:12px;border:1px solid var(--line);border-radius:6px;padding:1px 6px}
-.desc{margin:0;font-size:14px;color:var(--text);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
-.desc.none{color:var(--muted);font-style:italic}
-.kw{display:flex;flex-wrap:wrap;gap:6px}
-.kw span{font-size:12px;color:var(--muted);background:var(--surface-2);border-radius:6px;padding:2px 8px}
-.actions{display:flex;gap:8px;margin-top:auto;padding-top:4px}
-.btn{flex:1;display:inline-flex;justify-content:center;align-items:center;gap:6px;height:40px;border-radius:10px;
+#busca-ipt .bi-card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+#busca-ipt .bi-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+#busca-ipt .bi-code{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface-2);border-radius:6px;padding:5px 7px;color:var(--muted)}
+#busca-ipt .bi-badge{font-size:11.5px;font-weight:600;border-radius:999px;padding:3px 9px;background:var(--ok-soft);color:var(--ok)}
+#busca-ipt .bi-badge.bi-type{background:var(--surface-2);color:var(--muted);font-weight:500}
+#busca-ipt .bi-card h2{font-size:16.5px;line-height:1.35;margin:0;overflow-wrap:anywhere}
+#busca-ipt .bi-lab{display:flex;gap:8px;align-items:baseline;font-size:13px;color:var(--muted);min-width:0}
+#busca-ipt .bi-sigla{flex:none;font-weight:700;color:var(--primary);font-size:12px;border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+#busca-ipt .bi-desc{margin:0;font-size:14px;color:var(--text);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+#busca-ipt .bi-desc.bi-none{color:var(--muted);font-style:italic}
+#busca-ipt .bi-kw{display:flex;flex-wrap:wrap;gap:6px}
+#busca-ipt .bi-kw span{font-size:12px;color:var(--muted);background:var(--surface-2);border-radius:6px;padding:2px 8px}
+#busca-ipt .bi-actions{display:flex;gap:8px;margin-top:auto;padding-top:4px}
+#busca-ipt .bi-btn{flex:1;display:inline-flex;justify-content:center;align-items:center;gap:6px;height:40px;border-radius:10px;
   font-weight:600;font-size:14px;text-decoration:none;cursor:pointer;border:1.5px solid transparent;white-space:nowrap}
-.btn.sec{background:transparent;border-color:var(--line);color:var(--text)}
-.btn.sec:hover{border-color:var(--accent)}
-.btn.pri{background:var(--primary);color:var(--primary-ink)}
-.btn.pri:hover{filter:brightness(1.12)}
-mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 1px}
-.more{display:flex;justify-content:center;margin-top:20px}
-.more .btn{flex:none;padding:0 22px}
-.empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius);padding:28px;text-align:center;color:var(--muted)}
-.empty h2{color:var(--text);font-size:18px;margin:0 0 6px}
-
-/* detalhes */
-dialog{border:0;padding:0;border-radius:18px;width:min(760px,calc(100vw - 24px));max-height:calc(100dvh - 24px);
+#busca-ipt .bi-btn.bi-sec{background:transparent;border-color:var(--line);color:var(--text)}
+#busca-ipt .bi-btn.bi-sec:hover{border-color:var(--accent)}
+#busca-ipt .bi-btn.bi-pri{background:var(--primary);color:var(--primary-ink)}
+#busca-ipt .bi-btn.bi-pri:hover{filter:brightness(1.12)}
+#busca-ipt mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 1px}
+#busca-ipt .bi-more{display:flex;justify-content:center;margin-top:20px}
+#busca-ipt .bi-more .bi-btn{flex:none;padding:0 22px}
+#busca-ipt .bi-empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius);padding:28px;text-align:center;color:var(--muted)}
+#busca-ipt .bi-empty h2{color:var(--text);font-size:18px;margin:0 0 6px}
+#busca-ipt dialog{border:0;padding:0;border-radius:18px;width:min(760px,calc(100vw - 24px));max-height:calc(100dvh - 24px);
   background:var(--surface);color:var(--text);box-shadow:0 20px 60px rgba(0,0,0,.35)}
-dialog::backdrop{background:rgba(8,16,32,.55)}
-.dlg-head{position:sticky;top:0;background:var(--surface);padding:18px 20px 12px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start}
-.dlg-head h2{margin:6px 0 0;font-size:20px;line-height:1.3}
-.x{margin-left:auto;flex:none;border:0;background:var(--surface-2);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px}
-.dlg-body{padding:16px 20px 8px}
-.dlg-body dl{display:grid;grid-template-columns:150px 1fr;gap:10px 16px;margin:0}
-@media (max-width:560px){.dlg-body dl{grid-template-columns:1fr;gap:2px}.dlg-body dd{margin-bottom:10px}}
-.dlg-body dt{color:var(--muted);font-size:13px}
-.dlg-body dd{margin:0;overflow-wrap:anywhere}
-.dlg-body dd a{color:var(--accent)}
-.dlg-foot{position:sticky;bottom:0;background:var(--surface);border-top:1px solid var(--line);padding:12px 20px;display:flex;gap:8px;flex-wrap:wrap}
-.dlg-foot .btn{flex:1 1 180px}
-.norms{display:flex;flex-wrap:wrap;gap:6px}
-.norms span{font:600 12px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface-2);border-radius:6px;padding:2px 8px}
-.hint{font-size:12px;color:var(--muted)}
-footer{border-top:1px solid var(--line);padding:18px 0 28px;color:var(--muted);font-size:13px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#busca-ipt dialog::backdrop{background:rgba(8,16,32,.55)}
+#busca-ipt .bi-dlg-head{position:sticky;top:0;background:var(--surface);padding:18px 20px 12px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start}
+#busca-ipt .bi-dlg-head h2{margin:6px 0 0;font-size:20px;line-height:1.3}
+#busca-ipt .bi-x{margin-left:auto;flex:none;border:0;background:var(--surface-2);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px}
+#busca-ipt .bi-dlg-body{padding:16px 20px 8px}
+#busca-ipt .bi-dlg-body dl{display:grid;grid-template-columns:150px 1fr;gap:10px 16px;margin:0}
+@media (max-width:560px){
+#busca-ipt .bi-dlg-body dl{grid-template-columns:1fr;gap:2px}
+#busca-ipt .bi-dlg-body dd{margin-bottom:10px}
+}
+#busca-ipt .bi-dlg-body dt{color:var(--muted);font-size:13px}
+#busca-ipt .bi-dlg-body dd{margin:0;overflow-wrap:anywhere}
+#busca-ipt .bi-dlg-body dd a{color:var(--accent);text-decoration:underline}
+#busca-ipt .bi-dlg-foot{position:sticky;bottom:0;background:var(--surface);border-top:1px solid var(--line);padding:12px 20px;display:flex;gap:8px;flex-wrap:wrap}
+#busca-ipt .bi-dlg-foot .bi-btn{flex:1 1 180px}
+#busca-ipt .bi-norms{display:flex;flex-wrap:wrap;gap:6px}
+#busca-ipt .bi-norms span{font:600 12px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface-2);border-radius:6px;padding:2px 8px}
+#busca-ipt .bi-hint{font-size:12px;color:var(--muted)}
+#busca-ipt .bi-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 </style>
 </head>
 <body>
-<header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="?">Loja <b>IPT</b></a>
-    <span class="tag">Protótipo · busca de serviços</span>
-    <span class="spacer"></span>
-  </div>
-</header>
-
-<main class="wrap">
-  <section class="hero">
-    <h1>Ensaios, análises e calibrações</h1>
-    <p id="sub">Pesquise no catálogo de serviços dos laboratórios do IPT.</p>
-    <form class="searchbox" role="search" onsubmit="return false">
-      <label class="sr" for="q">Buscar serviço</label>
+<div id="busca-ipt" class="busca-ipt" data-dados="busca-servicos.json">
+<div class="bi-wrap">
+<section class="bi-hero">
+    <h1 class="bi-titulo">Ensaios, análises e calibrações</h1>
+    <p id="bi-sub">Pesquise no catálogo de serviços dos laboratórios do IPT.</p>
+    <form class="bi-searchbox" role="search" onsubmit="return false">
+      <label class="bi-sr" for="bi-q">Buscar serviço</label>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="q" type="search" autocomplete="off" spellcheck="false" maxlength="200"
+      <input id="bi-q" type="search" autocomplete="off" spellcheck="false" maxlength="200"
         placeholder="Ensaio, material, norma ou laboratório. Ex.: dureza, NBR 7190, etanol">
-      <button class="clear" id="clear" type="button" aria-label="Limpar busca">✕</button>
+      <button class="bi-clear" id="bi-clear" type="button" aria-label="Limpar busca">✕</button>
     </form>
-    <div class="examples" id="examples"><span>Experimente:</span></div>
+    <div class="bi-examples" id="bi-examples"><span>Experimente:</span></div>
   </section>
 
-  <div class="layout">
+  <div class="bi-layout">
     <aside>
-      <div class="panel">
-        <details id="filters" open>
-          <summary>Filtros <span class="hint" id="factive"></span></summary>
+      <div class="bi-panel">
+        <details id="bi-filters" open>
+          <summary>Filtros <span class="bi-hint" id="bi-factive"></span></summary>
           <h3>Acreditação</h3>
-          <label class="opt"><input type="checkbox" id="fcgcre"><span class="lbl">Somente com certificado Cgcre</span><span class="n" id="ncgcre"></span></label>
+          <label class="bi-opt"><input type="checkbox" id="bi-fcgcre"><span class="bi-lbl">Somente com certificado Cgcre</span><span class="bi-n" id="bi-ncgcre"></span></label>
           <h3>Tipo de serviço</h3>
-          <div id="ftipo"></div>
+          <div id="bi-ftipo"></div>
           <h3>Laboratório</h3>
-          <div id="flab"></div>
-          <button class="linkbtn" id="freset" type="button">Limpar filtros</button>
+          <div id="bi-flab"></div>
+          <button class="bi-linkbtn" id="bi-freset" type="button">Limpar filtros</button>
         </details>
       </div>
     </aside>
 
-    <section aria-labelledby="count">
-      <div class="bar">
-        <div class="count" id="count" aria-live="polite"></div>
+    <section aria-labelledby="bi-count">
+      <div class="bi-bar">
+        <div class="bi-count" id="bi-count" aria-live="polite"></div>
         <label>
-          <span class="sr">Ordenar</span>
-          <select id="sort">
+          <span class="bi-sr">Ordenar</span>
+          <select id="bi-sort">
             <option value="rel">Mais relevantes</option>
             <option value="nome">Nome (A–Z)</option>
             <option value="cod">Código</option>
           </select>
         </label>
       </div>
-      <div id="notices"></div>
-      <div class="grid" id="grid"></div>
-      <div class="more" id="more"></div>
+      <div id="bi-notices"></div>
+      <div class="bi-grid" id="bi-grid"></div>
+      <div class="bi-more" id="bi-more"></div>
     </section>
   </div>
-</main>
-
-<footer>
-  <div class="wrap" id="foot"></div>
-</footer>
-
-<dialog id="dlg" aria-labelledby="dlg-title"></dialog>
+<p class="bi-fonte" id="bi-foot"></p>
+</div>
+<dialog id="bi-dlg" aria-labelledby="bi-dlg-title"></dialog>
+</div>
 
 <script>
-const DADOS_EMBUTIDOS = /*__DADOS__*/null;
-const FONTE_DADOS = (document.querySelector('meta[name="busca-dados"]')||{}).content || 'busca-servicos.json';
+/* Busca de Serviços IPT
+   Catálogo de ensaios, análises e calibrações (origem: Scriba/Busca_EAC).
+   A marcação vive em #busca-ipt; os dados vêm de window.BUSCA_IPT_DADOS (embutidos)
+   ou do JSON indicado em data-dados no elemento #busca-ipt. */
+(function(){
+"use strict";
+const RAIZ = document.getElementById('busca-ipt');
+if(!RAIZ) return;
 function iniciar(DADOS){
 
 /* ---------- texto: normalização e caixa ---------- */
@@ -332,7 +336,7 @@ function sinonimos(qn){
 
 /* ---------- estado ---------- */
 const st = {q:'', labs:new Set(), tipos:new Set(), cgcre:false, sort:'rel', shown:24, ou:false};
-const $ = id => document.getElementById(id);
+const $ = id => document.getElementById('bi-'+id);
 function lerURL(){
   try{
     const p = new URLSearchParams(location.search);
@@ -344,7 +348,8 @@ function lerURL(){
 }
 function gravarURL(servico){
   try{
-    const p = new URLSearchParams();
+    const p = new URLSearchParams(location.search);
+    ['q','lab','tipo','cgcre','ordem','servico'].forEach(k=>p.delete(k));
     if(st.q) p.set('q',st.q);
     if(st.labs.size) p.set('lab',[...st.labs].join(','));
     if(st.tipos.size) p.set('tipo',[...st.tipos].join(','));
@@ -352,7 +357,7 @@ function gravarURL(servico){
     if(st.sort!=='rel') p.set('ordem',st.sort);
     if(servico) p.set('servico',servico);
     const qs = p.toString();
-    history.replaceState(null,'',qs?('?'+qs):location.pathname);
+    history.replaceState(history.state,'',location.pathname+(qs?('?'+qs):'')+location.hash);
   }catch(e){}
 }
 
@@ -401,29 +406,29 @@ function buscar(){
 
 /* ---------- render ---------- */
 function card(s,tm){
-  const desc = s.descV ? `<p class="desc">${marcar(s.descV,tm)}</p>` : `<p class="desc none">Descrição não informada no catálogo.</p>`;
-  const kws = s.kwV.length ? `<div class="kw">${s.kwV.slice(0,4).map(k=>`<span>${marcar(k,tm)}</span>`).join('')}</div>` : '';
-  const labs = s.labsV.map(l=>`<div class="lab"><span class="sigla">${esc(l.sigla)}</span><span>${marcar(l.nome,tm)}</span></div>`).join('');
-  return `<article class="card">
-    <div class="meta"><span class="code">Nº ${s.registro}</span>
-      ${s.cgcre?'<span class="badge" title="Serviço com acreditação Cgcre/Inmetro">Acreditado Cgcre</span>':''}
-      ${s.tipo_servico!=='Ensaios, análises e calibrações correntes'?`<span class="badge type">${esc(s.tipo_servico)}</span>`:''}
+  const desc = s.descV ? `<p class="bi-desc">${marcar(s.descV,tm)}</p>` : `<p class="bi-desc bi-none">Descrição não informada no catálogo.</p>`;
+  const kws = s.kwV.length ? `<div class="bi-kw">${s.kwV.slice(0,4).map(k=>`<span>${marcar(k,tm)}</span>`).join('')}</div>` : '';
+  const labs = s.labsV.map(l=>`<div class="bi-lab"><span class="bi-sigla">${esc(l.sigla)}</span><span>${marcar(l.nome,tm)}</span></div>`).join('');
+  return `<article class="bi-card">
+    <div class="bi-meta"><span class="bi-code">Nº ${s.registro}</span>
+      ${s.cgcre?'<span class="bi-badge" title="Serviço com acreditação Cgcre/Inmetro">Acreditado Cgcre</span>':''}
+      ${s.tipo_servico!=='Ensaios, análises e calibrações correntes'?`<span class="bi-badge bi-type">${esc(s.tipo_servico)}</span>`:''}
     </div>
     <h2>${marcar(s.nomeV,tm)}</h2>
     ${labs}
     ${desc}
     ${kws}
-    <div class="actions">
-      <button class="btn sec" type="button" data-det="${s.registro}">Ver detalhes</button>
-      <a class="btn pri" href="${esc(s.contato.url)}" target="_blank" rel="noopener">Solicitar serviço</a>
+    <div class="bi-actions">
+      <button class="bi-btn bi-sec" type="button" data-det="${s.registro}">Ver detalhes</button>
+      <a class="bi-btn bi-pri" href="${esc(s.contato.url)}" target="_blank" rel="noopener">Solicitar serviço</a>
     </div>
   </article>`;
 }
 function opcoes(el, itens, sel, cont, nome){
   el.innerHTML = itens.map(([v,rot,sub])=>{
     const n = cont.get(v)||0;
-    return `<label class="opt${n||sel.has(v)?'':' zero'}"><input type="checkbox" data-f="${nome}" value="${esc(v)}" ${sel.has(v)?'checked':''}>
-      <span class="lbl">${esc(rot)}${sub?`<small>${esc(sub)}</small>`:''}</span><span class="n">${n}</span></label>`;
+    return `<label class="bi-opt${n||sel.has(v)?'':' bi-zero'}"><input type="checkbox" data-f="${nome}" value="${esc(v)}" ${sel.has(v)?'checked':''}>
+      <span class="bi-lbl">${esc(rot)}${sub?`<small>${esc(sub)}</small>`:''}</span><span class="bi-n">${n}</span></label>`;
   }).join('');
 }
 function render(lista, cont, notas, vazio, tm){
@@ -431,13 +436,13 @@ function render(lista, cont, notas, vazio, tm){
   $('count').innerHTML = vazio && !st.labs.size && !st.tipos.size && !st.cgcre
     ? `<strong>${n}</strong> serviços no catálogo`
     : `<strong>${n}</strong> ${n===1?'serviço encontrado':'serviços encontrados'}${st.q.trim()?` para “${esc(st.q.trim())}”`:''}`;
-  $('notices').innerHTML = notas.map(t=>`<div class="notice">${t}</div>`).join('');
+  $('notices').innerHTML = notas.map(t=>`<div class="bi-notice">${t}</div>`).join('');
   $('grid').innerHTML = lista.slice(0,st.shown).map(s=>card(s,tm)).join('');
-  $('more').innerHTML = n>st.shown ? `<button class="btn sec" type="button" id="maisbtn">Mostrar mais ${Math.min(24,n-st.shown)} de ${n-st.shown} restantes</button>` : '';
+  $('more').innerHTML = n>st.shown ? `<button class="bi-btn bi-sec" type="button" id="bi-maisbtn">Mostrar mais ${Math.min(24,n-st.shown)} de ${n-st.shown} restantes</button>` : '';
   if(!n){
-    $('grid').innerHTML = `<div class="empty" style="grid-column:1/-1"><h2>Nenhum serviço encontrado</h2>
+    $('grid').innerHTML = `<div class="bi-empty" style="grid-column:1/-1"><h2>Nenhum serviço encontrado</h2>
       <p>Tente outra palavra, use o singular ou remova filtros. Alguns laboratórios atendem demandas que não estão neste catálogo.</p>
-      <p><a class="btn pri" style="display:inline-flex;padding:0 18px" href="https://ipt.br/contato" target="_blank" rel="noopener">Falar com o IPT</a></p></div>`;
+      <p><a class="bi-btn bi-pri" style="display:inline-flex;padding:0 18px" href="https://ipt.br/contato" target="_blank" rel="noopener">Falar com o IPT</a></p></div>`;
   }
   opcoes($('flab'), LABS.map(([sg,nm])=>[sg,sg,nm]), st.labs, cont.lab, 'lab');
   opcoes($('ftipo'), TIPOS.map(t=>[t,t]), st.tipos, cont.tipo, 'tipo');
@@ -459,21 +464,21 @@ function detalhes(reg){
   const tm = ultimo.termosMarca, nm = normas(s.descricao);
   const certs = s.certificados_cgcre.map(c=>`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.codigo)} (PDF)</a>`).join(' · ');
   $('dlg').innerHTML = `
-    <div class="dlg-head"><div>
-      <div class="meta"><span class="code">Nº ${s.registro}</span>${s.cgcre?'<span class="badge">Acreditado Cgcre</span>':''}<span class="badge type">${esc(s.tipo_servico)}</span></div>
-      <h2 id="dlg-title">${marcar(s.nomeV,tm)}</h2></div>
-      <button class="x" type="button" data-close aria-label="Fechar">✕</button></div>
-    <div class="dlg-body"><dl>
-      <dt>Descrição</dt><dd>${s.descV?marcar(s.descV,tm):'<span class="hint">Não informada no catálogo.</span>'}</dd>
-      ${nm.length?`<dt>Normas citadas</dt><dd><div class="norms">${nm.map(x=>`<span>${esc(x)}</span>`).join('')}</div><div class="hint">Identificadas automaticamente no texto da descrição.</div></dd>`:''}
+    <div class="bi-dlg-head"><div>
+      <div class="bi-meta"><span class="bi-code">Nº ${s.registro}</span>${s.cgcre?'<span class="bi-badge">Acreditado Cgcre</span>':''}<span class="bi-badge bi-type">${esc(s.tipo_servico)}</span></div>
+      <h2 id="bi-dlg-title">${marcar(s.nomeV,tm)}</h2></div>
+      <button class="bi-x" type="button" data-close aria-label="Fechar">✕</button></div>
+    <div class="bi-dlg-body"><dl>
+      <dt>Descrição</dt><dd>${s.descV?marcar(s.descV,tm):'<span class="bi-hint">Não informada no catálogo.</span>'}</dd>
+      ${nm.length?`<dt>Normas citadas</dt><dd><div class="bi-norms">${nm.map(x=>`<span>${esc(x)}</span>`).join('')}</div><div class="bi-hint">Identificadas automaticamente no texto da descrição.</div></dd>`:''}
       <dt>Laboratório${s.labsV.length>1?'s':''}</dt><dd>${s.labsV.map(l=>`<strong>${esc(l.sigla)}</strong> · ${esc(l.nome)}`).join('<br>')}</dd>
       ${s.kwV.length?`<dt>Palavras-chave</dt><dd>${s.kwV.map(k=>marcar(k,tm)).join(' · ')}</dd>`:''}
       ${certs?`<dt>Certificado Cgcre</dt><dd>${certs}</dd>`:''}
       <dt>Código no Scriba</dt><dd>${s.registro}</dd>
     </dl></div>
-    <div class="dlg-foot">
-      <a class="btn pri" href="${esc(s.contato.url)}" target="_blank" rel="noopener">Solicitar serviço</a>
-      <button class="btn sec" type="button" data-copy="${s.registro}">Copiar link deste serviço</button>
+    <div class="bi-dlg-foot">
+      <a class="bi-btn bi-pri" href="${esc(s.contato.url)}" target="_blank" rel="noopener">Solicitar serviço</a>
+      <button class="bi-btn bi-sec" type="button" data-copy="${s.registro}">Copiar link deste serviço</button>
     </div>`;
   if(!$('dlg').open) $('dlg').showModal();
   gravarURL(s.registro);
@@ -486,50 +491,56 @@ $('clear').addEventListener('click', ()=>{ st.q=''; $('q').value=''; st.shown=24
 $('sort').addEventListener('change', e=>{ st.sort=e.target.value; buscar(); gravarURL(); });
 $('fcgcre').addEventListener('change', e=>{ st.cgcre=e.target.checked; st.shown=24; buscar(); gravarURL(); });
 $('freset').addEventListener('click', ()=>{ st.labs.clear(); st.tipos.clear(); st.cgcre=false; st.shown=24; buscar(); gravarURL(); });
-document.addEventListener('change', e=>{
+RAIZ.addEventListener('change', e=>{
   const f=e.target.dataset.f; if(!f) return;
   const set = f==='lab'?st.labs:st.tipos;
   e.target.checked?set.add(e.target.value):set.delete(e.target.value);
   st.shown=24; buscar(); gravarURL();
 });
-document.addEventListener('click', e=>{
+RAIZ.addEventListener('click', e=>{
   const d=e.target.closest('[data-det]'); if(d){detalhes(d.dataset.det);return}
   if(e.target.closest('[data-close]')){$('dlg').close();return}
   const c=e.target.closest('[data-copy]');
   if(c){
-    let url=location.href; try{const u=new URL(location.href);u.search='';u.searchParams.set('servico',c.dataset.copy);url=u.href}catch(_){}
+    let url=location.href; try{const u=new URL(location.href);['q','lab','tipo','cgcre','ordem'].forEach(k=>u.searchParams.delete(k));u.searchParams.set('servico',c.dataset.copy);url=u.href}catch(_){}
     const ok=()=>{c.textContent='Link copiado'};
     try{navigator.clipboard.writeText(url).then(ok,()=>{c.textContent=url})}catch(_){c.textContent=url}
     return;
   }
-  if(e.target.id==='maisbtn'){ st.shown+=24; buscar(); }
+  if(e.target.id==='bi-maisbtn'){ st.shown+=24; buscar(); }
   const ch=e.target.closest('[data-ex]'); if(ch){ st.q=ch.dataset.ex; $('q').value=st.q; st.shown=24; buscar(); gravarURL(); }
 });
 $('dlg').addEventListener('click', e=>{ if(e.target===$('dlg')) $('dlg').close(); });
 $('dlg').addEventListener('close', ()=>gravarURL());
-if(matchMedia('(max-width:860px)').matches) $('filters').open=false;
+if(RAIZ.clientWidth < 860) $('filters').open=false;
 
 /* ---------- início ---------- */
 ['dureza','calibração de multímetro','NBR 7190','etanol','resistência ao fogo','papel'].forEach(x=>{
-  const b=document.createElement('button'); b.type='button'; b.className='chip'; b.dataset.ex=x; b.textContent=x; $('examples').appendChild(b);
+  const b=document.createElement('button'); b.type='button'; b.className='bi-chip'; b.dataset.ex=x; b.textContent=x; $('examples').appendChild(b);
 });
 const m = DADOS.meta;
-$('sub').textContent = `Pesquise entre ${m.servicos_unicos} serviços de ${m.laboratorios} laboratórios do IPT.`;
+if(!$('sub').dataset.fixo) $('sub').textContent = `Pesquise entre ${m.servicos_unicos} serviços de ${m.laboratorios} laboratórios do IPT.`;
 $('foot').innerHTML = `Protótipo. Dados do catálogo público do Scriba (Busca_EAC), coletados em ${m.coletado_em.split('-').reverse().join('/')}. Textos convertidos da caixa alta para leitura; o conteúdo é o original.`;
 const servicoURL = lerURL();
 $('q').value = st.q;
 buscar();
 if(servicoURL) detalhes(servicoURL);
 window.BUSCA_IPT = {servicos:S, buscar, analisar};
+RAIZ.dataset.buscaPronta = '1';
 document.documentElement.dataset.buscaPronta = '1';
 }
-(DADOS_EMBUTIDOS ? Promise.resolve(DADOS_EMBUTIDOS)
-  : fetch(FONTE_DADOS, {cache:'no-cache'}).then(r=>{ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }))
-  .then(iniciar)
-  .catch(err=>{
-    console.error('Busca IPT: falha ao carregar dados', err);
-    document.getElementById('grid').innerHTML = '<div class="empty" style="grid-column:1/-1"><h2>Não foi possível carregar o catálogo</h2><p>Tente novamente em alguns instantes ou <a href="https://ipt.br/contato" target="_blank" rel="noopener">fale com o IPT</a>.</p></div>';
-  });
+
+function falha(err){
+  console.error('Busca IPT: falha ao carregar dados', err);
+  const g = document.getElementById('bi-grid');
+  if(g) g.innerHTML = '<div class="bi-empty" style="grid-column:1/-1"><h2>Não foi possível carregar o catálogo</h2><p>Tente novamente em alguns instantes ou <a href="https://ipt.br/contato" target="_blank" rel="noopener">fale com o IPT</a>.</p></div>';
+}
+const embutidos = window.BUSCA_IPT_DADOS;
+const fonte = RAIZ.getAttribute('data-dados');
+(embutidos ? Promise.resolve(embutidos)
+  : fetch(fonte, {cache:'no-cache', credentials:'same-origin'}).then(r=>{ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }))
+  .then(iniciar).catch(falha);
+})();
 </script>
 </body>
 </html>

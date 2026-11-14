@@ -1,0 +1,52 @@
+<div id="busca-ipt" class="busca-ipt" data-dados="{{DADOS_URL}}">
+<div class="bi-wrap">
+<section class="bi-hero">
+    {{TITULO}}
+    <p id="bi-sub">Pesquise no catálogo de serviços dos laboratórios do IPT.</p>
+    <form class="bi-searchbox" role="search" onsubmit="return false">
+      <label class="bi-sr" for="bi-q">Buscar serviço</label>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="bi-q" type="search" autocomplete="off" spellcheck="false" maxlength="200"
+        placeholder="Ensaio, material, norma ou laboratório. Ex.: dureza, NBR 7190, etanol">
+      <button class="bi-clear" id="bi-clear" type="button" aria-label="Limpar busca">✕</button>
+    </form>
+    <div class="bi-examples" id="bi-examples"><span>Experimente:</span></div>
+  </section>
+
+  <div class="bi-layout">
+    <aside>
+      <div class="bi-panel">
+        <details id="bi-filters" open>
+          <summary>Filtros <span class="bi-hint" id="bi-factive"></span></summary>
+          <h3>Acreditação</h3>
+          <label class="bi-opt"><input type="checkbox" id="bi-fcgcre"><span class="bi-lbl">Somente com certificado Cgcre</span><span class="bi-n" id="bi-ncgcre"></span></label>
+          <h3>Tipo de serviço</h3>
+          <div id="bi-ftipo"></div>
+          <h3>Laboratório</h3>
+          <div id="bi-flab"></div>
+          <button class="bi-linkbtn" id="bi-freset" type="button">Limpar filtros</button>
+        </details>
+      </div>
+    </aside>
+
+    <section aria-labelledby="bi-count">
+      <div class="bi-bar">
+        <div class="bi-count" id="bi-count" aria-live="polite"></div>
+        <label>
+          <span class="bi-sr">Ordenar</span>
+          <select id="bi-sort">
+            <option value="rel">Mais relevantes</option>
+            <option value="nome">Nome (A–Z)</option>
+            <option value="cod">Código</option>
+          </select>
+        </label>
+      </div>
+      <div id="bi-notices"></div>
+      <div class="bi-grid" id="bi-grid"></div>
+      <div class="bi-more" id="bi-more"></div>
+    </section>
+  </div>
+<p class="bi-fonte" id="bi-foot"></p>
+</div>
+<dialog id="bi-dlg" aria-labelledby="bi-dlg-title"></dialog>
+</div>

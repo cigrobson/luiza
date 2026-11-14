@@ -9,6 +9,7 @@
 
   Requer Playwright:  npm i -D playwright && npx playwright install chromium
   Sai com código 1 se qualquer verificação falhar.
+  Com a página do WordPress, aponte para a URL da página que contém o shortcode.
 
   Os números esperados valem para a coleta de 14/11/2026 (568 serviços).
   Depois de atualizar os dados, reveja só as verificações marcadas "dados:".
@@ -43,17 +44,19 @@ function servir(dir) {
     const p = await nav.newPage({ viewport: { width: 1280, height: 900 }, ...opts });
     p.on('pageerror', e => erros.push(e.message));
     p.on('console', m => { if (m.type() === 'error') erros.push(m.text()); });
-    await p.goto(base + qs);
+    const u = new URL(base);  // preserva parâmetros já existentes (ex.: ?page_id=123 no WordPress)
+    new URLSearchParams(qs.replace(/^\?/, '')).forEach((v, k) => u.searchParams.set(k, v));
+    await p.goto(u.href);
     await p.waitForFunction(() => document.documentElement.dataset.buscaPronta === '1', null, { timeout: 15000 });
     return p;
   };
-  const buscar = async (p, q) => { await p.fill('#q', q); await p.waitForTimeout(400); };
+  const buscar = async (p, q) => { await p.fill('#bi-q', q); await p.waitForTimeout(400); };
   const estado = p => p.evaluate(() => ({
-    n: [...document.querySelectorAll('.card')].length,
-    total: parseInt((document.getElementById('count').innerText.match(/\d+/) || ['0'])[0], 10),
-    titulos: [...document.querySelectorAll('.card h2')].map(h => h.innerText),
-    avisos: [...document.querySelectorAll('.notice')].map(n => n.innerText).join(' | '),
-    vazio: !!document.querySelector('.empty'),
+    n: [...document.querySelectorAll('.bi-card')].length,
+    total: parseInt((document.getElementById('bi-count').innerText.match(/\d+/) || ['0'])[0], 10),
+    titulos: [...document.querySelectorAll('.bi-card h2')].map(h => h.innerText),
+    avisos: [...document.querySelectorAll('.bi-notice')].map(n => n.innerText).join(' | '),
+    vazio: !!document.querySelector('.bi-empty'),
   }));
 
   const p = await abrir();
@@ -87,39 +90,61 @@ function servir(dir) {
   await buscar(p, 'xyzabcqwe'); e = await estado(p);
   verifica(e.total === 0 && e.vazio, `sem resultado mostra estado vazio com contato`);
   await buscar(p, 'dureza');
-  const marcas = await p.$$eval('.card mark', m => m.length);
+  const marcas = await p.$$eval('.bi-card mark', m => m.length);
   verifica(marcas > 0, `termo destacado nos cards (${marcas} marcas)`);
 
   console.log('\nCards e ações');
-  const link = await p.getAttribute('.card a.btn.pri', 'href');
+  const link = await p.getAttribute('.bi-card a.bi-btn.bi-pri', 'href');
   verifica(/faleconosco\/\?Manifestacao=\d&Ensaio=\d+&CRD=\w+/.test(link || ''), `"Solicitar serviço" leva registro e unidade (${link})`);
-  verifica(await p.getAttribute('.card a.btn.pri', 'target') === '_blank', `"Solicitar serviço" abre em nova aba`);
-  await p.click('.card [data-det]'); await p.waitForTimeout(200);
-  verifica(await p.evaluate(() => document.getElementById('dlg').open), `"Ver detalhes" abre a janela`);
+  verifica(await p.getAttribute('.bi-card a.bi-btn.bi-pri', 'target') === '_blank', `"Solicitar serviço" abre em nova aba`);
+  await p.click('.bi-card [data-det]'); await p.waitForTimeout(200);
+  verifica(await p.evaluate(() => document.getElementById('bi-dlg').open), `"Ver detalhes" abre a janela`);
   verifica(/servico=\d+/.test(p.url()), `URL registra o serviço aberto (${p.url().split('?')[1]})`);
   await p.keyboard.press('Escape'); await p.waitForTimeout(150);
-  verifica(!(await p.evaluate(() => document.getElementById('dlg').open)), `Esc fecha a janela`);
+  verifica(!(await p.evaluate(() => document.getElementById('bi-dlg').open)), `Esc fecha a janela`);
 
   console.log('\nFiltros');
   await buscar(p, '');
-  await p.check('#fcgcre'); await p.waitForTimeout(200); e = await estado(p);
+  await p.evaluate(() => { document.getElementById('bi-filters').open = true; });  // em contêiner estreito os filtros começam recolhidos
+  await p.check('#bi-fcgcre'); await p.waitForTimeout(200); e = await estado(p);
   verifica(e.total === 101, `dados: filtro Cgcre = 101 (veio ${e.total})`);
   verifica(/cgcre=1/.test(p.url()), `filtro gravado na URL`);
-  await p.click('#freset'); await p.waitForTimeout(200);
+  await p.click('#bi-freset'); await p.waitForTimeout(200);
   await p.check('input[data-f="lab"][value="LV"]'); await p.waitForTimeout(200); e = await estado(p);
   verifica(e.total === 34, `dados: filtro laboratório LV = 34 (veio ${e.total})`);
 
   console.log('\nLink direto');
   const p2 = await abrir('?q=vazao&lab=LV&servico=870');
-  verifica(await p2.inputValue('#q') === 'vazao', `busca restaurada da URL`);
-  verifica(await p2.evaluate(() => document.getElementById('dlg').open), `serviço da URL aberto`);
+  verifica(await p2.inputValue('#bi-q') === 'vazao', `busca restaurada da URL`);
+  verifica(await p2.evaluate(() => document.getElementById('bi-dlg').open), `serviço da URL aberto`);
 
   console.log('\nCelular e tema escuro');
   const m = await abrir('?q=dureza', { viewport: { width: 360, height: 780 } });
   verifica(!(await m.evaluate(() => document.documentElement.scrollWidth > innerWidth)), `360 px sem rolagem horizontal`);
   const d = await abrir('', { colorScheme: 'dark' });
-  const fundo = await d.evaluate(() => getComputedStyle(document.body).backgroundColor);
-  verifica(fundo !== 'rgb(244, 246, 250)', `tema escuro aplicado (${fundo})`);
+  const tema = await d.evaluate(() => ({ forcado: document.getElementById('busca-ipt').dataset.theme || '', fundo: getComputedStyle(document.getElementById('busca-ipt')).backgroundColor }));
+  if (tema.forcado === 'light') verifica(tema.fundo === 'rgb(244, 246, 250)', `tema claro fixo respeitado com sistema escuro (${tema.fundo})`);
+  else verifica(tema.fundo !== 'rgb(244, 246, 250)', `tema escuro automático aplicado (${tema.fundo})`);
+
+  console.log('\nLargura do contêiner');
+  const colunas = async pg => pg.evaluate(() => ({ larg: document.getElementById('busca-ipt').clientWidth,
+    cols: getComputedStyle(document.querySelector('#busca-ipt .bi-layout')).gridTemplateColumns.split(' ').length }));
+  const c1 = await colunas(p);
+  verifica(c1.larg < 860 ? c1.cols === 1 : c1.cols === 2, `layout acompanha a largura do contêiner (${c1.larg}px → ${c1.cols} coluna(s))`);
+  const estreito = await abrir('', { viewport: { width: 1280, height: 900 } });
+  await estreito.evaluate(() => { document.getElementById('busca-ipt').style.maxWidth = '720px'; });
+  await estreito.waitForTimeout(150);
+  const c2 = await colunas(estreito);
+  verifica(c2.cols === 1, `contêiner de 720 px em tela larga empilha filtros e resultados (${c2.cols} coluna)`);
+
+  console.log('\nIsolamento de estilos');
+  const iso = await p.evaluate(() => {
+    const r = document.getElementById('busca-ipt');
+    const st = (sel, prop) => getComputedStyle(r.querySelector(sel))[prop];
+    return { btnTransform: st('.bi-btn', 'textTransform'), cardBorder: st('.bi-card', 'borderTopWidth'), countDisplay: st('#bi-count', 'display'), h2Size: st('.bi-card h2', 'fontSize') };
+  });
+  verifica(iso.btnTransform === 'none' && iso.cardBorder === '1px' && iso.countDisplay !== 'none' && iso.h2Size === '16.5px',
+    `estilos da busca preservados (${JSON.stringify(iso)})`);
 
   console.log('\nErros de JavaScript');
   verifica(erros.length === 0, `nenhum erro no console${erros.length ? ': ' + erros.join(' / ') : ''}`);

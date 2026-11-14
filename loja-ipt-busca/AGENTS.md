@@ -1,132 +1,186 @@
-# Instruções para o agente: integrar a busca de serviços na Loja IPT
+# Instruções para o agente: integrar a busca de serviços na Loja IPT (WordPress)
 
 ## Contexto
 
-A página https://loja.ipt.br/loja-15/ exibe o catálogo de ensaios, análises e calibrações do IPT por meio de um iframe apontando para o Scriba (https://escriba.ipt.br/Busca_EAC/). O Scriba é ASP clássico de 2017, sem layout responsivo. Por isso a página hoje pede que usuários de celular abram a busca em outra aba.
+A Loja IPT é um site WordPress. A página https://loja.ipt.br/loja-15/ exibe o catálogo de ensaios, análises e calibrações por meio de um iframe apontando para o Scriba (https://escriba.ipt.br/Busca_EAC/). O Scriba é ASP clássico de 2017, sem layout responsivo. Por isso a página hoje pede que usuários de celular abram a busca em outra aba.
 
-Esta pasta contém uma busca nova, independente do Scriba, já validada: 568 serviços, 19 laboratórios e 132 sinônimos extraídos do catálogo público em 14/11/2026. A tarefa é substituir o iframe por ela, com a identidade visual da loja.
+Esta pasta contém uma busca nova, independente do Scriba, empacotada como **plugin WordPress** com shortcode. Os dados (568 serviços, 19 laboratórios e 132 sinônimos) foram extraídos do catálogo público em 14/11/2026. A tarefa é instalar o plugin, substituir o iframe pelo shortcode e ajustar a página.
 
 O trabalho é supervisionado por Robson Santos da Silva (LID-IPT). Siga a seção "Quando parar e perguntar".
 
+## O que já está pronto e testado
+
+| Item | Situação |
+|---|---|
+| `wordpress/busca-servicos-ipt.zip` | Plugin pronto para Plugins → Adicionar novo → Enviar plugin |
+| Shortcode `[busca_servicos_ipt]` | Renderiza a busca completa: campo, filtros, cards, detalhes |
+| Isolamento do tema | CSS restrito a `#busca-ipt`, classes e IDs com prefixo `bi-`, blindagem contra seletores de elemento do tema (`button`, `input`, `label`, `dialog`…). Validado contra um tema que imita Bootstrap/Elementor |
+| Responsividade | Responde à largura da área de conteúdo, não da tela. Em áreas abaixo de 860 px empilha filtros e resultados e recolhe os filtros |
+| Dados | `assets/busca-servicos.json` dentro do plugin, com rota REST alternativa |
+| Testes | `scripts/testar_busca.js`: 30 verificações, todas passando nas versões avulsa, plugin com JSON, plugin com REST e URL com `?page_id=` |
+
+**Não reescreva a busca.** O trabalho é de integração.
+
 ## Mapa da pasta
 
-| Caminho | Papel | Pode editar? |
-|---|---|---|
-| `publicar/index.html` | Página de produção. Carrega os dados do JSON indicado em `<meta name="busca-dados">` | Gerado, não edite à mão |
-| `publicar/busca-servicos.json` | Dados que a página consome (≈400 KB) | Gerado, não edite à mão |
-| `prototipo/template.html` | Código-fonte da página (HTML, CSS e JS num arquivo) | **Sim, edite aqui** |
-| `prototipo/index.html` | Versão de demonstração com dados embutidos, abre offline | Gerado |
-| `dados/*.json`, `dados/servicos.csv` | Catálogo estruturado | Só pelos scripts |
-| `bruto/*.html` | Resposta original do Scriba, para auditoria | Não |
-| `scripts/extrair_escriba.py` | HTML do Scriba → `dados/` | Só se o Scriba mudar o HTML |
-| `scripts/montar_prototipo.py` | `template.html` + `dados/` → `publicar/` e `prototipo/index.html` | Raramente |
-| `scripts/testar_busca.js` | Teste de aceitação (27 verificações) | Acrescente casos, não remova |
-| `README.md` | Diagnóstico do Scriba e documentação | Atualize ao final |
+| Caminho | Papel |
+|---|---|
+| `src/busca.css`, `src/busca.js`, `src/busca.html` | Código-fonte da busca. **Edite aqui** |
+| `src/wordpress/busca-servicos-ipt.php`, `readme.txt` | Código-fonte do plugin. **Edite aqui** |
+| `wordpress/busca-servicos-ipt/` e `.zip` | Plugin gerado. Não edite à mão |
+| `publicar/` | Versão em página avulsa (fora do WordPress). Gerada |
+| `prototipo/index.html` | Demonstração offline com dados embutidos. Gerada |
+| `dados/` | Catálogo estruturado (JSON e CSV). Só pelos scripts |
+| `scripts/montar_prototipo.py` | `src/` + `dados/` → `wordpress/`, `publicar/`, `prototipo/` |
+| `scripts/extrair_escriba.py` | HTML do Scriba → `dados/` |
+| `scripts/testar_busca.js` | Teste de aceitação (Playwright) |
+| `scripts/wp_simulado.php` | WordPress simulado com tema agressivo, para testar o plugin sem instalar WordPress |
 
-Fluxo de edição: alterar `prototipo/template.html` → `python3 -I scripts/montar_prototipo.py` → `node scripts/testar_busca.js` → copiar `publicar/` para a loja.
+Fluxo para qualquer mudança de código: editar `src/` → `python3 -I scripts/montar_prototipo.py` → testar (abaixo) → instalar o `.zip` novo.
+
+## Shortcode
+
+```
+[busca_servicos_ipt titulo="" tema="claro"]
+```
+
+| Atributo | Padrão | Uso |
+|---|---|---|
+| `titulo` | `Ensaios, análises e calibrações` | `titulo=""` oculta o título (use na `loja-15`, que já tem título próprio). Quando exibido, sai como `<h2>` |
+| `subtitulo` | Frase automática "Pesquise entre 568 serviços…" | Texto fixo alternativo |
+| `tema` | `claro` | `claro`, `escuro` ou `auto`. Mantenha `claro` se o site não tiver modo escuro, senão a busca escurece sozinha dentro de uma página branca |
+| `fonte` | `arquivo` | `rest` lê os dados de `/wp-json/busca-servicos-ipt/v1/dados`. Use se o servidor bloquear `.json` em `wp-content` |
+| `dados` | vazio | URL alternativa do JSON, no mesmo domínio |
 
 ## Etapa 1: reconhecimento (sem alterar nada)
 
-1. Identifique a plataforma da loja (WordPress/WooCommerce, VTEX, Nuvemshop, site estático etc.), o tema e como se cria ou edita uma página.
-2. Localize o bloco da página `loja-15` que contém o iframe do Scriba, o banner e o botão "Abrir catálogo técnico".
-3. Verifique se a plataforma permite: (a) página com HTML próprio completo; (b) bloco de HTML personalizado dentro de uma página do tema; (c) envio de arquivo `.json` para o mesmo domínio.
-4. Leve a Robson um resumo de até 10 linhas com plataforma, opção de integração escolhida (abaixo) e onde ficarão os arquivos. **Aguarde o "ok" antes da etapa 2.**
+Levante e informe a Robson, em até 12 linhas:
 
-## Etapa 2: escolher a forma de integração
+1. Versão do WordPress e do PHP (o plugin exige WP 5.8+ e PHP 7.4+).
+2. Tema ativo e se há construtor de páginas (Gutenberg, Elementor, Divi, WPBakery…).
+3. Como a `loja-15` foi montada: qual bloco ou widget contém o iframe, o banner e o botão "Abrir catálogo técnico".
+4. Plugins de cache e otimização (WP Rocket, LiteSpeed Cache, W3 Total Cache, Autoptimize, SiteGround Optimizer…) e de segurança (Wordfence, iThemes…).
+5. Se o usuário atual pode instalar plugins (Plugins → Adicionar novo → botão "Enviar plugin"). Em WordPress gerenciado ou multisite isso pode estar bloqueado.
+6. Se o cabeçalho do tema é fixo (sticky) e qual a altura dele.
+7. Se existe modelo de página de largura total no tema.
 
-| Opção | Quando usar | Como |
-|---|---|---|
-| **A. Página própria** (preferida) | A plataforma aceita uma página/template com HTML completo, ou arquivos estáticos em uma pasta do domínio | Publique `publicar/index.html` e `publicar/busca-servicos.json` juntos, por exemplo em `loja.ipt.br/busca-servicos/`. Na `loja-15`, o banner passa a levar para essa página, ou a página substitui a `loja-15` |
-| **B. Bloco dentro do tema** | Só há bloco de HTML personalizado dentro do layout da loja | Ver "Cuidados da opção B" |
+**Aguarde o "ok" de Robson antes da etapa 2.**
 
-Iframe não é opção: o objetivo é justamente eliminar o iframe.
+## Etapa 2: testar o plugin fora do site (opcional, recomendado)
 
-### Cuidados da opção B
+```bash
+cd loja-ipt-busca
+npm i -D playwright && npx playwright install chromium     # uma vez
+php -S 127.0.0.1:8765 scripts/wp_simulado.php &
+node scripts/testar_busca.js http://127.0.0.1:8765/loja-15/   # esperado: 30 ok, 0 falha(s)
+```
 
-O CSS do template tem seletores globais (`*`, `body`, `a`, `button`, `header`, `footer`, `aside`, `dialog`, `mark`, `h1`, `h2`), que vão colidir com o tema. Antes de embutir:
+## Etapa 3: instalar e testar numa página de teste
 
-1. Envolva o conteúdo de `<body>` do template em `<div id="busca-ipt">…</div>`.
-2. Prefixe todos os seletores do `<style>` com `#busca-ipt` e troque `:root` por `#busca-ipt`. Os seletores de `body` passam para `#busca-ipt`.
-3. Remova do template o `<header class="topbar">` e o `<footer>`, porque a loja já tem os seus. Mantenha a frase de origem dos dados em algum lugar visível, pode ser abaixo da busca.
-4. Os IDs (`q`, `grid`, `count`, `dlg`, `flab`, `ftipo`, `fcgcre`, `sort`, `more`, `notices`, `examples`, `clear`, `freset`, `factive`, `ncgcre`, `sub`, `foot`) são usados pelo JavaScript. Se houver conflito com o tema, renomeie no HTML e no JS juntos.
-5. A busca grava estado na query string (`?q=`, `lab=`, `tipo=`, `cgcre=`, `ordem=`, `servico=`). Confirme que a plataforma não usa esses nomes na mesma página.
-6. Aponte `<meta name="busca-dados">` (ou a constante `FONTE_DADOS`) para o endereço real do JSON.
+1. Instale `wordpress/busca-servicos-ipt.zip`:
+   - painel: Plugins → Adicionar novo → Enviar plugin → escolher o `.zip` → Instalar → Ativar;
+   - ou WP-CLI: `wp plugin install busca-servicos-ipt.zip --activate`;
+   - ou SFTP: descompactar em `wp-content/plugins/` e ativar no painel.
+2. Crie uma página de teste, sem link no menu, com slug `teste-busca-servicos`, contendo só o bloco **Shortcode** (Gutenberg) ou o widget **Shortcode** (Elementor) com `[busca_servicos_ipt titulo="" tema="claro"]`. Use o modelo de página do tema que será usado na `loja-15`.
+3. Verifique, na prévia, se a busca carrega. Se aparecer "Não foi possível carregar o catálogo", abra o console do navegador:
+   - 403 ou 404 no `busca-servicos.json`: use `fonte="rest"`;
+   - erro de script: veja "Cache e otimização".
+4. Para rodar `testar_busca.js`, a página precisa estar acessível sem login. **Peça autorização a Robson** para publicá-la temporariamente (se houver plugin de SEO, marque "noindex"). Rode `node scripts/testar_busca.js https://loja.ipt.br/teste-busca-servicos/` e confirme `30 ok, 0 falha(s)`. Depois volte a página para rascunho ou exclua.
+5. Confira manualmente em 390 px e em desktop: a busca não tem rolagem lateral, a janela "Ver detalhes" abre centralizada e larga, e os botões não herdaram estilo do tema.
 
-## Etapa 3: identidade visual
+## Etapa 4: substituir o iframe na `loja-15`
 
-- Mude apenas as variáveis de cor em `:root` (há três blocos: claro, escuro automático e `[data-theme="dark"]`) e a pilha de fontes em `body`. Use as cores e a fonte do tema da loja.
-- Os botões "Solicitar serviço" usam `--primary`. O destaque de foco e os selos usam `--accent`. Mantenha contraste mínimo de 4.5:1 no texto.
-- Não carregue bibliotecas de CDN para a busca. Ela não precisa de nenhuma.
-- Se a loja não tiver modo escuro, pode remover os dois blocos escuros e `color-scheme`.
+Só depois de a etapa 3 passar e com autorização de Robson.
 
-## Etapa 4: ajustes na página atual (`loja-15`)
+1. Antes de editar, anote o número da revisão atual da página (Revisões) ou duplique a página como rascunho de segurança.
+2. Remova o bloco ou widget do iframe do Scriba.
+3. No mesmo lugar, insira um bloco/widget **Shortcode** com `[busca_servicos_ipt titulo="" tema="claro"]`.
+   - Não use bloco "HTML personalizado" nem cole `<script>`: o WordPress remove scripts de usuários sem `unfiltered_html`, e plugins de otimização costumam quebrá-los.
+4. Remova o aviso "Para pesquisar no catálogo técnico do IPT pelo celular, abra a pesquisa em uma nova página" e o botão "Abrir catálogo técnico".
+5. Se o tema tiver modelo de largura total, use-o nesta página. A busca mostra filtros ao lado dos resultados a partir de 860 px de área útil. Abaixo disso, empilha.
 
-1. **Banner sobrepondo o conteúdo no celular:** no print de 14/11/2026, o banner cobre o título e o parágrafo. Corrija para que ele fique no fluxo normal (`position: static`, sem margem negativa, `width: 100%; height: auto`).
-2. **Texto dentro da imagem:** as instruções sobre aspas estão gravadas no banner. Retire-as da imagem ou deixe-as decorativas, e ponha o texto em HTML.
+## Etapa 5: banner e textos da `loja-15`
+
+1. **Banner sobrepondo o conteúdo no celular:** no print de 14/11/2026, o banner cobre o título e o parágrafo. Verifique no bloco/seção do banner se há posição absoluta, margem negativa, altura fixa ou "sobreposição" (recurso comum no Elementor). Deixe o banner no fluxo normal da página (`width: 100%; height: auto`).
+2. **Texto dentro da imagem:** as instruções sobre aspas estão gravadas no banner. Peça a Robson a versão da arte sem esse texto, ou recorte a imagem, e coloque o texto em HTML, abaixo do banner.
 3. **Instrução desatualizada:** o banner diz que, sem aspas, o sistema procura cada palavra separadamente. Isso descreve o Scriba (várias palavras = OU). Na busca nova, várias palavras precisam aparecer todas (E). Use este texto:
 
    > Digite o nome do ensaio, material, norma ou laboratório. Ex.: dureza, NBR 7190, etanol. Use aspas para buscar uma expressão exata.
 
-4. Remova o aviso "Para pesquisar no catálogo técnico do IPT pelo celular, abra a pesquisa em uma nova página" e o botão "Abrir catálogo técnico", que deixam de ser necessários.
+## Etapa 6: identidade visual
+
+Não edite os arquivos do plugin no servidor: serão sobrescritos na próxima atualização. Sobrescreva as variáveis no **CSS adicional** (Aparência → Personalizar → CSS adicional, ou CSS personalizado do Elementor/tema):
+
+```css
+#busca-ipt {
+  --primary: #1d3557;      /* botão "Solicitar serviço", siglas */
+  --primary-ink: #ffffff;  /* texto sobre --primary */
+  --accent: #01adef;       /* foco, links, destaques */
+  --accent-soft: #e3f6fe;  /* fundo de avisos e anel de foco */
+  --bg: transparent;       /* fundo do bloco; transparent herda o da página */
+  --surface: #ffffff;      /* cards e painel de filtros */
+  --radius: 12px;          /* cantos dos cards */
+  --topo-fixo: 90px;       /* altura do cabeçalho fixo do tema + folga */
+  /* --fonte: "Montserrat", sans-serif;  por padrão a busca herda a fonte do tema */
+}
+```
+
+Use as cores reais do tema (inspecione o cabeçalho e os botões da loja). Mantenha contraste mínimo de 4.5:1 entre texto e fundo.
+
+## Cache e otimização
+
+- Limpe o cache do site (e da CDN, se houver) depois de instalar ou atualizar o plugin.
+- Se a busca não iniciar com "Atrasar JavaScript", "Combinar JS" ou similares ligados, exclua `busca-servicos-ipt/assets/busca.js` dessas otimizações. Não desligue a otimização do site inteiro.
+- Os arquivos do plugin levam `?ver=` com a data de modificação, então o navegador recebe a versão nova sozinho.
+
+## Atualização do catálogo
+
+Até haver exportação oficial do Scriba:
+
+1. Uma única requisição, no máximo uma vez por semana:
+   `curl -sS -o bruto/escriba_busca_todos_AAAA-MM-DD.html --data-urlencode "TxtTermo=%" https://escriba.ipt.br/Busca_EAC/pesquisas.asp`
+2. `python3 -I scripts/extrair_escriba.py bruto/escriba_busca_todos_AAAA-MM-DD.html dados`
+3. Aumente a versão em `src/wordpress/busca-servicos-ipt.php`, nos dois lugares (`Version:` e `BSIPT_VERSAO`), e em `src/wordpress/readme.txt` (`Stable tag`).
+4. `python3 -I scripts/montar_prototipo.py`, depois teste com o WordPress simulado. Os itens marcados "dados:" no teste podem mudar de valor. Atualize-os se a mudança for coerente (568 → 571) e investigue se for brusca (568 → 0 ou 568 → 120, que indicam mudança no HTML do Scriba).
+5. Envie o `.zip` novo em Plugins → Adicionar novo → Enviar plugin. O WordPress oferece "Substituir a versão atual pela enviada". Ou substitua só `wp-content/plugins/busca-servicos-ipt/assets/busca-servicos.json` por SFTP.
+6. Limpe o cache.
+
+Limites: não faça varredura, não envie requisições em laço, não use outros endpoints do Scriba e não teste o campo de busca do Scriba com entradas maliciosas. O Scriba é mantido por outra equipe.
 
 ## Regras da busca (não alterar sem autorização)
 
-Estas regras foram validadas com Robson. "Melhorar" qualquer uma delas exige pedido explícito.
-
-| Regra | Implementação |
+| Regra | Implementação em `src/busca.js` |
 |---|---|
 | Ignora acento e maiúscula | `norm()` com NFD |
 | Plural e início de palavra | `variantes()` e `casa()` (prefixo a partir de 3 letras) |
 | Várias palavras = E | `pontuar(…,'e')`. Se nada atender, recorre a OU e mostra aviso |
 | Frase entre aspas | Substring exata em nome, descrição e palavras-chave |
 | Correção de digitação | Levenshtein ≤1 (≤2 para 7+ letras) contra o vocabulário do catálogo, com aviso |
-| Sinônimos | `vocabulario_use.json` (ex.: AEAC → Etanol), com aviso, sem passar pela correção |
+| Sinônimos | `vocabulario_use.json` (ex.: AEAC → Etanol), com aviso |
 | Relevância | nome 10–14 > palavras-chave 7 > laboratório 5 > descrição 3, +8 se todos os termos estão no nome, código exato 100 |
-| Exibição | Caixa alta convertida para leitura, preservando `SIGLAS`, `UNID` e `PROPRIOS`. O conteúdo não é alterado. Para corrigir uma sigla, acrescente-a à lista |
+| Exibição | Caixa alta convertida para leitura, preservando `SIGLAS`, `UNID` e `PROPRIOS`. O conteúdo não muda. Para corrigir uma sigla, acrescente-a à lista |
 | "Solicitar serviço" | `https://www.ipt.br/faleconosco/?Manifestacao=…&Ensaio={registro}&CRD={unidade}`, em nova aba |
-
-## Testes
-
-```bash
-npm i -D playwright && npx playwright install chromium   # uma vez
-python3 -I scripts/montar_prototipo.py
-node scripts/testar_busca.js                    # testa ./publicar com servidor local
-node scripts/testar_busca.js https://loja.ipt.br/<caminho-da-busca>/   # após publicar
-```
-
-Os 27 testes devem passar localmente e na URL publicada. Na opção B, rode o teste contra a página da loja. Se algum seletor mudou (por exemplo, IDs renomeados), atualize o teste no mesmo commit e explique o motivo.
-
-Verifique também, manualmente, em celular real ou emulado (360 px e 390 px): a busca aparece sem rolagem lateral, o banner não cobre nada e a janela de detalhes rola até o botão "Solicitar serviço".
-
-## Atualização dos dados
-
-O catálogo muda quando os laboratórios alteram o Scriba. Até haver exportação oficial:
-
-1. Uma única requisição, no máximo uma vez por semana:
-   `curl -sS -o bruto/escriba_busca_todos_AAAA-MM-DD.html --data-urlencode "TxtTermo=%" https://escriba.ipt.br/Busca_EAC/pesquisas.asp`
-2. `python3 -I scripts/extrair_escriba.py bruto/escriba_busca_todos_AAAA-MM-DD.html dados`
-3. `python3 -I scripts/montar_prototipo.py`
-4. Rode o teste. Os itens marcados "dados:" podem mudar de valor. Atualize os números se a mudança for coerente (por exemplo, 568 → 571) e investigue se for brusca (por exemplo, 568 → 0 ou 568 → 120, que indicam mudança no HTML do Scriba).
-5. Publique só `publicar/busca-servicos.json`. A página não precisa ser republicada.
-
-Limites: não faça varredura, não envie requisições em laço, não tente outros endpoints do Scriba e não teste o campo de busca com entradas maliciosas. O Scriba é de outra equipe.
+| Estado na URL | `q`, `lab`, `tipo`, `cgcre`, `ordem`, `servico`. Demais parâmetros (ex.: `page_id`) são preservados |
 
 ## Quando parar e perguntar
 
 Pergunte a Robson antes de:
 
-- publicar em produção ou substituir a página `loja-15`;
+- instalar ou atualizar o plugin no site;
+- publicar a página de teste, mesmo temporariamente;
+- editar a `loja-15` ou remover o iframe antigo;
 - mudar o destino do botão "Solicitar serviço" (por exemplo, para formulário ou carrinho da loja);
-- alterar regras da busca, textos institucionais ou a lista de campos exibidos;
-- excluir o iframe antigo antes de a busca nova estar publicada e testada;
-- instalar plugin ou dependência na loja.
+- alterar regras da busca, textos institucionais ou campos exibidos;
+- desativar plugins de cache, otimização ou segurança;
+- instalar qualquer outro plugin.
+
+Nunca edite arquivos do plugin pelo editor de plugins do WordPress, nem cole `<script>` em blocos de HTML.
 
 ## Entrega esperada
 
-Ao terminar, informe a Robson:
-
-1. A opção de integração usada e os endereços finais (página e JSON).
-2. O resultado de `testar_busca.js` local e na URL publicada (`27 ok, 0 falha(s)`).
-3. Capturas em 390 px e em desktop, antes e depois.
-4. Os arquivos alterados na loja e neste repositório.
-5. Pendências: exportação oficial do Scriba, destino final do "Solicitar serviço" e rotina de atualização dos dados.
+1. Plugin instalado e ativo (versão) e o atributo do shortcode usado na `loja-15`.
+2. Resultado de `testar_busca.js` na página de teste ou na `loja-15` (`30 ok, 0 falha(s)`).
+3. Capturas da `loja-15` em 390 px e em desktop, antes e depois.
+4. CSS adicional aplicado (variáveis e valores).
+5. Revisão de segurança anotada da `loja-15`.
+6. Pendências: exportação oficial do Scriba, destino final do "Solicitar serviço", arte do banner sem texto e rotina de atualização dos dados.

@@ -4,27 +4,29 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 
 ## Conteúdo
 
-| Arquivo | Conteúdo |
+| Caminho | Conteúdo |
 |---|---|
+| `AGENTS.md` | Instruções para o agente (Codex) integrar a busca na Loja IPT (WordPress) |
+| `wordpress/busca-servicos-ipt.zip` | **Plugin WordPress** pronto para instalar (shortcode `[busca_servicos_ipt]`) |
+| `publicar/` | Versão em página avulsa: `index.html` + `busca-servicos.json` |
+| `prototipo/index.html` | Demonstração em arquivo único, funciona offline |
+| `src/` | Código-fonte: `busca.css`, `busca.js`, `busca.html` e `wordpress/` (PHP do plugin) |
 | `dados/servicos.json` | 568 serviços com registro, tipo, nome, descrição, palavras-chave, laboratórios, certificados Cgcre e link de contato |
 | `dados/servicos.csv` | Mesmo conteúdo em tabela (UTF-8 com BOM, separador `;`, abre direto no Excel) |
 | `dados/laboratorios.json` | 19 laboratórios/seções com sigla, nome, código CRD e total de serviços |
 | `dados/vocabulario_use.json` | 132 remissivas do vocabulário controlado (termo não preferido → termo a usar) |
 | `bruto/escriba_busca_todos_2026-11-14.html` | Resposta HTML original (Windows-1252), para auditoria |
-| `AGENTS.md` | Instruções para o agente (Codex) integrar a busca na Loja IPT |
-| `publicar/index.html` + `publicar/busca-servicos.json` | Versão de produção: página e dados separados, mesmo domínio |
-| `prototipo/index.html` | Protótipo da nova busca, arquivo único que funciona offline |
-| `prototipo/template.html` | Código do protótipo sem os dados |
-| `scripts/montar_prototipo.py` | Gera `publicar/` e `prototipo/index.html` a partir do template e de `dados/` |
-| `scripts/testar_busca.js` | Teste de aceitação com Playwright (27 verificações), local ou na URL publicada |
-| `scripts/extrair_escriba.py` | Conversor do HTML bruto para os arquivos acima |
+| `scripts/extrair_escriba.py` | HTML do Scriba → `dados/` |
+| `scripts/montar_prototipo.py` | `src/` + `dados/` → `wordpress/`, `publicar/`, `prototipo/` |
+| `scripts/testar_busca.js` | Teste de aceitação com Playwright (30 verificações), local ou em URL publicada |
+| `scripts/wp_simulado.php` | WordPress simulado com tema agressivo, para testar o plugin sem instalar WordPress |
 
-Para atualizar: salvar uma nova resposta de `pesquisas.asp` com `TxtTermo=%` e rodar
+Para atualizar os dados: salvar uma nova resposta de `pesquisas.asp` com `TxtTermo=%`, rodar
 `python3 -I scripts/extrair_escriba.py <arquivo.html> dados` e depois `python3 -I scripts/montar_prototipo.py`.
 
 ## Protótipo da nova busca
 
-Abrir `prototipo/index.html` no navegador. Não depende de servidor, iframe nem do Scriba.
+No WordPress: instalar `wordpress/busca-servicos-ipt.zip` e inserir `[busca_servicos_ipt]` num bloco Shortcode. Para ver sem instalar: abrir `prototipo/index.html` no navegador. Nenhuma versão depende de iframe nem do Scriba.
 
 | Recurso | Comportamento |
 |---|---|
@@ -39,9 +41,10 @@ Abrir `prototipo/index.html` no navegador. Não depende de servidor, iframe nem 
 | “Solicitar serviço” | Abre o Fale Conosco do IPT já com o registro e a unidade (`Ensaio=` e `CRD=`) |
 | URL | Guarda busca, filtros e serviço aberto (`?q=dureza&lab=LTDC&servico=7422`) |
 | Leitura | Textos convertidos da caixa alta para caixa normal, preservando siglas, unidades (kV, °C, pH) e nomes de métodos; o conteúdo não é alterado |
-| Layout | Responsivo (celular sem rolagem lateral), modo claro e escuro |
+| Layout | Responde à largura da área de conteúdo (não da tela); modo claro, escuro ou automático |
+| Convivência com o tema | CSS restrito a `#busca-ipt`, classes e IDs com prefixo `bi-`, blindagem contra estilos de elementos do tema; fonte herdada do tema |
 
-Teste automatizado: `node scripts/testar_busca.js` (27 verificações; passam nas versões `publicar/` e `prototipo/`).
+Teste automatizado: `node scripts/testar_busca.js` (30 verificações). Passam nas versões `publicar/`, `prototipo/` e no plugin dentro do WordPress simulado, com dados por arquivo e por REST.
 
 ## Diagnóstico técnico da busca atual
 
