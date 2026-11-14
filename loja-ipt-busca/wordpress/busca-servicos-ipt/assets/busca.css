@@ -132,3 +132,7 @@
 #busca-ipt .bi-norms span{font:600 12px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface-2);border-radius:6px;padding:2px 8px}
 #busca-ipt .bi-hint{font-size:12px;color:var(--muted)}
 #busca-ipt .bi-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#busca-ipt .bi-badge.bi-compra{background:var(--accent-soft);color:var(--primary)}
+#busca-ipt .bi-badge.bi-solic{background:var(--surface-2);color:var(--muted);font-weight:600}
+#busca-ipt .bi-preco{margin:0;font-weight:700;font-size:16px;color:var(--text)}
+#busca-ipt [hidden]{display:none!important}

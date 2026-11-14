@@ -1,17 +1,24 @@
 /* Busca de Serviços IPT
    Catálogo de ensaios, análises e calibrações (origem: Scriba/Busca_EAC).
-   A marcação vive em #busca-ipt; os dados vêm de window.BUSCA_IPT_DADOS (embutidos)
-   ou do JSON indicado em data-dados no elemento #busca-ipt. */
+   A marcação vive em #busca-ipt. Catálogo técnico: window.BUSCA_IPT_DADOS (embutido) ou o JSON
+   indicado em data-dados. Produtos da loja (opcional): <script type="application/json" id="bi-produtos">
+   gerado pelo plugin WordPress, ou window.BUSCA_IPT_PRODUTOS. */
 (function(){
 "use strict";
 const RAIZ = document.getElementById('busca-ipt');
 if(!RAIZ) return;
-function iniciar(DADOS){
+function lerProdutos(){
+  const el = document.getElementById('bi-produtos');
+  if(el){ try{ const v = JSON.parse(el.textContent||'[]'); if(Array.isArray(v)) return v; }catch(e){ console.warn('Busca IPT: produtos inválidos', e); } }
+  return Array.isArray(window.BUSCA_IPT_PRODUTOS) ? window.BUSCA_IPT_PRODUTOS : [];
+}
+const PRODUTOS = lerProdutos();
+function iniciar(DADOS, semCatalogo){
 
 /* ---------- texto: normalização e caixa ---------- */
 const norm = s => (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
 const STOP = new Set('a o as os e de da do das dos em no na nos nas para por com sem ao aos um uma ou se que sob ate pelo pela pelos pelas sua seu suas seus via entre conforme'.split(' '));
-const SIGLAS = new Set(('ABNT NBR ISO ASTM IEC NM EN BS IPT CGCRE AGA UV AC DC CIE DIN IESNA LM CRL RBLE RBC CCA IRC TCC PCS DSC CCB CAL RTAC RTQ RTQAC HPLC TAPPI LED CISPR PTS PCI API RF MRPM NEA DN CUV TF FTIR FTP CMAR TRRF BSI PA CD IP EFT AM RLC TGA NT DMA JIS EAC CST RMN ANSI CEN NR TAG IA AWPA OM ICMS PFI PTB ND EMC INMETRO ABPM ANP ASME UL SAE OIML IPX IK TÜV NFPA UNE NEMA EPA OCDE OECD CONAMA ANVISA MAPA PBE ENCE IEEE GLP GNV BTU NOX SOX AEAC AEHC ABCP LCPE LTDC LMM LME LV LQM LBE LGE LBI LCAP LCP LEL LMPC LPP LRM LSFEX LARI SIRGA NUTABES ASTMD').split(' '));
+const SIGLAS = new Set(('ABNT NBR ISO ASTM IEC NM EN BS IPT CGCRE AGA UV AC DC CIE DIN IESNA LM CRL RBLE RBC CCA IRC TCC PCS DSC CCB CAL RTAC RTQ RTQAC HPLC TAPPI LED CISPR PTS PCI API RF MRPM NEA DN CUV TF FTIR FTP CMAR TRRF BSI PA CD IP EFT AM RLC TGA NT DMA JIS EAC CST RMN ANSI CEN NR TAG IA AWPA OM ICMS PFI PTB ND EMC INMETRO ABPM ANP ASME UL SAE OIML IPX IK TÜV NFPA UNE NEMA EPA OCDE OECD CONAMA ANVISA MAPA PBE ENCE IEEE GLP GNV BTU NOX SOX AEAC AEHC TOC COT ABCP LCPE LTDC LMM LME LV LQM LBE LGE LBI LCAP LCP LEL LMPC LPP LRM LSFEX LARI SIRGA NUTABES ASTMD').split(' '));
 const UNID = {KV:'kV',MM:'mm',KG:'kg',CM:'cm',KN:'kN',GHZ:'GHz',HZ:'Hz',KHZ:'kHz',MHZ:'MHz',KPA:'kPa',MPA:'MPa',MG:'mg',MJ:'MJ',ML:'mL',PH:'pH',RPM:'rpm',KW:'kW',KWH:'kWh',MW:'MW',VA:'VA',KVA:'kVA',LUX:'lux'};
 const PROPRIOS = new Set('janka rockwell brinell vickers shore breuning karl fischer cobb bekk klemm taber jokro pitot coriolis kjeldahl charpy izod los angeles abrams mullen schopper elmendorf gurley sheffield bendtsen martindale wyzenbeek venturi pfi'.split(' '));
 function caso(s, titulo){
@@ -40,10 +47,24 @@ function marcar(texto, termos){
 const tokens = s => norm(s).split(/[^a-z0-9]+/).filter(Boolean);
 
 /* ---------- índice ---------- */
-const S = DADOS.servicos.map(s=>{
+const TIPO_LOJA = 'Itens da Loja IPT';
+const P = PRODUTOS.map(p=>{
+  const cats = (p.categorias||[]).filter(Boolean), tags = (p.tags||[]).filter(Boolean);
+  const o = {
+    fonte:'loja', mod: p.compra ? 'compra' : 'solicitacao', registro:null, id:p.id,
+    tipo_servico: TIPO_LOJA, nome:p.nome||'', descricao:p.descricao||'', palavras_chave:[...cats,...tags],
+    laboratorios:[], certificados_cgcre:[], contato:{url:p.url}, url:p.url, preco:p.preco||'',
+    carrinho:p.carrinho||'', compra:!!p.compra, sku:p.sku||'', categorias:cats,
+    nomeV:p.nome||'', descV:p.descricao||'', kwV:cats, labsV:[], cgcre:false,
+  };
+  o.tNome = tokens(o.nome); o.tKw = tokens([...cats,...tags,o.sku].join(' ')); o.tDesc = tokens(o.descricao);
+  o.tLab = tokens(cats.join(' ')); o.fNome = norm(o.nome); o.fAll = norm([o.nome,o.descricao,cats.join(' '),tags.join(' ')].join(' '));
+  return o;
+});
+const SC = DADOS.servicos.map(s=>{
   const lab = s.laboratorios;
   const o = {
-    ...s,
+    ...s, fonte:'scriba', mod:'solicitacao',
     nomeV: caso(s.nome),
     descV: caso(s.descricao||''),
     kwV: s.palavras_chave.map(k=>caso(k)),
@@ -55,11 +76,13 @@ const S = DADOS.servicos.map(s=>{
   o.fNome = norm(s.nome); o.fAll = norm([s.nome,s.descricao,s.palavras_chave.join(' ')].join(' '));
   return o;
 });
+const S = [...P, ...SC];
 const VOCAB = new Set(); S.forEach(s=>[s.tNome,s.tKw,s.tDesc,s.tLab].forEach(a=>a.forEach(t=>VOCAB.add(t))));
 const VOCARR = [...VOCAB];
 const USE = DADOS.use.map(u=>({termo:u.termo, use:u.use, n:norm(u.termo), nu:norm(u.use)}));
 const LABS = (()=>{const m=new Map();S.forEach(s=>s.labsV.forEach(l=>{if(!m.has(l.sigla))m.set(l.sigla,l.nome)}));return [...m].sort((a,b)=>a[0].localeCompare(b[0]))})();
-const TIPOS = [...new Set(S.map(s=>s.tipo_servico))];
+const TIPOS = [...new Set(SC.map(s=>s.tipo_servico))].concat(P.length?[TIPO_LOJA]:[]);
+const MODS = [['compra','Compra direta','Preço definido, compra imediata'],['solicitacao','Solicitação de serviço','Avaliação técnica e orçamento']];
 
 function lev(a,b,max){
   if(Math.abs(a.length-b.length)>max) return max+1;
@@ -111,6 +134,7 @@ function pontuar(s,a,modo){
   for(const {t,vs} of a.termos){
     let sc=0;
     if(/^\d+$/.test(t) && String(s.registro)===t) sc=100;
+    if(s.sku && norm(s.sku)===t) sc=100;
     for(const v of vs){
       if(casa(s.tNome,v)) sc=Math.max(sc, s.tNome.includes(v)?14:10);
       if(casa(s.tKw,v)) sc=Math.max(sc, 7);
@@ -121,6 +145,7 @@ function pontuar(s,a,modo){
   }
   if(a.termos.length && !hit) return 0;
   if(s.tNome.length && a.termos.length && a.termos.every(({vs})=>vs.some(v=>casa(s.tNome,v)))) score+=8;
+  if(score && s.fonte==='loja') score+=4;  // itens da loja têm ação imediata
   return score;
 }
 function sinonimos(qn){
@@ -130,7 +155,8 @@ function sinonimos(qn){
 }
 
 /* ---------- estado ---------- */
-const st = {q:'', labs:new Set(), tipos:new Set(), cgcre:false, sort:'rel', shown:24, ou:false};
+const st = {q:'', labs:new Set(), tipos:new Set(), mods:new Set(), cgcre:false, sort:'rel', shown:24, ou:false};
+const CHAVES_URL = ['q','lab','tipo','mod','cgcre','ordem','servico'];
 const $ = id => document.getElementById('bi-'+id);
 function lerURL(){
   try{
@@ -138,16 +164,18 @@ function lerURL(){
     st.q = p.get('q')||''; st.cgcre = p.get('cgcre')==='1'; st.sort = p.get('ordem')||'rel';
     (p.get('lab')||'').split(',').filter(Boolean).forEach(x=>st.labs.add(x));
     (p.get('tipo')||'').split(',').filter(Boolean).forEach(x=>st.tipos.add(x));
+    (p.get('mod')||'').split(',').filter(x=>x==='compra'||x==='solicitacao').forEach(x=>st.mods.add(x));
     return p.get('servico');
   }catch(e){return null}
 }
 function gravarURL(servico){
   try{
     const p = new URLSearchParams(location.search);
-    ['q','lab','tipo','cgcre','ordem','servico'].forEach(k=>p.delete(k));
+    CHAVES_URL.forEach(k=>p.delete(k));
     if(st.q) p.set('q',st.q);
     if(st.labs.size) p.set('lab',[...st.labs].join(','));
     if(st.tipos.size) p.set('tipo',[...st.tipos].join(','));
+    if(st.mods.size) p.set('mod',[...st.mods].join(','));
     if(st.cgcre) p.set('cgcre','1');
     if(st.sort!=='rel') p.set('ordem',st.sort);
     if(servico) p.set('servico',servico);
@@ -164,6 +192,7 @@ function buscar(){
   const a = analisar(q, syn.length>0);
   const vazio = !a.frases.length && !a.termos.length;
   let pontos = new Map(), modo='e', notas=[], extras=[];
+  if(semCatalogo) notas.push('O catálogo técnico está temporariamente indisponível. Mostrando apenas os itens da Loja IPT.');
   if(!vazio){
     S.forEach(s=>{const p=pontuar(s,a,'e'); if(p) pontos.set(s,p)});
     syn.forEach(u=>{
@@ -175,32 +204,56 @@ function buscar(){
     if(!pontos.size && a.termos.length>1){
       modo='ou';
       S.forEach(s=>{const p=pontuar(s,a,'ou'); if(p) pontos.set(s,p)});
-      if(pontos.size) notas.push('Nenhum serviço contém todos os termos. Mostrando os que contêm pelo menos um deles.');
+      if(pontos.size) notas.push('Nenhum resultado contém todos os termos. Mostrando os que contêm pelo menos um deles.');
     }
     if(a.corrigidos.length) notas.push('Buscando por '+a.corrigidos.map(([o,c])=>'<strong>'+esc(c)+'</strong> em vez de “'+esc(o)+'”').join(', ')+'.');
   }
   const base = vazio ? S.slice() : [...pontos.keys()];
   const passa = (s,ignorar) => (ignorar==='lab'||!st.labs.size||s.laboratorios.some(l=>st.labs.has(l.sigla)))
-    && (ignorar==='tipo'||!st.tipos.size||st.tipos.has(s.tipo_servico)) && (ignorar==='cgcre'||!st.cgcre||s.cgcre);
-  const cont = {lab:new Map(), tipo:new Map(), cgcre:0};
+    && (ignorar==='tipo'||!st.tipos.size||st.tipos.has(s.tipo_servico)) && (ignorar==='cgcre'||!st.cgcre||s.cgcre)
+    && (ignorar==='mod'||!st.mods.size||st.mods.has(s.mod));
+  const cont = {lab:new Map(), tipo:new Map(), mod:new Map(), cgcre:0};
   base.forEach(s=>{
     if(passa(s,'lab')) s.laboratorios.forEach(l=>cont.lab.set(l.sigla,(cont.lab.get(l.sigla)||0)+1));
     if(passa(s,'tipo')) cont.tipo.set(s.tipo_servico,(cont.tipo.get(s.tipo_servico)||0)+1);
     if(passa(s,'cgcre') && s.cgcre) cont.cgcre++;
+    if(passa(s,'mod')) cont.mod.set(s.mod,(cont.mod.get(s.mod)||0)+1);
   });
   let lista = base.filter(s=>passa(s));
   const chave=s=>s.nomeV.replace(/^[^\p{L}]+/u,'');
   const porNome=(x,y)=>chave(x).localeCompare(chave(y),'pt');
+  const lojaAntes=(x,y)=>(y.fonte==='loja')-(x.fonte==='loja');
   if(st.sort==='nome') lista.sort(porNome);
-  else if(st.sort==='cod') lista.sort((x,y)=>x.registro-y.registro);
-  else lista.sort(vazio?porNome:((x,y)=>pontos.get(y)-pontos.get(x)||porNome(x,y)));
+  else if(st.sort==='cod') lista.sort((x,y)=>(x.registro??1e9)-(y.registro??1e9)||porNome(x,y));
+  else lista.sort(vazio?((x,y)=>lojaAntes(x,y)||porNome(x,y)):((x,y)=>pontos.get(y)-pontos.get(x)||porNome(x,y)));
   const termosMarca = [...new Set([...a.termos.concat(extras).flatMap(x=>x.vs), ...a.frases.flatMap(f=>tokens(f))])].filter(v=>v.length>=2 && !STOP.has(v));
   ultimo = {lista, termosMarca};
   render(lista, cont, notas, vazio, termosMarca);
 }
 
 /* ---------- render ---------- */
+function cardLoja(s,tm){
+  const selo = s.compra ? '<span class="bi-badge bi-compra">Compra direta</span>' : '<span class="bi-badge bi-solic">Solicitação de serviço</span>';
+  const onde = s.categorias.length ? `<div class="bi-lab"><span>${marcar(s.categorias.join(' · '),tm)}</span></div>` : '';
+  const desc = s.descV ? `<p class="bi-desc">${marcar(s.descV,tm)}</p>` : '';
+  const preco = s.compra && s.preco ? `<p class="bi-preco">${esc(s.preco)}</p>` : '';
+  const acao = s.compra
+    ? (s.carrinho ? `<a class="bi-btn bi-pri" href="${esc(s.carrinho)}">Adicionar ao carrinho</a>` : `<a class="bi-btn bi-pri" href="${esc(s.url)}">Ver opções</a>`)
+    : `<a class="bi-btn bi-pri" href="${esc(s.url)}">Solicitar orçamento</a>`;
+  return `<article class="bi-card bi-card-loja">
+    <div class="bi-meta"><span class="bi-code">Loja IPT</span>${selo}</div>
+    <h2>${marcar(s.nomeV,tm)}</h2>
+    ${onde}
+    ${desc}
+    ${preco}
+    <div class="bi-actions">
+      <a class="bi-btn bi-sec" href="${esc(s.url)}">Ver detalhes</a>
+      ${acao}
+    </div>
+  </article>`;
+}
 function card(s,tm){
+  if(s.fonte==='loja') return cardLoja(s,tm);
   const desc = s.descV ? `<p class="bi-desc">${marcar(s.descV,tm)}</p>` : `<p class="bi-desc bi-none">Descrição não informada no catálogo.</p>`;
   const kws = s.kwV.length ? `<div class="bi-kw">${s.kwV.slice(0,4).map(k=>`<span>${marcar(k,tm)}</span>`).join('')}</div>` : '';
   const labs = s.labsV.map(l=>`<div class="bi-lab"><span class="bi-sigla">${esc(l.sigla)}</span><span>${marcar(l.nome,tm)}</span></div>`).join('');
@@ -228,21 +281,24 @@ function opcoes(el, itens, sel, cont, nome){
 }
 function render(lista, cont, notas, vazio, tm){
   const n = lista.length;
-  $('count').innerHTML = vazio && !st.labs.size && !st.tipos.size && !st.cgcre
-    ? `<strong>${n}</strong> serviços no catálogo`
-    : `<strong>${n}</strong> ${n===1?'serviço encontrado':'serviços encontrados'}${st.q.trim()?` para “${esc(st.q.trim())}”`:''}`;
+  const semFiltro = vazio && !st.labs.size && !st.tipos.size && !st.mods.size && !st.cgcre;
+  $('count').innerHTML = semFiltro
+    ? (P.length && SC.length ? `<strong>${n}</strong> itens: ${SC.length} serviços do catálogo técnico e ${P.length} da Loja IPT`
+       : P.length ? `<strong>${n}</strong> itens da Loja IPT` : `<strong>${n}</strong> serviços no catálogo`)
+    : `<strong>${n}</strong> ${n===1?'resultado':'resultados'}${st.q.trim()?` para “${esc(st.q.trim())}”`:''}`;
   $('notices').innerHTML = notas.map(t=>`<div class="bi-notice">${t}</div>`).join('');
   $('grid').innerHTML = lista.slice(0,st.shown).map(s=>card(s,tm)).join('');
   $('more').innerHTML = n>st.shown ? `<button class="bi-btn bi-sec" type="button" id="bi-maisbtn">Mostrar mais ${Math.min(24,n-st.shown)} de ${n-st.shown} restantes</button>` : '';
   if(!n){
-    $('grid').innerHTML = `<div class="bi-empty" style="grid-column:1/-1"><h2>Nenhum serviço encontrado</h2>
+    $('grid').innerHTML = `<div class="bi-empty" style="grid-column:1/-1"><h2>Nenhum resultado encontrado</h2>
       <p>Tente outra palavra, use o singular ou remova filtros. Alguns laboratórios atendem demandas que não estão neste catálogo.</p>
       <p><a class="bi-btn bi-pri" style="display:inline-flex;padding:0 18px" href="https://ipt.br/contato" target="_blank" rel="noopener">Falar com o IPT</a></p></div>`;
   }
   opcoes($('flab'), LABS.map(([sg,nm])=>[sg,sg,nm]), st.labs, cont.lab, 'lab');
   opcoes($('ftipo'), TIPOS.map(t=>[t,t]), st.tipos, cont.tipo, 'tipo');
+  if(P.length) opcoes($('fmod'), MODS, st.mods, cont.mod, 'mod');
   $('fcgcre').checked = st.cgcre; $('ncgcre').textContent = cont.cgcre;
-  const nf = st.labs.size+st.tipos.size+(st.cgcre?1:0);
+  const nf = st.labs.size+st.tipos.size+st.mods.size+(st.cgcre?1:0);
   $('factive').textContent = nf ? nf+(nf===1?' ativo':' ativos') : '';
   $('freset').style.display = nf ? '' : 'none';
   $('clear').style.display = st.q ? 'block' : 'none';
@@ -285,10 +341,10 @@ $('q').addEventListener('input', e=>{ st.q=e.target.value; st.shown=24; clearTim
 $('clear').addEventListener('click', ()=>{ st.q=''; $('q').value=''; st.shown=24; buscar(); gravarURL(); $('q').focus(); });
 $('sort').addEventListener('change', e=>{ st.sort=e.target.value; buscar(); gravarURL(); });
 $('fcgcre').addEventListener('change', e=>{ st.cgcre=e.target.checked; st.shown=24; buscar(); gravarURL(); });
-$('freset').addEventListener('click', ()=>{ st.labs.clear(); st.tipos.clear(); st.cgcre=false; st.shown=24; buscar(); gravarURL(); });
+$('freset').addEventListener('click', ()=>{ st.labs.clear(); st.tipos.clear(); st.mods.clear(); st.cgcre=false; st.shown=24; buscar(); gravarURL(); });
 RAIZ.addEventListener('change', e=>{
   const f=e.target.dataset.f; if(!f) return;
-  const set = f==='lab'?st.labs:st.tipos;
+  const set = f==='lab'?st.labs:(f==='mod'?st.mods:st.tipos);
   e.target.checked?set.add(e.target.value):set.delete(e.target.value);
   st.shown=24; buscar(); gravarURL();
 });
@@ -297,7 +353,7 @@ RAIZ.addEventListener('click', e=>{
   if(e.target.closest('[data-close]')){$('dlg').close();return}
   const c=e.target.closest('[data-copy]');
   if(c){
-    let url=location.href; try{const u=new URL(location.href);['q','lab','tipo','cgcre','ordem'].forEach(k=>u.searchParams.delete(k));u.searchParams.set('servico',c.dataset.copy);url=u.href}catch(_){}
+    let url=location.href; try{const u=new URL(location.href);CHAVES_URL.forEach(k=>u.searchParams.delete(k));u.searchParams.set('servico',c.dataset.copy);url=u.href}catch(_){}
     const ok=()=>{c.textContent='Link copiado'};
     try{navigator.clipboard.writeText(url).then(ok,()=>{c.textContent=url})}catch(_){c.textContent=url}
     return;
@@ -313,20 +369,27 @@ if(RAIZ.clientWidth < 860) $('filters').open=false;
 ['dureza','calibração de multímetro','NBR 7190','etanol','resistência ao fogo','papel'].forEach(x=>{
   const b=document.createElement('button'); b.type='button'; b.className='bi-chip'; b.dataset.ex=x; b.textContent=x; $('examples').appendChild(b);
 });
-const m = DADOS.meta;
-if(!$('sub').dataset.fixo) $('sub').textContent = `Pesquise entre ${m.servicos_unicos} serviços de ${m.laboratorios} laboratórios do IPT.`;
-$('foot').innerHTML = `Protótipo. Dados do catálogo público do Scriba (Busca_EAC), coletados em ${m.coletado_em.split('-').reverse().join('/')}. Textos convertidos da caixa alta para leitura; o conteúdo é o original.`;
+const m = DADOS.meta || {};
+if(!P.length) { const g=$('gmod'); if(g) g.hidden=true; }
+if(!$('sub').dataset.fixo) $('sub').textContent = SC.length
+  ? `Pesquise entre ${m.servicos_unicos} serviços de ${m.laboratorios} laboratórios do IPT${P.length?` e ${P.length} itens da Loja IPT`:''}.`
+  : `Pesquise entre ${P.length} itens da Loja IPT.`;
+const data = m.coletado_em ? m.coletado_em.split('-').reverse().join('/') : '';
+$('foot').textContent = `Fontes: catálogo técnico do IPT (Scriba)${data?`, atualizado em ${data}`:''}${P.length?', e produtos da Loja IPT':''}. Os textos do catálogo técnico são exibidos em caixa normal para facilitar a leitura, sem alteração de conteúdo.`;
 const servicoURL = lerURL();
 $('q').value = st.q;
 buscar();
 if(servicoURL) detalhes(servicoURL);
-window.BUSCA_IPT = {servicos:S, buscar, analisar};
+window.BUSCA_IPT = {servicos:SC, produtos:P, todos:S, buscar, analisar};
 RAIZ.dataset.buscaPronta = '1';
 document.documentElement.dataset.buscaPronta = '1';
 }
 
 function falha(err){
   console.error('Busca IPT: falha ao carregar dados', err);
+  if(PRODUTOS.length && !RAIZ.dataset.buscaPronta){
+    try{ iniciar({meta:{servicos_unicos:0,laboratorios:0,coletado_em:''},servicos:[],use:[]}, true); return; }catch(e){ console.error(e); }
+  }
   const g = document.getElementById('bi-grid');
   if(g) g.innerHTML = '<div class="bi-empty" style="grid-column:1/-1"><h2>Não foi possível carregar o catálogo</h2><p>Tente novamente em alguns instantes ou <a href="https://ipt.br/contato" target="_blank" rel="noopener">fale com o IPT</a>.</p></div>';
 }

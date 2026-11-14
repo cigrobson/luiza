@@ -1,0 +1,19 @@
+/* Aparência → Personalizar → CSS adicional (ou CSS do site no Elementor).
+   Aplica a identidade da Loja IPT (paleta global do Kadence) à busca, sem editar o plugin. */
+#busca-ipt {
+  --primary: var(--global-palette1, #1b3a5c);   /* botões principais, siglas */
+  --primary-ink: #ffffff;
+  --accent: var(--global-palette2, #00aeef);    /* foco, links, destaques */
+  --accent-soft: #e0f4fc;
+  --text: var(--global-palette3, #1a202c);
+  --muted: var(--global-palette5, #4a5568);
+  --line: #cfe0eb;
+  --surface: #ffffff;
+  --surface-2: var(--global-palette8, #f7fafc);
+  --bg: transparent;
+  --radius: 10px;
+  --fonte: 'Open Sans', Arial, sans-serif;
+  --topo-fixo: 96px;   /* ajuste à altura do cabeçalho fixo do Kadence + folga */
+}
+#busca-ipt .bi-card h2,
+#busca-ipt .bi-dlg-head h2 { font-family: Montserrat, Arial, sans-serif; }

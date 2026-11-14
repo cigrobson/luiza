@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       Busca de Serviços IPT
- * Description:       Busca no catálogo de ensaios, análises e calibrações do IPT. Use o shortcode [busca_servicos_ipt] na página desejada.
- * Version:           1.0.0
+ * Description:       Busca unificada no catálogo técnico do IPT (ensaios, análises e calibrações) e nos produtos da loja WooCommerce. Shortcode: [busca_servicos_ipt].
+ * Version:           1.1.0
  * Requires at least: 5.8
  * Requires PHP:      7.4
- * Author:            LID-IPT
+ * Author:            LID-IPT – Laboratório Virtual de Inteligência Digital Aplicada
  * License:           GPL-2.0-or-later
  * Text Domain:       busca-servicos-ipt
  */
@@ -14,23 +14,50 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BSIPT_VERSAO', '1.0.0' );
+define( 'BSIPT_VERSAO', '1.1.0' );
 define( 'BSIPT_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BSIPT_URL', plugin_dir_url( __FILE__ ) );
 
-/** Versão dos arquivos para quebrar cache quando forem substituídos. */
-function bsipt_versao_arquivo( $relativo ) {
-	$caminho = BSIPT_DIR . $relativo;
+require_once BSIPT_DIR . 'includes/produtos.php';
+if ( is_admin() ) {
+	require_once BSIPT_DIR . 'includes/admin.php';
+}
+
+/**
+ * Arquivo do catálogo técnico em uso: o enviado pela página de administração
+ * (wp-content/uploads/busca-servicos-ipt/) tem prioridade sobre o que acompanha o plugin.
+ *
+ * @return array{caminho:string,url:string,origem:string}
+ */
+function bsipt_arquivo_dados() {
+	$up      = wp_upload_dir( null, false );
+	$enviado = trailingslashit( $up['basedir'] ) . 'busca-servicos-ipt/busca-servicos.json';
+	if ( is_readable( $enviado ) ) {
+		return array(
+			'caminho' => $enviado,
+			'url'     => trailingslashit( $up['baseurl'] ) . 'busca-servicos-ipt/busca-servicos.json',
+			'origem'  => 'enviado',
+		);
+	}
+	return array(
+		'caminho' => BSIPT_DIR . 'assets/busca-servicos.json',
+		'url'     => BSIPT_URL . 'assets/busca-servicos.json',
+		'origem'  => 'plugin',
+	);
+}
+
+/** Versão para quebrar o cache do navegador quando um arquivo muda. */
+function bsipt_versao_arquivo( $caminho ) {
 	return file_exists( $caminho ) ? BSIPT_VERSAO . '.' . filemtime( $caminho ) : BSIPT_VERSAO;
 }
 
 function bsipt_registrar_assets() {
-	wp_register_style( 'busca-servicos-ipt', BSIPT_URL . 'assets/busca.css', array(), bsipt_versao_arquivo( 'assets/busca.css' ) );
-	wp_register_script( 'busca-servicos-ipt', BSIPT_URL . 'assets/busca.js', array(), bsipt_versao_arquivo( 'assets/busca.js' ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
+	wp_register_style( 'busca-servicos-ipt', BSIPT_URL . 'assets/busca.css', array(), bsipt_versao_arquivo( BSIPT_DIR . 'assets/busca.css' ) );
+	wp_register_script( 'busca-servicos-ipt', BSIPT_URL . 'assets/busca.js', array(), bsipt_versao_arquivo( BSIPT_DIR . 'assets/busca.js' ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
 }
 add_action( 'wp_enqueue_scripts', 'bsipt_registrar_assets', 5 );
 
-/** Carrega CSS no <head> quando o shortcode está no conteúdo (evita piscar sem estilo). */
+/** Carrega o CSS no <head> quando o shortcode está no conteúdo (evita piscar sem estilo). */
 function bsipt_enfileirar_cedo() {
 	$post = get_post();
 	if ( $post && has_shortcode( (string) $post->post_content, 'busca_servicos_ipt' ) ) {
@@ -39,7 +66,7 @@ function bsipt_enfileirar_cedo() {
 }
 add_action( 'wp_enqueue_scripts', 'bsipt_enfileirar_cedo', 20 );
 
-/** Endpoint alternativo para os dados, caso o servidor bloqueie arquivos .json em wp-content. */
+/** Rota alternativa para o catálogo, caso o servidor bloqueie arquivos .json em wp-content. */
 function bsipt_rota_rest() {
 	register_rest_route(
 		'busca-servicos-ipt/v1',
@@ -48,11 +75,11 @@ function bsipt_rota_rest() {
 			'methods'             => 'GET',
 			'permission_callback' => '__return_true',
 			'callback'            => function () {
-				$arquivo = BSIPT_DIR . 'assets/busca-servicos.json';
-				if ( ! is_readable( $arquivo ) ) {
+				$arquivo = bsipt_arquivo_dados();
+				if ( ! is_readable( $arquivo['caminho'] ) ) {
 					return new WP_Error( 'bsipt_sem_dados', 'Catálogo indisponível.', array( 'status' => 503 ) );
 				}
-				$resposta = new WP_REST_Response( json_decode( file_get_contents( $arquivo ), true ) );
+				$resposta = new WP_REST_Response( json_decode( file_get_contents( $arquivo['caminho'] ), true ) );
 				$resposta->header( 'Cache-Control', 'public, max-age=3600' );
 				return $resposta;
 			},
@@ -61,8 +88,21 @@ function bsipt_rota_rest() {
 }
 add_action( 'rest_api_init', 'bsipt_rota_rest' );
 
+/** Guarda as páginas que usam o shortcode, para limpar o cache delas quando produtos mudarem. */
+function bsipt_registrar_pagina() {
+	$id = (int) get_the_ID();
+	if ( $id <= 0 ) {
+		return;
+	}
+	$paginas = (array) get_option( 'bsipt_paginas', array() );
+	if ( ! in_array( $id, $paginas, true ) ) {
+		$paginas[] = $id;
+		update_option( 'bsipt_paginas', array_values( array_unique( array_map( 'intval', $paginas ) ) ), false );
+	}
+}
+
 /**
- * [busca_servicos_ipt titulo="..." subtitulo="..." tema="claro|escuro|auto" fonte="arquivo|rest" dados="URL"]
+ * [busca_servicos_ipt titulo="..." subtitulo="..." tema="claro|escuro|auto" produtos="sim|nao" fonte="arquivo|rest" dados="URL"]
  */
 function bsipt_shortcode( $atts ) {
 	$atts = shortcode_atts(
@@ -70,6 +110,7 @@ function bsipt_shortcode( $atts ) {
 			'titulo'    => 'Ensaios, análises e calibrações',
 			'subtitulo' => '',
 			'tema'      => 'claro',
+			'produtos'  => 'sim',
 			'fonte'     => 'arquivo',
 			'dados'     => '',
 		),
@@ -77,12 +118,14 @@ function bsipt_shortcode( $atts ) {
 		'busca_servicos_ipt'
 	);
 
+	$arquivo = bsipt_arquivo_dados();
+	$versao  = bsipt_versao_arquivo( $arquivo['caminho'] );
 	if ( '' !== $atts['dados'] ) {
 		$dados_url = $atts['dados'];
 	} elseif ( 'rest' === $atts['fonte'] ) {
-		$dados_url = add_query_arg( 'v', bsipt_versao_arquivo( 'assets/busca-servicos.json' ), rest_url( 'busca-servicos-ipt/v1/dados' ) );
+		$dados_url = add_query_arg( 'v', $versao, rest_url( 'busca-servicos-ipt/v1/dados' ) );
 	} else {
-		$dados_url = add_query_arg( 'v', bsipt_versao_arquivo( 'assets/busca-servicos.json' ), BSIPT_URL . 'assets/busca-servicos.json' );
+		$dados_url = add_query_arg( 'v', $versao, $arquivo['url'] );
 	}
 
 	$temas      = array( 'claro' => 'light', 'escuro' => 'dark', 'auto' => '' );
@@ -90,6 +133,7 @@ function bsipt_shortcode( $atts ) {
 
 	wp_enqueue_style( 'busca-servicos-ipt' );
 	wp_enqueue_script( 'busca-servicos-ipt' );
+	bsipt_registrar_pagina();
 
 	$titulo = '' === trim( $atts['titulo'] ) ? '' : '<h2 class="bi-titulo">' . esc_html( $atts['titulo'] ) . '</h2>';
 	$html   = file_get_contents( BSIPT_DIR . 'templates/busca.html' );
@@ -100,6 +144,14 @@ function bsipt_shortcode( $atts ) {
 	}
 	if ( '' !== trim( $atts['subtitulo'] ) ) {
 		$html = preg_replace( '#<p id="bi-sub">.*?</p>#s', '<p id="bi-sub" data-fixo="1">' . esc_html( $atts['subtitulo'] ) . '</p>', $html, 1 );
+	}
+
+	if ( 'nao' !== $atts['produtos'] ) {
+		$produtos = bsipt_indice_produtos();
+		if ( $produtos ) {
+			$json = wp_json_encode( $produtos, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP );
+			$html .= "\n" . '<script type="application/json" id="bi-produtos">' . $json . '</script>';
+		}
 	}
 	return $html;
 }

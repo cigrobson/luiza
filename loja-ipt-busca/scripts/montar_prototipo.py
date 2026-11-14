@@ -1,6 +1,6 @@
 """Gera todas as versões da busca a partir de src/ e dados/.
 
-  prototipo/index.html                  demonstração: arquivo único, dados embutidos, abre offline
+  prototipo/index.html                  demonstração: arquivo único, dados embutidos (catálogo + amostra de produtos da loja), abre offline
   publicar/index.html                   página avulsa que carrega publicar/busca-servicos.json
   publicar/busca-servicos.json          dados
   wordpress/busca-servicos-ipt/         plugin WordPress (shortcode [busca_servicos_ipt])
@@ -22,12 +22,18 @@ css, js, html = ler(src / 'busca.css'), ler(src / 'busca.js'), ler(src / 'busca.
 for marca in ('{{TITULO}}', '{{DADOS_URL}}'):
     assert html.count(marca) == 1, marca
 
-def pagina(dados_url, embutir):
+produtos_demo = (raiz / 'dados/produtos_loja.json')
+produtos = ler(produtos_demo) if produtos_demo.exists() else '[]'
+
+def pagina(dados_url, embutir, com_produtos=False):
     corpo = html.replace('{{TITULO}}', '<h1 class="bi-titulo">Ensaios, análises e calibrações</h1>').replace('{{DADOS_URL}}', dados_url)
     script_dados = ''
     if embutir:
         seguro = dados.replace('</', '<\\/').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
         script_dados = f'<script>window.BUSCA_IPT_DADOS={seguro};</script>\n'
+    if com_produtos:
+        prod = json.dumps(json.loads(produtos), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+        script_dados += f'<script type="application/json" id="bi-produtos">{prod}</script>\n'
     return f'''<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -53,7 +59,7 @@ body{{margin:0;background:#f4f6fa}}
 '''
 
 (raiz / 'prototipo').mkdir(exist_ok=True)
-(raiz / 'prototipo/index.html').write_text(pagina('', True), encoding='utf-8')
+(raiz / 'prototipo/index.html').write_text(pagina('', True, com_produtos=True), encoding='utf-8')
 
 pub = raiz / 'publicar'; pub.mkdir(exist_ok=True)
 (pub / 'index.html').write_text(pagina('busca-servicos.json', False), encoding='utf-8')
@@ -67,6 +73,9 @@ if plug.exists():
 (plug / 'templates').mkdir()
 shutil.copy(src / 'wordpress/busca-servicos-ipt.php', plug)
 shutil.copy(src / 'wordpress/readme.txt', plug)
+shutil.copy(src / 'wordpress/uninstall.php', plug)
+shutil.copytree(src / 'wordpress/includes', plug / 'includes')
+(plug / 'includes/index.php').write_text('<?php // Silêncio.\n', encoding='utf-8')
 (plug / 'assets/busca.css').write_text(css, encoding='utf-8')
 (plug / 'assets/busca.js').write_text(js, encoding='utf-8')
 (plug / 'assets/busca-servicos.json').write_text(dados, encoding='utf-8')

@@ -6,11 +6,15 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 
 | Caminho | Conteúdo |
 |---|---|
-| `AGENTS.md` | Instruções para o agente (Codex) integrar a busca na Loja IPT (WordPress) |
-| `wordpress/busca-servicos-ipt.zip` | **Plugin WordPress** pronto para instalar (shortcode `[busca_servicos_ipt]`) |
+| `AGENTS.md` | Instruções para o agente (Codex): página `/catalogo-tecnico/`, ajustes na `loja-15`, pendências institucionais |
+| `integracao/` | Script do topo e bloco da `loja-15`, CSS adicional com a paleta do Kadence |
+| `wordpress/busca-servicos-ipt.zip` | **Plugin WordPress 1.1.0**: busca unificada (catálogo técnico + produtos WooCommerce), painel em Ferramentas, shortcode `[busca_servicos_ipt]` |
 | `publicar/` | Versão em página avulsa: `index.html` + `busca-servicos.json` |
 | `prototipo/index.html` | Demonstração em arquivo único, funciona offline |
-| `src/` | Código-fonte: `busca.css`, `busca.js`, `busca.html` e `wordpress/` (PHP do plugin) |
+| `src/` | Código-fonte: `busca.css`, `busca.js`, `busca.html` e `wordpress/` (PHP do plugin: principal, `includes/produtos.php`, `includes/admin.php`, `uninstall.php`) |
+| `dados/produtos_loja.json` | Amostra dos 24 produtos da loja (14/11/2026), para a demonstração |
+| `scripts/produtos_loja.py` | Converte a Store API do WooCommerce para o formato da busca |
+| `scripts/fixtures/` | Resposta pública da Store API usada pelos testes |
 | `dados/servicos.json` | 568 serviços com registro, tipo, nome, descrição, palavras-chave, laboratórios, certificados Cgcre e link de contato |
 | `dados/servicos.csv` | Mesmo conteúdo em tabela (UTF-8 com BOM, separador `;`, abre direto no Excel) |
 | `dados/laboratorios.json` | 19 laboratórios/seções com sigla, nome, código CRD e total de serviços |
@@ -18,8 +22,8 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 | `bruto/escriba_busca_todos_2026-11-14.html` | Resposta HTML original (Windows-1252), para auditoria |
 | `scripts/extrair_escriba.py` | HTML do Scriba → `dados/` |
 | `scripts/montar_prototipo.py` | `src/` + `dados/` → `wordpress/`, `publicar/`, `prototipo/` |
-| `scripts/testar_busca.js` | Teste de aceitação com Playwright (30 verificações), local ou em URL publicada |
-| `scripts/wp_simulado.php` | WordPress simulado com tema agressivo, para testar o plugin sem instalar WordPress |
+| `scripts/testar_busca.js` | Teste de aceitação com Playwright (35 verificações com produtos, 31 sem), local ou em URL publicada |
+| `scripts/wp_simulado.php` | WordPress simulado com WooCommerce falso (produtos reais) e tema agressivo, para testar o plugin sem instalar WordPress |
 
 Para atualizar os dados: salvar uma nova resposta de `pesquisas.asp` com `TxtTermo=%`, rodar
 `python3 -I scripts/extrair_escriba.py <arquivo.html> dados` e depois `python3 -I scripts/montar_prototipo.py`.
@@ -44,7 +48,9 @@ No WordPress: instalar `wordpress/busca-servicos-ipt.zip` e inserir `[busca_serv
 | Layout | Responde à largura da área de conteúdo (não da tela); modo claro, escuro ou automático |
 | Convivência com o tema | CSS restrito a `#busca-ipt`, classes e IDs com prefixo `bi-`, blindagem contra estilos de elementos do tema; fonte herdada do tema |
 
-Teste automatizado: `node scripts/testar_busca.js` (30 verificações). Passam nas versões `publicar/`, `prototipo/` e no plugin dentro do WordPress simulado, com dados por arquivo e por REST.
+Teste automatizado: `node scripts/testar_busca.js`. Passam 35 verificações com produtos (demonstração e plugin no WordPress simulado) e 31 sem produtos (página avulsa e simulado sem WooCommerce).
+
+Na versão 1.1, os produtos da loja entram na mesma busca, com selo e filtro de modalidade (compra direta ou solicitação de serviço). A busca por "solo" passa de 4 resultados (só Scriba) para 10, com os 6 itens da loja primeiro.
 
 ## Diagnóstico técnico da busca atual
 

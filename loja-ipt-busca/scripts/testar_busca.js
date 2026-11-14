@@ -62,7 +62,10 @@ function servir(dir) {
   const p = await abrir();
   let e = await estado(p);
   console.log('\nCarga inicial');
-  verifica(e.total === 568, `dados: catálogo carregado com 568 serviços (veio ${e.total})`);
+  const nProd = await p.evaluate(() => window.BUSCA_IPT.produtos.length);
+  const nCompra = await p.evaluate(() => window.BUSCA_IPT.produtos.filter(x => x.compra).length);
+  console.log(`  (produtos da loja nesta página: ${nProd}, de compra direta: ${nCompra})`);
+  verifica(e.total === 568 + nProd, `dados: 568 serviços do catálogo técnico + ${nProd} produtos (veio ${e.total})`);
   verifica(e.n === 24, `primeira página mostra 24 cards (veio ${e.n})`);
   verifica(!/^[^A-Za-zÀ-ÿ]/.test(e.titulos[0]), `ordem inicial alfabética sem pontuação no início ("${e.titulos[0]}")`);
 
@@ -112,6 +115,31 @@ function servir(dir) {
   await p.click('#bi-freset'); await p.waitForTimeout(200);
   await p.check('input[data-f="lab"][value="LV"]'); await p.waitForTimeout(200); e = await estado(p);
   verifica(e.total === 34, `dados: filtro laboratório LV = 34 (veio ${e.total})`);
+
+  console.log('\nProdutos da loja');
+  if (nProd === 0) {
+    verifica(await p.evaluate(() => document.getElementById('bi-gmod').hidden), `sem produtos, o filtro "Modalidade" fica oculto`);
+  } else {
+    await p.click('#bi-freset').catch(() => {});
+    await buscar(p, 'solo'); e = await estado(p);
+    const lojaSolo = await p.$$eval('.bi-card-loja', c => c.length);
+    verifica(lojaSolo >= 5 && (await p.$eval('.bi-card', c => c.classList.contains('bi-card-loja'))), `"solo" traz os ensaios de solo da loja primeiro (${lojaSolo} itens da loja)`);
+    await buscar(p, 'inclinômetro'); e = await estado(p);
+    const cards = await p.$$eval('.bi-card-loja', cs => cs.map(c => ({ selo: c.querySelector('.bi-badge').innerText, preco: (c.querySelector('.bi-preco') || {}).innerText || '', acao: c.querySelector('.bi-btn.bi-pri').innerText, href: c.querySelector('.bi-btn.bi-pri').getAttribute('href') })));
+    verifica(cards.length >= 3 && cards.every(c => c.selo === 'Compra direta' && /R\$/.test(c.preco) && c.acao === 'Adicionar ao carrinho' && /add-to-cart=\d+/.test(c.href)),
+      `compra direta: selo, preço e "Adicionar ao carrinho" (${cards.length} itens)`);
+    await buscar(p, 'assinatura normas');
+    const saa = await p.$eval('.bi-card-loja', c => ({ acao: c.querySelector('.bi-btn.bi-pri').innerText, href: c.querySelector('.bi-btn.bi-pri').getAttribute('href'), preco: c.querySelector('.bi-preco').innerText }));
+    verifica(saa.acao === 'Ver opções' && /\/produto\//.test(saa.href) && /–/.test(saa.preco), `produto com variações: faixa de preço e "Ver opções" (${saa.preco})`);
+    await buscar(p, 'árvore');
+    const arv = await p.$eval('.bi-card-loja', c => ({ selo: c.querySelector('.bi-badge').innerText, acao: c.querySelector('.bi-btn.bi-pri').innerText, preco: !!c.querySelector('.bi-preco') }));
+    verifica(arv.selo === 'Solicitação de serviço' && arv.acao === 'Solicitar orçamento' && !arv.preco, `sem preço: "Solicitação de serviço" e "Solicitar orçamento"`);
+    await buscar(p, '');
+    await p.evaluate(() => { document.getElementById('bi-filters').open = true; });
+    await p.check('input[data-f="mod"][value="compra"]'); await p.waitForTimeout(200); e = await estado(p);
+    verifica(e.total === nCompra && /mod=compra/.test(p.url()), `filtro "Compra direta" = ${nCompra} itens e gravado na URL (veio ${e.total})`);
+    await p.click('#bi-freset'); await p.waitForTimeout(150);
+  }
 
   console.log('\nLink direto');
   const p2 = await abrir('?q=vazao&lab=LV&servico=870');

@@ -1,0 +1,358 @@
+[
+ {
+  "id": 440,
+  "nome": "Diagnóstico e Análise de Risco de Queda de Árvore",
+  "descricao": "Serviço de diagnóstico arbóreo com análise externa e interna de risco de queda, realizado pelo SPRSF/IPT. Inclui avaliação fitossanitária, uso de penetrógrafo e/ou tomógrafo de impulso. Atendimento presencial no local da árvore. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [],
+  "tags": [],
+  "sku": "SPRSF-DIAG-ARBOREO",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/diagnostico-e-analise-de-risco-de-queda-de-arvore/",
+  "carrinho": ""
+ },
+ {
+  "id": 436,
+  "nome": "Óleo de Silicone Dow Corning — Frasco 30 ml com Certificado de Calibração",
+  "descricao": "Óleo de silicone Dow Corning, índice de refração ND 1,4025 a 25°C, frasco de 30 ml, acompanha certificado de calibração emitido pelo LGE/IPT.",
+  "categorias": [
+   "Energia e Metrologia"
+  ],
+  "tags": [],
+  "sku": "",
+  "tipo": "simple",
+  "compra": true,
+  "preco": "R$ 1.400,00",
+  "url": "https://loja.ipt.br/produto/oleo-de-silicone-dow-corning-frasco-30-ml-com-certificado-de-calibracao/",
+  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=436"
+ },
+ {
+  "id": 434,
+  "nome": "Ensaio de Emissão Radiada em Luminária e Lâmpada LED",
+  "descricao": "Ensaio de emissão radiada (EMC) conforme CISPR 15 em luminária e lâmpada LED, com emissão de relatório de ensaio com selo INMETRO. Realizado pelo LGE/IPT. O cliente envia o produto ao laboratório. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Energia e Metrologia"
+  ],
+  "tags": [],
+  "sku": "LGE-EMC-CISPR15",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-emissao-radiada-em-luminaria-e-lampada-led-cispr-15/",
+  "carrinho": ""
+ },
+ {
+  "id": 407,
+  "nome": "SAA – Assinatura Anual de Monitoramento de Normas Técnicas",
+  "descricao": "Serviço online do IPT de monitoramento e atualização de normas técnicas, regulamentos e leis. Inclui alertas por e-mail sobre alterações, consulta ao acervo do IPT e acesso simultâneo de múltiplos usuários. Assinatura anual com preço por faixa de quantidade de normas monitoradas.",
+  "categorias": [
+   "SAA — Normas Técnicas"
+  ],
+  "tags": [],
+  "sku": "SAA-ASSINATURA-ANUAL",
+  "tipo": "variable",
+  "compra": true,
+  "preco": "R$ 435,00 – R$ 10.568,00",
+  "url": "https://loja.ipt.br/produto/saa-assinatura-anual-de-monitoramento-de-normas-tecnicas/",
+  "carrinho": ""
+ },
+ {
+  "id": 401,
+  "nome": "Ensaio de Teor de Formaldeído em Papel Indicador — ABNT NBR 25424/2021",
+  "descricao": "Ensaio para qualificação de desempenho de dessorção de formaldeído no ciclo de autoclavagem, conforme ABNT NBR 25424/2021 e EN 14180:2014 Anexo D. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Bionano"
+  ],
+  "tags": [],
+  "sku": "LBI-FOR-NBR25424",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-teor-de-formaldeido-em-papel-indicador-abnt-nbr-25424-2021/",
+  "carrinho": ""
+ },
+ {
+  "id": 400,
+  "nome": "Análise Microbiológica em Papel",
+  "descricao": "Determinação da qualidade microbiológica de papéis para 3 parâmetros: aeróbios totais, pesquisa de patógenos (até 5 espécies) e pesquisa de organismos clostrídeos sulfitorredutores, conforme MS 1480/90 e RDC 640/2022. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Bionano"
+  ],
+  "tags": [],
+  "sku": "LBI-MIC-RDC640",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/analise-microbiologica-em-papel-rdc-640-2022/",
+  "carrinho": ""
+ },
+ {
+  "id": 387,
+  "nome": "Ensaio de Biodegradabilidade Imediata de Materiais Solúveis em Água",
+  "descricao": "Determinação da biodegradabilidade de materiais solúveis em água após 28 dias em contato com microrganismos em sistema aquoso sob aeração, conforme OECD 301 item B. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Bionano"
+  ],
+  "tags": [],
+  "sku": "LBI-BIO-OECD301B",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-biodegradabilidade-imediata-de-materiais-soluveis-em-agua-oecd-301b/",
+  "carrinho": ""
+ },
+ {
+  "id": 386,
+  "nome": "Ensaio de Atividade Antibacteriana em Tecidos",
+  "descricao": "Avaliação de atividade antibacteriana de tecidos com determinação do grau de atividade em valor percentual, conforme AATCC 100. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [],
+  "tags": [],
+  "sku": "LBI-ANB-AATCC100",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antibacteriana-em-tecidos-aatcc-100/",
+  "carrinho": ""
+ },
+ {
+  "id": 383,
+  "nome": "Ensaio de Atividade Antibacteriana em Materiais",
+  "descricao": "Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Bionano"
+  ],
+  "tags": [],
+  "sku": "LBI-ANB-JIS2801",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antibacteriana-em-materiais-jis-z-2801/",
+  "carrinho": ""
+ },
+ {
+  "id": 382,
+  "nome": "Ensaio de Atividade Antifúngica em Tintas – ABNT NBR 15987",
+  "descricao": "Avaliação de atividade antifúngica de tintas aplicadas sobre corpos de prova de papel cartão submetidos à etapa prévia de lixiviação em água, conforme ABNT NBR 15987. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Bionano"
+  ],
+  "tags": [],
+  "sku": "LBI-ANF-15987",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-15987/",
+  "carrinho": ""
+ },
+ {
+  "id": 380,
+  "nome": "Ensaio de Atividade Antifúngica em Tintas – ABNT NBR 14941",
+  "descricao": "Avaliação de atividade antifúngica de tintas aplicadas sobre corpos de prova de papel cartão, conforme ABNT NBR 14941. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Bionano"
+  ],
+  "tags": [],
+  "sku": "LBI-ANF-14941",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-14941/",
+  "carrinho": ""
+ },
+ {
+  "id": 379,
+  "nome": "Ensaio de Densidade de Partículas do Solo",
+  "descricao": "Determinação da densidade de partículas e massa específica de amostra de solo em estado deformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Geotecnia e Meio Ambiente"
+  ],
+  "tags": [],
+  "sku": "SIRGA-DEN",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-densidade-de-particulas-do-solo/",
+  "carrinho": ""
+ },
+ {
+  "id": 370,
+  "nome": "Ensaio de Matéria Orgânica do Solo",
+  "descricao": "Determinação do teor de matéria orgânica de amostra de solo em estado deformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Geotecnia e Meio Ambiente"
+  ],
+  "tags": [],
+  "sku": "SIRGA-MOR",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-materia-organica-do-solo/",
+  "carrinho": ""
+ },
+ {
+  "id": 368,
+  "nome": "Ensaio de Fração de Carbono Orgânico",
+  "descricao": "Determinação da fração de carbono orgânico de amostra de solo em estado deformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Geotecnia e Meio Ambiente"
+  ],
+  "tags": [],
+  "sku": "SIRGA-FOC",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-fracao-de-carbono-organico/",
+  "carrinho": ""
+ },
+ {
+  "id": 366,
+  "nome": "Ensaio de Permeabilidade do Solo",
+  "descricao": "Determinação da permeabilidade e condutividade hidráulica de amostra de solo em estado deformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Geotecnia e Meio Ambiente"
+  ],
+  "tags": [],
+  "sku": "SIRGA-PER",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-permeabilidade-do-solo/",
+  "carrinho": ""
+ },
+ {
+  "id": 363,
+  "nome": "Ensaio de Porosidade do Solo",
+  "descricao": "Determinação da porosidade de amostra de solo em estado indeformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Geotecnia e Meio Ambiente"
+  ],
+  "tags": [],
+  "sku": "SIRGA-POR",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-porosidade-do-solo-sirga-ipt/",
+  "carrinho": ""
+ },
+ {
+  "id": 356,
+  "nome": "Ensaio de Granulometria de Solo",
+  "descricao": "Ensaio granulométrico de amostra de solo em estado deformado, realizado pelo Setor de Infraestrutura e Recursos Naturais (SIRGA) do IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Bionano"
+  ],
+  "tags": [],
+  "sku": "SIRGA-GRN",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/ensaio-de-granulometria-de-solo-sirga-ipt/",
+  "carrinho": ""
+ },
+ {
+  "id": 355,
+  "nome": "Tampa de Proteção para Inclinômetro, Polipropileno",
+  "descricao": "Tampa de proteção em polipropileno para tubos de inclinômetro de 4 polegadas. Disponível nas versões superior e inferior. Preço por unidade. Valor inclui IPI de 3,25%. Produto do SOC/IPT.",
+  "categorias": [
+   "Geotecnia e Meio Ambiente"
+  ],
+  "tags": [],
+  "sku": "SOC-TAMPA-INC",
+  "tipo": "simple",
+  "compra": true,
+  "preco": "R$ 49,66",
+  "url": "https://loja.ipt.br/produto/tampa-de-protecao-para-inclinometro-polipropileno/",
+  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=355"
+ },
+ {
+  "id": 351,
+  "nome": "Luva de Emenda para Inclinômetro, Alumínio 30 cm",
+  "descricao": "Luva de alumínio com 30 cm de comprimento para emenda de tubos de 4 polegadas em sistemas de monitoramento por inclinômetro. Preço por unidade. Valor inclui IPI de 3,25%. Produto do SOC/IPT.",
+  "categorias": [
+   "Geotecnia e Meio Ambiente"
+  ],
+  "tags": [],
+  "sku": "SOC-LUVA-INC",
+  "tipo": "simple",
+  "compra": true,
+  "preco": "R$ 49,66",
+  "url": "https://loja.ipt.br/produto/luva-de-emenda-para-inclinometro-aluminio-30-cm/",
+  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=351"
+ },
+ {
+  "id": 346,
+  "nome": "Tubo para Inclinômetro, Alumínio 4″ × 3 m",
+  "descricao": "Tubo de alumínio com diâmetro de 4 polegadas (aproximadamente 101,6 mm) e comprimento de 3 metros, desenvolvido para uso em sistemas de monitoramento geotécnico por inclinômetro. Fornecido pelo Setor de Obras Civis (SOC) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). Material de referência com rastreabilidade técnica institucional. Preço unitário por metro linear. IPI de 3,25% já incluso no valor apresentado.",
+  "categorias": [
+   "Geotecnia e Meio Ambiente"
+  ],
+  "tags": [],
+  "sku": "SOC-TUBO-INC",
+  "tipo": "simple",
+  "compra": true,
+  "preco": "R$ 152,91",
+  "url": "https://loja.ipt.br/produto/tubo-para-inclinometro-aluminio-4-x-3-m/",
+  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=346"
+ },
+ {
+  "id": 83,
+  "nome": "Areia Normal Brasileira N.100, Embalagem 25 kg",
+  "descricao": "Material de referência certificado pelo IPT conforme ABNT NBR 7214:2015. Granulometria N.100 — passante na peneira de 0,3 mm e retido na peneira de 0,15 mm. Embalagem de 25 kg. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Materiais de Referência"
+  ],
+  "tags": [],
+  "sku": "ANB-N100",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-100-embalagem-25-kg/",
+  "carrinho": ""
+ },
+ {
+  "id": 82,
+  "nome": "Areia Normal Brasileira N.50, Embalagem 25 kg",
+  "descricao": "Material de referência certificado pelo IPT conforme ABNT NBR 7214:2015. Granulometria N.50 — passante na peneira de 0,6 mm e retido na peneira de 0,3 mm. Embalagem de 25 kg. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Materiais de Referência"
+  ],
+  "tags": [],
+  "sku": "ANB-N50",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-50-embalagem-25-kg/",
+  "carrinho": ""
+ },
+ {
+  "id": 81,
+  "nome": "Areia Normal Brasileira N.30, Embalagem 25 kg",
+  "descricao": "Material de referência certificado pelo IPT conforme ABNT NBR 7214:2015. Granulometria N.30 — passante na peneira de 1,2 mm e retido na peneira de 0,6 mm. Embalagem de 25 kg. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Materiais de Referência"
+  ],
+  "tags": [],
+  "sku": "ANB-N30",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-30-embalagem-25-kg/",
+  "carrinho": ""
+ },
+ {
+  "id": 79,
+  "nome": "Areia Normal Brasileira N.16, Embalagem 25 kg",
+  "descricao": "Material de referência certificado pelo IPT conforme ABNT NBR 7214:2015. Granulometria N.16 — passante na peneira de 2,4 mm e retido na peneira de 1,2 mm. Embalagem de 25 kg. Orçamento personalizado O valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.",
+  "categorias": [
+   "Materiais de Referência"
+  ],
+  "tags": [],
+  "sku": "ANB-N16",
+  "tipo": "simple",
+  "compra": false,
+  "preco": "",
+  "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-16-embalagem-25-kg/",
+  "carrinho": ""
+ }
+]

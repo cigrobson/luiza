@@ -1,0 +1,1077 @@
+[
+ {
+  "id": 440,
+  "name": "Diagnóstico e Análise de Risco de Queda de Árvore",
+  "slug": "diagnostico-e-analise-de-risco-de-queda-de-arvore",
+  "type": "simple",
+  "sku": "SPRSF-DIAG-ARBOREO",
+  "short_description": "<p>Serviço de diagnóstico arbóreo com análise externa e interna de risco de queda, realizado pelo SPRSF/IPT. Inclui avaliação fitossanitária, uso de penetrógrafo e/ou tomógrafo de impulso. Atendimento presencial no local da árvore.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Serviço de diagnóstico e análise de risco de queda de árvore realizado pelo Setor de Preservação de Recursos Silvícolas e Florestais (SPRSF) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT), composto por duas etapas: análise externa e análise interna com avaliação de risco. A análise externa consiste na inspeção da árvore em 360 graus, abrangendo dendrometria, estado fitossanitário, presença de organismos xilófagos, condições de entorno e estado geral de raiz, fuste e copa. A análise interna utiliza equipamentos não destrutivos como penetrógrafo e tomógrafo de impulso para quantificação de processos de deterioração interna do lenho. Serviço indicado para prefeituras, condomínios, empresas e proprietários que necessitam de laudo técnico sobre risco de queda de árvores para fins de segurança, licenciamento ou atendimento a notificações de órgãos ambientais.</p>",
+  "permalink": "https://loja.ipt.br/produto/diagnostico-e-analise-de-risco-de-queda-de-arvore/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/SPRSF-DIAG-ARBOREO-diagnostico-risco-arvore-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Diagnóstico e Análise de Risco de Queda de Árvore&rdquo;",
+   "url": "https://loja.ipt.br/produto/diagnostico-e-analise-de-risco-de-queda-de-arvore/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 436,
+  "name": "Óleo de Silicone Dow Corning — Frasco 30 ml com Certificado de Calibração",
+  "slug": "oleo-de-silicone-dow-corning-frasco-30-ml-com-certificado-de-calibracao",
+  "type": "simple",
+  "sku": "",
+  "short_description": "<p>Óleo de silicone Dow Corning, índice de refração ND 1,4025 a 25°C, frasco de 30 ml, acompanha certificado de calibração emitido pelo LGE/IPT.</p>",
+  "description": "<p>Óleo de silicone Dow Corning com índice de refração ND 1,4025 a 25°C, fornecido em frasco de 30 ml com certificado de calibração emitido pelo Laboratório de Gestão de Energia (LGE) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O certificado de calibração garante a rastreabilidade metrológica do produto, tornando-o adequado para uso como material de referência em laboratórios de óptica, metrologia e controle de qualidade industrial. Produto indicado para laboratórios que necessitam de material de referência certificado para calibração de refratômetros e equipamentos ópticos de precisão.</p>",
+  "permalink": "https://loja.ipt.br/produto/oleo-de-silicone-dow-corning-frasco-30-ml-com-certificado-de-calibracao/",
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "prices": {
+   "price": "140000",
+   "regular_price": "140000",
+   "sale_price": "140000",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Energia e Metrologia"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LGE-OLEO-SILICONE-oleo-silicone-calibracao-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Adicionar ao carrinho",
+   "description": "Adicione ao carrinho: &ldquo;Óleo de Silicone Dow Corning — Frasco 30 ml com Certificado de Calibração&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=100&#038;add-to-cart=436",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 434,
+  "name": "Ensaio de Emissão Radiada em Luminária e Lâmpada LED",
+  "slug": "ensaio-de-emissao-radiada-em-luminaria-e-lampada-led-cispr-15",
+  "type": "simple",
+  "sku": "LGE-EMC-CISPR15",
+  "short_description": "<p>Ensaio de emissão radiada (EMC) conforme CISPR 15 em luminária e lâmpada LED, com emissão de relatório de ensaio com selo INMETRO. Realizado pelo LGE/IPT. O cliente envia o produto ao laboratório.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Ensaio de Emissão Radiada (EMC) conforme norma CISPR 15, realizado em luminária e lâmpada LED pelo Laboratório de Gestão de Energia (LGE) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pelo envio do produto ao laboratório do IPT em São Paulo (SP). Após a realização do ensaio, é emitido relatório técnico com selo INMETRO, conforme requisitos do programa de avaliação da conformidade. Ensaio indicado para fabricantes e importadores de luminárias e lâmpadas LED que necessitam comprovar conformidade eletromagnética para fins de certificação INMETRO ou atendimento a requisitos de clientes e distribuidores.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-emissao-radiada-em-luminaria-e-lampada-led-cispr-15/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Energia e Metrologia"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LGE-EMC-CISPR15-emissao-radiada-LED-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Emissão Radiada em Luminária e Lâmpada LED&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-emissao-radiada-em-luminaria-e-lampada-led-cispr-15/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 407,
+  "name": "SAA &#8211; Assinatura Anual de Monitoramento de Normas Técnicas",
+  "slug": "saa-assinatura-anual-de-monitoramento-de-normas-tecnicas",
+  "type": "variable",
+  "sku": "SAA-ASSINATURA-ANUAL",
+  "short_description": "<p>Serviço online do IPT de monitoramento e atualização de normas técnicas, regulamentos e leis. Inclui alertas por e-mail sobre alterações, consulta ao acervo do IPT e acesso simultâneo de múltiplos usuários. Assinatura anual com preço por faixa de quantidade de normas monitoradas.</p>",
+  "description": "<p>O SAA é um serviço online do IPT que monitora e atualiza normas técnicas, regulamentos e leis, oferecendo informações sobre a última edição, erratas, emendas, suplementos, cancelamentos, substituições, projetos de revisão e equivalência entre normas. O IPT monitora normas de mais de 200 organismos normativos nacionais e internacionais. A assinatura inclui alertas periódicos por e-mail sobre alterações nas normas de interesse, consulta presencial ao acervo do IPT, atendimento preferencial, desconto na aquisição de normas e acesso simultâneo de múltiplos usuários ao sistema. O SAA é instrumento válido para auditorias de sistemas de gestão da qualidade, demonstrando o registro e controle da documentação técnica, e de sistemas de gestão de riscos, prevenindo o uso de documentos normativos desatualizados. Para mais de 1000 normas, solicite orçamento pelo formulário de contato.</p>",
+  "permalink": "https://loja.ipt.br/produto/saa-assinatura-anual-de-monitoramento-de-normas-tecnicas/",
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "prices": {
+   "price": "43500",
+   "regular_price": "43500",
+   "sale_price": "43500",
+   "price_range": {
+    "min_amount": "43500",
+    "max_amount": "1056800"
+   },
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "SAA — Normas Técnicas"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/SAA-ASSINATURA-ANUAL-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ver opções",
+   "description": "Selecione as opções para &ldquo;SAA &#8211; Assinatura Anual de Monitoramento de Normas Técnicas&rdquo;",
+   "url": "https://loja.ipt.br/produto/saa-assinatura-anual-de-monitoramento-de-normas-tecnicas/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 401,
+  "name": "Ensaio de Teor de Formaldeído em Papel Indicador — ABNT NBR 25424/2021",
+  "slug": "ensaio-de-teor-de-formaldeido-em-papel-indicador-abnt-nbr-25424-2021",
+  "type": "simple",
+  "sku": "LBI-FOR-NBR25424",
+  "short_description": "<p>Ensaio para qualificação de desempenho de dessorção de formaldeído no ciclo de autoclavagem, conforme ABNT NBR 25424/2021 e EN 14180:2014 Anexo D. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Determinação do teor de formaldeído em papel indicador esterilizado em autoclave a formaldeído, para qualificação de desempenho de dessorção no ciclo de autoclavagem, executada conforme ABNT NBR 25424/2021 e EN 14180:2014 Anexo D, pelo Laboratório de Biotecnologia Industrial (LBI) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para fabricantes e usuários de autoclaves a formaldeído que necessitam qualificar o desempenho do equipamento para fins de validação, manutenção de registros regulatórios ou atendimento a requisitos de vigilância sanitária.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-teor-de-formaldeido-em-papel-indicador-abnt-nbr-25424-2021/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Bionano"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-FOR-NBR25424-formaldeido-papel-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Teor de Formaldeído em Papel Indicador — ABNT NBR 25424/2021&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-teor-de-formaldeido-em-papel-indicador-abnt-nbr-25424-2021/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 400,
+  "name": "Análise Microbiológica em Papel",
+  "slug": "analise-microbiologica-em-papel-rdc-640-2022",
+  "type": "simple",
+  "sku": "LBI-MIC-RDC640",
+  "short_description": "<p>Determinação da qualidade microbiológica de papéis para 3 parâmetros: aeróbios totais, pesquisa de patógenos (até 5 espécies) e pesquisa de organismos clostrídeos sulfitorredutores, conforme MS 1480/90 e RDC 640/2022. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Análise para determinação da qualidade microbiológica de papéis, abrangendo 3 parâmetros: aeróbios totais, pesquisa de patógenos (até 5 espécies) e pesquisa de organismos clostrídeos sulfitorredutores, executada conforme MS 1480/90 e RDC 640/2022, pelo Laboratório de Biotecnologia Industrial (LBI) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para fabricantes e distribuidores de papéis de uso sanitário, hospitalar e alimentício que necessitam comprovar conformidade microbiológica para fins de registro, certificação ou controle de qualidade.</p>",
+  "permalink": "https://loja.ipt.br/produto/analise-microbiologica-em-papel-rdc-640-2022/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Bionano"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-MIC-RDC640-microbiologica-papel-1-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Análise Microbiológica em Papel&rdquo;",
+   "url": "https://loja.ipt.br/produto/analise-microbiologica-em-papel-rdc-640-2022/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 387,
+  "name": "Ensaio de Biodegradabilidade Imediata de Materiais Solúveis em Água",
+  "slug": "ensaio-de-biodegradabilidade-imediata-de-materiais-soluveis-em-agua-oecd-301b",
+  "type": "simple",
+  "sku": "LBI-BIO-OECD301B",
+  "short_description": "<p>Determinação da biodegradabilidade de materiais solúveis em água após 28 dias em contato com microrganismos em sistema aquoso sob aeração, conforme OECD 301 item B. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Determinação da biodegradabilidade imediata de materiais solúveis em água após 28 dias em contato com microrganismos, em sistema aquoso sob aeração, executada conforme OECD 301 item B, pelo Laboratório de Biotecnologia Industrial (LBI) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para fabricantes de produtos químicos, detergentes, cosméticos e insumos industriais que necessitam comprovar biodegradabilidade para fins de licenciamento ambiental, certificação ou atendimento a regulamentações nacionais e internacionais.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-biodegradabilidade-imediata-de-materiais-soluveis-em-agua-oecd-301b/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Bionano"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-BIO-OECD301B-biodegradabilidade-agua-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Biodegradabilidade Imediata de Materiais Solúveis em Água&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-biodegradabilidade-imediata-de-materiais-soluveis-em-agua-oecd-301b/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 386,
+  "name": "Ensaio de Atividade Antibacteriana em Tecidos",
+  "slug": "ensaio-de-atividade-antibacteriana-em-tecidos-aatcc-100",
+  "type": "simple",
+  "sku": "LBI-ANB-AATCC100",
+  "short_description": "<p>Avaliação de atividade antibacteriana de tecidos com determinação do grau de atividade em valor percentual, conforme AATCC 100. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Avaliação da atividade antibacteriana de tecidos com determinação do grau de atividade em valor percentual, executada conforme norma AATCC 100, pelo Laboratório de Biotecnologia Industrial (LBI) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para fabricantes de tecidos com tratamento antibacteriano, atendendo a requisitos de certificação, controle de qualidade, exportação ou especificações técnicas da indústria têxtil e hospitalar.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-atividade-antibacteriana-em-tecidos-aatcc-100/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-ANB-AATCC100-antibacteriano-tecidos-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Atividade Antibacteriana em Tecidos&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antibacteriana-em-tecidos-aatcc-100/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 383,
+  "name": "Ensaio de Atividade Antibacteriana em Materiais",
+  "slug": "ensaio-de-atividade-antibacteriana-em-materiais-jis-z-2801",
+  "type": "simple",
+  "sku": "LBI-ANB-JIS2801",
+  "short_description": "<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Avaliação da atividade antibacteriana de materiais — plásticos, polímeros, cerâmicas e tintas aplicadas sobre aço inox — com determinação do grau de atividade em valor logarítmico ou percentual, executada conforme norma japonesa JIS Z 2801, pelo Laboratório de Biotecnologia Industrial (LBI) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para fabricantes de materiais com tratamento antibacteriano que necessitam comprovar eficácia para fins de certificação, exportação ou atendimento a especificações técnicas de clientes.</p>\n<p>Orçamento personalizado<br />\nO valor deste serviço é definido conforme as características da demanda, escopo, quantidade de amostras e condições específicas de execução.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-atividade-antibacteriana-em-materiais-jis-z-2801/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Bionano"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-ANB-JIS2801-antibacteriano-materiais-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Atividade Antibacteriana em Materiais&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antibacteriana-em-materiais-jis-z-2801/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 382,
+  "name": "Ensaio de Atividade Antifúngica em Tintas &#8211; ABNT NBR 15987",
+  "slug": "ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-15987",
+  "type": "simple",
+  "sku": "LBI-ANF-15987",
+  "short_description": "<p>Avaliação de atividade antifúngica de tintas aplicadas sobre corpos de prova de papel cartão submetidos à etapa prévia de lixiviação em água, conforme ABNT NBR 15987. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Avaliação da atividade antifúngica de tintas aplicadas sobre corpos de prova de papel cartão submetidos à etapa prévia de lixiviação em água, executada conforme ABNT NBR 15987, pelo Laboratório de Biotecnologia Industrial (LBI) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para fabricantes de tintas que necessitam avaliar a resistência antifúngica residual após lixiviação, atendendo a requisitos de certificação, controle de qualidade ou especificações normativas.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-15987/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Bionano"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-ANF-15987-antifungico-tinta-lixiviacao-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Atividade Antifúngica em Tintas &#8211; ABNT NBR 15987&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-15987/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 380,
+  "name": "Ensaio de Atividade Antifúngica em Tintas &#8211; ABNT NBR 14941",
+  "slug": "ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-14941",
+  "type": "simple",
+  "sku": "LBI-ANF-14941",
+  "short_description": "<p>Avaliação de atividade antifúngica de tintas aplicadas sobre corpos de prova de papel cartão, conforme ABNT NBR 14941. Realizado pelo LBI/IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Avaliação da atividade antifúngica de tintas aplicadas sobre corpos de prova de papel cartão, executada conforme ABNT NBR 14941, pelo Laboratório de Biotecnologia Industrial (LBI) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para fabricantes de tintas que necessitam comprovar eficácia antifúngica de seus produtos para fins de certificação, controle de qualidade ou atendimento a requisitos normativos.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-14941/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Bionano"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-ANF-14941-Ensaio-de-Atividade-Antifungica-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Atividade Antifúngica em Tintas &#8211; ABNT NBR 14941&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-14941/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 379,
+  "name": "Ensaio de Densidade de Partículas do Solo",
+  "slug": "ensaio-de-densidade-de-particulas-do-solo",
+  "type": "simple",
+  "sku": "SIRGA-DEN",
+  "short_description": "<p>Determinação da densidade de partículas e massa específica de amostra de solo em estado deformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Determinação da densidade de partículas e massa específica de amostra de solo em estado deformado, realizada pelo Setor de Infraestrutura e Recursos Naturais e Geotecnia (SIRGA) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT).  O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para cálculo de índices físicos do solo, projetos de fundações, estudos de compactação e caracterização geotécnica em geral.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-densidade-de-particulas-do-solo/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Geotecnia e Meio Ambiente"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/SIRGA-DEN-Densidade-de-Particulas-1-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Densidade de Partículas do Solo&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-densidade-de-particulas-do-solo/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 370,
+  "name": "Ensaio de Matéria Orgânica do Solo",
+  "slug": "ensaio-de-materia-organica-do-solo",
+  "type": "simple",
+  "sku": "SIRGA-MOR",
+  "short_description": "<p>Determinação do teor de matéria orgânica de amostra de solo em estado deformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Determinação do teor de matéria orgânica de amostra de solo em estado deformado, realizada pelo Setor de Infraestrutura e Recursos Naturais e Geotecnia (SIRGA) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para caracterização de solos agrícolas, estudos de fertilidade, projetos de recuperação de áreas degradadas e investigações ambientais.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-materia-organica-do-solo/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Geotecnia e Meio Ambiente"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/SIRGA-MOR-Materia-Organica-1-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Matéria Orgânica do Solo&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-materia-organica-do-solo/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 368,
+  "name": "Ensaio de Fração de Carbono Orgânico",
+  "slug": "ensaio-de-fracao-de-carbono-organico",
+  "type": "simple",
+  "sku": "SIRGA-FOC",
+  "short_description": "<p>Determinação da fração de carbono orgânico de amostra de solo em estado deformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Determinação da fração de carbono orgânico (FOC) de amostra de solo em estado deformado, realizada pelo Setor de Infraestrutura e Recursos Naturais e Geotecnia (SIRGA) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para estudos de contaminação de solos, avaliações de passivos ambientais, projetos de remediação e investigações de áreas degradadas.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-fracao-de-carbono-organico/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Geotecnia e Meio Ambiente"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/f019e352-3c11-43d2-aca1-fbbf3d772683-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Fração de Carbono Orgânico&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-fracao-de-carbono-organico/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 366,
+  "name": "Ensaio de Permeabilidade do Solo",
+  "slug": "ensaio-de-permeabilidade-do-solo",
+  "type": "simple",
+  "sku": "SIRGA-PER",
+  "short_description": "<p>Determinação da permeabilidade e condutividade hidráulica de amostra de solo em estado deformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Determinação da permeabilidade e condutividade hidráulica de amostra de solo em estado deformado, realizada pelo Setor de Infraestrutura e Recursos Naturais e Geotecnia (SIRGA) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT).  O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para projetos de drenagem, barragens, aterros sanitários, contenção de contaminantes e estudos de rebaixamento de lençol freático.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-permeabilidade-do-solo/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Geotecnia e Meio Ambiente"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/41b1d00b-b75e-4ec3-af7b-ec6687dfabbf-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Permeabilidade do Solo&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-permeabilidade-do-solo/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 363,
+  "name": "Ensaio de Porosidade do Solo",
+  "slug": "ensaio-de-porosidade-do-solo-sirga-ipt",
+  "type": "simple",
+  "sku": "SIRGA-POR",
+  "short_description": "<p>Determinação da porosidade de amostra de solo em estado indeformado, realizada pelo SIRGA/IPT. O cliente coleta e envia a amostra ao laboratório. Resultado entregue em relatório técnico assinado.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Determinação da porosidade total de amostra de solo em estado indeformado, realizada pelo Setor de Infraestrutura e Recursos Naturais e Geotecnia (SIRGA) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT em São Paulo (SP). Após recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para projetos de drenagem, análise de estabilidade de taludes, estudos de contaminação de solos e projetos geotécnicos em geral.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-porosidade-do-solo-sirga-ipt/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Geotecnia e Meio Ambiente"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/SIRGA-POR-Porosidade-do-Solo-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Porosidade do Solo&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-porosidade-do-solo-sirga-ipt/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 356,
+  "name": "Ensaio de Granulometria de Solo",
+  "slug": "ensaio-de-granulometria-de-solo-sirga-ipt",
+  "type": "simple",
+  "sku": "SIRGA-GRN",
+  "short_description": "<p>Ensaio granulométrico de amostra de solo em estado deformado, realizado pelo Setor de Infraestrutura e Recursos Naturais (SIRGA) do IPT. O cliente envia a amostra ao laboratório. Resultado entregue em relatório técnico.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>Determinação da distribuição granulométrica de amostra de solo em estado deformado, conforme metodologia do SIRGA — Setor de Infraestrutura e Recursos Naturais e Geotecnia do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O cliente é responsável pela coleta e envio da amostra ao laboratório do IPT, localizado em São Paulo (SP). Após o recebimento e processamento, o resultado é entregue em relatório técnico assinado por responsável técnico do IPT. Ensaio indicado para caracterização de solos em projetos geotécnicos, estudos ambientais, controle de qualidade de aterros e investigações de campo.</p>",
+  "permalink": "https://loja.ipt.br/produto/ensaio-de-granulometria-de-solo-sirga-ipt/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Bionano"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/1ff2faf8-5a4e-4254-9d11-47ec0961c6e2-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Ensaio de Granulometria de Solo&rdquo;",
+   "url": "https://loja.ipt.br/produto/ensaio-de-granulometria-de-solo-sirga-ipt/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 355,
+  "name": "Tampa de Proteção para Inclinômetro, Polipropileno",
+  "slug": "tampa-de-protecao-para-inclinometro-polipropileno",
+  "type": "simple",
+  "sku": "SOC-TAMPA-INC",
+  "short_description": "<p>Tampa de proteção em polipropileno para tubos de inclinômetro de 4 polegadas. Disponível nas versões superior e inferior. Preço por unidade. Valor inclui IPI de 3,25%. Produto do SOC/IPT.</p>",
+  "description": "<p>Tampa de proteção fabricada em polipropileno, desenvolvida para vedação superior e inferior de tubos de inclinômetro de 4 polegadas utilizados em sistemas de monitoramento geotécnico. Fornecida pelo Setor de Obras Civis (SOC) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). Material de referência com rastreabilidade técnica institucional. Preço por unidade. IPI de 3,25% já incluso no valor apresentado.</p>",
+  "permalink": "https://loja.ipt.br/produto/tampa-de-protecao-para-inclinometro-polipropileno/",
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "prices": {
+   "price": "4966",
+   "regular_price": "4966",
+   "sale_price": "4966",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Geotecnia e Meio Ambiente"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/Tampa-de-Protecao-para-Inclinometro-—-Polipropileno-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Adicionar ao carrinho",
+   "description": "Adicione ao carrinho: &ldquo;Tampa de Proteção para Inclinômetro, Polipropileno&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=100&#038;add-to-cart=355",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 351,
+  "name": "Luva de Emenda para Inclinômetro, Alumínio 30 cm",
+  "slug": "luva-de-emenda-para-inclinometro-aluminio-30-cm",
+  "type": "simple",
+  "sku": "SOC-LUVA-INC",
+  "short_description": "<p>Luva de alumínio com 30 cm de comprimento para emenda de tubos de 4 polegadas em sistemas de monitoramento por inclinômetro. Preço por unidade. Valor inclui IPI de 3,25%. Produto do SOC/IPT.</p>",
+  "description": "<p>Luva de alumínio com 30 cm de comprimento, desenvolvida para a emenda de tubos de 4 polegadas (aproximadamente 101,6 mm) utilizados em sistemas de monitoramento geotécnico por inclinômetro. Fornecida pelo Setor de Obras Civis (SOC) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). Material de referência com rastreabilidade técnica institucional. Preço por unidade. IPI de 3,25% já incluso no valor apresentado.</p>",
+  "permalink": "https://loja.ipt.br/produto/luva-de-emenda-para-inclinometro-aluminio-30-cm/",
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "prices": {
+   "price": "4966",
+   "regular_price": "4966",
+   "sale_price": "4966",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Geotecnia e Meio Ambiente"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/ChatGPT-Image-3-de-ago.-de-2026-08_26_47-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Adicionar ao carrinho",
+   "description": "Adicione ao carrinho: &ldquo;Luva de Emenda para Inclinômetro, Alumínio 30 cm&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=100&#038;add-to-cart=351",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 346,
+  "name": "Tubo para Inclinômetro, Alumínio 4&#8243; × 3 m",
+  "slug": "tubo-para-inclinometro-aluminio-4-x-3-m",
+  "type": "simple",
+  "sku": "SOC-TUBO-INC",
+  "short_description": "",
+  "description": "<p>Tubo de alumínio com diâmetro de 4 polegadas (aproximadamente 101,6 mm) e comprimento de 3 metros, desenvolvido para uso em sistemas de monitoramento geotécnico por inclinômetro. Fornecido pelo Setor de Obras Civis (SOC) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). Material de referência com rastreabilidade técnica institucional. Preço unitário por metro linear. IPI de 3,25% já incluso no valor apresentado.</p>",
+  "permalink": "https://loja.ipt.br/produto/tubo-para-inclinometro-aluminio-4-x-3-m/",
+  "is_purchasable": true,
+  "is_in_stock": true,
+  "prices": {
+   "price": "15291",
+   "regular_price": "15291",
+   "sale_price": "15291",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Geotecnia e Meio Ambiente"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/08/ChatGPT-Image-3-de-ago.-de-2026-08_11_28-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Adicionar ao carrinho",
+   "description": "Adicione ao carrinho: &ldquo;Tubo para Inclinômetro, Alumínio 4&#8243; × 3 m&rdquo;",
+   "url": "/wp-json/wc/store/v1/products?per_page=100&#038;add-to-cart=346",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 83,
+  "name": "Areia Normal Brasileira N.100, Embalagem 25 kg",
+  "slug": "areia-normal-brasileira-n-100-embalagem-25-kg",
+  "type": "simple",
+  "sku": "ANB-N100",
+  "short_description": "<p>Material de referência certificado pelo IPT conforme ABNT NBR 7214:2015. Granulometria N.100 — passante na peneira de 0,3 mm e retido na peneira de 0,15 mm. Embalagem de 25 kg.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade do LMPC.</p>",
+  "permalink": "https://loja.ipt.br/produto/areia-normal-brasileira-n-100-embalagem-25-kg/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Materiais de Referência"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/07/Produto-Areia-2-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Areia Normal Brasileira N.100, Embalagem 25 kg&rdquo;",
+   "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-100-embalagem-25-kg/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 9999,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 82,
+  "name": "Areia Normal Brasileira N.50, Embalagem 25 kg",
+  "slug": "areia-normal-brasileira-n-50-embalagem-25-kg",
+  "type": "simple",
+  "sku": "ANB-N50",
+  "short_description": "<p>Material de referência certificado pelo IPT conforme ABNT NBR 7214:2015. Granulometria N.50 — passante na peneira de 0,6 mm e retido na peneira de 0,3 mm. Embalagem de 25 kg.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade do LMPC.</p>",
+  "permalink": "https://loja.ipt.br/produto/areia-normal-brasileira-n-50-embalagem-25-kg/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Materiais de Referência"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/07/Produto-Areia-2-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Areia Normal Brasileira N.50, Embalagem 25 kg&rdquo;",
+   "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-50-embalagem-25-kg/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 970,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 81,
+  "name": "Areia Normal Brasileira N.30, Embalagem 25 kg",
+  "slug": "areia-normal-brasileira-n-30-embalagem-25-kg",
+  "type": "simple",
+  "sku": "ANB-N30",
+  "short_description": "<p>Material de referência certificado pelo IPT conforme ABNT NBR 7214:2015. Granulometria N.30 — passante na peneira de 1,2 mm e retido na peneira de 0,6 mm. Embalagem de 25 kg.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade do LMPC.</p>",
+  "permalink": "https://loja.ipt.br/produto/areia-normal-brasileira-n-30-embalagem-25-kg/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Materiais de Referência"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/07/Produto-Areia-2-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Areia Normal Brasileira N.30, Embalagem 25 kg&rdquo;",
+   "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-30-embalagem-25-kg/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 810,
+   "multiple_of": 1
+  }
+ },
+ {
+  "id": 79,
+  "name": "Areia Normal Brasileira N.16, Embalagem 25 kg",
+  "slug": "areia-normal-brasileira-n-16-embalagem-25-kg",
+  "type": "simple",
+  "sku": "ANB-N16",
+  "short_description": "<p>Material de referência certificado pelo IPT conforme ABNT NBR 7214:2015. Granulometria N.16 — passante na peneira de 2,4 mm e retido na peneira de 1,2 mm. Embalagem de 25 kg.</p>\n<p><strong>Orçamento personalizado</strong><br />\nO valor deste serviço é definido conforme as características da demanda, quantidade de amostras e condições específicas de execução.</p>\n<p><a href=\"https://loja.ipt.br/#orcamento\" style=\"display:inline-block;background:#00AEEF;color:#FFFFFF;font-family:&apos;Montserrat&apos;,sans-serif;font-weight:700;padding:14px 28px;border-radius:6px;text-decoration:none\"><br />\n  Solicitar orçamento<br />\n</a></p>",
+  "description": "<p>A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade do LMPC.</p>",
+  "permalink": "https://loja.ipt.br/produto/areia-normal-brasileira-n-16-embalagem-25-kg/",
+  "is_purchasable": false,
+  "is_in_stock": true,
+  "prices": {
+   "price": "0",
+   "regular_price": "0",
+   "sale_price": "0",
+   "price_range": null,
+   "currency_code": "BRL",
+   "currency_symbol": "R$",
+   "currency_minor_unit": 2,
+   "currency_decimal_separator": ",",
+   "currency_thousand_separator": ".",
+   "currency_prefix": "R$ ",
+   "currency_suffix": ""
+  },
+  "categories": [
+   {
+    "name": "Materiais de Referência"
+   }
+  ],
+  "tags": [],
+  "images": [
+   {
+    "thumbnail": "https://loja.ipt.br/wp-content/uploads/2026/07/Produto-Areia-2-600x600.png"
+   }
+  ],
+  "add_to_cart": {
+   "text": "Ler mais",
+   "description": "Leia mais sobre &ldquo;Areia Normal Brasileira N.16, Embalagem 25 kg&rdquo;",
+   "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-16-embalagem-25-kg/",
+   "single_text": "Adicionar ao carrinho",
+   "minimum": 1,
+   "maximum": 1000,
+   "multiple_of": 1
+  }
+ }
+]
