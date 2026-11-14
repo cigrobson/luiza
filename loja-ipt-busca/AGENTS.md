@@ -40,6 +40,7 @@ O trabalho é supervisionado por Robson Santos da Silva (LID-IPT). É um sistema
 | `integracao/loja-15-script-topo.js` | Substitui o primeiro `<script>` do widget do topo da `loja-15` |
 | `integracao/loja-15-bloco-catalogo.html` | Substitui o widget do iframe na `loja-15` |
 | `integracao/catalogo-tecnico-css-adicional.css` | CSS adicional com a identidade da loja |
+| `integracao/loja-15-correcoes.css` | Corrige cor e centralização do título do topo da `loja-15` |
 | `dados/servicos.json` e afins | Catálogo técnico estruturado |
 | `dados/produtos_loja.json` | Amostra dos 24 produtos (14/11/2026), usada só na demonstração |
 | `publicar/busca-servicos.json` | Catálogo no formato do plugin, para envio pelo painel |
@@ -117,10 +118,14 @@ Antes de editar, anote o número da revisão atual (Revisões) ou duplique a pá
 1. **Formulário do topo:** no widget HTML do topo, acrescente ao `<form id="ipt-top-search">` os atributos `action="/catalogo-tecnico/" method="get"` e ao `<input id="ipt-top-query">` o atributo `name="q"`. Assim a busca funciona mesmo se o JavaScript falhar.
 2. **Script do topo:** substitua o **primeiro** `<script>` desse widget pelo conteúdo de `integracao/loja-15-script-topo.js`. Ele leva "Buscar" e os atalhos para o catálogo e preserva os ajustes de títulos e selos que o script antigo fazia.
    - Não acrescente barras invertidas ao código: o editor as remove. O script atual já sofreu isso, e sua função `n()` contém `/s+/` no lugar de `/\s+/`.
-3. **Remova:** o widget do iframe do Scriba, o banner com texto gravado na imagem e o `<script>` `addMobileScribaAccess`, que insere o aviso "abra a pesquisa em uma nova página".
-4. **No lugar do iframe:** um widget HTML com `integracao/loja-15-bloco-catalogo.html`.
+3. **Remova:**
+   - o **container inteiro** do iframe (Elementor `70280232`), não só o widget `21dc7708`. Esse container tem margem superior negativa (−367 px no desktop, −234 px no celular) para esconder o cabeçalho do Scriba atrás do banner. É a causa da sobreposição do banner sobre o título no celular. Se ficar vazio na página, ele puxa a seção "Não encontrou o que precisa?" por cima do bloco novo;
+   - o widget do banner com texto gravado na imagem (`209515de`, classe `ipt-banner-scriba`, com `z-index: 20`);
+   - o `<script>` `addMobileScribaAccess`, que insere o aviso "abra a pesquisa em uma nova página".
+4. **No lugar do banner** (dentro do container `70678bbc`): um widget HTML com `integracao/loja-15-bloco-catalogo.html`. Confira no editor que nenhum container vizinho tem margem negativa.
 5. **Texto:** em "Não encontrou o que precisa?", troque "mais de 100 serviços técnicos" por "mais de 560 serviços técnicos".
-6. Limpe o cache do LiteSpeed e confira em 390 px e em desktop: topo, atalhos e bloco novo, sem sobreposição.
+6. **Título do topo ilegível:** o H1 "Encontre a solução técnica adequada para sua necessidade" sai quase preto sobre o fundo azul e deslocado para a esquerda, porque o Kadence sobrescreve cor e margem. Cole `integracao/loja-15-correcoes.css` no CSS adicional.
+7. Limpe o cache do LiteSpeed e confira em 390 px e em desktop: topo legível, atalhos, bloco novo e nenhuma rolagem automática ao abrir a página (o script antigo rolava até o iframe).
 
 Mapa dos atalhos de área, com resultados em 14/11/2026 (catálogo + loja):
 

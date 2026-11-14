@@ -1,0 +1,8 @@
+/* Loja IPT, página loja-15: correções do topo existente (Aparência → Personalizar → CSS adicional).
+   No site de 14/11/2026, o tema Kadence aplica ao H1 do topo cor quase preta (rgb 26,32,44) sobre o fundo
+   azul e anula a centralização. */
+.ipt-catalog-hero .ipt-catalog-title {
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
