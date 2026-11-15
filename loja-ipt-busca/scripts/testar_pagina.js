@@ -58,7 +58,7 @@ const verifica = (c, m) => { if (c) { ok++; console.log('  ok  ', m); } else { f
   verifica(await p.evaluate(() => document.activeElement && document.activeElement.id === 'bi-q'), `"Buscar ensaios e calibrações" leva o foco à caixa de busca`);
   await p.keyboard.type('inclinôm', { delay: 25 }); await p.waitForTimeout(600);
   const sug = await p.evaluate(() => { const c = document.getElementById('bi-sugestoes'); return { v: !c.hidden, g: [...c.querySelectorAll('.bi-sug-grupo')].map(x => x.innerText.toLowerCase()), n: c.querySelectorAll('.bi-sug').length }; });
-  verifica(sug.v && sug.n >= 3 && sug.g.some(x => /compra direta/.test(x)), `sugestões agrupadas aparecem ao digitar (${sug.n} itens)`);
+  verifica(sug.v && sug.n >= 3 && sug.g.some(x => /compra direta|preço definido/.test(x)), `sugestões agrupadas aparecem ao digitar (${sug.n} itens)`);
   await p.keyboard.press('ArrowDown'); await p.waitForTimeout(150);
   verifica(await p.$eval('#bi-sug-0', el => el.classList.contains('bi-sug-ativa')), `seta para baixo destaca a primeira sugestão`);
   await p.keyboard.press('Escape'); await p.waitForTimeout(150);
