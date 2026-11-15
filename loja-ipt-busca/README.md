@@ -6,12 +6,13 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 
 | Caminho | Conteúdo |
 |---|---|
-| `AGENTS.md` | Instruções para o agente (Codex): página `/catalogo-tecnico/`, ajustes na `loja-15`, pendências institucionais |
+| `AGENTS.md` | Procedimento para o Codex, todo pelo painel do WordPress: plugin, página `/catalogo-tecnico/`, ajustes na `loja-15`, coleta semanal, pendências |
+| `visualizacao/` | Imagem de como a loja fica após a implantação |
 | `integracao/` | Script do topo e bloco da `loja-15`, CSS adicional com a paleta do Kadence |
-| `wordpress/busca-servicos-ipt.zip` | **Plugin WordPress 1.1.0**: busca unificada (catálogo técnico + produtos WooCommerce), painel em Ferramentas, shortcode `[busca_servicos_ipt]` |
+| `wordpress/busca-servicos-ipt.zip` | **Plugin WordPress 1.2.0**: busca unificada (catálogo técnico + produtos WooCommerce), coleta do catálogo no Scriba feita pelo próprio WordPress (botão ou semanal), painel em Ferramentas, shortcode `[busca_servicos_ipt]` |
 | `publicar/` | Versão em página avulsa: `index.html` + `busca-servicos.json` |
 | `prototipo/index.html` | Demonstração em arquivo único, funciona offline |
-| `src/` | Código-fonte: `busca.css`, `busca.js`, `busca.html` e `wordpress/` (PHP do plugin: principal, `includes/produtos.php`, `includes/admin.php`, `uninstall.php`) |
+| `src/` | Código-fonte: `busca.css`, `busca.js`, `busca.html` e `wordpress/` (PHP do plugin: principal, `includes/catalogo.php`, `includes/produtos.php`, `includes/admin.php`, `uninstall.php`) |
 | `dados/produtos_loja.json` | Amostra dos 24 produtos da loja (14/11/2026), para a demonstração |
 | `scripts/produtos_loja.py` | Converte a Store API do WooCommerce para o formato da busca |
 | `scripts/fixtures/` | Resposta pública da Store API usada pelos testes |
@@ -25,7 +26,7 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 | `scripts/testar_busca.js` | Teste de aceitação com Playwright (35 verificações com produtos, 31 sem), local ou em URL publicada |
 | `scripts/wp_simulado.php` | WordPress simulado com WooCommerce falso (produtos reais) e tema agressivo, para testar o plugin sem instalar WordPress |
 
-Para atualizar os dados: salvar uma nova resposta de `pesquisas.asp` com `TxtTermo=%`, rodar
+Para atualizar os dados no site: Ferramentas → Busca de Serviços IPT → "Buscar catálogo atualizado no Scriba agora". O conversor PHP do plugin (`includes/catalogo.php`) gera saída idêntica à do extrator Python. Fora do WordPress: salvar uma nova resposta de `pesquisas.asp` com `TxtTermo=%`, rodar
 `python3 -I scripts/extrair_escriba.py <arquivo.html> dados` e depois `python3 -I scripts/montar_prototipo.py`.
 
 ## Protótipo da nova busca

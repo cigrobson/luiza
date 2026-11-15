@@ -1,57 +1,11 @@
 <?php
 /**
- * Página Ferramentas → Busca de Serviços IPT: situação dos dados, envio de catálogo novo
- * e reconstrução do índice de produtos. Apenas administradores (manage_options).
+ * Página Ferramentas → Busca de Serviços IPT: situação dos dados, coleta no Scriba (manual ou semanal),
+ * envio de arquivo de catálogo e reconstrução do índice de produtos. Apenas administradores (manage_options).
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
-}
-
-const BSIPT_TAMANHO_MAXIMO = 5242880; // 5 MB
-
-/**
- * Valida o conteúdo de um busca-servicos.json.
- *
- * @param string $conteudo   Texto do arquivo.
- * @param int    $n_atual    Quantidade de serviços no catálogo em uso (0 = desconhecida).
- * @param bool   $confirmado O administrador confirmou uma redução grande.
- * @return array{ok:bool,mensagem:string,dados:array|null}
- */
-function bsipt_validar_catalogo( $conteudo, $n_atual = 0, $confirmado = false ) {
-	$falha = function ( $m ) {
-		return array( 'ok' => false, 'mensagem' => $m, 'dados' => null );
-	};
-	if ( '' === trim( (string) $conteudo ) ) {
-		return $falha( 'O arquivo está vazio.' );
-	}
-	if ( strlen( $conteudo ) > BSIPT_TAMANHO_MAXIMO ) {
-		return $falha( 'O arquivo passa de 5 MB.' );
-	}
-	$dados = json_decode( $conteudo, true );
-	if ( ! is_array( $dados ) ) {
-		return $falha( 'O arquivo não é um JSON válido.' );
-	}
-	if ( ! isset( $dados['meta'], $dados['servicos'], $dados['use'] ) || ! is_array( $dados['servicos'] ) || ! is_array( $dados['use'] ) ) {
-		return $falha( 'O JSON não tem a estrutura do catálogo (meta, servicos, use). Use o busca-servicos.json gerado por scripts/montar_prototipo.py.' );
-	}
-	$n = count( $dados['servicos'] );
-	if ( $n < 1 ) {
-		return $falha( 'O catálogo não contém serviços.' );
-	}
-	foreach ( $dados['servicos'] as $i => $s ) {
-		if ( ! is_array( $s ) || ! isset( $s['registro'], $s['nome'] ) || ! is_int( $s['registro'] ) || ! is_string( $s['nome'] ) || '' === $s['nome']
-			|| ! isset( $s['laboratorios'], $s['palavras_chave'], $s['certificados_cgcre'], $s['contato'] ) ) {
-			return $falha( sprintf( 'O serviço na posição %d está incompleto (registro, nome, laboratorios, palavras_chave, certificados_cgcre e contato são obrigatórios).', $i + 1 ) );
-		}
-	}
-	if ( empty( $dados['meta']['coletado_em'] ) || ! preg_match( '/^\d{4}-\d{2}-\d{2}$/', (string) $dados['meta']['coletado_em'] ) ) {
-		return $falha( 'meta.coletado_em ausente ou fora do formato AAAA-MM-DD.' );
-	}
-	if ( $n_atual > 0 && $n < $n_atual / 2 && ! $confirmado ) {
-		return $falha( sprintf( 'O arquivo tem %d serviços e o catálogo atual tem %d. Uma queda desse tamanho costuma indicar falha na extração. Se estiver correto, marque a confirmação e envie de novo.', $n, $n_atual ) );
-	}
-	return array( 'ok' => true, 'mensagem' => sprintf( 'Catálogo com %d serviços, coletado em %s.', $n, $dados['meta']['coletado_em'] ), 'dados' => $dados );
 }
 
 /** Resumo do catálogo em uso. */
@@ -121,8 +75,33 @@ function bsipt_admin_pagina() {
 			</tbody>
 		</table>
 
-		<h2>Atualizar o catálogo técnico</h2>
-		<p>Envie o <code>busca-servicos.json</code> gerado por <code>scripts/montar_prototipo.py</code> (pasta <code>publicar/</code>). O arquivo é validado antes de entrar em uso, e o cache das páginas com a busca é limpo em seguida.</p>
+		<h2>Atualizar a partir do Scriba</h2>
+		<?php
+		$sync    = get_option( 'bsipt_ultima_sync' );
+		$semanal = (bool) get_option( 'bsipt_sync_semanal', 0 );
+		$proxima = wp_next_scheduled( BSIPT_EVENTO_SEMANAL );
+		?>
+		<p>O plugin faz uma única consulta à busca pública do Scriba (<code>pesquisas.asp</code>, termo <code>%</code>), converte o resultado e só substitui o catálogo em uso se a validação passar. Se o número de serviços cair mais da metade, o catálogo atual é mantido. Há um intervalo mínimo de uma hora entre coletas.</p>
+		<?php if ( is_array( $sync ) ) : ?>
+			<p><strong>Última coleta:</strong> <?php echo esc_html( $sync['quando'] . ' (' . ( 'agendada' === $sync['origem'] ? 'automática' : 'manual' ) . ') — ' . ( $sync['ok'] ? 'concluída' : 'não aplicada' ) . ': ' . $sync['mensagem'] ); ?></p>
+		<?php endif; ?>
+		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" style="display:inline-block;margin-right:12px">
+			<?php wp_nonce_field( 'bsipt_sincronizar' ); ?>
+			<input type="hidden" name="action" value="bsipt_sincronizar">
+			<?php submit_button( 'Buscar catálogo atualizado no Scriba agora', 'primary', 'submit', false ); ?>
+		</form>
+		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" style="margin-top:12px">
+			<?php wp_nonce_field( 'bsipt_semanal' ); ?>
+			<input type="hidden" name="action" value="bsipt_semanal">
+			<label><input type="checkbox" name="bsipt_semanal" value="1" <?php checked( $semanal ); ?>> Atualizar automaticamente uma vez por semana</label>
+			<?php if ( $semanal && $proxima ) : ?>
+				<span class="description">(próxima: <?php echo esc_html( wp_date( 'd/m/Y H:i', $proxima ) ); ?>)</span>
+			<?php endif; ?>
+			<?php submit_button( 'Salvar', 'secondary', 'submit', false ); ?>
+		</form>
+
+		<h2>Enviar um arquivo de catálogo</h2>
+		<p>Alternativa à coleta acima, para quando houver exportação oficial do Scriba ou um arquivo gerado por <code>scripts/montar_prototipo.py</code> (pasta <code>publicar/</code>). O arquivo é validado antes de entrar em uso.</p>
 		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" enctype="multipart/form-data">
 			<?php wp_nonce_field( 'bsipt_enviar' ); ?>
 			<input type="hidden" name="action" value="bsipt_enviar">
@@ -169,21 +148,11 @@ function bsipt_admin_enviar() {
 		wp_safe_redirect( bsipt_admin_url( 'Arquivo recusado: ' . $v['mensagem'] ) );
 		exit;
 	}
-	$up  = wp_upload_dir( null, false );
-	$dir = trailingslashit( $up['basedir'] ) . 'busca-servicos-ipt';
-	if ( ! wp_mkdir_p( $dir ) ) {
-		wp_safe_redirect( bsipt_admin_url( 'Não foi possível criar a pasta em uploads.' ) );
+	$gravou = bsipt_salvar_catalogo( $v['dados'] );
+	if ( true !== $gravou ) {
+		wp_safe_redirect( bsipt_admin_url( $gravou ) );
 		exit;
 	}
-	$ok = file_put_contents( $dir . '/busca-servicos.json', wp_json_encode( $v['dados'], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) );
-	if ( false === $ok ) {
-		wp_safe_redirect( bsipt_admin_url( 'Não foi possível gravar o arquivo em uploads.' ) );
-		exit;
-	}
-	if ( ! file_exists( $dir . '/index.php' ) ) {
-		file_put_contents( $dir . '/index.php', "<?php // Silêncio.\n" );
-	}
-	bsipt_limpar_cache_paginas();
 	wp_safe_redirect( bsipt_admin_url( 'Catálogo atualizado. ' . $v['mensagem'] ) );
 	exit;
 }
@@ -216,6 +185,29 @@ function bsipt_admin_reindexar() {
 	exit;
 }
 add_action( 'admin_post_bsipt_reindexar', 'bsipt_admin_reindexar' );
+
+function bsipt_admin_sincronizar() {
+	if ( ! current_user_can( 'manage_options' ) ) {
+		wp_die( 'Sem permissão.' );
+	}
+	check_admin_referer( 'bsipt_sincronizar' );
+	$r = bsipt_sincronizar_scriba( 'manual' );
+	wp_safe_redirect( bsipt_admin_url( ( $r['ok'] ? '' : 'Coleta não aplicada: ' ) . $r['mensagem'] ) );
+	exit;
+}
+add_action( 'admin_post_bsipt_sincronizar', 'bsipt_admin_sincronizar' );
+
+function bsipt_admin_semanal() {
+	if ( ! current_user_can( 'manage_options' ) ) {
+		wp_die( 'Sem permissão.' );
+	}
+	check_admin_referer( 'bsipt_semanal' );
+	$ligar = ! empty( $_POST['bsipt_semanal'] );
+	bsipt_definir_sync_semanal( $ligar );
+	wp_safe_redirect( bsipt_admin_url( $ligar ? 'Coleta semanal ligada.' : 'Coleta semanal desligada.' ) );
+	exit;
+}
+add_action( 'admin_post_bsipt_semanal', 'bsipt_admin_semanal' );
 
 /** Link "Configurações" na lista de plugins. */
 function bsipt_link_plugins( $links ) {

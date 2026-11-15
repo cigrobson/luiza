@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Busca de Serviços IPT
  * Description:       Busca unificada no catálogo técnico do IPT (ensaios, análises e calibrações) e nos produtos da loja WooCommerce. Shortcode: [busca_servicos_ipt].
- * Version:           1.1.0
+ * Version:           1.2.0
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            LID-IPT – Laboratório Virtual de Inteligência Digital Aplicada
@@ -14,14 +14,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BSIPT_VERSAO', '1.1.0' );
+define( 'BSIPT_VERSAO', '1.2.0' );
 define( 'BSIPT_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BSIPT_URL', plugin_dir_url( __FILE__ ) );
 
 require_once BSIPT_DIR . 'includes/produtos.php';
+require_once BSIPT_DIR . 'includes/catalogo.php';
 if ( is_admin() ) {
 	require_once BSIPT_DIR . 'includes/admin.php';
 }
+
+/** Ao desativar, cancela a coleta semanal (a opção fica guardada para quando reativar). */
+function bsipt_desativar() {
+	wp_clear_scheduled_hook( 'bsipt_sincronizar_semanal' );
+}
+register_deactivation_hook( __FILE__, 'bsipt_desativar' );
+
+/** Ao reativar, religa a coleta semanal se estava ligada. */
+function bsipt_ativar() {
+	if ( get_option( 'bsipt_sync_semanal' ) && ! wp_next_scheduled( 'bsipt_sincronizar_semanal' ) ) {
+		wp_schedule_event( time() + HOUR_IN_SECONDS, 'weekly', 'bsipt_sincronizar_semanal' );
+	}
+}
+register_activation_hook( __FILE__, 'bsipt_ativar' );
 
 /**
  * Arquivo do catálogo técnico em uso: o enviado pela página de administração

@@ -39,6 +39,8 @@ $CONTEUDO = $_GET['sc'] ?? '[busca_servicos_ipt titulo=""]';
 define('HOUR_IN_SECONDS', 3600);
 $OPCOES = ['woocommerce_hide_out_of_stock_items' => 'no']; $TRANS = [];
 function is_admin() { return false; }
+function register_activation_hook($f, $c) {}
+function register_deactivation_hook($f, $c) {}
 function get_option($k, $d = false) { global $OPCOES; return $OPCOES[$k] ?? $d; }
 function update_option($k, $v, $a = null) { global $OPCOES; $OPCOES[$k] = $v; return true; }
 function get_transient($k) { global $TRANS; return $TRANS[$k] ?? false; }

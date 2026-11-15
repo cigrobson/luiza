@@ -2,7 +2,7 @@
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 
 Busca unificada no catálogo técnico do IPT (ensaios, análises e calibrações) e nos produtos da Loja IPT, sem iframe.
@@ -26,7 +26,7 @@ Endereços aceitos pela página da busca: ?q=termo, &lab=LME,LMM, &mod=compra|so
 
 == Painel ==
 
-Ferramentas → Busca de Serviços IPT: situação dos dados, envio de catálogo novo (validado antes de entrar em uso), retorno ao catálogo do plugin e reconstrução do índice de produtos.
+Ferramentas → Busca de Serviços IPT: situação dos dados; coleta do catálogo no Scriba (botão ou uma vez por semana, desligada por padrão), com validação antes de substituir; envio de arquivo de catálogo; retorno ao catálogo do plugin; reconstrução do índice de produtos.
 
 == Produtos ==
 
@@ -39,6 +39,11 @@ Sobrescreva as variáveis no CSS adicional do tema, sem editar o plugin:
 #busca-ipt { --primary: #1b3a5c; --accent: #00aeef; --bg: transparent; --fonte: "Open Sans", Arial, sans-serif; }
 
 == Changelog ==
+
+= 1.2.0 =
+* Coleta do catálogo no Scriba feita pelo próprio WordPress (botão no painel e opção semanal), sem scripts externos.
+* Validação compartilhada entre coleta e envio de arquivo; o catálogo em uso nunca é trocado por um inválido ou muito menor.
+* Caixas de seleção e botões ajustados para telas estreitas.
 
 = 1.1.0 =
 * Produtos do WooCommerce na mesma busca, com selo e filtro de modalidade (compra direta ou solicitação de serviço).
