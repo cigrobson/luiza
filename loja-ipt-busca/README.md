@@ -6,6 +6,7 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 
 | Caminho | Conteúdo |
 |---|---|
+| `agente-ia/` | Base de conhecimento em Markdown para agente de IA (serviços, produtos, laboratórios, sinônimos) e instruções de sistema sugeridas |
 | `AGENTS.md` | Roteiro para o Codex: novo layout só na página `loja-15`, com o shortcode `[loja_ipt_pagina]` |
 | `visualizacao/` | Imagens: `loja-15-nova-*` (layout final) e versões anteriores das propostas |
 | `integracao/loja-15-css-pagina.css` | CSS da página `loja-15` (só se o cabeçalho for fixo) |
@@ -22,6 +23,7 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 | `dados/vocabulario_use.json` | 132 remissivas do vocabulário controlado (termo não preferido → termo a usar) |
 | `bruto/escriba_busca_todos_2026-11-14.html` | Resposta HTML original (Windows-1252), para auditoria |
 | `scripts/extrair_escriba.py` | HTML do Scriba → `dados/` |
+| `scripts/exportar_indice.js` e `scripts/gerar_base_agente.py` | Geram `dados/indice_busca.json` e a base de `agente-ia/` |
 | `scripts/montar_prototipo.py` | `src/` + `dados/` → `wordpress/`, `publicar/`, `prototipo/` |
 | `scripts/testar_pagina.js` | Teste da página completa (22 verificações) |
 | `scripts/testar_busca.js` | Teste de aceitação com Playwright (35 verificações com produtos, 31 sem), local ou em URL publicada |
