@@ -76,6 +76,8 @@ shutil.copy(src / 'wordpress/busca-servicos-ipt.php', plug)
 shutil.copy(src / 'wordpress/readme.txt', plug)
 shutil.copy(src / 'wordpress/uninstall.php', plug)
 shutil.copy(src / 'pagina.css', plug / 'assets/pagina.css')
+for f in (src / 'wordpress/templates').glob('*.php'):
+    shutil.copy(f, plug / 'templates' / f.name)
 shutil.copytree(src / 'wordpress/includes', plug / 'includes')
 (plug / 'includes/index.php').write_text('<?php // Silêncio.\n', encoding='utf-8')
 (plug / 'assets/busca.css').write_text(css, encoding='utf-8')

@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Busca de Serviços IPT
  * Description:       Busca unificada no catálogo técnico do IPT e nos produtos da loja, com as seções da página da Loja IPT. Shortcodes: [loja_ipt_pagina], [busca_servicos_ipt] e seções [loja_ipt_*].
- * Version:           1.3.0
+ * Version:           1.3.1
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            LID-IPT – Laboratório Virtual de Inteligência Digital Aplicada
@@ -14,13 +14,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BSIPT_VERSAO', '1.3.0' );
+define( 'BSIPT_VERSAO', '1.3.1' );
 define( 'BSIPT_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BSIPT_URL', plugin_dir_url( __FILE__ ) );
 
 require_once BSIPT_DIR . 'includes/produtos.php';
 require_once BSIPT_DIR . 'includes/catalogo.php';
 require_once BSIPT_DIR . 'includes/pagina.php';
+require_once BSIPT_DIR . 'includes/layout.php';
 if ( is_admin() ) {
 	require_once BSIPT_DIR . 'includes/admin.php';
 }

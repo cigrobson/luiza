@@ -51,6 +51,40 @@ function bsipt_admin_pagina() {
 			<div class="notice notice-info is-dismissible"><p><?php echo esc_html( $msg ); ?></p></div>
 		<?php endif; ?>
 
+		<h2 id="layout">Layout novo da página da loja</h2>
+		<?php
+		$lay   = bsipt_layout_config();
+		$link  = $lay['pagina'] ? get_permalink( $lay['pagina'] ) : '';
+		$previa = $link ? add_query_arg( 'bsipt_previa', '1', $link ) : '';
+		?>
+		<table class="widefat striped" style="max-width:760px">
+			<tbody>
+				<tr><th>Página</th><td><?php echo $link ? '<a href="' . esc_url( $link ) . '" target="_blank" rel="noopener">' . esc_html( get_the_title( $lay['pagina'] ) ) . '</a> (ID ' . (int) $lay['pagina'] . ')' : 'não encontrada'; ?></td></tr>
+				<tr><th>Situação</th><td><strong><?php echo $lay['ativo'] ? 'LAYOUT NOVO PUBLICADO — visitantes veem o layout novo' : 'Layout antigo (Elementor) — visitantes veem a página atual'; ?></strong><?php echo $lay['quando'] ? ' · desde ' . esc_html( $lay['quando'] ) : ''; ?></td></tr>
+				<tr><th>Formulário de contato</th><td>WPForms ID <?php echo (int) $lay['form']; ?></td></tr>
+			</tbody>
+		</table>
+		<p>O conteúdo da página no Elementor não é alterado: enquanto o layout novo estiver publicado, ele apenas deixa de ser exibido, e volta com o botão "Voltar ao layout antigo".</p>
+		<?php if ( $previa && ! $lay['ativo'] ) : ?>
+			<p><a class="button button-secondary" id="bsipt-previa" href="<?php echo esc_url( $previa ); ?>" target="_blank" rel="noopener">Pré-visualizar o layout novo (só administradores)</a></p>
+		<?php endif; ?>
+		<?php if ( ! $lay['ativo'] ) : ?>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<?php wp_nonce_field( 'bsipt_layout' ); ?>
+				<input type="hidden" name="action" value="bsipt_layout">
+				<input type="hidden" name="bsipt_acao" value="publicar">
+				<p><label><input type="checkbox" name="bsipt_conferido" value="1" required> Conferi a pré-visualização e quero publicar o layout novo para todos os visitantes</label></p>
+				<?php submit_button( 'Publicar o layout novo', 'primary', 'submit', false, array( 'id' => 'bsipt-publicar' ) ); ?>
+			</form>
+		<?php else : ?>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<?php wp_nonce_field( 'bsipt_layout' ); ?>
+				<input type="hidden" name="action" value="bsipt_layout">
+				<input type="hidden" name="bsipt_acao" value="voltar">
+				<?php submit_button( 'Voltar ao layout antigo (Elementor)', 'secondary', 'submit', false, array( 'id' => 'bsipt-voltar' ) ); ?>
+			</form>
+		<?php endif; ?>
+
 		<h2>Situação</h2>
 		<table class="widefat striped" style="max-width:760px">
 			<tbody>
@@ -208,6 +242,36 @@ function bsipt_admin_semanal() {
 	exit;
 }
 add_action( 'admin_post_bsipt_semanal', 'bsipt_admin_semanal' );
+
+function bsipt_admin_layout() {
+	if ( ! current_user_can( 'manage_options' ) ) {
+		wp_die( 'Sem permissão.' );
+	}
+	check_admin_referer( 'bsipt_layout' );
+	$c    = bsipt_layout_config();
+	$acao = isset( $_POST['bsipt_acao'] ) ? sanitize_key( wp_unslash( $_POST['bsipt_acao'] ) ) : '';
+	if ( 'publicar' === $acao ) {
+		if ( empty( $_POST['bsipt_conferido'] ) ) {
+			wp_safe_redirect( bsipt_admin_url( 'Marque a confirmação de que conferiu a pré-visualização.' ) . '#layout' );
+			exit;
+		}
+		$c['ativo']  = true;
+		$c['quando'] = current_time( 'd/m/Y H:i' );
+		bsipt_layout_salvar( $c );
+		wp_safe_redirect( bsipt_admin_url( 'Layout novo publicado. Os visitantes já veem a página nova.' ) . '#layout' );
+		exit;
+	}
+	if ( 'voltar' === $acao ) {
+		$c['ativo']  = false;
+		$c['quando'] = current_time( 'd/m/Y H:i' );
+		bsipt_layout_salvar( $c );
+		wp_safe_redirect( bsipt_admin_url( 'Layout antigo restaurado. Os visitantes voltaram a ver a página do Elementor.' ) . '#layout' );
+		exit;
+	}
+	wp_safe_redirect( bsipt_admin_url() );
+	exit;
+}
+add_action( 'admin_post_bsipt_layout', 'bsipt_admin_layout' );
 
 /** Link "Configurações" na lista de plugins. */
 function bsipt_link_plugins( $links ) {

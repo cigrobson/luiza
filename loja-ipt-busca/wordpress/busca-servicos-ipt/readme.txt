@@ -2,7 +2,7 @@
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 
 Busca unificada no catálogo técnico do IPT (ensaios, análises e calibrações) e nos produtos da Loja IPT, sem iframe.
@@ -53,6 +53,9 @@ Sobrescreva as variáveis no CSS adicional do tema, sem editar o plugin:
 #busca-ipt { --primary: #1b3a5c; --accent: #00aeef; --bg: transparent; --fonte: "Open Sans", Arial, sans-serif; }
 
 == Changelog ==
+
+= 1.3.1 =
+* Ferramentas → Busca de Serviços IPT → "Layout novo da página da loja": pré-visualização só para administradores, publicar e voltar ao layout antigo com um clique, sem editar o Elementor (página ID 565, formulário 232).
 
 = 1.3.0 =
 * Seções da página da Loja IPT conforme o layout aprovado ([loja_ipt_pagina] e [loja_ipt_*]), com destaques de produtos, busca em modo vitrine com sugestões e formulário com a faixa "Sua busca".

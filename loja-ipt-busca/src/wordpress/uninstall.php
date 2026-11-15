@@ -4,6 +4,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 delete_option( 'bsipt_paginas' );
+delete_option( 'bsipt_layout_loja' );
 delete_option( 'bsipt_ultima_sync' );
 delete_option( 'bsipt_sync_semanal' );
 delete_transient( 'bsipt_sync_trava' );
