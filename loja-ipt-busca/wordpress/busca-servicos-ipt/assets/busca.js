@@ -13,6 +13,34 @@ function lerProdutos(){
   return Array.isArray(window.BUSCA_IPT_PRODUTOS) ? window.BUSCA_IPT_PRODUTOS : [];
 }
 const PRODUTOS = lerProdutos();
+
+/* ===================== MAPA DE ÁREAS TÉCNICAS E TIPOS DE SOLUÇÃO =====================
+   Único lugar a editar para mudar nomes, laboratórios ou o enquadramento dos produtos.
+   id: usado nos endereços (?area=..., ?solucao=...) e nos links da página.
+   Serviços do catálogo técnico entram na área pelo laboratório; produtos da loja pela
+   categoria do WooCommerce ou pelo ID (PRODUTO_AREA / PRODUTO_SOLUCAO), sem alterar a loja. */
+const AREAS = [
+  {id:'papel-embalagem',         nome:'Papel e Embalagem',                         labs:['LCPE'],                        cats:[]},
+  {id:'metrologia-calibracao',   nome:'Metrologia e Calibração',                   labs:['LME','LMM','LV','LRM'],        cats:['Energia e Metrologia']},
+  {id:'construcao-civil',        nome:'Construção Civil',                          labs:['LMPC','LTDC','LEL'],           cats:['Materiais de Referência']},
+  {id:'energia-conforto',        nome:'Energia e Conforto Ambiental',              labs:['LGE','LCAP'],                  cats:[]},
+  {id:'bioenergia-combustiveis', nome:'Bioenergia e Combustíveis',                 labs:['LBE'],                         cats:[]},
+  {id:'seguranca-fogo',          nome:'Segurança ao Fogo',                         labs:['LSFEX'],                       cats:[]},
+  {id:'quimica-processos',       nome:'Química e Processos',                       labs:['LQM','LPP','LCP'],             cats:[]},
+  {id:'meio-ambiente',           nome:'Meio Ambiente, Geotecnia e Biotecnologia',  labs:['LARI','SIRGA','LBI','NUTABES'], cats:['Geotecnia e Meio Ambiente','Bionano']},
+];
+const SOLUCOES = [
+  {id:'ensaios-analises',            nome:'Ensaios e Análises'},
+  {id:'calibracoes',                 nome:'Calibrações'},
+  {id:'materiais-referencia',        nome:'Materiais de Referência'},
+  {id:'normas-tecnicas',             nome:'Normas Técnicas — SAA'},
+  {id:'diagnosticos-laudos',         nome:'Diagnósticos e Laudos'},
+  {id:'consultoria-desenvolvimento', nome:'Consultoria e Desenvolvimento'},
+];
+/* Produtos sem categoria coerente na loja (IDs do WooCommerce em 15/11/2026). */
+const PRODUTO_AREA    = {440:'meio-ambiente', 386:'meio-ambiente'};
+const PRODUTO_SOLUCAO = {436:'materiais-referencia', 440:'diagnosticos-laudos'};
+/* ==================================================================================== */
 function iniciar(DADOS, semCatalogo){
 
 /* ---------- texto: normalização e caixa ---------- */
@@ -54,11 +82,18 @@ const P = PRODUTOS.map(p=>{
     fonte:'loja', mod: p.compra ? 'compra' : 'solicitacao', registro:null, id:p.id,
     tipo_servico: TIPO_LOJA, nome:p.nome||'', descricao:p.descricao||'', palavras_chave:[...cats,...tags],
     laboratorios:[], certificados_cgcre:[], contato:{url:p.url}, url:p.url, preco:p.preco||'',
-    carrinho:p.carrinho||'', compra:!!p.compra, sku:p.sku||'', categorias:cats,
+    carrinho:p.carrinho||'', compra:!!p.compra, sku:p.sku||'', categorias:cats, imagem:p.imagem||'',
     nomeV:p.nome||'', descV:p.descricao||'', kwV:cats, labsV:[], cgcre:false,
   };
   o.tNome = tokens(o.nome); o.tKw = tokens([...cats,...tags,o.sku].join(' ')); o.tDesc = tokens(o.descricao);
   o.tLab = tokens(cats.join(' ')); o.fNome = norm(o.nome); o.fAll = norm([o.nome,o.descricao,cats.join(' '),tags.join(' ')].join(' '));
+  o.area = PRODUTO_AREA[p.id] || (AREAS.find(a=>a.cats.some(c=>cats.includes(c)))||{}).id || null;
+  const nn = norm(o.nome);
+  o.sol = PRODUTO_SOLUCAO[p.id]
+    || (cats.some(c=>/^SAA/.test(c)) || /^saa\b/.test(nn) ? 'normas-tecnicas'
+    : cats.includes('Materiais de Referência') ? 'materiais-referencia'
+    : /^diagnostic/.test(nn) ? 'diagnosticos-laudos'
+    : /^(ensaio|analise)/.test(nn) ? 'ensaios-analises' : null);
   return o;
 });
 const SC = DADOS.servicos.map(s=>{
@@ -76,12 +111,19 @@ const SC = DADOS.servicos.map(s=>{
   o.fNome = norm(s.nome); o.fAll = norm([s.nome,s.descricao,s.palavras_chave.join(' ')].join(' '));
   return o;
 });
+SC.forEach(s=>{
+  s.area = (AREAS.find(a=>s.laboratorios.some(l=>a.labs.includes(l.sigla)))||{}).id || null;
+  const nn = norm(s.nome), tudo = norm(s.nome+' '+(s.descricao||''));
+  s.sol = s.tipo_servico==='Serviços tecnológicos'
+    ? (/(diagnostic|identificac|parecer)/.test(nn) ? 'diagnosticos-laudos' : 'consultoria-desenvolvimento')
+    : (tudo.includes('calibra') ? 'calibracoes' : 'ensaios-analises');
+});
 const S = [...P, ...SC];
+const NOME_AREA = Object.fromEntries(AREAS.map(a=>[a.id,a.nome])), NOME_SOL = Object.fromEntries(SOLUCOES.map(x=>[x.id,x.nome]));
 const VOCAB = new Set(); S.forEach(s=>[s.tNome,s.tKw,s.tDesc,s.tLab].forEach(a=>a.forEach(t=>VOCAB.add(t))));
 const VOCARR = [...VOCAB];
 const USE = DADOS.use.map(u=>({termo:u.termo, use:u.use, n:norm(u.termo), nu:norm(u.use)}));
 const LABS = (()=>{const m=new Map();S.forEach(s=>s.labsV.forEach(l=>{if(!m.has(l.sigla))m.set(l.sigla,l.nome)}));return [...m].sort((a,b)=>a[0].localeCompare(b[0]))})();
-const TIPOS = [...new Set(SC.map(s=>s.tipo_servico))].concat(P.length?[TIPO_LOJA]:[]);
 const MODS = [['compra','Compra direta','Preço definido, compra imediata'],['solicitacao','Solicitação de serviço','Avaliação técnica e orçamento']];
 
 function lev(a,b,max){
@@ -155,8 +197,9 @@ function sinonimos(qn){
 }
 
 /* ---------- estado ---------- */
-const st = {q:'', labs:new Set(), tipos:new Set(), mods:new Set(), cgcre:false, sort:'rel', shown:24, ou:false};
-const CHAVES_URL = ['q','lab','tipo','mod','cgcre','ordem','servico'];
+const VITRINE = RAIZ.dataset.layout === 'vitrine';
+const st = {q:'', labs:new Set(), tipos:new Set(), mods:new Set(), areas:new Set(), sols:new Set(), cgcre:false, sort:'rel', shown:24, ou:false, aberto:!VITRINE};
+const CHAVES_URL = ['q','lab','tipo','mod','area','solucao','cgcre','ordem','servico'];
 const $ = id => document.getElementById('bi-'+id);
 function lerURL(){
   try{
@@ -165,6 +208,9 @@ function lerURL(){
     (p.get('lab')||'').split(',').filter(Boolean).forEach(x=>st.labs.add(x));
     (p.get('tipo')||'').split(',').filter(Boolean).forEach(x=>st.tipos.add(x));
     (p.get('mod')||'').split(',').filter(x=>x==='compra'||x==='solicitacao').forEach(x=>st.mods.add(x));
+    (p.get('area')||'').split(',').filter(x=>NOME_AREA[x]).forEach(x=>st.areas.add(x));
+    (p.get('solucao')||'').split(',').filter(x=>NOME_SOL[x]).forEach(x=>st.sols.add(x));
+    if(['q','area','solucao','lab','mod','cgcre','servico'].some(k=>p.get(k))) st.aberto = true;
     return p.get('servico');
   }catch(e){return null}
 }
@@ -176,6 +222,8 @@ function gravarURL(servico){
     if(st.labs.size) p.set('lab',[...st.labs].join(','));
     if(st.tipos.size) p.set('tipo',[...st.tipos].join(','));
     if(st.mods.size) p.set('mod',[...st.mods].join(','));
+    if(st.areas.size) p.set('area',[...st.areas].join(','));
+    if(st.sols.size) p.set('solucao',[...st.sols].join(','));
     if(st.cgcre) p.set('cgcre','1');
     if(st.sort!=='rel') p.set('ordem',st.sort);
     if(servico) p.set('servico',servico);
@@ -211,13 +259,17 @@ function buscar(){
   const base = vazio ? S.slice() : [...pontos.keys()];
   const passa = (s,ignorar) => (ignorar==='lab'||!st.labs.size||s.laboratorios.some(l=>st.labs.has(l.sigla)))
     && (ignorar==='tipo'||!st.tipos.size||st.tipos.has(s.tipo_servico)) && (ignorar==='cgcre'||!st.cgcre||s.cgcre)
-    && (ignorar==='mod'||!st.mods.size||st.mods.has(s.mod));
-  const cont = {lab:new Map(), tipo:new Map(), mod:new Map(), cgcre:0};
+    && (ignorar==='mod'||!st.mods.size||st.mods.has(s.mod))
+    && (ignorar==='area'||!st.areas.size||st.areas.has(s.area))
+    && (ignorar==='sol'||!st.sols.size||st.sols.has(s.sol));
+  const cont = {lab:new Map(), tipo:new Map(), mod:new Map(), area:new Map(), sol:new Map(), cgcre:0};
   base.forEach(s=>{
     if(passa(s,'lab')) s.laboratorios.forEach(l=>cont.lab.set(l.sigla,(cont.lab.get(l.sigla)||0)+1));
     if(passa(s,'tipo')) cont.tipo.set(s.tipo_servico,(cont.tipo.get(s.tipo_servico)||0)+1);
     if(passa(s,'cgcre') && s.cgcre) cont.cgcre++;
     if(passa(s,'mod')) cont.mod.set(s.mod,(cont.mod.get(s.mod)||0)+1);
+    if(passa(s,'area') && s.area) cont.area.set(s.area,(cont.area.get(s.area)||0)+1);
+    if(passa(s,'sol') && s.sol) cont.sol.set(s.sol,(cont.sol.get(s.sol)||0)+1);
   });
   let lista = base.filter(s=>passa(s));
   const chave=s=>s.nomeV.replace(/^[^\p{L}]+/u,'');
@@ -229,6 +281,8 @@ function buscar(){
   const termosMarca = [...new Set([...a.termos.concat(extras).flatMap(x=>x.vs), ...a.frases.flatMap(f=>tokens(f))])].filter(v=>v.length>=2 && !STOP.has(v));
   ultimo = {lista, termosMarca};
   render(lista, cont, notas, vazio, termosMarca);
+  $('resultados').hidden = !st.aberto;
+  renderSugestoes();
 }
 
 /* ---------- render ---------- */
@@ -268,7 +322,7 @@ function card(s,tm){
     ${kws}
     <div class="bi-actions">
       <button class="bi-btn bi-sec" type="button" data-det="${s.registro}">Ver detalhes</button>
-      <a class="bi-btn bi-pri" href="${esc(s.contato.url)}" target="_blank" rel="noopener">Solicitar serviço</a>
+      <a class="bi-btn bi-pri" href="${esc(s.contato.url)}" target="_blank" rel="noopener">Solicitar orçamento</a>
     </div>
   </article>`;
 }
@@ -281,7 +335,7 @@ function opcoes(el, itens, sel, cont, nome){
 }
 function render(lista, cont, notas, vazio, tm){
   const n = lista.length;
-  const semFiltro = vazio && !st.labs.size && !st.tipos.size && !st.mods.size && !st.cgcre;
+  const semFiltro = vazio && !st.labs.size && !st.tipos.size && !st.mods.size && !st.areas.size && !st.sols.size && !st.cgcre;
   $('count').innerHTML = semFiltro
     ? (P.length && SC.length ? `<strong>${n}</strong> itens: ${SC.length} serviços do catálogo técnico e ${P.length} da Loja IPT`
        : P.length ? `<strong>${n}</strong> itens da Loja IPT` : `<strong>${n}</strong> serviços no catálogo`)
@@ -290,20 +344,141 @@ function render(lista, cont, notas, vazio, tm){
   $('grid').innerHTML = lista.slice(0,st.shown).map(s=>card(s,tm)).join('');
   $('more').innerHTML = n>st.shown ? `<button class="bi-btn bi-sec" type="button" id="bi-maisbtn">Mostrar mais ${Math.min(24,n-st.shown)} de ${n-st.shown} restantes</button>` : '';
   if(!n){
+    const temForm = !!formularioContato();
+    const termo = st.q.trim();
+    const msg = termo ? `Busquei no catálogo técnico por "${termo}" e não encontrei o que preciso. Descrição da necessidade: ` : 'Não encontrei no catálogo técnico o que preciso. Descrição da necessidade: ';
+    const acao = temForm
+      ? `<button class="bi-btn bi-pri" type="button" style="display:inline-flex;padding:0 18px" data-preencher-contato="${esc(msg)}" data-contato-rotulo="${esc(termo ? '“'+termo+'”' : 'catálogo técnico')}">Descrever minha necessidade ao IPT</button>`
+      : `<a class="bi-btn bi-pri" style="display:inline-flex;padding:0 18px" href="https://ipt.br/contato" target="_blank" rel="noopener">Falar com o IPT</a>`;
     $('grid').innerHTML = `<div class="bi-empty" style="grid-column:1/-1"><h2>Nenhum resultado encontrado</h2>
       <p>Tente outra palavra, use o singular ou remova filtros. Alguns laboratórios atendem demandas que não estão neste catálogo.</p>
-      <p><a class="bi-btn bi-pri" style="display:inline-flex;padding:0 18px" href="https://ipt.br/contato" target="_blank" rel="noopener">Falar com o IPT</a></p></div>`;
+      <p>${acao}</p></div>`;
   }
   opcoes($('flab'), LABS.map(([sg,nm])=>[sg,sg,nm]), st.labs, cont.lab, 'lab');
-  opcoes($('ftipo'), TIPOS.map(t=>[t,t]), st.tipos, cont.tipo, 'tipo');
+  opcoes($('farea'), AREAS.map(a=>[a.id,a.nome]), st.areas, cont.area, 'area');
+  opcoes($('fsol'), SOLUCOES.map(x=>[x.id,x.nome]), st.sols, cont.sol, 'sol');
+  renderAtivos();
   if(P.length) opcoes($('fmod'), MODS, st.mods, cont.mod, 'mod');
   $('fcgcre').checked = st.cgcre; $('ncgcre').textContent = cont.cgcre;
-  const nf = st.labs.size+st.tipos.size+st.mods.size+(st.cgcre?1:0);
+  const nf = st.labs.size+st.tipos.size+st.mods.size+st.areas.size+st.sols.size+(st.cgcre?1:0);
   $('factive').textContent = nf ? nf+(nf===1?' ativo':' ativos') : '';
   $('freset').style.display = nf ? '' : 'none';
   $('clear').style.display = st.q ? 'block' : 'none';
   $('sort').value = st.sort;
 }
+
+function renderAtivos(){
+  const tags = [
+    ...[...st.areas].map(v=>['area',v,'Área: '+NOME_AREA[v]]),
+    ...[...st.sols].map(v=>['sol',v,'Tipo: '+NOME_SOL[v]]),
+    ...[...st.mods].map(v=>['mod',v,v==='compra'?'Compra direta':'Solicitação de serviço']),
+    ...(st.cgcre?[['cgcre','1','Acreditado Cgcre']]:[]),
+    ...[...st.labs].map(v=>['lab',v,'Laboratório: '+v]),
+  ];
+  $('ativos').innerHTML = tags.map(([f,v,rot])=>`<button type="button" class="bi-tag" data-remover="${f}" data-valor="${esc(v)}" aria-label="Remover filtro ${esc(rot)}">${esc(rot)} <span aria-hidden="true">✕</span></button>`).join('');
+  $('ativos').hidden = !tags.length;
+}
+
+/* ---------- sugestões (modo vitrine) ---------- */
+let sugAtiva = -1, sugItens = [];
+const ICONE_CAL = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 13l3-3M10 2h4"/></svg>';
+const ICONE_ENS = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.6 18.6A1.6 1.6 0 0 0 6 21h12a1.6 1.6 0 0 0 1.4-2.4L14 9V3"/></svg>';
+function fecharSugestoes(){ $('sugestoes').hidden = true; $('q').setAttribute('aria-expanded','false'); $('q').removeAttribute('aria-activedescendant'); sugAtiva = -1; }
+function renderSugestoes(){
+  const caixa = $('sugestoes');
+  if(!VITRINE || st.aberto || !st.q.trim() || document.activeElement !== $('q')){ fecharSugestoes(); return; }
+  const tm = ultimo.termosMarca, L = ultimo.lista;
+  const compra = L.filter(s=>s.fonte==='loja' && s.compra).slice(0,3);
+  const outros = L.filter(s=>!(s.fonte==='loja' && s.compra)).slice(0,4);
+  sugItens = [...compra, ...outros];
+  const linha = (s,i) => {
+    const loja = s.fonte==='loja';
+    const ic = loja ? (s.imagem ? `<img src="${esc(s.imagem)}" alt="">` : '') : (s.sol==='calibracoes' ? ICONE_CAL : ICONE_ENS);
+    const sub = loja ? esc(s.categorias.join(' · ') || 'Loja IPT') : `${esc(s.labsV.map(l=>l.sigla).join(', '))} · ${esc(s.labsV[0] ? s.labsV[0].nome : '')}`;
+    const lado = loja && s.compra ? `<span class="bi-sug-preco">${esc(s.preco)}</span>` : (s.cgcre ? `<span class="bi-sug-cgcre">Cgcre ${esc((s.certificados_cgcre[0]||{}).codigo||'')}</span>` : '');
+    const acao = loja && s.compra
+      ? (s.carrinho ? `<a class="bi-sug-acao bi-sug-pri" href="${esc(s.carrinho)}">Adicionar ao carrinho</a>` : `<a class="bi-sug-acao bi-sug-pri" href="${esc(s.url)}">Ver opções</a>`)
+      : `<a class="bi-sug-acao" href="${esc(loja ? s.url : s.contato.url)}"${loja?'':' target="_blank" rel="noopener"'}>Solicitar orçamento</a>`;
+    return `<div class="bi-sug${i===sugAtiva?' bi-sug-ativa':''}" role="option" id="bi-sug-${i}" data-sug="${i}" aria-selected="${i===sugAtiva}">
+      <span class="bi-sug-ic${loja?' bi-sug-foto':''}">${ic}</span>
+      <span class="bi-sug-txt"><b>${marcar(s.nomeV,tm)}</b><small>${sub}</small></span>
+      ${lado}${acao}</div>`;
+  };
+  let h = '';
+  if(compra.length) h += `<p class="bi-sug-grupo">Compra direta · preço fixo</p>` + compra.map((s,i)=>linha(s,i)).join('');
+  if(outros.length) h += `<p class="bi-sug-grupo">Serviços técnicos · sob orçamento</p>` + outros.map((s,i)=>linha(s,compra.length+i)).join('');
+  if(!sugItens.length){
+    const msg = `Busquei no catálogo técnico por "${st.q.trim()}" e não encontrei o que preciso. Descrição da necessidade: `;
+    h = `<p class="bi-sug-vazio">Nenhum resultado para “${esc(st.q.trim())}”.${formularioContato()?` <button type="button" class="bi-sug-link" data-preencher-contato="${esc(msg)}" data-contato-rotulo="${esc('“'+st.q.trim()+'”')}">Descrever minha necessidade ao IPT</button>`:''}</p>`;
+  }
+  h += `<div class="bi-sug-rodape"><button type="button" class="bi-sug-todos" data-ver-todos>Ver todos os resultados para “${esc(st.q.trim())}”</button><span>↑↓ navegar · Enter abrir · Esc fechar</span></div>`;
+  caixa.innerHTML = h; caixa.hidden = false; $('q').setAttribute('aria-expanded','true');
+  if(sugAtiva>=0) $('q').setAttribute('aria-activedescendant','bi-sug-'+sugAtiva); else $('q').removeAttribute('aria-activedescendant');
+}
+function abrirSugestao(i){
+  const s = sugItens[i]; if(!s) return;
+  if(s.fonte==='loja') { location.href = s.url; return; }
+  fecharSugestoes(); detalhes(s.registro);
+}
+function confirmarBusca(){
+  fecharSugestoes(); st.aberto = true; st.shown = 24;
+  buscar(); gravarURL(); if(VITRINE) rolarPara($('resultados'));
+}
+
+/* ---------- integração com a página (blocos de área e categoria, formulário de contato) ---------- */
+function formularioContato(){
+  return document.querySelector('[data-busca-contato]') || document.querySelector('.wpforms-form') || null;
+}
+function topoFixo(){
+  const v = parseFloat(getComputedStyle(RAIZ).getPropertyValue('--topo-fixo'));
+  return isNaN(v) ? 12 : v;
+}
+function rolarPara(el){
+  if(!el) return;
+  const y = el.getBoundingClientRect().top + window.scrollY - topoFixo() - 8;
+  window.scrollTo({top:Math.max(0,y), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+}
+function aplicarFiltro({area, solucao, termo}){
+  st.areas.clear(); st.sols.clear(); st.labs.clear(); st.tipos.clear(); st.mods.clear(); st.cgcre=false;
+  if(area && NOME_AREA[area]) st.areas.add(area);
+  if(solucao && NOME_SOL[solucao]) st.sols.add(solucao);
+  st.q = termo || ''; $('q').value = st.q; st.shown = 24; st.aberto = true;
+  buscar(); gravarURL(); rolarPara(VITRINE ? $('resultados') : RAIZ);
+}
+function preencherContato(texto, rotulo, prefixo){
+  const f = formularioContato(); if(!f) return false;
+  const faixa = document.querySelector('[data-sua-busca]');
+  if(faixa){ const alvo = faixa.querySelector('[data-sua-busca-texto]'); if(alvo) alvo.textContent = rotulo || texto;
+    const pre = faixa.querySelector('[data-sua-busca-prefixo]'); if(pre) pre.textContent = prefixo || 'Sua busca:'; faixa.hidden = false; faixa.dataset.textoInserido = texto; }
+  const campo = f.querySelector('textarea') || f.querySelector('input[type="text"]');
+  if(campo){
+    campo.value = texto;
+    campo.dispatchEvent(new Event('input',{bubbles:true})); campo.dispatchEvent(new Event('change',{bubbles:true}));
+  }
+  rolarPara(f);
+  const vazio = [...f.querySelectorAll('input:not([type=hidden]):not([type=submit]),textarea')].find(x=>!x.value);
+  setTimeout(()=>{ try{ (vazio||campo).focus({preventScroll:true}); }catch(_){ } }, 450);
+  return true;
+}
+document.addEventListener('click', e=>{
+  const alvo = e.target.closest('[data-busca-area],[data-busca-solucao],[data-busca-termo]');
+  if(alvo){ e.preventDefault(); aplicarFiltro({area:alvo.dataset.buscaArea, solucao:alvo.dataset.buscaSolucao, termo:alvo.dataset.buscaTermo}); return; }
+  const ct = e.target.closest('[data-preencher-contato]');
+  if(ct && preencherContato(ct.dataset.preencherContato, ct.dataset.contatoRotulo, ct.dataset.contatoPrefixo)) { e.preventDefault(); return; }
+  const rm = e.target.closest('[data-sua-busca-remover]');
+  if(rm){ e.preventDefault(); const faixa = rm.closest('[data-sua-busca]'); const f = formularioContato();
+    const campo = f && (f.querySelector('textarea') || f.querySelector('input[type="text"]'));
+    if(campo && faixa && campo.value.indexOf(faixa.dataset.textoInserido || '\u0000') === 0) campo.value = campo.value.slice(faixa.dataset.textoInserido.length);
+    if(faixa) faixa.hidden = true; return; }
+  const fo = e.target.closest('[data-busca-foco]');
+  if(fo){ e.preventDefault(); rolarPara(RAIZ); setTimeout(()=>{ try{ $('q').focus({preventScroll:true}); }catch(_){ } }, 450); return; }
+});
+document.addEventListener('submit', e=>{
+  const f = e.target.closest('form[data-busca-ipt]'); if(!f) return;
+  e.preventDefault();
+  const campo = f.querySelector('[name="q"]') || f.querySelector('input[type="search"],input[type="text"]');
+  aplicarFiltro({termo: campo ? campo.value.trim() : ''});
+});
 
 /* ---------- detalhes ---------- */
 function normas(t){
@@ -328,7 +503,7 @@ function detalhes(reg){
       <dt>Código no Scriba</dt><dd>${s.registro}</dd>
     </dl></div>
     <div class="bi-dlg-foot">
-      <a class="bi-btn bi-pri" href="${esc(s.contato.url)}" target="_blank" rel="noopener">Solicitar serviço</a>
+      <a class="bi-btn bi-pri" href="${esc(s.contato.url)}" target="_blank" rel="noopener">Solicitar orçamento</a>
       <button class="bi-btn bi-sec" type="button" data-copy="${s.registro}">Copiar link deste serviço</button>
     </div>`;
   if(!$('dlg').open) $('dlg').showModal();
@@ -337,18 +512,36 @@ function detalhes(reg){
 
 /* ---------- eventos ---------- */
 let tmr;
-$('q').addEventListener('input', e=>{ st.q=e.target.value; st.shown=24; clearTimeout(tmr); tmr=setTimeout(()=>{buscar();gravarURL()},140); });
-$('clear').addEventListener('click', ()=>{ st.q=''; $('q').value=''; st.shown=24; buscar(); gravarURL(); $('q').focus(); });
+$('q').addEventListener('input', e=>{ st.q=e.target.value; st.shown=24; sugAtiva=-1; clearTimeout(tmr); tmr=setTimeout(()=>{buscar(); if(st.aberto) gravarURL();},140); });
+$('form').addEventListener('submit', e=>{ e.preventDefault();
+  if(VITRINE && !$('sugestoes').hidden && sugAtiva>=0){ abrirSugestao(sugAtiva); return; }
+  st.q = $('q').value; confirmarBusca(); });
+$('q').addEventListener('keydown', e=>{
+  if($('sugestoes').hidden) return;
+  if(e.key==='ArrowDown' || e.key==='ArrowUp'){ e.preventDefault(); const n = sugItens.length; if(!n) return;
+    sugAtiva = e.key==='ArrowDown' ? (sugAtiva+1)%n : (sugAtiva<=0 ? n-1 : sugAtiva-1); renderSugestoes();
+    const el = document.getElementById('bi-sug-'+sugAtiva); if(el) el.scrollIntoView({block:'nearest'}); }
+  else if(e.key==='Escape'){ e.preventDefault(); fecharSugestoes(); }
+});
+$('q').addEventListener('focus', ()=>{ if(VITRINE && !st.aberto && st.q.trim()) renderSugestoes(); });
+document.addEventListener('click', e=>{ if(!$('sugestoes').hidden && !e.target.closest('.bi-caixa')) fecharSugestoes(); });
+$('clear').addEventListener('click', ()=>{ st.q=''; $('q').value=''; st.shown=24;
+  if(VITRINE && !st.areas.size && !st.sols.size && !st.labs.size && !st.mods.size && !st.cgcre) st.aberto=false;
+  buscar(); gravarURL(); $('q').focus(); });
 $('sort').addEventListener('change', e=>{ st.sort=e.target.value; buscar(); gravarURL(); });
 $('fcgcre').addEventListener('change', e=>{ st.cgcre=e.target.checked; st.shown=24; buscar(); gravarURL(); });
-$('freset').addEventListener('click', ()=>{ st.labs.clear(); st.tipos.clear(); st.mods.clear(); st.cgcre=false; st.shown=24; buscar(); gravarURL(); });
+$('freset').addEventListener('click', ()=>{ st.labs.clear(); st.tipos.clear(); st.mods.clear(); st.areas.clear(); st.sols.clear(); st.cgcre=false; st.shown=24; buscar(); gravarURL(); });
 RAIZ.addEventListener('change', e=>{
   const f=e.target.dataset.f; if(!f) return;
-  const set = f==='lab'?st.labs:(f==='mod'?st.mods:st.tipos);
+  const set = {lab:st.labs, mod:st.mods, area:st.areas, sol:st.sols}[f] || st.tipos;
   e.target.checked?set.add(e.target.value):set.delete(e.target.value);
   st.shown=24; buscar(); gravarURL();
 });
 RAIZ.addEventListener('click', e=>{
+  const rm=e.target.closest('[data-remover]');
+  if(rm){ const f=rm.dataset.remover, v=rm.dataset.valor;
+    if(f==='cgcre') st.cgcre=false; else ({area:st.areas, sol:st.sols, mod:st.mods, lab:st.labs}[f]).delete(v);
+    st.shown=24; buscar(); gravarURL(); return; }
   const d=e.target.closest('[data-det]'); if(d){detalhes(d.dataset.det);return}
   if(e.target.closest('[data-close]')){$('dlg').close();return}
   const c=e.target.closest('[data-copy]');
@@ -359,28 +552,30 @@ RAIZ.addEventListener('click', e=>{
     return;
   }
   if(e.target.id==='bi-maisbtn'){ st.shown+=24; buscar(); }
-  const ch=e.target.closest('[data-ex]'); if(ch){ st.q=ch.dataset.ex; $('q').value=st.q; st.shown=24; buscar(); gravarURL(); }
+  if(e.target.closest('[data-ver-todos]')){ confirmarBusca(); return; }
+  const sg=e.target.closest('[data-sug]'); if(sg && !e.target.closest('a')){ abrirSugestao(+sg.dataset.sug); return; }
+  const ch=e.target.closest('[data-ex]'); if(ch){ st.q=ch.dataset.ex; $('q').value=st.q; confirmarBusca(); }
 });
 $('dlg').addEventListener('click', e=>{ if(e.target===$('dlg')) $('dlg').close(); });
 $('dlg').addEventListener('close', ()=>gravarURL());
 if(RAIZ.clientWidth < 860) $('filters').open=false;
 
 /* ---------- início ---------- */
-['dureza','calibração de multímetro','NBR 7190','etanol','resistência ao fogo','papel'].forEach(x=>{
+['dureza','NBR 7190','etanol','torquímetro','reação ao fogo'].forEach(x=>{
   const b=document.createElement('button'); b.type='button'; b.className='bi-chip'; b.dataset.ex=x; b.textContent=x; $('examples').appendChild(b);
 });
 const m = DADOS.meta || {};
 if(!P.length) { const g=$('gmod'); if(g) g.hidden=true; }
-if(!$('sub').dataset.fixo) $('sub').textContent = SC.length
-  ? `Pesquise entre ${m.servicos_unicos} serviços de ${m.laboratorios} laboratórios do IPT${P.length?` e ${P.length} itens da Loja IPT`:''}.`
-  : `Pesquise entre ${P.length} itens da Loja IPT.`;
+if(!$('sub').dataset.fixo) $('sub').innerHTML = VITRINE
+  ? `${m.servicos_unicos||0} serviços de ${m.laboratorios||0} laboratórios${P.length?` e ${P.length} produtos da loja`:''}, pesquisados em uma única caixa.<br>Digite um ensaio, material, norma ou laboratório.`
+  : (SC.length ? `Pesquise entre ${m.servicos_unicos} serviços de ${m.laboratorios} laboratórios do IPT${P.length?` e ${P.length} itens da Loja IPT`:''}.` : `Pesquise entre ${P.length} itens da Loja IPT.`);
 const data = m.coletado_em ? m.coletado_em.split('-').reverse().join('/') : '';
 $('foot').textContent = `Fontes: catálogo técnico do IPT (Scriba)${data?`, atualizado em ${data}`:''}${P.length?', e produtos da Loja IPT':''}. Os textos do catálogo técnico são exibidos em caixa normal para facilitar a leitura, sem alteração de conteúdo.`;
 const servicoURL = lerURL();
 $('q').value = st.q;
 buscar();
 if(servicoURL) detalhes(servicoURL);
-window.BUSCA_IPT = {servicos:SC, produtos:P, todos:S, buscar, analisar};
+window.BUSCA_IPT = {servicos:SC, produtos:P, todos:S, buscar, analisar, filtrar:aplicarFiltro, areas:AREAS, solucoes:SOLUCOES};
 RAIZ.dataset.buscaPronta = '1';
 document.documentElement.dataset.buscaPronta = '1';
 }

@@ -1,0 +1,148 @@
+/* Seções da página da Loja IPT (loja-15). Tudo restrito a .lip; o tema não é alterado.
+   Medidas da proposta de layout aprovada (1280 px de largura de referência). */
+.lip{
+  --lip-navy:#0b1f3a; --lip-navy-2:#142841; --lip-navy-borda:rgba(214,228,242,.16);
+  --lip-ciano:#7ac7eb; --lip-azul:#2a9fd8; --lip-azul-texto:#1f6f9f;
+  --lip-texto:#0f1d30; --lip-cinza:#59606d; --lip-fundo:#f6f7f9; --lip-borda:#dfe0e4; --lip-branco:#fff;
+  --lip-fonte:"IBM Plex Sans",Arial,"Helvetica Neue",sans-serif;
+  font-family:var(--lip-fonte); color:var(--lip-texto); font-size:16px; line-height:1.5;
+  box-sizing:border-box;
+}
+.lip.lip *, .lip.lip *::before, .lip.lip *::after{box-sizing:border-box}
+/* blindagem: (0,2,0) vence seletores do tema como .entry-content h2 ou .elementor-kit-22 a */
+.lip.lip :where(h1,h2,h3,p,figure,nav){margin:0;padding:0;font-family:inherit;letter-spacing:normal;text-transform:none}
+.lip.lip :where(a){color:inherit;text-decoration:none;font-family:inherit;box-shadow:none}
+.lip.lip :where(label,span,strong,button,input,textarea,select){font-family:inherit;letter-spacing:normal;text-transform:none}
+.lip.lip :where(button:not([class*="wpforms"])){margin:0;border:0;background:none;cursor:pointer;color:inherit;padding:0;box-shadow:none;width:auto;min-height:0}
+.lip.lip :where(img){max-width:100%;height:auto;display:block}
+.lip .lip-wrap{max-width:1232px;margin:0 auto;padding-left:16px;padding-right:16px}
+.lip .lip-h2{font-size:28px;font-weight:600;line-height:1.2;color:var(--lip-texto)}
+.lip .lip-sobre{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lip-cinza);margin-bottom:10px}
+.lip .lip-sobre-azul{color:var(--lip-azul-texto)}
+.lip a:focus-visible,.lip label:focus-visible,.lip button:focus-visible{outline:2px solid var(--lip-azul);outline-offset:3px;border-radius:6px}
+
+/* ---------- topo ---------- */
+.lip.lip-topo{background:var(--lip-navy);color:#fff;padding:86px 0 58px;text-align:center}
+.lip .lip-selo{display:inline-block;border:1.5px solid #3a8ec0;color:var(--lip-ciano);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:5px 12px;border-radius:4px;margin-bottom:24px}
+.lip .lip-h1{font-size:clamp(30px,4vw,47px);font-weight:700;line-height:1.16;color:#fff;max-width:880px;margin:0 auto 18px;text-wrap:balance}
+.lip .lip-sub{font-size:18px;line-height:1.6;color:#c6d3e2;max-width:640px;margin:0 auto 32px;text-wrap:balance}
+.lip .lip-cta{display:inline-flex;align-items:center;gap:12px;background:var(--lip-azul);color:var(--lip-navy);font-weight:600;font-size:17px;padding:15px 30px;border-radius:8px;transition:filter .15s}
+.lip .lip-cta:hover{filter:brightness(1.08)}
+.lip .lip-areas-bloco{margin-top:44px;border-top:1px solid var(--lip-navy-borda);padding-top:26px}
+.lip .lip-rotulo{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lip-ciano);margin-bottom:22px}
+.lip .lip-areas{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px}
+.lip .lip-area{aspect-ratio:1/1;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:10px;background:var(--lip-navy-2);border:1px solid var(--lip-navy-borda);border-radius:10px;color:#fff;font-size:14px;font-weight:600;line-height:1.3;text-align:center;transition:border-color .15s,background .15s}
+.lip .lip-area svg{color:var(--lip-ciano);flex:none}
+.lip .lip-area:hover{border-color:var(--lip-ciano);background:#18304f}
+
+/* ---------- categorias ---------- */
+.lip.lip-categorias{background:var(--lip-fundo);padding:64px 0 28px}
+.lip .lip-cab{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-bottom:24px}
+.lip .lip-cab-sub{font-size:15px;color:var(--lip-cinza)}
+.lip .lip-cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.lip .lip-cat{display:flex;flex-direction:column;gap:6px;min-height:101px;padding:17px 21px;background:#fff;border:1px solid var(--lip-borda);border-radius:8px;transition:border-color .15s,box-shadow .15s}
+.lip .lip-cat:hover{border-color:var(--lip-azul);box-shadow:0 4px 14px rgba(11,31,58,.08)}
+.lip .lip-cat-titulo{font-size:15px;font-weight:600;line-height:1.3;color:var(--lip-texto)}
+.lip .lip-cat-desc{font-size:13px;line-height:1.4;color:var(--lip-cinza)}
+.lip .lip-externo{margin-left:6px;font-size:13px;color:var(--lip-azul-texto)}
+
+/* ---------- destaques ---------- */
+.lip.lip-destaques{background:var(--lip-fundo);padding:36px 0 64px}
+.lip.lip-destaques{position:relative}
+.lip .lip-radio{position:absolute;left:0;top:0;opacity:0;pointer-events:none;width:1px;height:1px;margin:0;padding:0;border:0}
+.lip .lip-dest-cab{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}
+.lip .lip-abas{display:inline-flex;gap:4px;background:#fff;border:1px solid var(--lip-borda);border-radius:10px;padding:4px}
+.lip .lip-aba{padding:8px 18px;border-radius:7px;font-size:15px;font-weight:600;color:var(--lip-texto);cursor:pointer;user-select:none}
+.lip .lip-aba:hover{background:var(--lip-fundo)}
+.lip .lip-r-todos:checked ~ .lip-wrap .lip-aba-todos,
+.lip .lip-r-compra:checked ~ .lip-wrap .lip-aba-compra,
+.lip .lip-r-solic:checked ~ .lip-wrap .lip-aba-solic{background:var(--lip-navy);color:#fff}
+.lip .lip-r-todos:focus-visible ~ .lip-wrap .lip-aba-todos,
+.lip .lip-r-compra:focus-visible ~ .lip-wrap .lip-aba-compra,
+.lip .lip-r-solic:focus-visible ~ .lip-wrap .lip-aba-solic{outline:2px solid var(--lip-azul);outline-offset:2px}
+.lip .lip-r-compra:checked ~ .lip-wrap .lip-prod.is-solic,
+.lip .lip-r-solic:checked ~ .lip-wrap .lip-prod.is-compra{display:none}
+.lip .lip-prods{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.lip .lip-prod{display:flex;flex-direction:column;background:#fff;border:1px solid var(--lip-borda);border-radius:12px;overflow:hidden}
+.lip .lip-prod-foto{display:block;aspect-ratio:16/10;background:#e9ebef;overflow:hidden}
+.lip .lip-prod-foto img{width:100%;height:100%;object-fit:cover}
+.lip .lip-prod-corpo{display:flex;flex-direction:column;flex:1;padding:20px 22px 22px}
+.lip .lip-prod-selo{font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--lip-cinza);margin-bottom:10px}
+.lip .lip-prod.is-compra .lip-prod-selo{color:var(--lip-azul-texto)}
+.lip .lip-prod-nome{font-size:16.5px;font-weight:600;line-height:1.35;color:var(--lip-texto);margin-bottom:14px}
+.lip .lip-prod-nome a:hover{text-decoration:underline}
+.lip .lip-prod-preco{margin-top:auto;font-size:18px;font-weight:700;color:var(--lip-texto);margin-bottom:12px}
+.lip .lip-prod-valor{margin-top:auto;font-size:13px;color:var(--lip-cinza);margin-bottom:12px}
+.lip .lip-prod-btn{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;border-radius:8px;background:var(--lip-navy);color:#fff;font-size:15px;font-weight:600;text-align:center;border:1.5px solid var(--lip-navy)}
+.lip .lip-prod-btn:hover{filter:brightness(1.25)}
+.lip .lip-prod-btn-sec{background:#fff;color:var(--lip-texto);border-color:#c9ced6}
+.lip .lip-prod-btn-sec:hover{filter:none;border-color:var(--lip-navy)}
+
+/* ---------- contato ---------- */
+.lip.lip-contato{background:#fff;padding:64px 0 72px;scroll-margin-top:96px}
+.lip .lip-contato-grade{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px 56px;align-items:start}
+.lip .lip-h2-grande{font-size:clamp(28px,3.2vw,40px);font-weight:700;line-height:1.15;margin-bottom:18px}
+.lip .lip-contato-p{font-size:17px;line-height:1.65;color:var(--lip-cinza);padding-bottom:20px;border-bottom:1px solid var(--lip-borda);margin-bottom:18px}
+.lip .lip-nota{font-size:14.5px;color:var(--lip-cinza);margin-bottom:8px}
+.lip .lip-contato-grade > *{min-width:0}
+.lip .lip-contato-card input,.lip .lip-contato-card textarea,.lip .lip-contato-card select{max-width:100%;min-width:0}
+.lip .lip-contato-card{border:1px solid var(--lip-borda);border-radius:14px;padding:28px 28px 24px;background:#fff}
+.lip .lip-sua-busca{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#eaf3fb;border-radius:8px;padding:11px 18px;margin-bottom:18px;font-size:15px;color:var(--lip-texto)}
+.lip .lip-sua-busca[hidden]{display:none}
+.lip .lip-remover{color:var(--lip-azul-texto);font-weight:600;font-size:15px}
+.lip .lip-remover:hover{text-decoration:underline}
+.lip .lip-lgpd{margin-top:12px;font-size:13px;color:var(--lip-cinza)}
+.lip .lip-lgpd a{color:var(--lip-azul-texto);text-decoration:underline}
+/* WPForms (estilo moderno): ajustado pelas variáveis do próprio WPForms */
+.lip .lip-contato-card .wpforms-container{
+  --wpforms-field-border-radius:7px; --wpforms-field-border-color:#d5d9df; --wpforms-field-text-color:#0f1d30;
+  --wpforms-label-color:#0f1d30; --wpforms-label-sublabel-color:#59606d;
+  --wpforms-button-border-radius:8px; --wpforms-button-background-color:#2a9fd8; --wpforms-button-text-color:#0b1f3a;
+  --wpforms-field-size-input-height:46px; --wpforms-button-size-height:50px; --wpforms-field-size-font-size:16px;
+  margin:0;
+}
+.lip .lip-contato-card .wpforms-submit-container .wpforms-submit,.lip .lip-contato-card button[type=submit]{width:100%;font-weight:600}
+
+/* ---------- institucional e rodapé ---------- */
+.lip.lip-inst{background:var(--lip-fundo);padding:60px 0 64px}
+.lip .lip-inst .lip-h2,.lip.lip-inst .lip-h2{font-size:30px;margin-bottom:34px}
+.lip .lip-inst-grade{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.lip .lip-inst-item{border-left:2px solid var(--lip-azul);padding:6px 16px 8px}
+.lip .lip-inst-titulo{font-size:20px;font-weight:600;line-height:1.25;color:var(--lip-texto);margin-bottom:8px}
+.lip .lip-inst-desc{font-size:14.5px;line-height:1.5;color:var(--lip-cinza)}
+.lip.lip-rodape{background:#fff;border-top:1px solid var(--lip-borda);padding:22px 0}
+.lip .lip-rodape-linha{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 24px;font-size:14px;color:var(--lip-cinza)}
+.lip .lip-rodape-linha nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.lip .lip-rodape-linha a{text-decoration:underline;color:var(--lip-cinza)}
+
+/* ---------- telas menores ---------- */
+@media (max-width:1100px){
+  .lip .lip-areas{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .lip .lip-area{aspect-ratio:auto;min-height:104px}
+  .lip .lip-prods{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lip .lip-inst-grade{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .lip .lip-cats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lip .lip-contato-grade{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .lip.lip-topo{padding:56px 0 40px}
+  .lip .lip-sub{font-size:16px}
+  .lip .lip-cta{width:100%;justify-content:center}
+  .lip .lip-areas{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .lip .lip-cats{grid-template-columns:1fr}
+  .lip .lip-prods{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .lip .lip-prod-corpo{padding:12px 12px 14px}
+  .lip .lip-prod-nome{font-size:14px;margin-bottom:10px}
+  .lip .lip-prod-preco{font-size:15px}
+  .lip .lip-prod-valor{font-size:12px}
+  .lip .lip-prod-btn{font-size:13px;min-height:40px;padding:6px 8px}
+  .lip .lip-prod-selo{font-size:10px;letter-spacing:.04em}
+  .lip .lip-abas{width:100%}
+  .lip .lip-aba{flex:1;text-align:center;padding:8px 6px;font-size:14px}
+  .lip .lip-inst-grade{grid-template-columns:1fr}
+  .lip .lip-contato-card{padding:20px 16px}
+  .lip .lip-h2{font-size:24px}
+}
+@media (prefers-reduced-motion:reduce){.lip *{transition:none!important}}

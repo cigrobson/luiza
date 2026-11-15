@@ -6,10 +6,10 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 
 | Caminho | Conteúdo |
 |---|---|
-| `AGENTS.md` | Procedimento para o Codex, todo pelo painel do WordPress: plugin, página `/catalogo-tecnico/`, ajustes na `loja-15`, coleta semanal, pendências |
-| `visualizacao/` | Imagem de como a loja fica após a implantação |
-| `integracao/` | Script do topo e bloco da `loja-15`, CSS adicional com a paleta do Kadence |
-| `wordpress/busca-servicos-ipt.zip` | **Plugin WordPress 1.2.0**: busca unificada (catálogo técnico + produtos WooCommerce), coleta do catálogo no Scriba feita pelo próprio WordPress (botão ou semanal), painel em Ferramentas, shortcode `[busca_servicos_ipt]` |
+| `AGENTS.md` | Roteiro para o Codex: novo layout só na página `loja-15`, com o shortcode `[loja_ipt_pagina]` |
+| `visualizacao/` | Imagens: `loja-15-nova-*` (layout final) e versões anteriores das propostas |
+| `integracao/loja-15-css-pagina.css` | CSS da página `loja-15` (só se o cabeçalho for fixo) |
+| `wordpress/busca-servicos-ipt.zip` | **Plugin WordPress 1.3.0**: seções da página da Loja IPT (`[loja_ipt_pagina]`), busca unificada com áreas técnicas e tipos de solução, coleta do Scriba pelo WordPress, painel em Ferramentas |
 | `publicar/` | Versão em página avulsa: `index.html` + `busca-servicos.json` |
 | `prototipo/index.html` | Demonstração em arquivo único, funciona offline |
 | `src/` | Código-fonte: `busca.css`, `busca.js`, `busca.html` e `wordpress/` (PHP do plugin: principal, `includes/catalogo.php`, `includes/produtos.php`, `includes/admin.php`, `uninstall.php`) |
@@ -23,6 +23,7 @@ Cópia estruturada do catálogo público exibido em https://escriba.ipt.br/Busca
 | `bruto/escriba_busca_todos_2026-11-14.html` | Resposta HTML original (Windows-1252), para auditoria |
 | `scripts/extrair_escriba.py` | HTML do Scriba → `dados/` |
 | `scripts/montar_prototipo.py` | `src/` + `dados/` → `wordpress/`, `publicar/`, `prototipo/` |
+| `scripts/testar_pagina.js` | Teste da página completa (22 verificações) |
 | `scripts/testar_busca.js` | Teste de aceitação com Playwright (35 verificações com produtos, 31 sem), local ou em URL publicada |
 | `scripts/wp_simulado.php` | WordPress simulado com WooCommerce falso (produtos reais) e tema agressivo, para testar o plugin sem instalar WordPress |
 

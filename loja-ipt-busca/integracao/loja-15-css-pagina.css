@@ -1,0 +1,7 @@
+/* Loja IPT, página loja-15: CSS da página (Elementor → Configurações da página → Avançado → CSS personalizado).
+   Só é necessário se o cabeçalho do Kadence for fixo (sticky). Troque 96px pela altura do cabeçalho + folga,
+   para que a rolagem até a busca e até o formulário não pare atrás dele. */
+#busca-ipt { --topo-fixo: 96px; }
+.busca-ipt-ancora,
+#busca-ipt .bi-corpo,
+.lip.lip-contato { scroll-margin-top: 96px; }

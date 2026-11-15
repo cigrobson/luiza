@@ -23,7 +23,7 @@ function plugin_dir_path($f) { return dirname($f).'/'; }
 function plugin_dir_url($f) { return '/wp-content/plugins/busca-servicos-ipt/'; }
 function wp_register_style($h, $s, $d = [], $v = '') { global $REG; $REG['css'][$h] = $s.'?ver='.$v; }
 function wp_register_script($h, $s, $d = [], $v = '', $a = []) { global $REG; $REG['js'][$h] = $s.'?ver='.$v; }
-function wp_enqueue_style($h) { global $ESTILOS, $REG; $ESTILOS[$h] = $REG['css'][$h]; }
+function wp_enqueue_style($h, $src = null, $d = [], $v = null) { global $ESTILOS, $REG; $ESTILOS[$h] = $src ?: $REG['css'][$h]; }
 function wp_enqueue_script($h) { global $SCRIPTS, $REG; $SCRIPTS[$h] = $REG['js'][$h]; }
 function esc_url($u) { return htmlspecialchars($u, ENT_QUOTES); }
 function esc_html($s) { return htmlspecialchars($s, ENT_QUOTES); }
@@ -39,6 +39,11 @@ $CONTEUDO = $_GET['sc'] ?? '[busca_servicos_ipt titulo=""]';
 define('HOUR_IN_SECONDS', 3600);
 $OPCOES = ['woocommerce_hide_out_of_stock_items' => 'no']; $TRANS = [];
 function is_admin() { return false; }
+function absint($n) { return abs((int)$n); }
+function number_format_i18n($n) { return number_format($n, 0, ',', '.'); }
+function do_shortcode($s) { if (preg_match('/\[wpforms id="(\d+)"/', $s, $m)) return bsipt_form_simulado($m[1]); return $s; }
+function bsipt_form_simulado($id) { return '<div class="wpforms-container wpforms-container-full" id="wpforms-'.$id.'"><form id="wpforms-form-'.$id.'" class="wpforms-validate wpforms-form" onsubmit="return false"><div class="wpforms-field-container"><div class="wpforms-field"><label class="wpforms-field-label">Nome <span>*</span></label><div class="sim-linha"><input type="text" id="wpforms-'.$id.'-field_1" placeholder="Nome"><input type="text" id="wpforms-'.$id.'-field_1-last" placeholder="Sobrenome"></div></div><div class="wpforms-field"><label class="wpforms-field-label">E-mail <span>*</span></label><input type="email" id="wpforms-'.$id.'-field_2"></div><div class="wpforms-field"><label class="wpforms-field-label">Empresa</label><input type="text" id="wpforms-'.$id.'-field_4"></div><div class="wpforms-field"><label class="wpforms-field-label">Comentário ou Mensagem</label><textarea id="wpforms-'.$id.'-field_3" rows="4"></textarea></div></div><div class="wpforms-submit-container"><button type="submit" class="wpforms-submit">Enviar</button></div></form></div>'; }
+function sanitize_title($s) { return strtolower(trim(preg_replace('/[^a-z0-9]+/i', '-', $s), '-')); }
 function register_activation_hook($f, $c) {}
 function register_deactivation_hook($f, $c) {}
 function get_option($k, $d = false) { global $OPCOES; return $OPCOES[$k] ?? $d; }
@@ -68,6 +73,7 @@ if (!isset($_GET['semwoo'])) {
     function is_in_stock() { return (bool)($this->d['is_in_stock'] ?? true); }
     function get_catalog_visibility() { return 'visible'; }
     function get_permalink() { return $this->d['permalink']; }
+    function get_image_id() { return !empty($this->d['images'][0]['thumbnail']) ? $this->d['id'] : 0; }
     function get_price_html() {
       $pr = $this->d['prices']; $r = $pr['price_range'] ?? null;
       if ($r && $r['min_amount'] !== $r['max_amount']) {
@@ -81,6 +87,7 @@ if (!isset($_GET['semwoo'])) {
   function wc_get_products($args) { return array_map(fn($d) => new BsiptProdutoSimulado($d), bsipt_fixture()); }
   function wc_get_product_terms($id, $tax, $a) { foreach (bsipt_fixture() as $d) if ($d['id'] == $id) return array_column($tax === 'product_cat' ? $d['categories'] : $d['tags'], 'name'); return []; }
   function wc_get_cart_url() { return 'https://loja.ipt.br/carrinho/'; }
+  function wp_get_attachment_image_url($id, $t) { foreach (bsipt_fixture() as $d) if ($d['id'] == $id) return $d['images'][0]['thumbnail'] ?? ''; return ''; }
 }
 function get_post() { global $CONTEUDO; return (object)['post_content' => $CONTEUDO]; }
 require $PLUGIN.'busca-servicos-ipt.php';
@@ -88,11 +95,16 @@ require $PLUGIN.'busca-servicos-ipt.php';
 do_action('rest_api_init');
 if (isset($ROTAS[$uri])) { $r = $ROTAS[$uri](); header('Content-Type: application/json'); echo json_encode($r->data, JSON_UNESCAPED_UNICODE); exit; }
 do_action('wp_enqueue_scripts');
-$saida = preg_replace_callback('/\[busca_servicos_ipt([^\]]*)\]/', function ($m) use ($SHORT) {
-  preg_match_all('/(\w+)="([^"]*)"/', $m[1], $p, PREG_SET_ORDER); $a = []; foreach ($p as $x) $a[$x[1]] = $x[2];
-  return $SHORT['busca_servicos_ipt']($a);
+$saida = preg_replace_callback('/\[([a-z_]+)([^\]]*)\]/', function ($m) use ($SHORT) {
+  if (!isset($SHORT[$m[1]])) return $m[0];
+  preg_match_all('/(\w+)="([^"]*)"/', $m[2], $p, PREG_SET_ORDER); $a = []; foreach ($p as $x) $a[$x[1]] = $x[2];
+  return $SHORT[$m[1]]($a);
 }, $CONTEUDO);
 ?><!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Loja IPT (simulação)</title>
+<?php if (isset($_GET['limpo'])): ?>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+<style>body{margin:0;font-family:"Open Sans",Arial,sans-serif;color:#1a202c;background:#fff}.site-header{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;background:#fff;border-bottom:1px solid #eee;font-size:15px}.site-header b{font:700 26px Arial;color:#0b1f3a;letter-spacing:-1px}.site-header nav{display:flex;gap:28px;color:#1a202c}.entry-content{max-width:none;margin:0;padding:0}.sim-linha{display:flex;gap:12px}.sim-linha input{flex:1}.wpforms-field{margin-bottom:16px}.wpforms-field-label{display:block;font-weight:600;margin-bottom:6px;color:#0f1d30}.wpforms-field input,.wpforms-field textarea{width:100%;height:46px;border:1px solid #d5d9df;border-radius:7px;padding:8px 12px;font:inherit}.wpforms-field textarea{height:110px}.wpforms-submit{width:100%;height:50px;border:0;border-radius:8px;background:#2a9fd8;color:#0b1f3a;font:600 17px "IBM Plex Sans",Arial}@media(max-width:700px){.site-header{padding:0 16px}.site-header nav{display:none}}</style>
+<?php else: ?>
 <style>/* TEMA HOSTIL: imita Bootstrap/Elementor e temas agressivos */
 body{margin:0;font-family:Georgia,serif;font-size:18px;line-height:2;color:#333;background:#fff}
 .site-header{position:sticky;top:0;z-index:10;height:70px;background:#1d3557;color:#fff;display:flex;align-items:center;padding:0 24px}
@@ -115,10 +127,11 @@ label{display:block;font-weight:bold;margin-bottom:20px}
 dialog{max-width:200px}
 mark{background:red;color:#fff}
 </style>
+<?php endif; ?>
 <?php foreach ($ESTILOS as $s) echo '<link rel="stylesheet" href="'.$s.'">'."\n"; ?>
 </head><body>
-<header class="site-header">Loja IPT</header>
-<main class="entry-content"><h1>Pesquise ensaios, análises e calibrações</h1>
+<header class="site-header"><?php if (isset($_GET['limpo'])): ?><b>ipt</b><nav><span>Início</span><span>Produtos e Serviços</span><span>Solicitar Orçamento</span><span>Sobre o IPT</span><span>Minha conta</span><span>Carrinho</span></nav><?php else: ?>Loja IPT<?php endif; ?></header>
+<main class="entry-content"><?php if (!isset($_GET['limpo'])): ?><h1>Pesquise ensaios, análises e calibrações</h1><?php endif; ?>
 <?= $saida ?>
 </main>
 <?php foreach ($SCRIPTS as $s) echo '<script src="'.$s.'" defer></script>'."\n"; ?>

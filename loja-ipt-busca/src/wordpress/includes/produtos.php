@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const BSIPT_TRANSIENT_PRODUTOS = 'bsipt_produtos_v1';
+const BSIPT_TRANSIENT_PRODUTOS = 'bsipt_produtos_v2';
 
 /** Remove HTML, o texto do botão "Solicitar orçamento" e limita o tamanho (mesma regra de scripts/produtos_loja.py). */
 function bsipt_limpar_texto( $texto, $limite = 700 ) {
@@ -81,6 +81,7 @@ function bsipt_indice_produtos() {
 			'preco'      => $preco,
 			'url'        => $p->get_permalink(),
 			'carrinho'   => $carrinho,
+			'imagem'     => $p->get_image_id() ? (string) wp_get_attachment_image_url( $p->get_image_id(), 'woocommerce_thumbnail' ) : '',
 		);
 	}
 	set_transient( BSIPT_TRANSIENT_PRODUTOS, $itens, 12 * HOUR_IN_SECONDS );

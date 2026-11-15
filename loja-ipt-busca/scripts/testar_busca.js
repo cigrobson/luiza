@@ -141,6 +141,47 @@ function servir(dir) {
     await p.click('#bi-freset'); await p.waitForTimeout(150);
   }
 
+  console.log('\nÁreas técnicas e tipos de solução');
+  const conta = await p.evaluate(() => { const T = window.BUSCA_IPT.todos, c = (k, v) => T.filter(x => x[k] === v).length;
+    return { metro: c('area', 'metrologia-calibracao'), fogo: c('area', 'seguranca-fogo'), calib: c('sol', 'calibracoes'),
+      calibServ: window.BUSCA_IPT.servicos.filter(x => x.sol === 'calibracoes').length,
+      semArea: window.BUSCA_IPT.servicos.filter(x => !x.area).length }; });
+  verifica(conta.semArea === 0, `todos os serviços do catálogo têm área técnica (sem área: ${conta.semArea})`);
+  verifica(conta.calibServ === 111, `dados: 111 serviços classificados como Calibrações (veio ${conta.calibServ})`);
+  const pa = await abrir('?area=metrologia-calibracao');
+  e = await estado(pa);
+  verifica(e.total === conta.metro, `?area=metrologia-calibracao filtra a área (${e.total} = ${conta.metro})`);
+  verifica(await pa.$eval('#bi-ativos', el => !el.hidden && /Metrologia e Calibração/.test(el.innerText)), `chip "Área: Metrologia e Calibração" visível`);
+  await pa.click('#bi-ativos [data-remover="area"]'); await pa.waitForTimeout(200);
+  verifica((await estado(pa)).total === 568 + nProd && !/area=/.test(pa.url()), `remover o chip volta ao catálogo inteiro e limpa a URL`);
+  const ps = await abrir('?solucao=calibracoes');
+  verifica((await estado(ps)).total === conta.calib, `?solucao=calibracoes filtra o tipo (${conta.calib})`);
+  // blocos da página fora da busca (como os cards da loja-15)
+  await ps.evaluate(() => {
+    const d = document.createElement('div'); d.id = 'teste-integracao';
+    d.innerHTML = '<a href="?area=seguranca-fogo#catalogo" id="t-area" data-busca-area="seguranca-fogo">Segurança ao Fogo</a>'
+      + '<form id="t-form" data-busca-ipt action="#catalogo"><input name="q" value="dureza"><button>Buscar</button></form>'
+      + '<a href="#contato" id="t-cert" data-preencher-contato="Assunto: Certificação de produto. ">Certificação</a>'
+      + '<form class="wpforms-form" id="t-wpf"><input type="text" name="nome"><textarea name="msg"></textarea></form>';
+    document.body.insertBefore(d, document.body.firstChild);
+    window.scrollTo(0, 0);
+  });
+  await ps.click('#t-area'); await ps.waitForTimeout(900);
+  e = await estado(ps);
+  const topo = await ps.evaluate(() => document.getElementById('busca-ipt').getBoundingClientRect().top);
+  verifica(e.total === conta.fogo && /area=seguranca-fogo/.test(ps.url()) && topo < 300, `clique em bloco de área filtra sem recarregar e rola até a busca (${e.total}, topo ${Math.round(topo)} px)`);
+  await ps.evaluate(() => window.scrollTo(0, 0));
+  await ps.click('#t-form button'); await ps.waitForTimeout(700);
+  e = await estado(ps);
+  verifica(e.titulos[0] === 'Dureza Janka ABPM' && (await ps.inputValue('#bi-q')) === 'dureza', `campo de busca da página pesquisa na busca ("dureza")`);
+  await ps.click('#t-cert'); await ps.waitForTimeout(600);
+  verifica((await ps.inputValue('#t-wpf textarea')) === 'Assunto: Certificação de produto. ', `"Certificação de Produto" preenche a mensagem do formulário`);
+  await buscar(ps, 'xyzabcqwe');
+  const btn = await ps.$('#busca-ipt [data-preencher-contato]');
+  verifica(!!btn, `busca sem resultado oferece "Descrever minha necessidade ao IPT"`);
+  if (btn) { await btn.click(); await ps.waitForTimeout(400);
+    verifica(/xyzabcqwe/.test(await ps.inputValue('#t-wpf textarea')), `o termo buscado segue para a mensagem do formulário`); }
+
   console.log('\nLink direto');
   const p2 = await abrir('?q=vazao&lab=LV&servico=870');
   verifica(await p2.inputValue('#bi-q') === 'vazao', `busca restaurada da URL`);

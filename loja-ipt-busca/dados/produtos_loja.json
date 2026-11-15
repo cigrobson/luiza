@@ -10,7 +10,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/diagnostico-e-analise-de-risco-de-queda-de-arvore/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/SPRSF-DIAG-ARBOREO-diagnostico-risco-arvore-600x600.png"
  },
  {
   "id": 436,
@@ -25,7 +26,8 @@
   "compra": true,
   "preco": "R$ 1.400,00",
   "url": "https://loja.ipt.br/produto/oleo-de-silicone-dow-corning-frasco-30-ml-com-certificado-de-calibracao/",
-  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=436"
+  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=436",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LGE-OLEO-SILICONE-oleo-silicone-calibracao-600x600.png"
  },
  {
   "id": 434,
@@ -40,7 +42,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-emissao-radiada-em-luminaria-e-lampada-led-cispr-15/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LGE-EMC-CISPR15-emissao-radiada-LED-600x600.png"
  },
  {
   "id": 407,
@@ -55,7 +58,8 @@
   "compra": true,
   "preco": "R$ 435,00 – R$ 10.568,00",
   "url": "https://loja.ipt.br/produto/saa-assinatura-anual-de-monitoramento-de-normas-tecnicas/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/SAA-ASSINATURA-ANUAL-600x600.png"
  },
  {
   "id": 401,
@@ -70,7 +74,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-teor-de-formaldeido-em-papel-indicador-abnt-nbr-25424-2021/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-FOR-NBR25424-formaldeido-papel-600x600.png"
  },
  {
   "id": 400,
@@ -85,7 +90,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/analise-microbiologica-em-papel-rdc-640-2022/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-MIC-RDC640-microbiologica-papel-1-600x600.png"
  },
  {
   "id": 387,
@@ -100,7 +106,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-biodegradabilidade-imediata-de-materiais-soluveis-em-agua-oecd-301b/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-BIO-OECD301B-biodegradabilidade-agua-600x600.png"
  },
  {
   "id": 386,
@@ -113,7 +120,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antibacteriana-em-tecidos-aatcc-100/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-ANB-AATCC100-antibacteriano-tecidos-600x600.png"
  },
  {
   "id": 383,
@@ -128,7 +136,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antibacteriana-em-materiais-jis-z-2801/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-ANB-JIS2801-antibacteriano-materiais-600x600.png"
  },
  {
   "id": 382,
@@ -143,7 +152,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-15987/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-ANF-15987-antifungico-tinta-lixiviacao-600x600.png"
  },
  {
   "id": 380,
@@ -158,7 +168,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-atividade-antifungica-em-tintas-abnt-nbr-14941/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/LBI-ANF-14941-Ensaio-de-Atividade-Antifungica-600x600.png"
  },
  {
   "id": 379,
@@ -173,7 +184,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-densidade-de-particulas-do-solo/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/SIRGA-DEN-Densidade-de-Particulas-1-600x600.png"
  },
  {
   "id": 370,
@@ -188,7 +200,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-materia-organica-do-solo/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/SIRGA-MOR-Materia-Organica-1-600x600.png"
  },
  {
   "id": 368,
@@ -203,7 +216,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-fracao-de-carbono-organico/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/f019e352-3c11-43d2-aca1-fbbf3d772683-600x600.png"
  },
  {
   "id": 366,
@@ -218,7 +232,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-permeabilidade-do-solo/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/41b1d00b-b75e-4ec3-af7b-ec6687dfabbf-600x600.png"
  },
  {
   "id": 363,
@@ -233,7 +248,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-porosidade-do-solo-sirga-ipt/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/SIRGA-POR-Porosidade-do-Solo-600x600.png"
  },
  {
   "id": 356,
@@ -248,7 +264,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/ensaio-de-granulometria-de-solo-sirga-ipt/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/1ff2faf8-5a4e-4254-9d11-47ec0961c6e2-600x600.png"
  },
  {
   "id": 355,
@@ -263,7 +280,8 @@
   "compra": true,
   "preco": "R$ 49,66",
   "url": "https://loja.ipt.br/produto/tampa-de-protecao-para-inclinometro-polipropileno/",
-  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=355"
+  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=355",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/Tampa-de-Protecao-para-Inclinometro-—-Polipropileno-600x600.png"
  },
  {
   "id": 351,
@@ -278,7 +296,8 @@
   "compra": true,
   "preco": "R$ 49,66",
   "url": "https://loja.ipt.br/produto/luva-de-emenda-para-inclinometro-aluminio-30-cm/",
-  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=351"
+  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=351",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/ChatGPT-Image-3-de-ago.-de-2026-08_26_47-600x600.png"
  },
  {
   "id": 346,
@@ -293,7 +312,8 @@
   "compra": true,
   "preco": "R$ 152,91",
   "url": "https://loja.ipt.br/produto/tubo-para-inclinometro-aluminio-4-x-3-m/",
-  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=346"
+  "carrinho": "https://loja.ipt.br/carrinho/?add-to-cart=346",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/08/ChatGPT-Image-3-de-ago.-de-2026-08_11_28-600x600.png"
  },
  {
   "id": 83,
@@ -308,7 +328,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-100-embalagem-25-kg/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/07/Produto-Areia-2-600x600.png"
  },
  {
   "id": 82,
@@ -323,7 +344,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-50-embalagem-25-kg/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/07/Produto-Areia-2-600x600.png"
  },
  {
   "id": 81,
@@ -338,7 +360,8 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-30-embalagem-25-kg/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/07/Produto-Areia-2-600x600.png"
  },
  {
   "id": 79,
@@ -353,6 +376,7 @@
   "compra": false,
   "preco": "",
   "url": "https://loja.ipt.br/produto/areia-normal-brasileira-n-16-embalagem-25-kg/",
-  "carrinho": ""
+  "carrinho": "",
+  "imagem": "https://loja.ipt.br/wp-content/uploads/2026/07/Produto-Areia-2-600x600.png"
  }
 ]

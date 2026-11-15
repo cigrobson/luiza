@@ -47,6 +47,7 @@ def converter(p, base='https://loja.ipt.br'):
         'preco': preco,
         'url': p.get('permalink'),
         'carrinho': carrinho,
+        'imagem': ((p.get('images') or [{}])[0] or {}).get('thumbnail') or '',
     }
 
 if __name__ == '__main__':

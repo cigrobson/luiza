@@ -1,225 +1,134 @@
-# Instruções para o Codex: incorporar a busca do catálogo técnico à Loja IPT, tudo dentro do WordPress
+# Instruções para o Codex: novo layout da página loja-15 da Loja IPT
 
-## O que se quer
+## Escopo (regra principal)
 
-Substituir o iframe do Scriba na Loja IPT (https://loja.ipt.br) por uma busca própria que roda **inteira dentro do WordPress**:
+**Só a página https://loja.ipt.br/loja-15/ muda.** Não altere menu, tema, CSS adicional do tema, outras páginas, produtos ou categorias do WooCommerce. A única ação fora da página é instalar o plugin, que não aparece em nenhum lugar onde seus shortcodes não forem usados.
 
-| Parte | Onde fica | Como se mantém |
+Trabalho supervisionado por Robson Santos da Silva (LID-IPT). Siga "Quando parar e perguntar".
+
+## O que será feito
+
+Substituir o conteúdo atual da `loja-15` (topo com atalhos, categorias antigas, iframe do Scriba, banner, formulário e bloco institucional) pelo layout aprovado, entregue pelo plugin **Busca de Serviços IPT 1.3.0** (`wordpress/busca-servicos-ipt.zip`):
+
+| Seção | Shortcode | O que faz |
 |---|---|---|
-| Código da busca | Plugin "Busca de Serviços IPT" (`wordpress/busca-servicos-ipt.zip`, versão 1.2.0) | Plugins → Enviar plugin |
-| Catálogo técnico (568 serviços, 19 laboratórios, 132 sinônimos) | Arquivo dentro do plugin e, após cada coleta, em `wp-content/uploads/busca-servicos-ipt/` | Ferramentas → Busca de Serviços IPT → "Buscar catálogo atualizado no Scriba agora" ou coleta semanal |
-| Produtos da loja | WooCommerce, lidos direto do banco pelo plugin | Automático ao salvar produtos |
-| Página do catálogo | Página WordPress `/catalogo-tecnico/` editada no Elementor, com o shortcode `[busca_servicos_ipt]` | Elementor |
-| Visual | CSS adicional do tema (Aparência → Personalizar) | Personalizar |
+| Topo + Áreas técnicas | `[loja_ipt_topo]` | "Buscar ensaios e calibrações" leva à caixa de busca; as 8 áreas filtram a busca da própria página |
+| Categorias técnicas | `[loja_ipt_categorias]` | 6 filtram a busca; Certificação de Produto vai ao formulário com o assunto preenchido; Ensino Tecnológico abre https://sapiens.ipt.br/index_new.aspx |
+| Produtos e serviços em destaque | `[loja_ipt_destaques limite="8"]` | Produtos reais da loja; abas Todos / Compra direta / Solicitação de serviço |
+| Busca de ensaios, análises e calibrações | `[busca_servicos_ipt layout="vitrine"]` | Substitui o iframe do Scriba: 568 serviços + produtos, sugestões ao digitar, catálogo completo com filtros |
+| Não encontrou o que precisa? | `[loja_ipt_contato form="232"]` | O formulário WPForms 232 que já existe na página, com a faixa "Sua busca" |
+| Referência nacional | `[loja_ipt_institucional]` | Bloco institucional e links SIC SP, Privacidade e Termos |
+| **Tudo junto** | **`[loja_ipt_pagina form="232"]`** | **As seis seções na ordem acima. É o que vai na página** |
 
-O Scriba passa a ser só a **fonte** do catálogo: uma consulta de leitura à busca pública, feita pelo próprio WordPress quando um administrador pede (ou uma vez por semana, se ligado). Nenhum iframe, script externo ou servidor fora do WordPress.
-
-Você trabalha pelo painel do WordPress, sob supervisão de Robson Santos da Silva (LID-IPT). O sistema é institucional: siga "Quando parar e perguntar". **Não reescreva a busca.** O trabalho é instalação, configuração e ajuste de páginas.
-
-## Situação da loja (levantamento de 14 e 15/11/2026)
-
-- WordPress 7.0, tema Kadence, Elementor Pro 4.3, WooCommerce 11.3, WPForms, servidor LiteSpeed.
-- `loja-15` (página ID 565, "Loja IPT – Nova versão") é a candidata a nova página inicial. A home atual é a página 99.
-- O topo da `loja-15` tem o campo "Buscar" (`#ipt-top-search`) e oito atalhos de área (`.ipt-interest`). Hoje eles **não buscam**: só rolam a página até o iframe. O script do topo também rola a página sozinho ao abrir.
-- O container Elementor `70280232`, que guarda o iframe, tem margem superior de −367 px (−234 px no celular). É isso que faz o banner cobrir o título no celular.
-- O H1 do topo sai quase preto sobre o fundo azul e deslocado para a esquerda, porque o Kadence sobrescreve cor e margem.
-- A loja tem 24 produtos: 5 de compra direta e 19 de solicitação de serviço. Nenhum está no Scriba.
-
-## Arquivos que você vai usar
-
-Todos estão nesta pasta do repositório (peça a Robson se não tiver acesso):
-
-| Arquivo | Para quê |
-|---|---|
-| `wordpress/busca-servicos-ipt.zip` | Plugin a instalar |
-| `integracao/catalogo-tecnico-css-adicional.css` | Cores e fontes da loja aplicadas à busca |
-| `integracao/loja-15-correcoes.css` | Corrige o título do topo da `loja-15` |
-| `integracao/loja-15-script-topo.js` | Substitui o primeiro `<script>` do widget do topo |
-| `integracao/loja-15-bloco-catalogo.html` | Bloco que entra no lugar do banner e do iframe |
-| `visualizacao/loja-ipt-apos-implantacao.png` | Como as páginas devem ficar |
+Referência visual: `visualizacao/loja-15-nova-computador.png`, `visualizacao/loja-15-nova-celular.png` e `visualizacao/loja-15-nova-busca-sugestoes.png`.
 
 ## Etapa 1: reconhecimento, sem alterar nada
 
-Verifique pelo painel e informe a Robson, em até 10 linhas:
+Informe a Robson, em até 8 linhas:
 
-1. Se o seu usuário pode instalar plugins (Plugins → Adicionar novo → botão "Enviar plugin").
-2. Se o LiteSpeed Cache está ativo e quais otimizações de JS estão ligadas (LiteSpeed Cache → Otimização de página → JS).
-3. Se o slug `catalogo-tecnico` está livre (Páginas → buscar "catalogo").
-4. A altura do cabeçalho fixo do Kadence (Aparência → Personalizar → Cabeçalho), para `--topo-fixo`.
-5. Se há plugin de SEO (Yoast, Rank Math…).
-6. Se o WP-Cron está ativo. Em Ferramentas → Saúde do site, um aviso sobre "eventos agendados" indica que não está.
+1. Se o seu usuário pode instalar plugins (Plugins → Adicionar novo → "Enviar plugin").
+2. Se o LiteSpeed Cache está ativo e quais otimizações de JS e CSS estão ligadas.
+3. Se o cabeçalho do Kadence é fixo e a altura dele em px.
+4. O ID do formulário WPForms usado hoje na `loja-15` (esperado: 232) e se ele é usado em outras páginas.
+5. Se o Elementor permite "Salvar rascunho" na `loja-15` sem publicar (página já publicada).
 
-**Aguarde o "ok" de Robson antes da etapa 2.**
+**Aguarde o "ok" de Robson.**
 
-## Etapa 2: instalar o plugin
+## Etapa 2: instalar o plugin (com autorização)
 
-Com autorização de Robson:
+1. Plugins → Adicionar novo → Enviar plugin → `busca-servicos-ipt.zip` → Instalar → Ativar. Se já houver uma versão, aceite "Substituir a versão atual pela enviada".
+2. Ferramentas → Busca de Serviços IPT: confira a versão 1.3.0, 568 / 19 / 132 e o número de produtos. Clique em **"Buscar catálogo atualizado no Scriba agora"**.
+   - "O Scriba não respondeu": o servidor não alcança `escriba.ipt.br`. A página funciona com o catálogo do plugin. Avise Robson.
+3. Não ligue a coleta semanal sem autorização.
 
-1. Plugins → Adicionar novo → Enviar plugin → escolha `busca-servicos-ipt.zip` → Instalar agora → Ativar.
-2. Abra **Ferramentas → Busca de Serviços IPT** e confira:
-   - Versão 1.2.0;
-   - Catálogo "incluído no plugin", coleta 14/11/2026, 568 / 19 / 132;
-   - Produtos da loja na busca: o número atual de produtos publicados (24 em 15/11/2026).
-3. Clique em **"Buscar catálogo atualizado no Scriba agora"**. Resultado esperado: "Catálogo atualizado a partir do Scriba. Catálogo com N serviços, coletado em [hoje]". Na situação, "Catálogo técnico em uso" passa a "Arquivo enviado pela administração".
-   - Se aparecer "O Scriba não respondeu", o servidor da loja não alcança `escriba.ipt.br`. A busca continua funcionando com o catálogo do plugin. Informe Robson: a equipe de infraestrutura precisa liberar a saída do servidor para esse endereço.
-   - Se aparecer "Coleta não aplicada" com queda grande de serviços, o Scriba mudou ou respondeu pela metade. Nada foi substituído. Informe Robson.
-4. **Não ligue** ainda a opção "Atualizar automaticamente uma vez por semana". Isso depende da etapa 7.
+Nada muda no site depois desta etapa: os shortcodes ainda não estão em nenhuma página.
 
-## Etapa 3: criar a página `/catalogo-tecnico/` como rascunho
+## Etapa 3: guardar a versão atual da loja-15
 
-1. Páginas → Adicionar nova. Título: **Catálogo técnico: ensaios, análises e calibrações**. Slug: `catalogo-tecnico`.
-2. Kadence (painel lateral da página): layout de largura total, sem barra lateral, título da página visível como H1.
-3. Editar com Elementor. Adicione **um widget "Shortcode"** com:
+No Elementor da `loja-15`: menu ☰ → **Salvar como modelo** → nome `loja-15 antes do layout novo (AAAA-MM-DD)`. Anote também o número da revisão atual (Revisões). É o caminho de volta.
+
+## Etapa 4: montar o layout novo (com autorização)
+
+No Elementor da `loja-15`:
+
+1. Apague **todos** os contêineres e widgets atuais da página: topo, categorias, produtos, banner, container do iframe (`70280232`, com margem negativa), formulário e bloco institucional. Todos passam a vir do shortcode. Manter o formulário antigo duplicaria o WPForms 232.
+2. Adicione **um contêiner** de largura total, com preenchimento 0 e espaçamento 0.
+3. Dentro dele, um widget **Shortcode** com:
    ```
-   [busca_servicos_ipt titulo="" tema="claro"]
+   [loja_ipt_pagina form="232"]
    ```
-   Não use widget "HTML" para a busca.
-4. Salve como rascunho e abra a **Pré-visualização**.
+   Use o ID real do formulário, se for outro. Não use widget HTML.
+4. Se o cabeçalho for fixo: ⚙ Configurações da página → Avançado → **CSS personalizado** → cole `integracao/loja-15-css-pagina.css`, trocando 96px pela altura medida na etapa 1. Esse CSS vale só para esta página.
+5. Clique em **"Salvar rascunho"** (não em "Atualizar") e abra **"Visualizar alterações"**.
 
-## Etapa 4: identidade visual
+## Etapa 5: conferir na pré-visualização
 
-Aparência → Personalizar → **CSS adicional**: cole o conteúdo de `integracao/catalogo-tecnico-css-adicional.css` e ajuste `--topo-fixo` à altura do cabeçalho medida na etapa 1. Publicar.
-
-Não edite os arquivos do plugin: seriam perdidos na próxima atualização.
-
-## Etapa 5: conferir a página de teste
-
-Na pré-visualização de `/catalogo-tecnico/`, no computador e com a janela estreita, como num celular (cerca de 390 px):
+No computador e com a janela estreita (cerca de 390 px):
 
 | Ação | Esperado |
 |---|---|
-| Abrir a página | Frase "Pesquise entre 568 serviços de 19 laboratórios do IPT e 24 itens da Loja IPT" (ou os números atuais) |
-| Buscar `solo` | 10 resultados; primeiro os ensaios de solo da loja, com o selo "Solicitação de serviço" e o botão "Solicitar orçamento" |
-| Buscar `inclinômetro` | Itens com preço, selo "Compra direta" e o botão "Adicionar ao carrinho" |
-| Buscar `dureza` | Primeiro resultado "Dureza Janka ABPM"; "Ver detalhes" abre a janela com descrição, normas e laboratório |
-| Buscar `AEAC` | Aviso de sinônimo e resultados de Etanol |
-| Buscar `multímtero` | Aviso "Buscando por multimetro" e 6 resultados |
-| Marcar "Compra direta" em Filtros | Só os itens de compra direta |
-| Janela estreita | Nenhuma rolagem lateral; filtros recolhidos; botões legíveis |
-| Visual | Cores e fontes da loja; botões sem herdar o estilo do tema |
+| Abrir a página | Topo azul-escuro com 8 áreas; categorias; destaques com fotos; busca escura; formulário; bloco institucional. A página abre no topo e os resultados da busca ficam ocultos |
+| "Buscar ensaios e calibrações" | Rola até a caixa de busca, com o cursor nela |
+| Digitar `inclinôm` | Sugestões: "Compra direta · preço fixo" (3 itens com preço) e "Serviços técnicos · sob orçamento" (transdutor de deslocamento angular, Cgcre CAL 0003) |
+| Enter | Abre o catálogo completo abaixo, com 4 resultados e filtros |
+| Área "Metrologia e Calibração" | Rola até os resultados filtrados, com o chip "Área: Metrologia e Calibração" |
+| Categoria "Calibrações" | 111 resultados |
+| Categoria "Certificação de Produto" | Rola até o formulário, com "Assunto: Certificação de produto" e a mensagem iniciada |
+| "remover" na faixa do formulário | Faixa e texto inserido somem |
+| Categoria "Ensino Tecnológico" | Abre o Sapiens em nova aba |
+| Abas dos destaques | "Compra direta" e "Solicitação de serviço" filtram os cards |
+| Celular | Sem rolagem lateral; áreas em 2 colunas; destaques em 2 colunas |
 
-Se aparecer **"Não foi possível carregar o catálogo"**:
-- Troque o shortcode por `[busca_servicos_ipt titulo="" tema="claro" fonte="rest"]`. Isso resolve quando o servidor bloqueia arquivos `.json`.
-- Se persistir, em LiteSpeed Cache → Otimização de página → JS, adicione `busca-servicos-ipt/assets/busca.js` às exclusões de "Combinar", "Adiar" e "Atrasar". Não desligue a otimização do site inteiro.
+Se aparecer "Não foi possível carregar o catálogo", use `[loja_ipt_pagina form="232" fonte="rest"]` (o servidor pode estar bloqueando arquivos `.json`). Se houver erro de script, exclua `busca-servicos-ipt/assets/busca.js` das otimizações de JS do LiteSpeed, só esse arquivo.
 
-Com autorização de Robson, publique a página, ainda **fora do menu**.
+## Etapa 6: publicar (com autorização expressa de Robson)
 
-## Etapa 6: ajustar a `loja-15`
+1. Com o "ok" de Robson sobre a pré-visualização, clique em **"Atualizar"**.
+2. LiteSpeed Cache → Purgar tudo, ou purgar só a `loja-15`.
+3. Se houver terminal disponível: `node scripts/testar_pagina.js https://loja.ipt.br/loja-15/` deve dar `22 ok, 0 falha(s)`.
+4. Envie a Robson as capturas no computador e no celular.
 
-Com autorização de Robson. Antes, anote o número da revisão atual da página (Revisões) ou duplique-a como rascunho.
+**Para voltar atrás:** Elementor → apagar o contêiner novo → Inserir modelo → `loja-15 antes do layout novo` → Atualizar. Ou restaure a revisão anotada.
 
-No editor Elementor da `loja-15`:
+## Comportamentos que não devem ser alterados sem autorização
 
-1. **Widget do topo** (o HTML com `ipt-top-search`):
-   - no `<form id="ipt-top-search" ...>`, acrescente `action="/catalogo-tecnico/" method="get"`;
-   - no `<input id="ipt-top-query" ...>`, acrescente `name="q"`;
-   - substitua o **primeiro** `<script>` desse widget pelo conteúdo de `integracao/loja-15-script-topo.js`. Ele preserva os ajustes de títulos e selos que o script antigo fazia.
-   - O arquivo não tem barras invertidas e não deve ganhar nenhuma: o editor as apaga ao salvar. Foi o que estragou a função `n()` do script atual.
-2. **Remova o container inteiro `70280232`** (o do iframe), não só o widget interno. Vazio, ele continuaria puxando a seção seguinte para cima por causa da margem negativa.
-3. **Remova o widget do banner** (`209515de`, imagem com texto sobre aspas), dentro do container `70678bbc`.
-4. **No mesmo container `70678bbc`**, adicione um widget HTML com o conteúdo de `integracao/loja-15-bloco-catalogo.html`.
-5. **Remova** o `<script>` que contém `addMobileScribaAccess`, que cria o aviso "abra a pesquisa em uma nova página".
-6. **Texto:** em "Não encontrou o que precisa?", troque "mais de 100 serviços técnicos" por "mais de 560 serviços técnicos".
-7. **CSS adicional:** acrescente o conteúdo de `integracao/loja-15-correcoes.css`.
-8. Atualize a página, limpe o cache (LiteSpeed Cache → Purgar tudo) e confira, no computador e no celular:
-   - a página abre no topo, sem rolar sozinha;
-   - o título do topo está branco e centralizado;
-   - digitar "dureza" e clicar em "Buscar" abre `/catalogo-tecnico/?q=dureza` com resultados;
-   - o atalho "Metrologia" abre `/catalogo-tecnico/?q=calibração`;
-   - o bloco "Pesquise ensaios, análises e calibrações" aparece entre os produtos e "Não encontrou o que precisa?", sem nada por cima;
-   - o resultado bate com `visualizacao/loja-ipt-apos-implantacao.png`.
-
-Os atalhos usam estas buscas. Em discussão com Robson, a lista de áreas pode mudar; não altere sem a decisão dele.
-
-| Atalho | Abre | Resultados em 15/11/2026 |
-|---|---|---|
-| Solo | `?q=solo` | 10 |
-| Água | `?q=água` | 50 |
-| Têxteis | `?q=tecido` | 10 |
-| Papel e Embalagem | `?q=papel` | 126 |
-| Metrologia | `?q=calibração` | 110 |
-| Energia | `?q=energia` | 60 |
-| Construção | `?q=construção` | 53 |
-| Materiais | `?q=materiais` | 131 |
-
-## Etapa 7: menu e atualização semanal
-
-Com autorização de Robson:
-
-1. Aparência → Menus (ou cabeçalho do Kadence): acrescente **Catálogo técnico** → `/catalogo-tecnico/`, depois de "Produtos e Serviços". O item "Solicitar Orçamento" aponta para `#`; não altere sem decisão.
-2. Ferramentas → Busca de Serviços IPT: marque **"Atualizar automaticamente uma vez por semana"** e salve, se Robson autorizar e o WP-Cron estiver ativo (etapa 1). O painel mostra a data da próxima coleta.
-   - A coleta semanal faz uma única consulta ao Scriba. Se a resposta vier inválida ou com menos da metade dos serviços, o catálogo atual é mantido, e o motivo aparece em "Última coleta".
-   - Sem WP-Cron, deixe desligado: a atualização fica manual, pelo botão.
-
-## Manutenção depois de implantado
-
-| Situação | O que fazer |
+| Item | Comportamento |
 |---|---|
-| Laboratórios mudaram serviços no Scriba | Ferramentas → Busca de Serviços IPT → "Buscar catálogo atualizado no Scriba agora" (ou aguardar a semanal) |
-| Produto novo, alterado ou retirado na loja | Nada: o índice é refeito e o cache da página é limpo ao salvar |
-| Produtos importados em lote | Botão "Refazer índice de produtos e limpar cache" |
-| Coleta recusada | Ler a mensagem em "Última coleta" e avisar Robson. A busca segue com o catálogo anterior |
-| Exportação oficial do Scriba disponível | "Enviar um arquivo de catálogo" no mesmo painel |
-| Nova versão do plugin | Plugins → Enviar plugin → "Substituir a versão atual pela enviada". O catálogo coletado fica em uploads e não se perde |
+| Áreas técnicas | Papel e Embalagem; Metrologia e Calibração; Construção Civil; Energia e Conforto Ambiental; Bioenergia e Combustíveis; Segurança ao Fogo; Química e Processos; Meio Ambiente, Geotecnia e Biotecnologia. Definidas pelos laboratórios do catálogo; cobrem os 568 serviços |
+| Categorias técnicas | Ensaios e Análises; Calibrações; Materiais de Referência; Normas Técnicas — SAA; Diagnósticos e Laudos; Consultoria e Desenvolvimento; Certificação de Produto (formulário); Ensino Tecnológico (Sapiens) |
+| Produtos | Área e tipo de cada produto vêm do mapa em `src/busca.js` (`AREAS`, `PRODUTO_AREA`, `PRODUTO_SOLUCAO`). Nada é gravado no WooCommerce |
+| Endereços | `?area=`, `?solucao=`, `?q=`, `&mod=`, `&cgcre=1`, `&servico=`; âncoras `#catalogo` e `#contato` |
+| Busca | Ignora acentos; plural; várias palavras = E; aspas = expressão exata; correção de digitação; sinônimos do Scriba |
 
-## Regras da busca (não alterar sem autorização)
-
-| Regra | Comportamento |
-|---|---|
-| Acentos e maiúsculas | Ignorados |
-| Plural e início de palavra | `durezas` = `dureza`; `calibra` encontra calibração |
-| Várias palavras | Precisam aparecer todas; se nenhum serviço tiver todas, mostra os que têm alguma e avisa |
-| Aspas | Expressão exata |
-| Erro de digitação | Corrigido pelo vocabulário do catálogo, com aviso |
-| Sinônimos | Vocabulário controlado do Scriba (132 remissivas) |
-| Ordem | Nome > palavras-chave e categorias > laboratório > descrição; itens da loja ganham prioridade leve, porque têm ação imediata |
-| Itens da loja | Com preço: "Adicionar ao carrinho" ou "Ver opções". Sem preço: "Solicitar orçamento" na página do produto |
-| Serviços do catálogo | "Ver detalhes" (janela) e "Solicitar serviço" (Fale Conosco do ipt.br com registro e unidade) |
-| Endereços | `?q=`, `&lab=`, `&mod=compra|solicitacao`, `&tipo=`, `&cgcre=1`, `&ordem=nome|cod`, `&servico=7422` |
+Para mudar nomes ou enquadramentos: editar `src/busca.js` (mapa) e `src/wordpress/includes/pagina.php` (textos e links), rodar `python3 -I scripts/montar_prototipo.py` e testar.
 
 ## Quando parar e perguntar
 
 Pergunte a Robson antes de:
 
-- instalar, atualizar ou desativar o plugin;
-- publicar `/catalogo-tecnico/`, alterar o menu ou tornar a `loja-15` página inicial;
-- editar a `loja-15` ou remover o iframe;
-- ligar a coleta semanal;
-- mudar o destino de "Solicitar serviço" ou de "Solicitar Orçamento";
-- alterar atalhos de área, textos institucionais ou regras da busca;
-- desligar cache, otimização ou segurança, ou instalar outro plugin.
+- instalar ou atualizar o plugin;
+- salvar qualquer alteração na `loja-15`, inclusive o rascunho;
+- publicar ("Atualizar");
+- mexer em qualquer coisa fora da `loja-15`: menu, tema, outras páginas, produtos, formulários;
+- ligar a coleta semanal do Scriba;
+- desligar otimizações, cache ou segurança.
 
-Nunca edite o plugin pelo editor de plugins do WordPress, nunca cole a busca em widget HTML e nunca use iframe.
+Nunca edite o plugin pelo editor de plugins, nunca use iframe e nunca cole a busca em widget HTML.
 
-## Pendências institucionais (decisão de Robson e das áreas responsáveis)
+## Pendências institucionais (decisão de Robson)
 
-1. **Repositório:** transferir o código para um repositório institucional do IPT/LID.
-2. **Fonte oficial:** combinar com a equipe do Scriba uma exportação periódica, ou ao menos informá-la da coleta semanal (uma consulta por semana à busca pública).
-3. **"Solicitar serviço":** Fale Conosco do ipt.br (atual) ou formulário WPForms da loja já preenchido com o serviço.
-4. **Menu "Solicitar Orçamento":** aponta para `#`.
-5. **Áreas do topo:** os oito atalhos cobrem 355 dos 568 serviços. Há proposta de oito áreas por laboratório que cobre todos; aguarda validação.
-6. **Cadastro da loja:** "Ensaio de Granulometria de Solo" está em "Bionano"; três produtos estão sem categoria coerente; os cards de categorias apontam todos para `/loja/`.
-7. **Textos:** submeter à comunicação os textos do bloco novo, da página do catálogo e do rodapé da busca.
+1. Textos do layout para validação da comunicação. Em especial: "+1.000 profissionais", "Empresa pública vinculada à SCTI-SP" e "A solicitação vai ao laboratório responsável" (depende de como o WPForms 232 encaminha as mensagens).
+2. Botão "Solicitar orçamento" dos serviços do catálogo: hoje vai ao Fale Conosco do ipt.br, com registro e unidade. A alternativa é o formulário da própria página.
+3. Areia Normal Brasileira: na loja, é "solicitação de serviço" (sem preço); a proposta original mostrava "compra direta".
+4. Repositório do código: transferir para um repositório institucional.
+5. Exportação oficial do catálogo pelo Scriba.
 
-## Entrega esperada
-
-1. Versão do plugin e o que o painel mostra (catálogo em uso, data da coleta, contagens, produtos).
-2. Resultado do botão "Buscar catálogo atualizado no Scriba agora".
-3. Endereço de `/catalogo-tecnico/` e a tabela da etapa 5 preenchida (passou ou não, por linha).
-4. Revisão de segurança da `loja-15` e lista do que foi alterado nela.
-5. Capturas da `loja-15` e do catálogo, no computador e no celular.
-6. Situação de cada pendência que dependa de você.
-
-## Anexo: testes automáticos (opcional, só com terminal)
-
-Se houver um computador com Node.js e PHP, a pasta permite testar o plugin fora da loja e a página publicada:
+## Anexo: testes automáticos (opcional, com Node.js e PHP)
 
 ```bash
 cd loja-ipt-busca
 npm i -D playwright && npx playwright install chromium
 php -S 127.0.0.1:8765 scripts/wp_simulado.php &
-node scripts/testar_busca.js http://127.0.0.1:8765/loja-15/             # esperado: 35 ok, 0 falha(s)
-node scripts/testar_busca.js https://loja.ipt.br/catalogo-tecnico/       # após publicar: 35 ok, 0 falha(s)
+node scripts/testar_pagina.js 'http://127.0.0.1:8765/loja-15/?limpo=1&sc=[loja_ipt_pagina form="232"]'   # 22 ok
+node scripts/testar_busca.js http://127.0.0.1:8765/loja-15/                                              # 46 ok
 ```
-
-Para mudar o código da busca: editar `src/`, rodar `python3 -I scripts/montar_prototipo.py`, testar e enviar o `.zip` novo pelo painel.

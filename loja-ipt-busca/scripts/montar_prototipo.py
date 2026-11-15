@@ -19,14 +19,15 @@ d = json.loads(ler(raiz / 'dados/servicos.json'))
 use = json.loads(ler(raiz / 'dados/vocabulario_use.json'))
 dados = json.dumps({'meta': d['meta'], 'servicos': d['servicos'], 'use': use}, ensure_ascii=False, separators=(',', ':'))
 css, js, html = ler(src / 'busca.css'), ler(src / 'busca.js'), ler(src / 'busca.html')
-for marca in ('{{TITULO}}', '{{DADOS_URL}}'):
+html = html.replace('{{ANCORA}}', '{{ANCORA}}')
+for marca in ('{{TITULO}}', '{{DADOS_URL}}', '{{ANCORA}}'):
     assert html.count(marca) == 1, marca
 
 produtos_demo = (raiz / 'dados/produtos_loja.json')
 produtos = ler(produtos_demo) if produtos_demo.exists() else '[]'
 
 def pagina(dados_url, embutir, com_produtos=False):
-    corpo = html.replace('{{TITULO}}', '<h1 class="bi-titulo">Ensaios, análises e calibrações</h1>').replace('{{DADOS_URL}}', dados_url)
+    corpo = html.replace('{{TITULO}}', '<h1 class="bi-titulo">Ensaios, análises e calibrações</h1>').replace('{{DADOS_URL}}', dados_url).replace('{{ANCORA}}', 'catalogo').replace('{{LAYOUT}}', 'catalogo')
     script_dados = ''
     if embutir:
         seguro = dados.replace('</', '<\\/').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029')
@@ -74,6 +75,7 @@ if plug.exists():
 shutil.copy(src / 'wordpress/busca-servicos-ipt.php', plug)
 shutil.copy(src / 'wordpress/readme.txt', plug)
 shutil.copy(src / 'wordpress/uninstall.php', plug)
+shutil.copy(src / 'pagina.css', plug / 'assets/pagina.css')
 shutil.copytree(src / 'wordpress/includes', plug / 'includes')
 (plug / 'includes/index.php').write_text('<?php // Silêncio.\n', encoding='utf-8')
 (plug / 'assets/busca.css').write_text(css, encoding='utf-8')

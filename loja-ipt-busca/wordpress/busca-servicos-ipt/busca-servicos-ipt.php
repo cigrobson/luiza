@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:       Busca de Serviços IPT
- * Description:       Busca unificada no catálogo técnico do IPT (ensaios, análises e calibrações) e nos produtos da loja WooCommerce. Shortcode: [busca_servicos_ipt].
- * Version:           1.2.0
+ * Description:       Busca unificada no catálogo técnico do IPT e nos produtos da loja, com as seções da página da Loja IPT. Shortcodes: [loja_ipt_pagina], [busca_servicos_ipt] e seções [loja_ipt_*].
+ * Version:           1.3.0
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            LID-IPT – Laboratório Virtual de Inteligência Digital Aplicada
@@ -14,12 +14,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BSIPT_VERSAO', '1.2.0' );
+define( 'BSIPT_VERSAO', '1.3.0' );
 define( 'BSIPT_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BSIPT_URL', plugin_dir_url( __FILE__ ) );
 
 require_once BSIPT_DIR . 'includes/produtos.php';
 require_once BSIPT_DIR . 'includes/catalogo.php';
+require_once BSIPT_DIR . 'includes/pagina.php';
 if ( is_admin() ) {
 	require_once BSIPT_DIR . 'includes/admin.php';
 }
@@ -117,7 +118,7 @@ function bsipt_registrar_pagina() {
 }
 
 /**
- * [busca_servicos_ipt titulo="..." subtitulo="..." tema="claro|escuro|auto" produtos="sim|nao" fonte="arquivo|rest" dados="URL"]
+ * [busca_servicos_ipt titulo="..." subtitulo="..." tema="claro|escuro|auto" produtos="sim|nao" fonte="arquivo|rest" dados="URL" ancora="catalogo" layout="catalogo|vitrine"]
  */
 function bsipt_shortcode( $atts ) {
 	$atts = shortcode_atts(
@@ -128,6 +129,8 @@ function bsipt_shortcode( $atts ) {
 			'produtos'  => 'sim',
 			'fonte'     => 'arquivo',
 			'dados'     => '',
+			'ancora'    => 'catalogo',
+			'layout'    => 'catalogo',
 		),
 		$atts,
 		'busca_servicos_ipt'
@@ -154,6 +157,9 @@ function bsipt_shortcode( $atts ) {
 	$html   = file_get_contents( BSIPT_DIR . 'templates/busca.html' );
 	$html   = str_replace( '{{TITULO}}', $titulo, $html );
 	$html   = str_replace( '{{DADOS_URL}}', esc_url( $dados_url ), $html );
+	$ancora = sanitize_title( $atts['ancora'] );
+	$html   = str_replace( '{{LAYOUT}}', 'vitrine' === $atts['layout'] ? 'vitrine' : 'catalogo', $html );
+	$html   = str_replace( '{{ANCORA}}', esc_attr( '' !== $ancora ? $ancora : 'catalogo' ), $html );
 	if ( $data_theme ) {
 		$html = str_replace( '<div id="busca-ipt" ', '<div id="busca-ipt" data-theme="' . esc_attr( $data_theme ) . '" ', $html );
 	}

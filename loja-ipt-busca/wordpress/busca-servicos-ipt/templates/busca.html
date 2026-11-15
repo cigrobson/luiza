@@ -1,31 +1,42 @@
-<div id="busca-ipt" class="busca-ipt" data-dados="{{DADOS_URL}}">
-<div class="bi-wrap">
-<section class="bi-hero">
+<div id="{{ANCORA}}" class="busca-ipt-ancora">
+<div id="busca-ipt" class="busca-ipt" data-dados="{{DADOS_URL}}" data-layout="{{LAYOUT}}">
+<section class="bi-hero" aria-label="Busca no catálogo técnico">
+  <div class="bi-wrap">
+    <p class="bi-sobre">Catálogo técnico + Loja</p>
     {{TITULO}}
     <p id="bi-sub">Pesquise no catálogo de serviços dos laboratórios do IPT.</p>
-    <form class="bi-searchbox" role="search" onsubmit="return false">
-      <label class="bi-sr" for="bi-q">Buscar serviço</label>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="bi-q" type="search" autocomplete="off" spellcheck="false" maxlength="200"
-        placeholder="Ensaio, material, norma ou laboratório. Ex.: dureza, NBR 7190, etanol">
-      <button class="bi-clear" id="bi-clear" type="button" aria-label="Limpar busca">✕</button>
-    </form>
-    <div class="bi-examples" id="bi-examples"><span>Experimente:</span></div>
-  </section>
+    <div class="bi-caixa">
+      <form class="bi-searchbox" role="search" id="bi-form">
+        <label class="bi-sr" for="bi-q">Buscar ensaio, material, norma ou laboratório</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="bi-q" type="search" autocomplete="off" spellcheck="false" maxlength="200" role="combobox" aria-expanded="false" aria-controls="bi-sugestoes" aria-autocomplete="list"
+          placeholder="Ensaio, material, norma ou laboratório. Ex.: dureza, NBR 7190, etanol">
+        <button class="bi-clear" id="bi-clear" type="button" aria-label="Limpar busca">✕</button>
+        <button class="bi-buscar" id="bi-buscar" type="submit">Buscar</button>
+      </form>
+      <div class="bi-sugestoes" id="bi-sugestoes" role="listbox" aria-label="Sugestões" hidden></div>
+    </div>
+    <div class="bi-examples" id="bi-examples"><span>Mais buscados:</span></div>
+  </div>
+</section>
 
+<div class="bi-corpo" id="bi-resultados">
+  <div class="bi-wrap">
   <div class="bi-layout">
     <aside>
       <div class="bi-panel">
         <details id="bi-filters" open>
           <summary>Filtros <span class="bi-hint" id="bi-factive"></span></summary>
+          <h3>Área técnica</h3>
+          <div id="bi-farea"></div>
+          <h3>Tipo de solução</h3>
+          <div id="bi-fsol"></div>
           <h3>Acreditação</h3>
           <label class="bi-opt"><input type="checkbox" id="bi-fcgcre"><span class="bi-lbl">Somente com certificado Cgcre</span><span class="bi-n" id="bi-ncgcre"></span></label>
           <div id="bi-gmod">
           <h3>Modalidade</h3>
           <div id="bi-fmod"></div>
           </div>
-          <h3>Tipo de serviço</h3>
-          <div id="bi-ftipo"></div>
           <h3>Laboratório</h3>
           <div id="bi-flab"></div>
           <button class="bi-linkbtn" id="bi-freset" type="button">Limpar filtros</button>
@@ -45,12 +56,15 @@
           </select>
         </label>
       </div>
+      <div class="bi-ativos" id="bi-ativos" hidden></div>
       <div id="bi-notices"></div>
       <div class="bi-grid" id="bi-grid"></div>
       <div class="bi-more" id="bi-more"></div>
     </section>
   </div>
-<p class="bi-fonte" id="bi-foot"></p>
+  <p class="bi-fonte" id="bi-foot"></p>
+  </div>
 </div>
 <dialog id="bi-dlg" aria-labelledby="bi-dlg-title"></dialog>
+</div>
 </div>
