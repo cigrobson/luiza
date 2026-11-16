@@ -691,7 +691,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de alinhadores de eixos a laser (laser shaft alignment)
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Alinhador de eixos a laser (Serviço IPT nº 1867)".
 
@@ -703,7 +703,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de balanças de pressão hidráulicas e pneumáticas (balanças de peso morto) e balanças digitais de pistão (balança de pressão digital). Calibração efetuada por comparação com balança de pressão incluindo a determinação da área efetiva do pistão e pesagem dos pesos.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Balança de pressão 1 pistão (hidráulica, pneumática e esfera) - 10 PTS (Serviço IPT nº 1319)".
 
@@ -715,7 +715,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de medidores de pressão atmosférica / absoluta tais como: Barômetro, estação meteorológica e termo-higro-barômetro (com ou sem conexão de pressão). Calibração efetuada por comparação com barômetro de referência utilizando câmara de vácuo / barométrica.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Barômetro digital ou analógico 700 a 1100 mbar - 8 PTS (Serviço IPT nº 1910)".
 
@@ -727,7 +727,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Bloco padrão ( de 1 a 5 peças ) até 100 mm (Serviço IPT nº 8911)".
 
@@ -739,7 +739,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Calibrador de altura até 1000 mm (Serviço IPT nº 8905)".
 
@@ -751,7 +751,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de calibradores (MECÂNICOS) de relógios comparador / apalpador e calibradores (ELETRÔNICO) de relógio comparador / apalpador
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Calibrador de relógio (Serviço IPT nº 1218)".
 
@@ -763,7 +763,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de comparadores eletrônicos de deslocamento e apalpadores eletrônicos.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Comparador / apalpador eletrônico (Serviço IPT nº 1235)".
 
@@ -775,7 +775,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Conjunto bloco padrão ( 122 peças ) (Serviço IPT nº 9809)".
 
@@ -788,7 +788,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de instrumentos de medição de força tais como: Células de carga, trandustores de força, sensor de força, arco/anel dinamométrico, force transducer, load cell, force sensor. Calibração efetuada baseado na(s) norma(s) ABNT NBR ISO 376, ASTM E74 e DIN EN ISO 376 (similar a ISO 376).
 - **Normas citadas no texto:** ABNT NBR ISO 376, ASTM E74, DIN EN ISO 376, ISO 376
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Célula de carga até 100 TF - [ABNT NBR ISO 376] (Serviço IPT nº 987)".
 
@@ -801,7 +801,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de instrumentos de medição de força indireta tais como: Macaco hidráulico, macaco de protensão, macaco de forma deslizante, célula de carga hidráulica. Calibração efetuada baseado na norma ABNT NBR 8197.
 - **Normas citadas no texto:** ABNT NBR 8197
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Célula de carga hidráulica (Serviço IPT nº 1201)".
 
@@ -814,7 +814,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
 - **Normas citadas no texto:** ABNT NBR 8197
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Dinamômetro até 200 TF - [ABNT NBR 8197] (Serviço IPT nº 9752)".
 
@@ -827,7 +827,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
 - **Normas citadas no texto:** ABNT NBR 8197
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Dinamômetro até 500 TF - [ABNT NBR 8197] (COMPRESSÃO) (Serviço IPT nº 9753)".
 
@@ -840,7 +840,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
 - **Normas citadas no texto:** ABNT NBR 8197
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Dinamômetro até 500 TF - [ABNT NBR 8197] (TRAÇÃO) (Serviço IPT nº 9754)".
 
@@ -852,7 +852,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de esquadro combinado (combination squares).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Esquadro (Serviço IPT nº 1239)".
 
@@ -864,7 +864,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Estação meteorológica (medidor de umidade relativa e temperatura) (Serviço IPT nº 9789)".
 
@@ -876,7 +876,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de hastes padrão para micrômetro externo até 3000 mm (rod inside micrometer)
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Haste padrão (Serviço IPT nº 888)".
 
@@ -888,7 +888,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Luneta de maquina de duresa (Serviço IPT nº 8812)".
 
@@ -900,7 +900,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de medidores de pressão relativa, diferencial e absoluta (digitais ou analógicos) tais como: Manômetros, vacuômetros, manovacuômetros, manômetros de coluna líquida, esfigmomanômetros, transdutores / transmissores com saída em unidade elétrica, calibradores / controladores de pressão e registradores de pressão (dataloggers). As calibrações são efetuadas por comparação com balança de pressão, balança digital de pistão, manometro padrão e/ou barômetro de referência.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Manômetro e vacuômetro analógico até 1000 bar - 10 PTS (Serviço IPT nº 1872)".
 
@@ -912,7 +912,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de medidores de espessura com relógio (thickness gauge, digital thickness gauge).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Medidor de espessura (Serviço IPT nº 1890)".
 
@@ -924,7 +924,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de medidores de nível por ultrassom (ultrasonic measurement).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Medidor de nível por ultrassom (Serviço IPT nº 1895)".
 
@@ -936,7 +936,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** A medição de peças e componentes inclui a pesagem / medição da massa das peças e/ou medições das dimensões ou outras propriedades geométricas tais como: Medições de ângulos, rugosidade, paralelismo, perpendicularidade, diâmetro, circularidade, cilindricidade, perfil de linha, planeza, concentricidade, coaxilidade, batimento. A medição da massa é realizada por meio de pesagens em balanças de precisão ou por comparação com pesos padrão. Para as medições dimensionais, pode-se ter como padrões de referência: Rugosímetros, perfilômetros, máquina de medição por coordenadas, máquina de erro de forma, máquina de medição linear, laser interferométrico.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Medição de peças , artefatos e componentes (Serviço IPT nº 1939)".
 
@@ -948,7 +948,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Medição de peças-coroa, pinhão, corrente (Serviço IPT nº 8721)".
 
@@ -960,7 +960,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de mesas de seno e réguas de seno, baseado na norma jis-b 7525.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Mesa / régua de seno (Serviço IPT nº 1252)".
 
@@ -984,7 +984,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de microscópios e projetores de perfil (measuring microscopes, profile projectors).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Microscópio / projetor (Serviço IPT nº 1287)".
 
@@ -997,7 +997,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuado por método comparativo direto de micrômetro analógico, micrômetro digital, micrômetro para medidas profundidade e micrômetro tubulares para medidas internas (outside micrometers, electronic outside micrometers, depth micrometers), baseado nas normas BS EN ISO 3611.
 - **Normas citadas no texto:** EN ISO 3611
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Micrômetro (Serviço IPT nº 878)".
 
@@ -1010,7 +1010,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de máquinas de ensaio de dureza pelo método direto e indireto, Rockwell, Brinell, Vickers, Shore hardness testing machine. Calibração efetuada baseada nas normas NM ISO 6508-2, NM ISO 6506-2, NM ISO 6507-2, DIN ISO 7619- 1 e ASTM D2240.
 - **Normas citadas no texto:** NM ISO 6508-2, NM ISO 6506-2, NM ISO 6507-2, DIN ISO 7619, ASTM D2240
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de dureza (Serviço IPT nº 870)".
 
@@ -1023,7 +1023,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de escala máquina de ensaio de materiais metálicos, plásticos, borracha e concreto em tração e compressão, tension/compression testing machine, static uniaxial testing machine, parâmetros deslocamento e velocidade. Extensômetro. Calibração efetuada baseado na norma ABNT NBR ISO 7500-1. Calibração efetuada, baseado na norma ASTM E2309/E2309M. Calibração efetuada , baseado na norma ASTM E2658. Calibração efetuada baseado na norma NBR ISO 9513.
 - **Normas citadas no texto:** ABNT NBR ISO 7500-1, ASTM E2309/E2309M, ASTM E2658, NBR ISO 9513
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de ensaio (Serviço IPT nº 1248)".
 
@@ -1035,7 +1035,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de ensaio com 6 escalas (Serviço IPT nº 9759)".
 
@@ -1048,7 +1048,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de máquinas de ensaio de impacto Charpy pelo método direto e indireto baseado na norma ABNT NBR ISO 148-2. Charpy pendulum impact test
 - **Normas citadas no texto:** ABNT NBR ISO 148-2
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de ensaio de impacto (Serviço IPT nº 1212)".
 
@@ -1060,7 +1060,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de máquina de medição linear, máquinas de erro de forma/circularímetro, máquina de medição de rugosidade (rugosímetro) e perfilômetro.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de medição (Serviço IPT nº 874)".
 
@@ -1072,7 +1072,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de padrão escalonado para paquímetro e medidor de altura, padrões escalonado com tambor micrométrico e padrões escalonado para micrômetro de profundidade, baseado kc euromet.l-k35
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Padrão escalonado (Serviço IPT nº 1268)".
 
@@ -1084,7 +1084,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Paquímetro até 1000 mm (Serviço IPT nº 8901)".
 
@@ -1097,7 +1097,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de peneiras granulométricas = 25 ?m , baseado na norma NBR NM ISO 3310-1.
 - **Normas citadas no texto:** NBR NM ISO 3310-1
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Peneira (Serviço IPT nº 1278)".
 
@@ -1109,7 +1109,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de pesos padrão (massas padrão) classes E2, F1, F2, M1, M2 e M3. Calibração efetuada conforme oiml-r111-1 por comparação com pesos padrão.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Peso padrão até 20 kg [E2 até 5 kg; F1; F2; M1; M2; M3] (Serviço IPT nº 1277)".
 
@@ -1121,7 +1121,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo indireto por processo interferométrico de plano óptico (optical flat), baseado na norma jis-b 7430.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Plano óptico (Serviço IPT nº 1295)".
 
@@ -1133,7 +1133,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Relógio comparador/apalpador até 100 mm (Serviço IPT nº 8903)".
 
@@ -1145,7 +1145,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de tambor micrométrico (digimatic micrometer heads).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Tambor micrométrico (Serviço IPT nº 1308)".
 
@@ -1158,7 +1158,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por comparação com sensores padrão em meio térmico com uniformidade e estabilidade conhecidas, baseado na norma NBR 13770.
 - **Normas citadas no texto:** NBR 13770
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Termopar metais nobres (s, r, b) com ou sem a determinação dos coeficientes (Serviço IPT nº 23)".
 
@@ -1171,7 +1171,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por comparação com sensores padrão em meio térmico com uniformidade e estabilidade conhecidas, baseado na norma NBR 15970.
 - **Normas citadas no texto:** NBR 15970
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Termômetro de líquido em vidro (Serviço IPT nº 862)".
 
@@ -1184,7 +1184,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por comparação com sensores padrão em meio térmico com uniformidade e estabilidade conhecidas, baseado na norma NBR 13772.
 - **Normas citadas no texto:** NBR 13772
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Termômetro de resistência (termorresistência, pt-100, pt-25) cmc (Serviço IPT nº 901)".
 
@@ -1210,7 +1210,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de equipamentos tais como: Torquímetro analógico, digital, estalo, barra de torção ou flexão, chave mecânica, chave de torque, torquímetro hidráulico, torque wrench, hydraulic torque wrench, digital torque wrench. Calibração efetuada baseado na(s) norma(s) ABNT NBR ISO 6789.
 - **Normas citadas no texto:** ABNT NBR ISO 6789
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Torquímetro - 5 PTS (Serviço IPT nº 1260)".
 
@@ -1222,7 +1222,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de transdutores de deslocamento angular (ENCODER) com indicador analógico ou digital, instrumentos com escala angular digital, torpedo inclinômetro (rotary encoders, inclinometer)
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Transdutor de deslocamento angular (Serviço IPT nº 1309)".
 
@@ -1234,7 +1234,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Veiculo porta contêiner (VPC) 6 m (Serviço IPT nº 8941)".
 
@@ -1419,7 +1419,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** Serviço de calibração de medidores de líquidos nas instalações dos clientes utilizando um provador compacto como instrumento padrão.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Calibração de medidores em campo - provador (Serviço IPT nº 4679)".
 
@@ -1528,7 +1528,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** Serviço de estimativa da incerteza de medição global de gás natural em sistemas de medição por placa de orifício.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Estimativa de incerteza global - conf. K - sistema de medição por placa de orifício (Serviço IPT nº 4470)".
 
@@ -1540,7 +1540,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** Serviço de estimativa da incerteza de medição global de gás natural ou óleo em sistemas de medição por medidor turbina.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Estimativa de incerteza global - conf. L - sistema de medição por medidor turbina (Serviço IPT nº 4471)".
 
@@ -1564,7 +1564,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** Serviço de estimativa da incerteza de medição global de gás natural ou óleo em sistemas de medição por medidor ultrassônico.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Estimativa de incerteza global - conf. N - sistema de medição por medidor ultrassônico (Serviço IPT nº 4473)".
 
@@ -1577,7 +1577,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição de sistemas de medição de gás natural, gases ou hidrocarbonetos líquidos. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167, AGA#3, AGA#7, AGA#9 e API.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. A - um trecho reto a montante e um trecho reto a jusante (Serviço IPT nº 4460)".
 
@@ -1590,7 +1590,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição e retificador de escoamento de 19 tubos de sistemas de medição de gás natural, gases ou hidrocarbonetos líquidos. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167, AGA#3, AGA#7, AGA#9 e API.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. B - um trecho reto montante, um trecho reto jusante e um retificador (Serviço IPT nº 4461)".
 
@@ -1603,7 +1603,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição, um disposistivo porta-placa e condiciocador de escoamento zanker de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167, AGA#3 e AGA#9.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. D - dois trechos montante, um trecho jusante e um zanker (Serviço IPT nº 4463)".
 
@@ -1616,7 +1616,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição, um disposistivo porta-placa e condicionador de escoamento zanker de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167 e AGA#3.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. E - dois montantes, um jusante, um porta-placa e um zanker (Serviço IPT nº 4464)".
 
@@ -1629,7 +1629,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trecho reto de medição ou de um disposistivo porta-placa ou de um condicionador de escoamento zanker de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167; AGA#3, AGA#9.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. F - um trecho reto, um porta-placa ou um condicionador zanker (Serviço IPT nº 4465)".
 
@@ -1642,7 +1642,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de elementos primários deprimogênitos tais como placa de orifício, bocias, tubos de Venturi e medidores tipo cone de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167 e AGA#3.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. G - placa de orifício (Serviço IPT nº 4466)".
 
@@ -1655,7 +1655,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional de retificador de escoamento de 19 tubos de sistemas de medição de gás natural, gases ou hidrocarbonetos líquidos. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167; AGA#3; AGA#7; AGA#9 e API.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. H - retificador de escoamento (Serviço IPT nº 4468)".
 
@@ -1668,7 +1668,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição e dispostivo porta-placa de sistemas de medição de gás natural, gases ou hidrocarbonetos líquidos. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167, AGA#3, AGA#7, AGA#9 e API.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. I - um trecho montante, um trecho jusante e um porta-placa (Serviço IPT nº 4469)".
 
@@ -1681,6 +1681,6 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição, um disposistivo porta-placa e retificador de escoamento de 19 tubos de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167 e AGA#3.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf.c - um trecho montante, um trecho jusante, um porta-placa um retificador (Serviço IPT nº 4462)".

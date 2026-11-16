@@ -124,7 +124,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Condutividade térmica pode ser definida como a taxa na qual o calor é transferido por condução através de uma área de seção transversal unitária de um material, quando um existe um gradiente de temperatura perpendicular à área. Essa propriedade determina se um material pode ser utilizado como isolante térmico. O método utilizado para a medição de condutividade térmica de materiais sólidos e flexíveis está descrito na norma ASTM C 518.
 - **Palavras-chave:** Condutividade térmica, Material sólido, Energia térmica
 - **Normas citadas no texto:** ASTM C 518
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da condutividade térmica de materiais sólidos em forma de placas (Serviço IPT nº 3597)".
 
@@ -138,7 +138,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Condutividade térmica pode ser definida como a taxa na qual o calor é transferido por condução através de uma área de seção transversal unitária de um material, quando um existe um gradiente de temperatura perpendicular à área. Essa propriedade determina se um material pode ser utilizado como isolante térmico. O método utilizado para a medição de condutividade térmica de materiais sólidos está descrito na norma ASTM C 177.
 - **Palavras-chave:** Condutividade térmica, Resistência térmica, Transmitância térmica, Energia térmica
 - **Normas citadas no texto:** ASTM C 177
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da condutividade, resistência e transmitância térmica. (Serviço IPT nº 3599)".
 
@@ -491,7 +491,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LGE – Laboratório de Usos Finais e Gestão em Energia (unidade DD14)
 - **Descrição:** Calibração de iluminância de fotômetros é feita por comparação para transferir rastrabilidade as medições. A faixa de calibração oferecida pelo leo está compreendida no intervalo de 110 lux a 2000 lux. A calibração é rastreada ao INMETRO e ao PTB (instituto nacional de metrologia da alemanha). Laboratório de calibração acreditado pela CGCRE/INMETRO sob o número CAL 0377 (RBC).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0377 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0377_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0377_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0377
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Calibração de luxímetro/fotômetro em 5 pontos (Serviço IPT nº 5369)".
 

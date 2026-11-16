@@ -36,7 +36,7 @@ Identificação: Instituto de Pesquisas Tecnológicas do Estado de São Paulo S.
 
 **Que amostra devo enviar?** O catálogo não define tipo, quantidade ou forma de envio de amostras. Essas condições são combinadas com o laboratório após a solicitação.
 
-**O que significa acreditação Cgcre?** A Coordenação-Geral de Acreditação do Inmetro (Cgcre) reconhece formalmente a competência técnica de laboratórios de ensaio e calibração, com base na norma ABNT NBR ISO/IEC 17025. Um serviço marcado como acreditado tem o código do certificado (ex.: CAL 0003 para calibração, CRL para ensaio) e o link do certificado em PDF.
+**O que significa acreditação Cgcre?** A Coordenação-Geral de Acreditação do Inmetro (Cgcre) reconhece formalmente a competência técnica de laboratórios de ensaio e calibração, com base na norma ABNT NBR ISO/IEC 17025. Um serviço marcado como acreditado traz o código do certificado (ex.: CAL 0003 para calibração, CRL 0111 para ensaio). O escopo exato da acreditação deve ser confirmado com o laboratório no orçamento.
 
 **Que documento recebo?** Pela ABNT NBR ISO/IEC 17025, resultados de ensaio são emitidos em relatório e os de calibração em certificado. O catálogo não detalha o documento de cada serviço; o laboratório informa no orçamento.
 
@@ -454,7 +454,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LCPE – Laboratório de Celulose, Papel e Embalagem (unidade DO13)
 - **Descrição:** Determinação da abrasão de cargas em suspensão aquosa, segundo Breuning. Este método é aplicável para avaliação da abrasividade em cargas/pigmentos minerais utilizados na fabricação de papel e que não tenham revestimento. O resultado do ensaio é apresentados como desgaste da tela metálica (expresso em miligramas) e o teor abrasivo (expresso em g/m²).
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0357 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0357_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0357_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0357
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Abrasão de cargas e pigmentos em suspensão aquosa - segundo Breuning (Serviço IPT nº 5104)".
 
@@ -1223,7 +1223,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LCPE – Laboratório de Celulose, Papel e Embalagem (unidade DO13)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0357 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0357_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0357_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0357
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Número kappa (Serviço IPT nº 5262)".
 
@@ -2692,7 +2692,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de alinhadores de eixos a laser (laser shaft alignment)
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Alinhador de eixos a laser (Serviço IPT nº 1867)".
 
@@ -2704,7 +2704,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de balanças de pressão hidráulicas e pneumáticas (balanças de peso morto) e balanças digitais de pistão (balança de pressão digital). Calibração efetuada por comparação com balança de pressão incluindo a determinação da área efetiva do pistão e pesagem dos pesos.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Balança de pressão 1 pistão (hidráulica, pneumática e esfera) - 10 PTS (Serviço IPT nº 1319)".
 
@@ -2716,7 +2716,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de medidores de pressão atmosférica / absoluta tais como: Barômetro, estação meteorológica e termo-higro-barômetro (com ou sem conexão de pressão). Calibração efetuada por comparação com barômetro de referência utilizando câmara de vácuo / barométrica.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Barômetro digital ou analógico 700 a 1100 mbar - 8 PTS (Serviço IPT nº 1910)".
 
@@ -2728,7 +2728,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Bloco padrão ( de 1 a 5 peças ) até 100 mm (Serviço IPT nº 8911)".
 
@@ -2740,7 +2740,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Calibrador de altura até 1000 mm (Serviço IPT nº 8905)".
 
@@ -2752,7 +2752,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de calibradores (MECÂNICOS) de relógios comparador / apalpador e calibradores (ELETRÔNICO) de relógio comparador / apalpador
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Calibrador de relógio (Serviço IPT nº 1218)".
 
@@ -2764,7 +2764,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de comparadores eletrônicos de deslocamento e apalpadores eletrônicos.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Comparador / apalpador eletrônico (Serviço IPT nº 1235)".
 
@@ -2776,7 +2776,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Conjunto bloco padrão ( 122 peças ) (Serviço IPT nº 9809)".
 
@@ -2789,7 +2789,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de instrumentos de medição de força tais como: Células de carga, trandustores de força, sensor de força, arco/anel dinamométrico, force transducer, load cell, force sensor. Calibração efetuada baseado na(s) norma(s) ABNT NBR ISO 376, ASTM E74 e DIN EN ISO 376 (similar a ISO 376).
 - **Normas citadas no texto:** ABNT NBR ISO 376, ASTM E74, DIN EN ISO 376, ISO 376
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Célula de carga até 100 TF - [ABNT NBR ISO 376] (Serviço IPT nº 987)".
 
@@ -2802,7 +2802,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de instrumentos de medição de força indireta tais como: Macaco hidráulico, macaco de protensão, macaco de forma deslizante, célula de carga hidráulica. Calibração efetuada baseado na norma ABNT NBR 8197.
 - **Normas citadas no texto:** ABNT NBR 8197
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Célula de carga hidráulica (Serviço IPT nº 1201)".
 
@@ -2815,7 +2815,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
 - **Normas citadas no texto:** ABNT NBR 8197
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Dinamômetro até 200 TF - [ABNT NBR 8197] (Serviço IPT nº 9752)".
 
@@ -2828,7 +2828,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
 - **Normas citadas no texto:** ABNT NBR 8197
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Dinamômetro até 500 TF - [ABNT NBR 8197] (COMPRESSÃO) (Serviço IPT nº 9753)".
 
@@ -2841,7 +2841,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
 - **Normas citadas no texto:** ABNT NBR 8197
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Dinamômetro até 500 TF - [ABNT NBR 8197] (TRAÇÃO) (Serviço IPT nº 9754)".
 
@@ -2853,7 +2853,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de esquadro combinado (combination squares).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Esquadro (Serviço IPT nº 1239)".
 
@@ -2865,7 +2865,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Estação meteorológica (medidor de umidade relativa e temperatura) (Serviço IPT nº 9789)".
 
@@ -2877,7 +2877,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de hastes padrão para micrômetro externo até 3000 mm (rod inside micrometer)
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Haste padrão (Serviço IPT nº 888)".
 
@@ -2889,7 +2889,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Luneta de maquina de duresa (Serviço IPT nº 8812)".
 
@@ -2901,7 +2901,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de medidores de pressão relativa, diferencial e absoluta (digitais ou analógicos) tais como: Manômetros, vacuômetros, manovacuômetros, manômetros de coluna líquida, esfigmomanômetros, transdutores / transmissores com saída em unidade elétrica, calibradores / controladores de pressão e registradores de pressão (dataloggers). As calibrações são efetuadas por comparação com balança de pressão, balança digital de pistão, manometro padrão e/ou barômetro de referência.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Manômetro e vacuômetro analógico até 1000 bar - 10 PTS (Serviço IPT nº 1872)".
 
@@ -2913,7 +2913,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de medidores de espessura com relógio (thickness gauge, digital thickness gauge).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Medidor de espessura (Serviço IPT nº 1890)".
 
@@ -2925,7 +2925,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de medidores de nível por ultrassom (ultrasonic measurement).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Medidor de nível por ultrassom (Serviço IPT nº 1895)".
 
@@ -2937,7 +2937,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** A medição de peças e componentes inclui a pesagem / medição da massa das peças e/ou medições das dimensões ou outras propriedades geométricas tais como: Medições de ângulos, rugosidade, paralelismo, perpendicularidade, diâmetro, circularidade, cilindricidade, perfil de linha, planeza, concentricidade, coaxilidade, batimento. A medição da massa é realizada por meio de pesagens em balanças de precisão ou por comparação com pesos padrão. Para as medições dimensionais, pode-se ter como padrões de referência: Rugosímetros, perfilômetros, máquina de medição por coordenadas, máquina de erro de forma, máquina de medição linear, laser interferométrico.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Medição de peças , artefatos e componentes (Serviço IPT nº 1939)".
 
@@ -2949,7 +2949,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Medição de peças-coroa, pinhão, corrente (Serviço IPT nº 8721)".
 
@@ -2961,7 +2961,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de mesas de seno e réguas de seno, baseado na norma jis-b 7525.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Mesa / régua de seno (Serviço IPT nº 1252)".
 
@@ -2985,7 +2985,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de microscópios e projetores de perfil (measuring microscopes, profile projectors).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Microscópio / projetor (Serviço IPT nº 1287)".
 
@@ -2998,7 +2998,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuado por método comparativo direto de micrômetro analógico, micrômetro digital, micrômetro para medidas profundidade e micrômetro tubulares para medidas internas (outside micrometers, electronic outside micrometers, depth micrometers), baseado nas normas BS EN ISO 3611.
 - **Normas citadas no texto:** EN ISO 3611
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Micrômetro (Serviço IPT nº 878)".
 
@@ -3011,7 +3011,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de máquinas de ensaio de dureza pelo método direto e indireto, Rockwell, Brinell, Vickers, Shore hardness testing machine. Calibração efetuada baseada nas normas NM ISO 6508-2, NM ISO 6506-2, NM ISO 6507-2, DIN ISO 7619- 1 e ASTM D2240.
 - **Normas citadas no texto:** NM ISO 6508-2, NM ISO 6506-2, NM ISO 6507-2, DIN ISO 7619, ASTM D2240
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de dureza (Serviço IPT nº 870)".
 
@@ -3024,7 +3024,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de escala máquina de ensaio de materiais metálicos, plásticos, borracha e concreto em tração e compressão, tension/compression testing machine, static uniaxial testing machine, parâmetros deslocamento e velocidade. Extensômetro. Calibração efetuada baseado na norma ABNT NBR ISO 7500-1. Calibração efetuada, baseado na norma ASTM E2309/E2309M. Calibração efetuada , baseado na norma ASTM E2658. Calibração efetuada baseado na norma NBR ISO 9513.
 - **Normas citadas no texto:** ABNT NBR ISO 7500-1, ASTM E2309/E2309M, ASTM E2658, NBR ISO 9513
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de ensaio (Serviço IPT nº 1248)".
 
@@ -3036,7 +3036,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de ensaio com 6 escalas (Serviço IPT nº 9759)".
 
@@ -3049,7 +3049,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de máquinas de ensaio de impacto Charpy pelo método direto e indireto baseado na norma ABNT NBR ISO 148-2. Charpy pendulum impact test
 - **Normas citadas no texto:** ABNT NBR ISO 148-2
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de ensaio de impacto (Serviço IPT nº 1212)".
 
@@ -3061,7 +3061,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de máquina de medição linear, máquinas de erro de forma/circularímetro, máquina de medição de rugosidade (rugosímetro) e perfilômetro.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Máquina de medição (Serviço IPT nº 874)".
 
@@ -3073,7 +3073,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de padrão escalonado para paquímetro e medidor de altura, padrões escalonado com tambor micrométrico e padrões escalonado para micrômetro de profundidade, baseado kc euromet.l-k35
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Padrão escalonado (Serviço IPT nº 1268)".
 
@@ -3085,7 +3085,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Paquímetro até 1000 mm (Serviço IPT nº 8901)".
 
@@ -3098,7 +3098,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de peneiras granulométricas = 25 ?m , baseado na norma NBR NM ISO 3310-1.
 - **Normas citadas no texto:** NBR NM ISO 3310-1
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Peneira (Serviço IPT nº 1278)".
 
@@ -3110,7 +3110,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de pesos padrão (massas padrão) classes E2, F1, F2, M1, M2 e M3. Calibração efetuada conforme oiml-r111-1 por comparação com pesos padrão.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Peso padrão até 20 kg [E2 até 5 kg; F1; F2; M1; M2; M3] (Serviço IPT nº 1277)".
 
@@ -3122,7 +3122,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo indireto por processo interferométrico de plano óptico (optical flat), baseado na norma jis-b 7430.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Plano óptico (Serviço IPT nº 1295)".
 
@@ -3134,7 +3134,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Relógio comparador/apalpador até 100 mm (Serviço IPT nº 8903)".
 
@@ -3146,7 +3146,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de tambor micrométrico (digimatic micrometer heads).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Tambor micrométrico (Serviço IPT nº 1308)".
 
@@ -3159,7 +3159,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por comparação com sensores padrão em meio térmico com uniformidade e estabilidade conhecidas, baseado na norma NBR 13770.
 - **Normas citadas no texto:** NBR 13770
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Termopar metais nobres (s, r, b) com ou sem a determinação dos coeficientes (Serviço IPT nº 23)".
 
@@ -3172,7 +3172,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por comparação com sensores padrão em meio térmico com uniformidade e estabilidade conhecidas, baseado na norma NBR 15970.
 - **Normas citadas no texto:** NBR 15970
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Termômetro de líquido em vidro (Serviço IPT nº 862)".
 
@@ -3185,7 +3185,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por comparação com sensores padrão em meio térmico com uniformidade e estabilidade conhecidas, baseado na norma NBR 13772.
 - **Normas citadas no texto:** NBR 13772
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Termômetro de resistência (termorresistência, pt-100, pt-25) cmc (Serviço IPT nº 901)".
 
@@ -3211,7 +3211,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração de equipamentos tais como: Torquímetro analógico, digital, estalo, barra de torção ou flexão, chave mecânica, chave de torque, torquímetro hidráulico, torque wrench, hydraulic torque wrench, digital torque wrench. Calibração efetuada baseado na(s) norma(s) ABNT NBR ISO 6789.
 - **Normas citadas no texto:** ABNT NBR ISO 6789
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Torquímetro - 5 PTS (Serviço IPT nº 1260)".
 
@@ -3223,7 +3223,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** Calibração efetuada por método comparativo direto de transdutores de deslocamento angular (ENCODER) com indicador analógico ou digital, instrumentos com escala angular digital, torpedo inclinômetro (rotary encoders, inclinometer)
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Transdutor de deslocamento angular (Serviço IPT nº 1309)".
 
@@ -3235,7 +3235,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LMM – Laboratório de Metrologia Mecânica (unidade DH12)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0003 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0003_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0003
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Veiculo porta contêiner (VPC) 6 m (Serviço IPT nº 8941)".
 
@@ -3420,7 +3420,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** Serviço de calibração de medidores de líquidos nas instalações dos clientes utilizando um provador compacto como instrumento padrão.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Calibração de medidores em campo - provador (Serviço IPT nº 4679)".
 
@@ -3529,7 +3529,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** Serviço de estimativa da incerteza de medição global de gás natural em sistemas de medição por placa de orifício.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Estimativa de incerteza global - conf. K - sistema de medição por placa de orifício (Serviço IPT nº 4470)".
 
@@ -3541,7 +3541,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** Serviço de estimativa da incerteza de medição global de gás natural ou óleo em sistemas de medição por medidor turbina.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Estimativa de incerteza global - conf. L - sistema de medição por medidor turbina (Serviço IPT nº 4471)".
 
@@ -3565,7 +3565,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** Serviço de estimativa da incerteza de medição global de gás natural ou óleo em sistemas de medição por medidor ultrassônico.
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Estimativa de incerteza global - conf. N - sistema de medição por medidor ultrassônico (Serviço IPT nº 4473)".
 
@@ -3578,7 +3578,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição de sistemas de medição de gás natural, gases ou hidrocarbonetos líquidos. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167, AGA#3, AGA#7, AGA#9 e API.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. A - um trecho reto a montante e um trecho reto a jusante (Serviço IPT nº 4460)".
 
@@ -3591,7 +3591,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição e retificador de escoamento de 19 tubos de sistemas de medição de gás natural, gases ou hidrocarbonetos líquidos. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167, AGA#3, AGA#7, AGA#9 e API.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. B - um trecho reto montante, um trecho reto jusante e um retificador (Serviço IPT nº 4461)".
 
@@ -3604,7 +3604,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição, um disposistivo porta-placa e condiciocador de escoamento zanker de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167, AGA#3 e AGA#9.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. D - dois trechos montante, um trecho jusante e um zanker (Serviço IPT nº 4463)".
 
@@ -3617,7 +3617,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição, um disposistivo porta-placa e condicionador de escoamento zanker de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167 e AGA#3.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. E - dois montantes, um jusante, um porta-placa e um zanker (Serviço IPT nº 4464)".
 
@@ -3630,7 +3630,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trecho reto de medição ou de um disposistivo porta-placa ou de um condicionador de escoamento zanker de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167; AGA#3, AGA#9.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. F - um trecho reto, um porta-placa ou um condicionador zanker (Serviço IPT nº 4465)".
 
@@ -3643,7 +3643,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de elementos primários deprimogênitos tais como placa de orifício, bocias, tubos de Venturi e medidores tipo cone de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167 e AGA#3.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. G - placa de orifício (Serviço IPT nº 4466)".
 
@@ -3656,7 +3656,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional de retificador de escoamento de 19 tubos de sistemas de medição de gás natural, gases ou hidrocarbonetos líquidos. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167; AGA#3; AGA#7; AGA#9 e API.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. H - retificador de escoamento (Serviço IPT nº 4468)".
 
@@ -3669,7 +3669,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição e dispostivo porta-placa de sistemas de medição de gás natural, gases ou hidrocarbonetos líquidos. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167, AGA#3, AGA#7, AGA#9 e API.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf. I - um trecho montante, um trecho jusante e um porta-placa (Serviço IPT nº 4469)".
 
@@ -3682,7 +3682,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LV – Laboratório de Vazão (unidade DH14)
 - **Descrição:** O serviço consiste na inspeção dimensional e de rugosidade superificial de trechos retos de medição, um disposistivo porta-placa e retificador de escoamento de 19 tubos de sistemas de medição de gás natural ou gases. Os resultados são comparados a requisitos de normas ou documentos técnicos tais como ISO 5167 e AGA#3.
 - **Normas citadas no texto:** ISO 5167
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0162 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0162_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0162
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Inspeção dimensional - conf.c - um trecho montante, um trecho jusante, um porta-placa um retificador (Serviço IPT nº 4462)".
 
@@ -4406,7 +4406,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaio que determina o teor de ingredientes ativos e balanceamento químico em solução do produto preservativo CCA ou CCB, utilizando a técnica de espectrofotometria de absorção atômica; o procedimento tem como referência as normas AWPA - american wood preservers’ association - standard A11-93 - standard methods for analysis of treated wood and treating solutions by atomic absorption spectroscopy e BSI - british standards - BS 5666:part 3:1991 - methods of analysis of wood preservatives and treated timber.
 - **Palavras-chave:** Produto preservativo, Madeira, Espectrofotometria de absorção atômica
 - **Normas citadas no texto:** BS 5666
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0364 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0364_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0364
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Teores de IA em solução do preservativo CCA ou CCB (Serviço IPT nº 4325)".
 
@@ -4463,7 +4463,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 13961:2010 - móveis para escritório - armários / gaveteiros- classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos de segurança, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Armário de madeira, Gaveteiro de madeira
 - **Normas citadas no texto:** ABNT NBR 13961
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de armários e arquivos (Serviço IPT nº 3299)".
 
@@ -4477,7 +4477,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 16031:2011 - móveis - assentos multiplos - requisitos e métodos de ensaio para a resistência e a durabilidade - classificação e caracteristicas fisicas, - (requisitos de segurança,(pontos de cisalhamento) dimensões e ensaios mecânicos de segurança (durabilidade e impactos).
 - **Palavras-chave:** Mobiliário, Longarina de madeira, Durabilidade
 - **Normas citadas no texto:** ABNT NBR 16031
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de assentos multiplos (LONGARINAS) (Serviço IPT nº 4062)".
 
@@ -4491,7 +4491,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 15878:2011 - móveis - assentos para espectadores - requisitos e métodos de ensaio para a resistência e a durabilidade - classificação e caracteristicas fisicas, - (requisitos de segurança,(pontos de cisalhamento) e ensaios mecânicos de segurança (durabilidade e impactos), e dimensões para longarinas.
 - **Palavras-chave:** Mobiliário, Cadeira de madeira
 - **Normas citadas no texto:** ABNT NBR 15878
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de assentos para espectadores (Serviço IPT nº 2638)".
 
@@ -4505,7 +4505,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 13962:2018 - móveis para escritório - cadeiras - requisitos e métodos de ensaio- (requisitos, classificação, dimensões, estabilidade e ensaios de durabilidade).
 - **Palavras-chave:** Mobiliário para escritório, Cadeira de madeira
 - **Normas citadas no texto:** ABNT NBR 13962
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de cadeira de diálogo fixa e giratória (Serviço IPT nº 452)".
 
@@ -4519,7 +4519,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 13962:2018 - móveis para escritório - cadeiras - requisitos e métodos de ensaio- (requisitos, classificação, dimensões, estabilidade e ensaios de durabilidade).
 - **Palavras-chave:** Mobiliário para escritório, Cadeira de madeira
 - **Normas citadas no texto:** ABNT NBR 13962
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de cadeira giratória operacional (Serviço IPT nº 3304)".
 
@@ -4533,7 +4533,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 13961:2010 - móveis para escritório - armários / gaveteiros- classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos de segurança, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Armário de madeira, Gaveteiro de madeira
 - **Normas citadas no texto:** ABNT NBR 13961
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de gaveteiros fixo e volante (Serviço IPT nº 3303)".
 
@@ -4547,7 +4547,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 13966:2008 - móveis para escritório - mesas - classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Mesa de madeira
 - **Normas citadas no texto:** ABNT NBR 13966
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de mesas (Serviço IPT nº 3266)".
 
@@ -4561,7 +4561,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 15786:2011 - móveis para escritório - móveis para teleatendimento, call center e telemarketing- classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos de segurança, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Madeira
 - **Normas citadas no texto:** ABNT NBR 15786
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de mesas para teleatendimento, call center e telemarketing (Serviço IPT nº 3272)".
 
@@ -4575,7 +4575,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios referente a norma ABNT NBR 13967:2011 - móveis para escritório - sistema de estação de trabalho - classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Madeira
 - **Normas citadas no texto:** ABNT NBR 13967
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de sistemas de estação de trabalho (Serviço IPT nº 3273)".
 
@@ -4953,7 +4953,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaio que determina a quantidade do produto preservativo CCA ou CCB em madeira tratada sob pressão, utilizando a técnica de espectrofotometria de absorção atômica; procedimento de ensaio que tem como referência a norma ABNT NBR 6232 -penetração e retenção de preservativos em madeira tratada sob pressão. Este ensaio avalia se a retenção do produto é adequada ao uso ue será dado à madeira.
 - **Palavras-chave:** Produto preservativo, Madeira
 - **Normas citadas no texto:** ABNT NBR 6232
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Retenção de produto preservativo CCA ou CCB (Serviço IPT nº 2016)".
 
@@ -5105,7 +5105,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Condutividade térmica pode ser definida como a taxa na qual o calor é transferido por condução através de uma área de seção transversal unitária de um material, quando um existe um gradiente de temperatura perpendicular à área. Essa propriedade determina se um material pode ser utilizado como isolante térmico. O método utilizado para a medição de condutividade térmica de materiais sólidos e flexíveis está descrito na norma ASTM C 518.
 - **Palavras-chave:** Condutividade térmica, Material sólido, Energia térmica
 - **Normas citadas no texto:** ASTM C 518
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da condutividade térmica de materiais sólidos em forma de placas (Serviço IPT nº 3597)".
 
@@ -5119,7 +5119,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Condutividade térmica pode ser definida como a taxa na qual o calor é transferido por condução através de uma área de seção transversal unitária de um material, quando um existe um gradiente de temperatura perpendicular à área. Essa propriedade determina se um material pode ser utilizado como isolante térmico. O método utilizado para a medição de condutividade térmica de materiais sólidos está descrito na norma ASTM C 177.
 - **Palavras-chave:** Condutividade térmica, Resistência térmica, Transmitância térmica, Energia térmica
 - **Normas citadas no texto:** ASTM C 177
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da condutividade, resistência e transmitância térmica. (Serviço IPT nº 3599)".
 
@@ -5472,7 +5472,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LGE – Laboratório de Usos Finais e Gestão em Energia (unidade DD14)
 - **Descrição:** Calibração de iluminância de fotômetros é feita por comparação para transferir rastrabilidade as medições. A faixa de calibração oferecida pelo leo está compreendida no intervalo de 110 lux a 2000 lux. A calibração é rastreada ao INMETRO e ao PTB (instituto nacional de metrologia da alemanha). Laboratório de calibração acreditado pela CGCRE/INMETRO sob o número CAL 0377 (RBC).
-- **Acreditação Cgcre/Inmetro:** sim — CAL 0377 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CAL_0377_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CAL_0377_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CAL 0377
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Calibração de luxímetro/fotômetro em 5 pontos (Serviço IPT nº 5369)".
 
@@ -5896,7 +5896,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Neste ensaio é determinada a condutividade elétrica, que corresponde à capacidade de um material conduzir corrente elétrica, em etanol anidro e hidratado combustível, mensurada com auxílio de uma célula de platina.
 - **Palavras-chave:** Etanol, Condutividade elétrica
 - **Normas citadas no texto:** ABNT NBR 10547-16
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da condutividade elétrica, ABNT NBR 10547-16 (Serviço IPT nº 2127)".
 
@@ -5910,7 +5910,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Este método é aplicado para a determinação do teor de substâncias não dissolvidas no óleo diesel, denominadas como contaminação total. Esta técnica baseia-se na quantificação dos resíduos remanescentes no filtro utilizado na filtração à vácuo de uma alíquota da amostra e é expressa em relação à massa da amostra em mg/kg.
 - **Palavras-chave:** Óleo diesel, Biodiesel
 - **Normas citadas no texto:** BS EN 12662-24
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da contaminação total, BSI BS EN 12662-24(partes 1 e 2) (Serviço IPT nº 4381)".
 
@@ -5924,7 +5924,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** A determinação da cor ASTM do óleo diesel representa uma importante característica de qualidade. A técnica utiliza um colorímetro e um sistema de padrões de cores, com valores de 0,5 a 8,0, que serve de referência para comparação com a cor das amostras.
 - **Palavras-chave:** Óleo diesel, Óleo mineral isolante, Óleo lubrificante
 - **Normas citadas no texto:** ASTM D1500-24
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da cor ASTM, ASTM D1500-24 (Serviço IPT nº 2096)".
 
@@ -5938,7 +5938,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** A determinação de cor e aspecto dos combustíveis é realizada visualmente e permite avaliar a presença de contaminação por água livre ou material particulado. A água livre corresponde a água em excesso, em concentração superior à da solubilidade no combustível na temperatura do ensaio. O material particulado pode ser proveniente da contaminação por poeira, produtos de corrosão, instabilidade do combustível, deterioração de revestimentos de proteção, entre outros.
 - **Palavras-chave:** Óleo diesel, Etanol, Biodiesel
 - **Normas citadas no texto:** ABNT NBR 14954-21
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da cor e aspecto, ABNT NBR 14954-21 (Serviço IPT nº 2362)".
 
@@ -5952,7 +5952,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** As características de destilação (volatilidade) dos combustíveis são importantes no que se refere à segurança e desempenho. O intervalo de ebulição fornece informações sobre a composição, propriedades e comportamento do combustível durante o armazenamento e uso. Os resultados deste método são expressos como porcentagem evaporada ou porcentagem recuperada em função da temperatura.
 - **Palavras-chave:** Gasolina, Nafta petroquímica, Solvente, Óleo diesel
 - **Normas citadas no texto:** ASTM D86-23AE2
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da curva de destilação, ASTM D86-23AE2 (Serviço IPT nº 2098)".
 
@@ -5966,7 +5966,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Este ensaio refere-se à determinação da massa específica e do teor alcoólico de etanol combustível utilizando-se densímetro digital e tabelas alcoométricas.
 - **Palavras-chave:** Etanol
 - **Normas citadas no texto:** ABNT NBR 15639-16
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da massa específica e do teor alcoólico, ABNT NBR 15639-16 (Serviço IPT nº 4279)".
 
@@ -5980,7 +5980,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** A densidade é uma propriedade física fundamental das substâncias e corresponde a massa por unidade de volume a uma dada temperatura. A metodologia ASTM D4052 define a utilização de um densímetro automático para execução da análise.
 - **Palavras-chave:** Óleo combustível, Óleo diesel, Querosene de aviação, Biodiesel, Gasolina, Óleo lubrificante, Óleo lubrificante, Óleo mineral isolante, Líquido para arrefecimento
 - **Normas citadas no texto:** ASTM D4052-22, ASTM D4052
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da massa específica ou densidade relativa por densímetro digital, ASTM D4052-22 (Serviço IPT nº 2360)".
 
@@ -6020,7 +6020,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LBE – Laboratório de Bioenergia e Eficiência Energética (unidade DD11)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação de água livre (Serviço IPT nº 8555)".
 
@@ -6034,7 +6034,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Este método é aplicado para determinação do pH de etanol hidratado combustível, contendo até 3% v/v de hidrocarbonetos, utilizando eletrodo combinado de pH com sistema de referência prata/cloreto de prata.
 - **Palavras-chave:** Etanol
 - **Normas citadas no texto:** ABNT NBR 10891-17
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do pH, ABNT NBR 10891-17 errata 1 (Serviço IPT nº 2099)".
 
@@ -6132,7 +6132,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** O ponto de fulgor de um líquido é definido como a menor temperatura na qual o material libera vapores suficientes para formar uma mistura com ar atmosférico que pode entrar em ignição em contato com uma fonte de calor. A classificação de inflamabilidade de produtos líquidos é baseada nas determinações de ponto de fulgor e/ou ponto de ebulição. O método pensky-martens é realizado em vaso fechado, com agitação e aplicado à produtos com ponto de fulgor na faixa 40°C a 370°C.
 - **Palavras-chave:** Óleo combustível, Óleo diesel, Biodiesel, Ponto de fulgor
 - **Normas citadas no texto:** ASTM D93-25
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do ponto de fulgor (pensky-martens), ASTM D93-25 (Serviço IPT nº 1976)".
 
@@ -6146,7 +6146,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Este método utiliza a técnica de espectrometria na região de infravermelho médio. O pico de absorbância máxima na banda típica de absorção para os ésteres é medido e com base na curva analítica é obtido o teor de biodiesel de uma amostra.
 - **Palavras-chave:** Óleo diesel
 - **Normas citadas no texto:** DIN EN 14078-14
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de biodiesel, DIN EN 14078-14 (Serviço IPT nº 2830)".
 
@@ -6174,7 +6174,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** O teor de cinzas, reportado em % massa, corresponde à quantidade de resíduos sólidos remanescentes após a queima do combustível. Esse resíduo é geralmente atribuído aos minerais e a outros compostos inorgânicos presentes na amostra.
 - **Palavras-chave:** Óleo combustível, Óleo diesel
 - **Normas citadas no texto:** ASTM D482-25
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de cinzas em produtos de petróleo, ASTM D482-25 (Serviço IPT nº 4283)".
 
@@ -6216,7 +6216,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Este método é aplicado para determinação do teor de enxofre em hidrocarbonetos líquidos com ponto de ebulição na faixa de 25 °C a 400 °C e viscosidade entre 0,2 CST e 20 CST à temperatura ambiente. Nesta técnica o material é queimado na presença de excesso de oxigênio, gerando radicais SO2, que fluorescem na região do ultravioleta.
 - **Palavras-chave:** Gasolina, Óleo diesel, Biodiesel, Etanol
 - **Normas citadas no texto:** ASTM D5453-25
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de enxofre total por ultravioleta, ASTM D5453-25 (Serviço IPT nº 2792)".
 
@@ -6230,7 +6230,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Este método é aplicado para determinação do teor de etanol anidro combustível (EAC), a partir de 1% em volume, em gasolinas automotivas. Nesta técnica, que utiliza provetas de 100 mL para a determinação, todos os demais álcoois que possam estar presentes na amostra serão contabilizados como EAC.
 - **Palavras-chave:** Gasolina
 - **Normas citadas no texto:** ABNT NBR 13992-15
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de etanol anidro combustível, ABNT NBR 13992-15 (Serviço IPT nº 2108)".
 
@@ -6244,7 +6244,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Nesta técnica o teor de hidrocarbonetos em etanol anidro combustível e etanol hidratado combustível é determinado por método volumétrico, utilizando solução de cloreto de sódio. Neste método compostos de baixa polaridade presentes nos derivados de petróleo também são contabilizados como hidrocarbonetos.
 - **Palavras-chave:** Etanol
 - **Normas citadas no texto:** ABNT NBR 13993-18
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de hidrocarbonetos, ABNT NBR 13993-18 (Serviço IPT nº 2807)".
 
@@ -6313,7 +6313,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Este método abrange a determinação do teor de água, na faixa de 10 mg/kg a 25000 mg/kg, em produtos petróleo e hidrocarbonetos. Esta técnica é baseada na oxidação de SO2 por iodo na presença de água e é utilizado um titulador Karl Fischer coulométrico.
 - **Palavras-chave:** Biodiesel, Óleo diesel, Etanol, Óleo lubrificante
 - **Normas citadas no texto:** ASTM D6304-25
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de água (método Karl Fischer coulométrico), ASTM D6304-25 - proc. A (Serviço IPT nº 2794)".
 
@@ -6386,7 +6386,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios para avaliação da capacidade extintora na classe de fogo a (fogos em combustíveis sólidos) conforme os requisitos e critérios definidos nas normas ABNT NBR 15808 (extintores de incêndio portáteis) e ABNT NBR 15809 (extintores de incêndio sobrerrodas).
 - **Palavras-chave:** Equipamento de segurança contra incêndio, Classe de fogo a, Combustível sólido
 - **Normas citadas no texto:** ABNT NBR 15808, ABNT NBR 15809
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Capacidade extintora 2-a (Serviço IPT nº 3660)".
 
@@ -6400,7 +6400,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios para avaliação da capacidade extintora na classe de fogo b (fogos em líquidos inflamáveis) conforme os requisitos e critérios definidos nas normas ABNT NBR 15808 (extintores de incêndio portáteis) e ABNT NBR 15809 (extintores de incêndio sobrerrodas).
 - **Palavras-chave:** Equipamento de segurança contra incêndio, Capacidade extintora, Classe de fogo b, Líquido inflamável
 - **Normas citadas no texto:** ABNT NBR 15808, ABNT NBR 15809
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Capacidade extintora 20-b (Serviço IPT nº 3682)".
 
@@ -6441,7 +6441,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios para determinar a classificação de reação ao fogo de materiais de acabamento e revestimento de teto/forro e parede empregados em edificações. A contribuição que esses materiais podem dar ao desenvolvimento do incêndio, denomina-se reação fogo, as características de reação ao fogo são determinadas em laboratório e podem ser utilizadas para aceitar ou rejeitar os materiais na definição do projeto arquitetônico. Um projeto arquitetônico que privilegie a segurança contra incêndio certamente se valerá da seleção de materiais que tenham características de reação ao fogo compatíveis com o risco existente no local. Conforme exigência das instruções técnicas dos corpos de bombeiros de diversos estados, através do CMAR (controle dos materiais de acabamento e revestimento) e das normas ABNT NBR 16626 - classificação da reação ao fogo de produtos de construção e ABNT NBR 15575 - desempenho de edificações habitacionais são: Ensaio de determinação da densidade óptica de fumaça pela norma ASTM E662, ensaio de índice de propagação superficial de chama pela norma ABNT NBR 9442 e classificação de reação ao fogo dos materiais em função dos resultados dos dois métodos de ensaios utilizados.
 - **Palavras-chave:** Comportamento dos materiais, Reação ao fogo, Material de revestimento, Edificações, Segurança contra incêndio
 - **Normas citadas no texto:** NBR 9442, ABNT NBR 16626, ABNT NBR 15575, ASTM E662, ABNT NBR 9442
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do índice de propagação superficial de chama pelo método do painel radiante NBR 9442 (Serviço IPT nº 3706)".
 
@@ -6455,7 +6455,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaio para avaliação de condutividade elétrica em extintores de incêndio classe de fogo c, conforme os requisitos e critérios definidos nas normas ABNT NBR 15808 (extintores de incêndio portáteis) e ABNT NBR 15809 (extintores de incêndio sobrerrodas).
 - **Palavras-chave:** Equipamento de segurança contra incêndio, Condutividade elétrica, Classe de fogo c
 - **Normas citadas no texto:** ABNT NBR 15808, ABNT NBR 15809
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaio classe c para extintores de incêndio (Serviço IPT nº 3659)".
 
@@ -6480,7 +6480,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LSFEX – Laboratório de Segurança ao Fogo e Explosões (unidade DL15)
 - **Descrição:** Ensaio de funcionamento mecânico e resistência ao fogo em porta para entrada de unidade autônoma.
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaio de funcionamento mecânico e resistência ao fogo em porta para entrada de unidade autônoma (Serviço IPT nº 3747)".
 
@@ -6493,7 +6493,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LSFEX – Laboratório de Segurança ao Fogo e Explosões (unidade DL15)
 - **Descrição:** Ensaios em materais combustíveis, como por exemplo, polimérios e têxteis, utilizados na confeção de componentes eletro-eletrônicos, revestimentos de estofados e cortinas, colchões, tecidos para roupas e epi's, cadeiras, placas de sinalização, correias transportadoras, entre outros, estão sujeitos a entrarem em contato com uma fonte de ignição, devido, principalmente, a defeitos e acidentes. Para evitar que uma pequena fonte de ignição resulte em um incêndio de grandes proporções, a escolha de materiais adequados para a fabricação dos produtos é de grande importância.
 - **Palavras-chave:** Comportamento dos materiais, Reação ao fogo, Material combustível, Material têxtil, Inflamabilidade dos materiais, Ignitabilidade dos materiais, Segurança contra incêndio
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaio de inflamabilidade/ignitabilidade de materiais (Serviço IPT nº 3657)".
 
@@ -6601,7 +6601,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Os ensaios para determinar o desempenho quanto à reação ao fogo de materiais de acabamento e revestimento da construção naval, quando expostos a um fluxo de energia radiante e uma chama piloto padronizados, são exigidos por orgãos de inspeção e certificadoras de produtos. Os métodos tem como objetivo limitar a velocidade de propagação de chama é a quantidade de liberação e toxicidade da fumaça, em um príncipio e avanço do incêndio. Os resultados são expressos da seguinte forma: Fluxo crítico de energia radiante na extinção (CFE); calor médio de sustentação de queima (QSB); calor total desenvolvido (QT); pico de desenvolvimento de calor (QP); densidade óptica de fumaça (DM) e toxicidade dos gases (medida em ppm pelo FTIR).as normas de avaliação da propagação superficial são: ISO 5658-2, 2010 FTP code e ABNT NBR 15708-1 e as normas para a avaliação da densidade de fumaça e toxicidade dos gases são: ISO 5659-2, 2010 FTP code e e ABNT NBR 15708-1
 - **Palavras-chave:** Comportamento dos materiais, Reação ao fogo, Material de revestimento, Construção naval, Segurança contra incêndio
 - **Normas citadas no texto:** ISO 5658-2, ABNT NBR 15708-1, ISO 5659-2
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaios de reação ao fogo em materiais da área naval (Serviço IPT nº 3690)".
 
@@ -6615,7 +6615,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios para determinar a classificação de reação ao fogo de materiais de acabamento e revestimento em condições especiais empregados em edificações. A contribuição que esses materiais podem dar ao desenvolvimento do incêndio denomina-se reação fogo, as características de reação ao fogo são determinadas em laboratório e podem ser utilizadas para aceitar ou rejeitar os materiais na definição do projeto arquitetônico. Os revestimentos em condição especial caracterizam-se por retração abrupta na presença de chama, materiais combustíveis envolvidos por materiais incombustiveis, entre outros. Conforme exigência das instruções técnicas dos corpos de bombeiros de diversos estados, através do CMAR (controle dos materiais de acabamento e revestimento), portaria do INMETRO e das normas ABNT NBR 16626 - classificação da reação ao fogo de produtos de construção e ABNT NBR 15575 - desempenho de edificações habitacionais. Ensaio de verificação da ignitabilidade pela norma ISO 11925-2 e ensaio sbi (single burning item) pela norma EN 13823 e classificação de reação ao fogo dos materiais em função dos resultados obtidos nos dois métodos de ensaio.
 - **Palavras-chave:** Comportamento dos materiais, Reação ao fogo, Material de revestimento, Edificações, Segurança contra incêndio
 - **Normas citadas no texto:** ABNT NBR 16626, ABNT NBR 15575, ISO 11925-2, EN 13823
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaios de reação ao fogo em revestimentos emcondiçoes especiais, exceto revestimento de piso (Serviço IPT nº 3702)".
 
@@ -6629,7 +6629,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios para determinar o tempo de resistência ao fogo dos elementos construtivos e estruturais (tempo durante o qual conservam suas características funcionais) e a compartimentação dos ambientes, que visa dividir a edificação em células capacitadas em suportar a queima dos materiais combustíveis e impedir o alastramento do incêndio para outros ambientes. Um desses elementos importantes da segurança contra incêndio são as portas, que podem ser de folha simples ou duplas, consistem de um elemento importante para compor a compartimentação do ambiente, com o objetivo de subdividir a edificação em células capazes de suportar a ação da queima dos materiais combustíveis nela contidos, impedindo a propagação do incêndio, restringindo a livre movimentação da fumaça no interior do edifício, mantendo as rotas de fuga seguras contra os efeitos do incêndio e facilitando as operações de combate ao incêndio. Os elementos que propiciam tais subdivisões devem apresentar resistência ao fogo, determinada através de ensaios laboratoriais.
 - **Palavras-chave:** Tempo requerido de resistência ao fogo - TRRF, Compartimentação de ambientes, Segurança contra incêndio
 - **Normas citadas no texto:** ABNT NBR 11742
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaios em porta corta-fogo para saída de emergência - ABNT NBR 11742 (Serviço IPT nº 3746)".
 
@@ -6671,7 +6671,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Descrição:** Ensaios para avaliação da embalagem para acondicionamento e para avaliação da propriedade extintora nas classes de fogo a (fogos em combustíveis sólidos) e b (fogos em líquidos inflamáveis) de pó químico para extinção de incêndio, conforme os requisitos e critérios definidos nas normas ABNT NBR 9695 (pó químico para extinção de incêndio) e ABNT NBR 15808 (extintores de incêndio portáteis).
 - **Palavras-chave:** Equipamento de segurança contra incêndio, Capacidade extintora, Classe de fogo a, Classe de fogo b, Combustível sólido, Líquido inflamável
 - **Normas citadas no texto:** ABNT NBR 9695, ABNT NBR 15808
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Propriedade extintora 20-b (Serviço IPT nº 3977)".
 
@@ -6709,7 +6709,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** LSFEX – Laboratório de Segurança ao Fogo e Explosões (unidade DL15)
 - **Descrição:** Ensaios de caracterização da capacidade de um produto ou material explodir ou não. Análise e classificação de explosividade de equipamentos. Determinação da pressão máxima gerada numa explosão (PMAX). Determinação da velocidade de aumento da pressão gerada numa explosão (kst. Dimensionamento de dispositivos de alívio de proteção e pressão de explosão. Estimativa dos danos gerados numa explosão de pós em suspensão. Determinar a energia mínima que pode provocar a explosão de nuvem de pó em suspensão. Determinação da concentração mínima de explosão (CME) ou limite inferior de explosividade (LIE) de pós em suspensão. Determinação da temperatura mínima de explosão de poeira. Determinação da temperatura mínima de inflamação de pós em camada. Análise do tamanho de partícula considerada explosiva. Determinação da temperatura mínima a partir do qual os vapores desprendidos por material sólido aquecido podem se inflamar ao entrar em contato com uma fonte de ignição. Determinação da característica isolante, semi-condutor ou condutor de materiais sólidos. Determinação da caloria gerada na combustão de materiais. Determinação do poder calorífico superior de dado material
 - **Palavras-chave:** Explosão, Pós em suspensão, Energia mínima de ignição, Temperatura mínima, Poder calorífico
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Severidade da explosão (pmax, dp/dt e kmax) de pós em suspensão (Serviço IPT nº 6433)".
 
@@ -7612,7 +7612,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** NUTABES – Núcleo de Tecnologias Avançadas para Bem-estar e Saúde Aplicados as Ciências da Vida (unidade DK11)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0161 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0161_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0161_certificado_ingles.pdf); CRL 1146 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_1146_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_1146_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0161, CRL 1146
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação de bifelinas polibromadas de acordo com a diretiva rohs. (Serviço IPT nº 8797)".
 
@@ -7675,7 +7675,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Laboratório responsável:** NUTABES – Núcleo de Tecnologias Avançadas para Bem-estar e Saúde Aplicados as Ciências da Vida (unidade DK11)
 - **Descrição:** Essa técnica visa a investigar compotos orgânicos pelas ligações químicas orgânicas em determinados produtos. Aplicável em amostras como: Plásticos, borrachas, tintas, óleos, e materiais orgânicos em geral. As principais normas utilizadas são ASTM E 1252 e ASTM D 3677. Essa técnica pode ser também utilizada para verificar contaminações ou diferenças entre produtos de referência e produtos com problemas.
 - **Normas citadas no texto:** ASTM E 1252, ASTM D 3677
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0161 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0161_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0161_certificado_ingles.pdf); CRL 1146 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_1146_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_1146_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0161, CRL 1146
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Identificação de compsotos orgânicos por espectrofotometria no infravermelho (FTIR) (Serviço IPT nº 8030)".
 

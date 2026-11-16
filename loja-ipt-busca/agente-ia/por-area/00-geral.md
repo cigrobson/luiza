@@ -36,7 +36,7 @@ Identificação: Instituto de Pesquisas Tecnológicas do Estado de São Paulo S.
 
 **Que amostra devo enviar?** O catálogo não define tipo, quantidade ou forma de envio de amostras. Essas condições são combinadas com o laboratório após a solicitação.
 
-**O que significa acreditação Cgcre?** A Coordenação-Geral de Acreditação do Inmetro (Cgcre) reconhece formalmente a competência técnica de laboratórios de ensaio e calibração, com base na norma ABNT NBR ISO/IEC 17025. Um serviço marcado como acreditado tem o código do certificado (ex.: CAL 0003 para calibração, CRL para ensaio) e o link do certificado em PDF.
+**O que significa acreditação Cgcre?** A Coordenação-Geral de Acreditação do Inmetro (Cgcre) reconhece formalmente a competência técnica de laboratórios de ensaio e calibração, com base na norma ABNT NBR ISO/IEC 17025. Um serviço marcado como acreditado traz o código do certificado (ex.: CAL 0003 para calibração, CRL 0111 para ensaio). O escopo exato da acreditação deve ser confirmado com o laboratório no orçamento.
 
 **Que documento recebo?** Pela ABNT NBR ISO/IEC 17025, resultados de ensaio são emitidos em relatório e os de calibração em certificado. O catálogo não detalha o documento de cada serviço; o laboratório informa no orçamento.
 

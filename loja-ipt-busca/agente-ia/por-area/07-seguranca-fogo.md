@@ -18,7 +18,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios para avaliação da capacidade extintora na classe de fogo a (fogos em combustíveis sólidos) conforme os requisitos e critérios definidos nas normas ABNT NBR 15808 (extintores de incêndio portáteis) e ABNT NBR 15809 (extintores de incêndio sobrerrodas).
 - **Palavras-chave:** Equipamento de segurança contra incêndio, Classe de fogo a, Combustível sólido
 - **Normas citadas no texto:** ABNT NBR 15808, ABNT NBR 15809
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Capacidade extintora 2-a (Serviço IPT nº 3660)".
 
@@ -32,7 +32,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios para avaliação da capacidade extintora na classe de fogo b (fogos em líquidos inflamáveis) conforme os requisitos e critérios definidos nas normas ABNT NBR 15808 (extintores de incêndio portáteis) e ABNT NBR 15809 (extintores de incêndio sobrerrodas).
 - **Palavras-chave:** Equipamento de segurança contra incêndio, Capacidade extintora, Classe de fogo b, Líquido inflamável
 - **Normas citadas no texto:** ABNT NBR 15808, ABNT NBR 15809
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Capacidade extintora 20-b (Serviço IPT nº 3682)".
 
@@ -73,7 +73,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios para determinar a classificação de reação ao fogo de materiais de acabamento e revestimento de teto/forro e parede empregados em edificações. A contribuição que esses materiais podem dar ao desenvolvimento do incêndio, denomina-se reação fogo, as características de reação ao fogo são determinadas em laboratório e podem ser utilizadas para aceitar ou rejeitar os materiais na definição do projeto arquitetônico. Um projeto arquitetônico que privilegie a segurança contra incêndio certamente se valerá da seleção de materiais que tenham características de reação ao fogo compatíveis com o risco existente no local. Conforme exigência das instruções técnicas dos corpos de bombeiros de diversos estados, através do CMAR (controle dos materiais de acabamento e revestimento) e das normas ABNT NBR 16626 - classificação da reação ao fogo de produtos de construção e ABNT NBR 15575 - desempenho de edificações habitacionais são: Ensaio de determinação da densidade óptica de fumaça pela norma ASTM E662, ensaio de índice de propagação superficial de chama pela norma ABNT NBR 9442 e classificação de reação ao fogo dos materiais em função dos resultados dos dois métodos de ensaios utilizados.
 - **Palavras-chave:** Comportamento dos materiais, Reação ao fogo, Material de revestimento, Edificações, Segurança contra incêndio
 - **Normas citadas no texto:** NBR 9442, ABNT NBR 16626, ABNT NBR 15575, ASTM E662, ABNT NBR 9442
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do índice de propagação superficial de chama pelo método do painel radiante NBR 9442 (Serviço IPT nº 3706)".
 
@@ -87,7 +87,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaio para avaliação de condutividade elétrica em extintores de incêndio classe de fogo c, conforme os requisitos e critérios definidos nas normas ABNT NBR 15808 (extintores de incêndio portáteis) e ABNT NBR 15809 (extintores de incêndio sobrerrodas).
 - **Palavras-chave:** Equipamento de segurança contra incêndio, Condutividade elétrica, Classe de fogo c
 - **Normas citadas no texto:** ABNT NBR 15808, ABNT NBR 15809
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaio classe c para extintores de incêndio (Serviço IPT nº 3659)".
 
@@ -112,7 +112,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LSFEX – Laboratório de Segurança ao Fogo e Explosões (unidade DL15)
 - **Descrição:** Ensaio de funcionamento mecânico e resistência ao fogo em porta para entrada de unidade autônoma.
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaio de funcionamento mecânico e resistência ao fogo em porta para entrada de unidade autônoma (Serviço IPT nº 3747)".
 
@@ -125,7 +125,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LSFEX – Laboratório de Segurança ao Fogo e Explosões (unidade DL15)
 - **Descrição:** Ensaios em materais combustíveis, como por exemplo, polimérios e têxteis, utilizados na confeção de componentes eletro-eletrônicos, revestimentos de estofados e cortinas, colchões, tecidos para roupas e epi's, cadeiras, placas de sinalização, correias transportadoras, entre outros, estão sujeitos a entrarem em contato com uma fonte de ignição, devido, principalmente, a defeitos e acidentes. Para evitar que uma pequena fonte de ignição resulte em um incêndio de grandes proporções, a escolha de materiais adequados para a fabricação dos produtos é de grande importância.
 - **Palavras-chave:** Comportamento dos materiais, Reação ao fogo, Material combustível, Material têxtil, Inflamabilidade dos materiais, Ignitabilidade dos materiais, Segurança contra incêndio
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaio de inflamabilidade/ignitabilidade de materiais (Serviço IPT nº 3657)".
 
@@ -233,7 +233,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Os ensaios para determinar o desempenho quanto à reação ao fogo de materiais de acabamento e revestimento da construção naval, quando expostos a um fluxo de energia radiante e uma chama piloto padronizados, são exigidos por orgãos de inspeção e certificadoras de produtos. Os métodos tem como objetivo limitar a velocidade de propagação de chama é a quantidade de liberação e toxicidade da fumaça, em um príncipio e avanço do incêndio. Os resultados são expressos da seguinte forma: Fluxo crítico de energia radiante na extinção (CFE); calor médio de sustentação de queima (QSB); calor total desenvolvido (QT); pico de desenvolvimento de calor (QP); densidade óptica de fumaça (DM) e toxicidade dos gases (medida em ppm pelo FTIR).as normas de avaliação da propagação superficial são: ISO 5658-2, 2010 FTP code e ABNT NBR 15708-1 e as normas para a avaliação da densidade de fumaça e toxicidade dos gases são: ISO 5659-2, 2010 FTP code e e ABNT NBR 15708-1
 - **Palavras-chave:** Comportamento dos materiais, Reação ao fogo, Material de revestimento, Construção naval, Segurança contra incêndio
 - **Normas citadas no texto:** ISO 5658-2, ABNT NBR 15708-1, ISO 5659-2
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaios de reação ao fogo em materiais da área naval (Serviço IPT nº 3690)".
 
@@ -247,7 +247,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios para determinar a classificação de reação ao fogo de materiais de acabamento e revestimento em condições especiais empregados em edificações. A contribuição que esses materiais podem dar ao desenvolvimento do incêndio denomina-se reação fogo, as características de reação ao fogo são determinadas em laboratório e podem ser utilizadas para aceitar ou rejeitar os materiais na definição do projeto arquitetônico. Os revestimentos em condição especial caracterizam-se por retração abrupta na presença de chama, materiais combustíveis envolvidos por materiais incombustiveis, entre outros. Conforme exigência das instruções técnicas dos corpos de bombeiros de diversos estados, através do CMAR (controle dos materiais de acabamento e revestimento), portaria do INMETRO e das normas ABNT NBR 16626 - classificação da reação ao fogo de produtos de construção e ABNT NBR 15575 - desempenho de edificações habitacionais. Ensaio de verificação da ignitabilidade pela norma ISO 11925-2 e ensaio sbi (single burning item) pela norma EN 13823 e classificação de reação ao fogo dos materiais em função dos resultados obtidos nos dois métodos de ensaio.
 - **Palavras-chave:** Comportamento dos materiais, Reação ao fogo, Material de revestimento, Edificações, Segurança contra incêndio
 - **Normas citadas no texto:** ABNT NBR 16626, ABNT NBR 15575, ISO 11925-2, EN 13823
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaios de reação ao fogo em revestimentos emcondiçoes especiais, exceto revestimento de piso (Serviço IPT nº 3702)".
 
@@ -261,7 +261,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios para determinar o tempo de resistência ao fogo dos elementos construtivos e estruturais (tempo durante o qual conservam suas características funcionais) e a compartimentação dos ambientes, que visa dividir a edificação em células capacitadas em suportar a queima dos materiais combustíveis e impedir o alastramento do incêndio para outros ambientes. Um desses elementos importantes da segurança contra incêndio são as portas, que podem ser de folha simples ou duplas, consistem de um elemento importante para compor a compartimentação do ambiente, com o objetivo de subdividir a edificação em células capazes de suportar a ação da queima dos materiais combustíveis nela contidos, impedindo a propagação do incêndio, restringindo a livre movimentação da fumaça no interior do edifício, mantendo as rotas de fuga seguras contra os efeitos do incêndio e facilitando as operações de combate ao incêndio. Os elementos que propiciam tais subdivisões devem apresentar resistência ao fogo, determinada através de ensaios laboratoriais.
 - **Palavras-chave:** Tempo requerido de resistência ao fogo - TRRF, Compartimentação de ambientes, Segurança contra incêndio
 - **Normas citadas no texto:** ABNT NBR 11742
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Ensaios em porta corta-fogo para saída de emergência - ABNT NBR 11742 (Serviço IPT nº 3746)".
 
@@ -303,7 +303,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios para avaliação da embalagem para acondicionamento e para avaliação da propriedade extintora nas classes de fogo a (fogos em combustíveis sólidos) e b (fogos em líquidos inflamáveis) de pó químico para extinção de incêndio, conforme os requisitos e critérios definidos nas normas ABNT NBR 9695 (pó químico para extinção de incêndio) e ABNT NBR 15808 (extintores de incêndio portáteis).
 - **Palavras-chave:** Equipamento de segurança contra incêndio, Capacidade extintora, Classe de fogo a, Classe de fogo b, Combustível sólido, Líquido inflamável
 - **Normas citadas no texto:** ABNT NBR 9695, ABNT NBR 15808
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Propriedade extintora 20-b (Serviço IPT nº 3977)".
 
@@ -341,7 +341,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** LSFEX – Laboratório de Segurança ao Fogo e Explosões (unidade DL15)
 - **Descrição:** Ensaios de caracterização da capacidade de um produto ou material explodir ou não. Análise e classificação de explosividade de equipamentos. Determinação da pressão máxima gerada numa explosão (PMAX). Determinação da velocidade de aumento da pressão gerada numa explosão (kst. Dimensionamento de dispositivos de alívio de proteção e pressão de explosão. Estimativa dos danos gerados numa explosão de pós em suspensão. Determinar a energia mínima que pode provocar a explosão de nuvem de pó em suspensão. Determinação da concentração mínima de explosão (CME) ou limite inferior de explosividade (LIE) de pós em suspensão. Determinação da temperatura mínima de explosão de poeira. Determinação da temperatura mínima de inflamação de pós em camada. Análise do tamanho de partícula considerada explosiva. Determinação da temperatura mínima a partir do qual os vapores desprendidos por material sólido aquecido podem se inflamar ao entrar em contato com uma fonte de ignição. Determinação da característica isolante, semi-condutor ou condutor de materiais sólidos. Determinação da caloria gerada na combustão de materiais. Determinação do poder calorífico superior de dado material
 - **Palavras-chave:** Explosão, Pós em suspensão, Energia mínima de ignição, Temperatura mínima, Poder calorífico
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Severidade da explosão (pmax, dp/dt e kmax) de pós em suspensão (Serviço IPT nº 6433)".
 

@@ -722,7 +722,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaio que determina o teor de ingredientes ativos e balanceamento químico em solução do produto preservativo CCA ou CCB, utilizando a técnica de espectrofotometria de absorção atômica; o procedimento tem como referência as normas AWPA - american wood preservers’ association - standard A11-93 - standard methods for analysis of treated wood and treating solutions by atomic absorption spectroscopy e BSI - british standards - BS 5666:part 3:1991 - methods of analysis of wood preservatives and treated timber.
 - **Palavras-chave:** Produto preservativo, Madeira, Espectrofotometria de absorção atômica
 - **Normas citadas no texto:** BS 5666
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0364 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0364_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0364
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Teores de IA em solução do preservativo CCA ou CCB (Serviço IPT nº 4325)".
 
@@ -779,7 +779,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 13961:2010 - móveis para escritório - armários / gaveteiros- classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos de segurança, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Armário de madeira, Gaveteiro de madeira
 - **Normas citadas no texto:** ABNT NBR 13961
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de armários e arquivos (Serviço IPT nº 3299)".
 
@@ -793,7 +793,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 16031:2011 - móveis - assentos multiplos - requisitos e métodos de ensaio para a resistência e a durabilidade - classificação e caracteristicas fisicas, - (requisitos de segurança,(pontos de cisalhamento) dimensões e ensaios mecânicos de segurança (durabilidade e impactos).
 - **Palavras-chave:** Mobiliário, Longarina de madeira, Durabilidade
 - **Normas citadas no texto:** ABNT NBR 16031
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de assentos multiplos (LONGARINAS) (Serviço IPT nº 4062)".
 
@@ -807,7 +807,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 15878:2011 - móveis - assentos para espectadores - requisitos e métodos de ensaio para a resistência e a durabilidade - classificação e caracteristicas fisicas, - (requisitos de segurança,(pontos de cisalhamento) e ensaios mecânicos de segurança (durabilidade e impactos), e dimensões para longarinas.
 - **Palavras-chave:** Mobiliário, Cadeira de madeira
 - **Normas citadas no texto:** ABNT NBR 15878
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de assentos para espectadores (Serviço IPT nº 2638)".
 
@@ -821,7 +821,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 13962:2018 - móveis para escritório - cadeiras - requisitos e métodos de ensaio- (requisitos, classificação, dimensões, estabilidade e ensaios de durabilidade).
 - **Palavras-chave:** Mobiliário para escritório, Cadeira de madeira
 - **Normas citadas no texto:** ABNT NBR 13962
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de cadeira de diálogo fixa e giratória (Serviço IPT nº 452)".
 
@@ -835,7 +835,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 13962:2018 - móveis para escritório - cadeiras - requisitos e métodos de ensaio- (requisitos, classificação, dimensões, estabilidade e ensaios de durabilidade).
 - **Palavras-chave:** Mobiliário para escritório, Cadeira de madeira
 - **Normas citadas no texto:** ABNT NBR 13962
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de cadeira giratória operacional (Serviço IPT nº 3304)".
 
@@ -849,7 +849,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 13961:2010 - móveis para escritório - armários / gaveteiros- classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos de segurança, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Armário de madeira, Gaveteiro de madeira
 - **Normas citadas no texto:** ABNT NBR 13961
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de gaveteiros fixo e volante (Serviço IPT nº 3303)".
 
@@ -863,7 +863,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 13966:2008 - móveis para escritório - mesas - classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Mesa de madeira
 - **Normas citadas no texto:** ABNT NBR 13966
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de mesas (Serviço IPT nº 3266)".
 
@@ -877,7 +877,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 15786:2011 - móveis para escritório - móveis para teleatendimento, call center e telemarketing- classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos de segurança, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Madeira
 - **Normas citadas no texto:** ABNT NBR 15786
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de mesas para teleatendimento, call center e telemarketing (Serviço IPT nº 3272)".
 
@@ -891,7 +891,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaios referente a norma ABNT NBR 13967:2011 - móveis para escritório - sistema de estação de trabalho - classificação e caracteristicas fisicas, requisitos e métodos de ensaio- (requisitos, dimensões, estabilidade e ensaios mecânicos de segurança).
 - **Palavras-chave:** Mobiliário para escritório, Madeira
 - **Normas citadas no texto:** ABNT NBR 13967
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Avaliação de sistemas de estação de trabalho (Serviço IPT nº 3273)".
 
@@ -1269,7 +1269,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Ensaio que determina a quantidade do produto preservativo CCA ou CCB em madeira tratada sob pressão, utilizando a técnica de espectrofotometria de absorção atômica; procedimento de ensaio que tem como referência a norma ABNT NBR 6232 -penetração e retenção de preservativos em madeira tratada sob pressão. Este ensaio avalia se a retenção do produto é adequada ao uso ue será dado à madeira.
 - **Palavras-chave:** Produto preservativo, Madeira
 - **Normas citadas no texto:** ABNT NBR 6232
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0111 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0111_certificado.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0111
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Retenção de produto preservativo CCA ou CCB (Serviço IPT nº 2016)".
 

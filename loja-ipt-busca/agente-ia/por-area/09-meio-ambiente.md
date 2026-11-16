@@ -238,7 +238,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** NUTABES – Núcleo de Tecnologias Avançadas para Bem-estar e Saúde Aplicados as Ciências da Vida (unidade DK11)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0161 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0161_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0161_certificado_ingles.pdf); CRL 1146 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_1146_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_1146_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0161, CRL 1146
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação de bifelinas polibromadas de acordo com a diretiva rohs. (Serviço IPT nº 8797)".
 
@@ -301,7 +301,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Laboratório responsável:** NUTABES – Núcleo de Tecnologias Avançadas para Bem-estar e Saúde Aplicados as Ciências da Vida (unidade DK11)
 - **Descrição:** Essa técnica visa a investigar compotos orgânicos pelas ligações químicas orgânicas em determinados produtos. Aplicável em amostras como: Plásticos, borrachas, tintas, óleos, e materiais orgânicos em geral. As principais normas utilizadas são ASTM E 1252 e ASTM D 3677. Essa técnica pode ser também utilizada para verificar contaminações ou diferenças entre produtos de referência e produtos com problemas.
 - **Normas citadas no texto:** ASTM E 1252, ASTM D 3677
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0161 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0161_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0161_certificado_ingles.pdf); CRL 1146 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_1146_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_1146_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0161, CRL 1146
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Identificação de compsotos orgânicos por espectrofotometria no infravermelho (FTIR) (Serviço IPT nº 8030)".
 

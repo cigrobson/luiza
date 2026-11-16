@@ -103,13 +103,9 @@ def bloco_servico(s):
     if s['normas']:
         linhas.append(f"- **Normas citadas no texto:** {', '.join(s['normas'])}")
     if s['certs']:
-        cs = []
-        for c in s['certs']:
-            t = f"{c['codigo']} (certificado: {c['url']}"
-            if c['codigo'] in s['certs_en']:
-                t += f"; em inglês: {s['certs_en'][c['codigo']]}"
-            cs.append(t + ')')
-        linhas.append(f"- **Acreditação Cgcre/Inmetro:** sim — {'; '.join(cs)}")
+        # Os PDFs dos certificados no Scriba retornam 404 (verificado em 16/11/2026): só o código é publicado.
+        cs = list(dict.fromkeys(c['codigo'] for c in s['certs']))
+        linhas.append(f"- **Acreditação Cgcre/Inmetro:** sim — certificado {', '.join(cs)}")
     else:
         linhas.append('- **Acreditação Cgcre/Inmetro:** não consta para este serviço no catálogo.')
     linhas.append(f"- **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.")
@@ -205,7 +201,7 @@ Identificação: Instituto de Pesquisas Tecnológicas do Estado de São Paulo S.
 
 **Que amostra devo enviar?** O catálogo não define tipo, quantidade ou forma de envio de amostras. Essas condições são combinadas com o laboratório após a solicitação.
 
-**O que significa acreditação Cgcre?** A Coordenação-Geral de Acreditação do Inmetro (Cgcre) reconhece formalmente a competência técnica de laboratórios de ensaio e calibração, com base na norma ABNT NBR ISO/IEC 17025. Um serviço marcado como acreditado tem o código do certificado (ex.: CAL 0003 para calibração, CRL para ensaio) e o link do certificado em PDF.
+**O que significa acreditação Cgcre?** A Coordenação-Geral de Acreditação do Inmetro (Cgcre) reconhece formalmente a competência técnica de laboratórios de ensaio e calibração, com base na norma ABNT NBR ISO/IEC 17025. Um serviço marcado como acreditado traz o código do certificado (ex.: CAL 0003 para calibração, CRL 0111 para ensaio). O escopo exato da acreditação deve ser confirmado com o laboratório no orçamento.
 
 **Que documento recebo?** Pela ABNT NBR ISO/IEC 17025, resultados de ensaio são emitidos em relatório e os de calibração em certificado. O catálogo não detalha o documento de cada serviço; o laboratório informa no orçamento.
 

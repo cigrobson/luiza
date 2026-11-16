@@ -16,7 +16,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LCPE – Laboratório de Celulose, Papel e Embalagem (unidade DO13)
 - **Descrição:** Determinação da abrasão de cargas em suspensão aquosa, segundo Breuning. Este método é aplicável para avaliação da abrasividade em cargas/pigmentos minerais utilizados na fabricação de papel e que não tenham revestimento. O resultado do ensaio é apresentados como desgaste da tela metálica (expresso em miligramas) e o teor abrasivo (expresso em g/m²).
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0357 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0357_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0357_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0357
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Abrasão de cargas e pigmentos em suspensão aquosa - segundo Breuning (Serviço IPT nº 5104)".
 
@@ -785,7 +785,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LCPE – Laboratório de Celulose, Papel e Embalagem (unidade DO13)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0357 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0357_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0357_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0357
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Número kappa (Serviço IPT nº 5262)".
 

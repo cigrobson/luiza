@@ -31,7 +31,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Neste ensaio é determinada a condutividade elétrica, que corresponde à capacidade de um material conduzir corrente elétrica, em etanol anidro e hidratado combustível, mensurada com auxílio de uma célula de platina.
 - **Palavras-chave:** Etanol, Condutividade elétrica
 - **Normas citadas no texto:** ABNT NBR 10547-16
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da condutividade elétrica, ABNT NBR 10547-16 (Serviço IPT nº 2127)".
 
@@ -45,7 +45,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Este método é aplicado para a determinação do teor de substâncias não dissolvidas no óleo diesel, denominadas como contaminação total. Esta técnica baseia-se na quantificação dos resíduos remanescentes no filtro utilizado na filtração à vácuo de uma alíquota da amostra e é expressa em relação à massa da amostra em mg/kg.
 - **Palavras-chave:** Óleo diesel, Biodiesel
 - **Normas citadas no texto:** BS EN 12662-24
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da contaminação total, BSI BS EN 12662-24(partes 1 e 2) (Serviço IPT nº 4381)".
 
@@ -59,7 +59,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** A determinação da cor ASTM do óleo diesel representa uma importante característica de qualidade. A técnica utiliza um colorímetro e um sistema de padrões de cores, com valores de 0,5 a 8,0, que serve de referência para comparação com a cor das amostras.
 - **Palavras-chave:** Óleo diesel, Óleo mineral isolante, Óleo lubrificante
 - **Normas citadas no texto:** ASTM D1500-24
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da cor ASTM, ASTM D1500-24 (Serviço IPT nº 2096)".
 
@@ -73,7 +73,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** A determinação de cor e aspecto dos combustíveis é realizada visualmente e permite avaliar a presença de contaminação por água livre ou material particulado. A água livre corresponde a água em excesso, em concentração superior à da solubilidade no combustível na temperatura do ensaio. O material particulado pode ser proveniente da contaminação por poeira, produtos de corrosão, instabilidade do combustível, deterioração de revestimentos de proteção, entre outros.
 - **Palavras-chave:** Óleo diesel, Etanol, Biodiesel
 - **Normas citadas no texto:** ABNT NBR 14954-21
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da cor e aspecto, ABNT NBR 14954-21 (Serviço IPT nº 2362)".
 
@@ -87,7 +87,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** As características de destilação (volatilidade) dos combustíveis são importantes no que se refere à segurança e desempenho. O intervalo de ebulição fornece informações sobre a composição, propriedades e comportamento do combustível durante o armazenamento e uso. Os resultados deste método são expressos como porcentagem evaporada ou porcentagem recuperada em função da temperatura.
 - **Palavras-chave:** Gasolina, Nafta petroquímica, Solvente, Óleo diesel
 - **Normas citadas no texto:** ASTM D86-23AE2
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da curva de destilação, ASTM D86-23AE2 (Serviço IPT nº 2098)".
 
@@ -101,7 +101,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Este ensaio refere-se à determinação da massa específica e do teor alcoólico de etanol combustível utilizando-se densímetro digital e tabelas alcoométricas.
 - **Palavras-chave:** Etanol
 - **Normas citadas no texto:** ABNT NBR 15639-16
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da massa específica e do teor alcoólico, ABNT NBR 15639-16 (Serviço IPT nº 4279)".
 
@@ -115,7 +115,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** A densidade é uma propriedade física fundamental das substâncias e corresponde a massa por unidade de volume a uma dada temperatura. A metodologia ASTM D4052 define a utilização de um densímetro automático para execução da análise.
 - **Palavras-chave:** Óleo combustível, Óleo diesel, Querosene de aviação, Biodiesel, Gasolina, Óleo lubrificante, Óleo lubrificante, Óleo mineral isolante, Líquido para arrefecimento
 - **Normas citadas no texto:** ASTM D4052-22, ASTM D4052
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação da massa específica ou densidade relativa por densímetro digital, ASTM D4052-22 (Serviço IPT nº 2360)".
 
@@ -155,7 +155,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Classificação no catálogo:** Ensaios, análises e calibrações correntes
 - **Laboratório responsável:** LBE – Laboratório de Bioenergia e Eficiência Energética (unidade DD11)
 - **Descrição:** não informada no catálogo do IPT.
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação de água livre (Serviço IPT nº 8555)".
 
@@ -169,7 +169,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Este método é aplicado para determinação do pH de etanol hidratado combustível, contendo até 3% v/v de hidrocarbonetos, utilizando eletrodo combinado de pH com sistema de referência prata/cloreto de prata.
 - **Palavras-chave:** Etanol
 - **Normas citadas no texto:** ABNT NBR 10891-17
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do pH, ABNT NBR 10891-17 errata 1 (Serviço IPT nº 2099)".
 
@@ -267,7 +267,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** O ponto de fulgor de um líquido é definido como a menor temperatura na qual o material libera vapores suficientes para formar uma mistura com ar atmosférico que pode entrar em ignição em contato com uma fonte de calor. A classificação de inflamabilidade de produtos líquidos é baseada nas determinações de ponto de fulgor e/ou ponto de ebulição. O método pensky-martens é realizado em vaso fechado, com agitação e aplicado à produtos com ponto de fulgor na faixa 40°C a 370°C.
 - **Palavras-chave:** Óleo combustível, Óleo diesel, Biodiesel, Ponto de fulgor
 - **Normas citadas no texto:** ASTM D93-25
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do ponto de fulgor (pensky-martens), ASTM D93-25 (Serviço IPT nº 1976)".
 
@@ -281,7 +281,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Este método utiliza a técnica de espectrometria na região de infravermelho médio. O pico de absorbância máxima na banda típica de absorção para os ésteres é medido e com base na curva analítica é obtido o teor de biodiesel de uma amostra.
 - **Palavras-chave:** Óleo diesel
 - **Normas citadas no texto:** DIN EN 14078-14
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de biodiesel, DIN EN 14078-14 (Serviço IPT nº 2830)".
 
@@ -309,7 +309,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** O teor de cinzas, reportado em % massa, corresponde à quantidade de resíduos sólidos remanescentes após a queima do combustível. Esse resíduo é geralmente atribuído aos minerais e a outros compostos inorgânicos presentes na amostra.
 - **Palavras-chave:** Óleo combustível, Óleo diesel
 - **Normas citadas no texto:** ASTM D482-25
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de cinzas em produtos de petróleo, ASTM D482-25 (Serviço IPT nº 4283)".
 
@@ -351,7 +351,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Este método é aplicado para determinação do teor de enxofre em hidrocarbonetos líquidos com ponto de ebulição na faixa de 25 °C a 400 °C e viscosidade entre 0,2 CST e 20 CST à temperatura ambiente. Nesta técnica o material é queimado na presença de excesso de oxigênio, gerando radicais SO2, que fluorescem na região do ultravioleta.
 - **Palavras-chave:** Gasolina, Óleo diesel, Biodiesel, Etanol
 - **Normas citadas no texto:** ASTM D5453-25
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de enxofre total por ultravioleta, ASTM D5453-25 (Serviço IPT nº 2792)".
 
@@ -365,7 +365,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Este método é aplicado para determinação do teor de etanol anidro combustível (EAC), a partir de 1% em volume, em gasolinas automotivas. Nesta técnica, que utiliza provetas de 100 mL para a determinação, todos os demais álcoois que possam estar presentes na amostra serão contabilizados como EAC.
 - **Palavras-chave:** Gasolina
 - **Normas citadas no texto:** ABNT NBR 13992-15
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de etanol anidro combustível, ABNT NBR 13992-15 (Serviço IPT nº 2108)".
 
@@ -379,7 +379,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Nesta técnica o teor de hidrocarbonetos em etanol anidro combustível e etanol hidratado combustível é determinado por método volumétrico, utilizando solução de cloreto de sódio. Neste método compostos de baixa polaridade presentes nos derivados de petróleo também são contabilizados como hidrocarbonetos.
 - **Palavras-chave:** Etanol
 - **Normas citadas no texto:** ABNT NBR 13993-18
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de hidrocarbonetos, ABNT NBR 13993-18 (Serviço IPT nº 2807)".
 
@@ -448,7 +448,7 @@ Parte da base de conhecimento dos serviços do IPT (catálogo de 14/11/2026). Or
 - **Descrição:** Este método abrange a determinação do teor de água, na faixa de 10 mg/kg a 25000 mg/kg, em produtos petróleo e hidrocarbonetos. Esta técnica é baseada na oxidação de SO2 por iodo na presença de água e é utilizado um titulador Karl Fischer coulométrico.
 - **Palavras-chave:** Biodiesel, Óleo diesel, Etanol, Óleo lubrificante
 - **Normas citadas no texto:** ASTM D6304-25
-- **Acreditação Cgcre/Inmetro:** sim — CRL 0249 (certificado: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado.pdf; em inglês: https://escriba.ipt.br/qualidade_acreditacao/CRL_0249_certificado_ingles.pdf)
+- **Acreditação Cgcre/Inmetro:** sim — certificado CRL 0249
 - **Preço e prazo:** sob orçamento, definidos pelo laboratório após análise da demanda.
 - **Como solicitar:** formulário da Loja IPT (https://loja.ipt.br/#contato) ou botão "Solicitar orçamento" do serviço na busca de https://loja.ipt.br/, informando "Determinação do teor de água (método Karl Fischer coulométrico), ASTM D6304-25 - proc. A (Serviço IPT nº 2794)".
 
