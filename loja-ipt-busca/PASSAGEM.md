@@ -34,7 +34,7 @@ Regras de trabalho: confirmar com Robson antes de qualquer ação fora da págin
 
 ## Pendências
 
-1. **Envio de teste do formulário**: confirmar que a mensagem chega a loja@ipt.br com "Pedido: …". Nunca confirmado.
+1. ~~Envio de teste do formulário~~: **resolvido em 16/11/2026** (protocolo IPT-LOJA-20261116-194854-5F5A chegou a loja@ipt.br e ao painel).
 2. **Página antiga `/versao1/`** (página 99, com iframe do Scriba) ainda pública: passar para Privado.
 3. **Preços** dos 5 itens com preço confirmados com a área (Óleo de Silicone R$ 1.400,00; SAA R$ 435,00–10.568,00; Tubo para Inclinômetro R$ 152,91 — a descrição diz "por metro linear", conflita com "× 3 m"; Luva e Tampa R$ 49,66).
 4. **Passo 13 (acabamento visual)**: prompt pronto na conversa anterior; não executado. Itens: frase "Valores sem frete" uma vez por seção; imagens dos cards padronizadas; 8 sugestões na busca; fonte única; larguras do formulário; categorias com ícone; 2 colunas no celular; contador no rodapé; rodapé em 2 linhas; variar os destaques (3 são Areia Normal).
@@ -42,14 +42,15 @@ Regras de trabalho: confirmar com Robson antes de qualquer ação fora da págin
 6. **Encaminhamento por laboratório**: depende da lista de e-mails por código CRD (tabela em `dados/laboratorios.json`). Fazer no plugin (tabela no servidor), não em campo da página.
 7. **Widget "Pergunte à IA"**: o robô cobre parte do card "Meio Ambiente" em telas menores; conferir.
 8. Avisar a equipe do Scriba sobre os certificados fora do ar.
-9. Plugin 1.3.14+: desinstalação não apaga `bsipt_campo_pedido`, `bsipt_orcamento_publicado` e opção do modo vitrine (baixa prioridade).
-10. Decisões de TI: cache de página do LiteSpeed na home, imagens WebP, cabeçalhos de segurança, descrição para o Google.
+9. ~~Opções na desinstalação~~: resolvido na 1.4.0 (apaga tudo se "Apagar dados ao desinstalar" estiver marcado).
+10. Decisões de TI: cache de página do LiteSpeed na home, imagens WebP, cabeçalhos de segurança, descrição para o Google. **Urgente:** o WP Mail SMTP avisa que a Microsoft está desativando a autenticação básica no SMTP do Outlook; verificar o método de envio e migrar para OAuth/Microsoft 365, ou o formulário pode parar de enviar e-mails.
+11. Painel: possível 1.4.2 com gráficos por laboratório e por situação e o tipo de pedido. Avaliar depois de 3–4 semanas de solicitações reais.
 
 ## Painel da Loja (Passos 14 a 15.1)
 
 - Robson pediu um painel simples de gestão. A proposta ampla do Passo 14 foi descartada; vale o Passo 15 (`prompts/passo-15-painel-simples.md`) com os ajustes do 15.1.
 - Plugin **1.4.1** auditado em 16/11/2026: só `painel-classificacao.php`, `painel.php`, versão e readme mudaram em relação à 1.4.0; arquivos públicos idênticos aos da 1.3.15; 21 de 22 casos do classificador corretos (falha conhecida: "Ensaio de embalagem" vai para LQM; corrigir à mão no painel).
-- **Instalado em 16/11/2026**, painel ligado (usuário robsonss). Envio de teste IPT-LOJA-20261116-194854-5F5A apareceu no painel em Metrologia e Calibração. Auditoria pós-instalação: 22 ok. Falta Robson confirmar o e-mail em loja@ipt.br e excluir o registro de teste.
+- **Instalado em 16/11/2026**, painel ligado (usuário robsonss). Envio de teste IPT-LOJA-20261116-194854-5F5A apareceu no painel em Metrologia e Calibração. Auditoria pós-instalação: 22 ok. E-mail confirmado em loja@ipt.br; registro de teste excluído. Registro diário de visitas começou em 16/11/2026 (o total anterior, 67, não tem datas).
 - Produção: WordPress 7.1.4, PHP 8.3.36, MariaDB 11.8.9, WPForms Lite 2.0.3.1. Formulário 232: campo 1 Nome, 2 E-mail, 3 Mensagem. Protocolo gerado pelo snippet WPCode 560 (`ipt_loja_v4_protocolo()`).
 
 ## Agente de IA
