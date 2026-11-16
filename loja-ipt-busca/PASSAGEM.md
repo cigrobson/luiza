@@ -13,7 +13,7 @@ Regras de trabalho: confirmar com Robson antes de qualquer ação fora da págin
 ## Estado do site
 
 - Endereço: https://loja.ipt.br/ (página 565, página inicial). `/loja-15/` redireciona (301) para `/`.
-- Plugin "Busca de Serviços IPT" **1.3.15** em produção (zip mais recente no computador de Robson: `C:/Users/robsonss/Downloads/claude/`).
+- Plugin "Busca de Serviços IPT" **1.4.1** em produção (painel de gestão ligado) (zip mais recente no computador de Robson: `C:/Users/robsonss/Downloads/claude/`).
 - Auditoria de 16/11/2026: `node scripts/testar_pagina.js https://loja.ipt.br/` = **22 ok, 0 falha**; sem erros de JavaScript; sem rolagem lateral em 390 px.
 - WordPress com tema Kadence, WooCommerce, WPForms **Lite** (não guarda entradas; conferir pelo e-mail), LiteSpeed Cache. O "CSS adicional" do tema força `.wpforms-container .wpforms-submit { background:#00AEEF !important; color:#FFF !important }` — por isso as regras do plugin para o botão usam `!important`.
 
@@ -48,7 +48,8 @@ Regras de trabalho: confirmar com Robson antes de qualquer ação fora da págin
 ## Painel da Loja (Passos 14 a 15.1)
 
 - Robson pediu um painel simples de gestão. A proposta ampla do Passo 14 foi descartada; vale o Passo 15 (`prompts/passo-15-painel-simples.md`) com os ajustes do 15.1.
-- Plugin **1.4.1** auditado em 16/11/2026: só `painel-classificacao.php`, `painel.php`, versão e readme mudaram em relação à 1.4.0; arquivos públicos idênticos aos da 1.3.15; 21 de 22 casos do classificador corretos (falha conhecida: "Ensaio de embalagem" vai para LQM; corrigir à mão no painel). Aguardando instalação.
+- Plugin **1.4.1** auditado em 16/11/2026: só `painel-classificacao.php`, `painel.php`, versão e readme mudaram em relação à 1.4.0; arquivos públicos idênticos aos da 1.3.15; 21 de 22 casos do classificador corretos (falha conhecida: "Ensaio de embalagem" vai para LQM; corrigir à mão no painel).
+- **Instalado em 16/11/2026**, painel ligado (usuário robsonss). Envio de teste IPT-LOJA-20261116-194854-5F5A apareceu no painel em Metrologia e Calibração. Auditoria pós-instalação: 22 ok. Falta Robson confirmar o e-mail em loja@ipt.br e excluir o registro de teste.
 - Produção: WordPress 7.1.4, PHP 8.3.36, MariaDB 11.8.9, WPForms Lite 2.0.3.1. Formulário 232: campo 1 Nome, 2 E-mail, 3 Mensagem. Protocolo gerado pelo snippet WPCode 560 (`ipt_loja_v4_protocolo()`).
 
 ## Agente de IA
