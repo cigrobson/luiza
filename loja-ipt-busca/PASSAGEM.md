@@ -45,6 +45,12 @@ Regras de trabalho: confirmar com Robson antes de qualquer ação fora da págin
 9. Plugin 1.3.14+: desinstalação não apaga `bsipt_campo_pedido`, `bsipt_orcamento_publicado` e opção do modo vitrine (baixa prioridade).
 10. Decisões de TI: cache de página do LiteSpeed na home, imagens WebP, cabeçalhos de segurança, descrição para o Google.
 
+## Painel da Loja (Passos 14 a 15.1)
+
+- Robson pediu um painel simples de gestão. A proposta ampla do Passo 14 foi descartada; vale o Passo 15 (`prompts/passo-15-painel-simples.md`) com os ajustes do 15.1.
+- Plugin **1.4.1** auditado em 16/11/2026: só `painel-classificacao.php`, `painel.php`, versão e readme mudaram em relação à 1.4.0; arquivos públicos idênticos aos da 1.3.15; 21 de 22 casos do classificador corretos (falha conhecida: "Ensaio de embalagem" vai para LQM; corrigir à mão no painel). Aguardando instalação.
+- Produção: WordPress 7.1.4, PHP 8.3.36, MariaDB 11.8.9, WPForms Lite 2.0.3.1. Formulário 232: campo 1 Nome, 2 E-mail, 3 Mensagem. Protocolo gerado pelo snippet WPCode 560 (`ipt_loja_v4_protocolo()`).
+
 ## Agente de IA
 
 Base em `agente-ia/` (568 serviços, 24 produtos, 19 laboratórios, 132 sinônimos), gerada por `scripts/exportar_indice.js` + `scripts/gerar_base_agente.py`. Instruções de sistema e testes em `agente-ia/instrucoes-agente.md`.
