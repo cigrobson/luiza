@@ -48,10 +48,10 @@ const TXT_SAA='A assinatura inclui alertas periódicos por e-mail sobre alteraç
 const V3=(args)=>{const [prods,LOGO,TXT_SAA]=args;
   // 2. categoria SAA -> Serviços acreditados Cgcre
   const cat=[...document.querySelectorAll('.lip-cat')].find(c=>/Normas Técnicas/.test(c.innerText));
-  if(cat){cat.removeAttribute('data-busca-solucao');cat.setAttribute('href','?cgcre=1#catalogo');
-    const tit=[...cat.querySelectorAll('*')].find(e=>e.children.length===0&&/Normas Técnicas/.test(e.textContent));tit.textContent='Serviços acreditados Cgcre';
-    const sub=[...cat.querySelectorAll('*')].find(e=>e.children.length===0&&/Monitoramento de normas/.test(e.textContent));sub.textContent='101 serviços com acreditação Cgcre/Inmetro (ABNT NBR ISO/IEC 17025)';
-    const svg=cat.querySelector('svg');if(svg)svg.innerHTML='<path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="m9 12 2 2 4-4"/>';
+  if(cat){cat.removeAttribute('data-busca-solucao');cat.setAttribute('href','?mod=compra#catalogo');
+    const tit=[...cat.querySelectorAll('*')].find(e=>e.children.length===0&&/Normas Técnicas/.test(e.textContent));tit.textContent='Produtos para compra';
+    const sub=[...cat.querySelectorAll('*')].find(e=>e.children.length===0&&/Monitoramento de normas/.test(e.textContent));sub.textContent='Óleo de silicone com certificado e acessórios para inclinômetro, com preço definido';
+    const svg=cat.querySelector('svg');if(svg)svg.innerHTML='<path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/>';
     window.__tag(cat,'2','Substitui “Normas Técnicas — SAA”','tl');}
   // 3. destaques
   const grade=document.querySelector('.lip-destaques .lip-prod').parentElement;

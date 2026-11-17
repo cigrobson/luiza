@@ -10,7 +10,7 @@ Regras comuns a todos os passos:
 - Antes de alterar qualquer produto no WooCommerce, copiar para um arquivo de texto os campos atuais (título, preço, descrição, descrição curta, imagem) e entregar junto com o resultado. É o caminho de volta.
 - Não alterar menu, tema, outras páginas, formulário 232 nem o snippet WPCode 560.
 - Depois de cada passo: LiteSpeed Cache → Purgar tudo; `node scripts/testar_pagina.js https://loja.ipt.br/` (os testes que o próprio passo altera estão indicados).
-- Autorização: Robson autorizou em 17/11/2026 a alteração do produto SAA (ID 407), dos produtos 436, 79, 81, 82 e 83 (textos de certificado), das categorias técnicas e do botão do topo. Fora disso, perguntar.
+- Autorização: Robson autorizou em 17/11/2026 a alteração do produto SAA (ID 407), dos produtos 436, 79, 81, 82 e 83 (textos de certificado), das categorias técnicas (cartão "Produtos para compra") e do botão do topo. Fora disso, perguntar.
 
 ---
 
@@ -100,25 +100,28 @@ Regras comuns a todos os passos:
 
 ---
 
-## PASSO 18 — Categorias: "Serviços acreditados Cgcre" no lugar de "Normas Técnicas — SAA"
+## PASSO 18 — Categorias: "Produtos para compra" no lugar de "Normas Técnicas — SAA"
+
+Fazer depois do PASSO 16 (com o SAA sob orçamento, a modalidade "Preço definido" fica com 4 produtos).
 
 ### O que fazer (plugin 1.4.5)
 
 1. Na lista `bsipt_pagina_categorias()`, trocar o cartão "Normas Técnicas — SAA / Monitoramento de normas" por:
-   - Título: **Serviços acreditados Cgcre**
-   - Linha: **"N serviços com acreditação Cgcre/Inmetro"**, com N calculado do catálogo carregado (hoje 101 de 568), não escrito à mão.
-   - Ícone: escudo com marca de verificação (diferente do ícone de Certificação de Produto).
-   - Ação: novo tipo `filtro-cgcre`, que liga o filtro "Somente com certificado Cgcre" e rola até os resultados, como os outros cartões de filtro. Endereço do link: `?cgcre=1#catalogo`.
+   - Título: **Produtos para compra**
+   - Linha: **Óleo de silicone com certificado e acessórios para inclinômetro, com preço definido**
+   - Ícone: sacola de compras (contorno, no mesmo estilo dos outros ícones).
+   - Ação: novo tipo `filtro-modalidade`, que liga o filtro Modalidade "Preço definido" e rola até os resultados, como os outros cartões de filtro. Endereço do link: `?mod=compra#catalogo` (parâmetro que já existe).
 2. O cartão fica na mesma posição (1º da primeira fileira).
 3. **Manter** "Normas Técnicas — SAA" como opção do filtro "Tipo de solução" no catálogo. Só o cartão sai.
-4. Atualizar a tabela "Comportamentos que não devem ser alterados" do `AGENTS.md` (categorias técnicas) com a nova lista.
+4. Se um produto com preço for incluído ou retirado no WooCommerce, a linha do cartão precisa ser revista por Robson (o texto cita os produtos).
+5. Atualizar a tabela "Comportamentos que não devem ser alterados" do `AGENTS.md` (categorias técnicas) com a nova lista.
 
 ### Testes
 
 | Ação | Esperado |
 |---|---|
-| Clicar "Serviços acreditados Cgcre" | Resultados com o chip "Somente com certificado Cgcre" e a mesma contagem do cartão (hoje 101) |
-| Abrir `https://loja.ipt.br/?cgcre=1#catalogo` | Mesmo resultado |
+| Clicar "Produtos para compra" | Resultados com o chip "Preço definido": Óleo de Silicone, Tubo, Luva e Tampa para Inclinômetro (4); o SAA não aparece |
+| Abrir `https://loja.ipt.br/?mod=compra#catalogo` | Mesmo resultado |
 | Filtro "Tipo de solução" no catálogo | "Normas Técnicas — SAA" continua disponível |
 | `testar_pagina.js` | O teste "6 categorias filtram a busca com ids válidos" precisa aceitar o novo tipo; ajustar o teste e informar |
 
@@ -184,5 +187,5 @@ Procurar também, nos 24 produtos, qualquer outra ocorrência de "certificado" s
 1. **"Aguardemos seu contato"** foi escrito como "Aguardamos seu contato" (o IPT aguarda o contato do cliente). Confirmar.
 2. **Frase das 1000 normas:** o cliente pediu para apagá-la; o texto indicado por Robson para o catálogo (PASSO 16, item 6) a mantém. A versão acima segue Robson: sai da página do produto e fica no catálogo.
 3. **Abas da página do SAA:** o cliente pediu só a retirada de "Informação adicional"; o PASSO 16 retira também "Avaliações", que não tem uso no modo vitrine.
-4. **Cartão Cgcre:** escolhido entre os dados do catálogo porque usa um filtro que já existe (`?cgcre=1`) e cobre 101 serviços de 10 laboratórios. Alternativa, se Robson preferir: "Ensaios antimicrobianos e de biodegradabilidade" (7 produtos da categoria Bionano na loja).
+4. **Cartão "Produtos para compra":** substitui a proposta "Serviços acreditados Cgcre", recusada por Robson em 17/11/2026. Hoje nenhum cartão leva direto aos itens com preço: "Materiais de Referência" mistura o Óleo de Silicone (com preço) com as Areias (sob orçamento), e os demais levam a serviços sob orçamento, à Certificação ou ao Sapiens.
 5. **Produto 434 (Ensaio de Emissão Radiada):** a descrição diz "Realizado pelo LGE/IPT" e cita o Laboratório de Gestão de Energia (LGE). Não é certificado (é relatório de ensaio), por isso ficou fora do PASSO 20. Confirmar se a regra "sem sigla" vale também para esse caso.
