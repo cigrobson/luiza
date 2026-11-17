@@ -10,7 +10,7 @@ Regras comuns a todos os passos:
 - Antes de alterar qualquer produto no WooCommerce, copiar para um arquivo de texto os campos atuais (título, preço, descrição, descrição curta, imagem) e entregar junto com o resultado. É o caminho de volta.
 - Não alterar menu, tema, outras páginas, formulário 232 nem o snippet WPCode 560.
 - Depois de cada passo: LiteSpeed Cache → Purgar tudo; `node scripts/testar_pagina.js https://loja.ipt.br/` (os testes que o próprio passo altera estão indicados).
-- Autorização: Robson autorizou em 17/11/2026 a alteração do produto SAA (ID 407), dos produtos 436, 79, 81, 82 e 83 (textos de certificado), das categorias técnicas (cartão "Produtos para compra") e do botão do topo. Fora disso, perguntar.
+- Autorização: Robson autorizou em 17/11/2026 a alteração do produto SAA (ID 407), dos produtos 436, 79, 81, 82 e 83 (textos de certificado), das categorias técnicas (cartão "Ensaios Microbiológicos e Antimicrobianos") e do botão do topo. Fora disso, perguntar.
 
 ---
 
@@ -100,29 +100,50 @@ Regras comuns a todos os passos:
 
 ---
 
-## PASSO 18 — Categorias: "Produtos para compra" no lugar de "Normas Técnicas — SAA"
-
-Fazer depois do PASSO 16 (com o SAA sob orçamento, a modalidade "Preço definido" fica com 4 produtos).
+## PASSO 18 — Categorias: "Ensaios Microbiológicos e Antimicrobianos" no lugar de "Normas Técnicas — SAA"
 
 ### O que fazer (plugin 1.4.5)
 
 1. Na lista `bsipt_pagina_categorias()`, trocar o cartão "Normas Técnicas — SAA / Monitoramento de normas" por:
-   - Título: **Produtos para compra**
-   - Linha: **Óleo de silicone com certificado e acessórios para inclinômetro, com preço definido**
-   - Ícone: sacola de compras (contorno, no mesmo estilo dos outros ícones).
-   - Ação: novo tipo `filtro-modalidade`, que liga o filtro Modalidade "Preço definido" e rola até os resultados, como os outros cartões de filtro. Endereço do link: `?mod=compra#catalogo` (parâmetro que já existe).
-2. O cartão fica na mesma posição (1º da primeira fileira).
-3. **Manter** "Normas Técnicas — SAA" como opção do filtro "Tipo de solução" no catálogo. Só o cartão sai.
-4. Se um produto com preço for incluído ou retirado no WooCommerce, a linha do cartão precisa ser revista por Robson (o texto cita os produtos).
-5. Atualizar a tabela "Comportamentos que não devem ser alterados" do `AGENTS.md` (categorias técnicas) com a nova lista.
+   - Título: **Ensaios Microbiológicos e Antimicrobianos**
+   - Linha: **Atividade antibacteriana e antifúngica, análise microbiológica e biodegradabilidade**
+   - Ícone: placa de Petri ou microscópio (contorno, no mesmo estilo dos outros ícones).
+   - Posição: a mesma (1º cartão da primeira fileira).
+2. Criar no plugin uma **coleção fixa** `microbiologicos`, com os itens abaixo. A coleção é definida por ID e não depende da categoria do WooCommerce (o produto 386 não tem categoria, e a categoria "Bionano" inclui itens que não são microbiológicos: 356 Granulometria de Solo e 401 Teor de Formaldeído).
+
+   | Tipo | ID / registro | Item |
+   |---|---|---|
+   | Produto da loja | 400 | Análise Microbiológica em Papel |
+   | Produto da loja | 383 | Ensaio de Atividade Antibacteriana em Materiais |
+   | Produto da loja | 386 | Ensaio de Atividade Antibacteriana em Tecidos |
+   | Produto da loja | 382 | Ensaio de Atividade Antifúngica em Tintas – ABNT NBR 15987 |
+   | Produto da loja | 380 | Ensaio de Atividade Antifúngica em Tintas – ABNT NBR 14941 |
+   | Produto da loja | 387 | Ensaio de Biodegradabilidade Imediata de Materiais Solúveis em Água |
+   | Serviço do Scriba | 244 | Ensaio de resistência de tintas aos fungos emboloradores em câmara úmida |
+   | Serviço do Scriba | 6321 | Sanidade biológica de material – insetos e fungos |
+   | Serviço do Scriba | 8823 | Ensaio de vazão e análise microbiológica (ISO 15714:2019) |
+   | Serviço do Scriba | 9521 | Pesquisa de bactérias produtoras de celulases |
+
+   Total: 10 itens. As listas de IDs ficam numa opção do painel do plugin ("Coleção Microbiológicos e Antimicrobianos: produtos" e "…: serviços"), para Robson incluir ou retirar itens sem nova versão.
+3. Novo parâmetro de endereço `colecao=microbiologicos`. O link do cartão é `?colecao=microbiologicos#catalogo`. Ao clicar:
+   - os resultados mostram só os itens da coleção, com o chip "Ensaios Microbiológicos e Antimicrobianos" (removível, como os outros chips);
+   - a página rola até os resultados, como nos outros cartões de filtro;
+   - a coleção combina com os demais filtros (E), como os filtros atuais.
+4. Os itens da coleção **continuam** nos seus tipos de solução atuais (por exemplo, "Ensaios e Análises"). Nada é gravado no WooCommerce.
+5. **Manter** "Normas Técnicas — SAA" como opção do filtro "Tipo de solução" no catálogo. Só o cartão sai.
+6. Atualizar no `AGENTS.md` a tabela "Comportamentos que não devem ser alterados": categorias técnicas (nova lista) e endereços (incluir `?colecao=`).
 
 ### Testes
 
 | Ação | Esperado |
 |---|---|
-| Clicar "Produtos para compra" | Resultados com o chip "Preço definido": Óleo de Silicone, Tubo, Luva e Tampa para Inclinômetro (4); o SAA não aparece |
-| Abrir `https://loja.ipt.br/?mod=compra#catalogo` | Mesmo resultado |
+| Clicar "Ensaios Microbiológicos e Antimicrobianos" | 10 resultados (6 produtos e 4 serviços da tabela), com o chip da coleção |
+| Abrir `https://loja.ipt.br/?colecao=microbiologicos#catalogo` | Mesmo resultado |
+| Remover o chip | Volta ao catálogo sem o filtro |
+| Coleção + filtro Modalidade "Preço definido" | 0 resultados, com a mensagem de lista vazia atual |
+| Filtro "Tipo de solução" → "Ensaios e Análises" | Os produtos da coleção continuam aparecendo ali |
 | Filtro "Tipo de solução" no catálogo | "Normas Técnicas — SAA" continua disponível |
+| Celular (390 px) | Cartão sem corte de texto; sem rolagem lateral |
 | `testar_pagina.js` | O teste "6 categorias filtram a busca com ids válidos" precisa aceitar o novo tipo; ajustar o teste e informar |
 
 ---
@@ -182,10 +203,11 @@ Procurar também, nos 24 produtos, qualquer outra ocorrência de "certificado" s
 
 ---
 
-## Pontos que Robson precisa confirmar antes do envio
+## Decisões já tomadas (não reabrir sem Robson)
 
-1. **"Aguardemos seu contato"** foi escrito como "Aguardamos seu contato" (o IPT aguarda o contato do cliente). Confirmar.
-2. **Frase das 1000 normas:** o cliente pediu para apagá-la; o texto indicado por Robson para o catálogo (PASSO 16, item 6) a mantém. A versão acima segue Robson: sai da página do produto e fica no catálogo.
-3. **Abas da página do SAA:** o cliente pediu só a retirada de "Informação adicional"; o PASSO 16 retira também "Avaliações", que não tem uso no modo vitrine.
-4. **Cartão "Produtos para compra":** substitui a proposta "Serviços acreditados Cgcre", recusada por Robson em 17/11/2026. Hoje nenhum cartão leva direto aos itens com preço: "Materiais de Referência" mistura o Óleo de Silicone (com preço) com as Areias (sob orçamento), e os demais levam a serviços sob orçamento, à Certificação ou ao Sapiens.
-5. **Produto 434 (Ensaio de Emissão Radiada):** a descrição diz "Realizado pelo LGE/IPT" e cita o Laboratório de Gestão de Energia (LGE). Não é certificado (é relatório de ensaio), por isso ficou fora do PASSO 20. Confirmar se a regra "sem sigla" vale também para esse caso.
+1. Texto do SAA: "Aguardamos seu contato" (correção de "Aguardemos").
+2. Frase "Para mais de 1000 normas, solicite orçamento pelo formulário de contato.": sai da página do produto (aba Descrição) e fica no texto do SAA no catálogo (PASSO 16, item 6), como indicado por Robson.
+3. Página do SAA: saem as abas "Informação adicional" (pedido do cliente) e "Avaliações" (sem uso no modo vitrine).
+4. Cartão de categoria no lugar do SAA: "Ensaios Microbiológicos e Antimicrobianos" (escolha de Robson em 17/11/2026, entre três opções). Propostas anteriores "Serviços acreditados Cgcre" e "Produtos para compra" foram descartadas.
+5. Produto 434 (Ensaio de Emissão Radiada): a frase "Realizado pelo LGE/IPT" descreve quem executa o ensaio e não é certificado; fica fora do PASSO 20 até decisão de Robson.
+6. Busca: permanece no lugar atual (opção conservadora), sem botão nem caixa no topo.
