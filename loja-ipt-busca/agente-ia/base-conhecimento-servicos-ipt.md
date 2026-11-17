@@ -267,7 +267,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Categoria na loja:** Energia e Metrologia
 - **Preço publicado:** R$ 1.400,00. Valores sem frete.
 - **Como pedir:** botão "Solicitar compra" na página do produto (https://loja.ipt.br/produto/oleo-de-silicone-dow-corning-frasco-30-ml-com-certificado-de-calibracao/) ou formulário https://loja.ipt.br/#contato, informando "Óleo de Silicone Dow Corning — Frasco 30 ml com Certificado de Calibração (Produto IPT 436)" e a quantidade. A loja não recebe pagamento online: a equipe confirma a disponibilidade e informa as formas de pagamento.
-- **Descrição:** Óleo de silicone Dow Corning com índice de refração ND 1,4025 a 25°C, fornecido em frasco de 30 ml com certificado de calibração emitido pelo Laboratório de Gestão de Energia (LGE) do Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O certificado de calibração garante a rastreabilidade metrológica do produto, tornando-o adequado para uso como material de referência em laboratórios de óptica, metrologia e controle de qualidade industrial. Produto indicado para laboratórios que necessitam de material de referência certificado para calibração de refratômetros e equipamentos ópticos de precisão.
+- **Descrição:** Óleo de silicone Dow Corning com índice de refração ND 1,4025 a 25°C, fornecido em frasco de 30 ml com certificado de calibração emitido pelo Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT). O certificado de calibração garante a rastreabilidade metrológica do produto, tornando-o adequado para uso como material de referência em laboratórios de óptica, metrologia e controle de qualidade industrial. Produto indicado para laboratórios que necessitam de material de referência certificado para calibração de refratômetros e equipamentos ópticos de precisão.
 
 ### Análise Microbiológica em Papel — Produto IPT 400
 
@@ -285,7 +285,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Código (SKU):** ANB-N100
 - **Preço:** definido após avaliação técnica (sob orçamento).
 - **Como pedir:** botão "Solicitar orçamento" na página do produto (https://loja.ipt.br/produto/areia-normal-brasileira-n-100-embalagem-25-kg/) ou formulário https://loja.ipt.br/#contato, informando "Areia Normal Brasileira N.100, Embalagem 25 kg (Produto IPT 83)".
-- **Descrição:** A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade do LMPC.
+- **Descrição:** A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade emitido pelo IPT.
 
 ### Areia Normal Brasileira N.16, Embalagem 25 kg — Produto IPT 79
 
@@ -294,7 +294,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Código (SKU):** ANB-N16
 - **Preço:** definido após avaliação técnica (sob orçamento).
 - **Como pedir:** botão "Solicitar orçamento" na página do produto (https://loja.ipt.br/produto/areia-normal-brasileira-n-16-embalagem-25-kg/) ou formulário https://loja.ipt.br/#contato, informando "Areia Normal Brasileira N.16, Embalagem 25 kg (Produto IPT 79)".
-- **Descrição:** A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade do LMPC.
+- **Descrição:** A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade emitido pelo IPT.
 
 ### Areia Normal Brasileira N.30, Embalagem 25 kg — Produto IPT 81
 
@@ -303,7 +303,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Código (SKU):** ANB-N30
 - **Preço:** definido após avaliação técnica (sob orçamento).
 - **Como pedir:** botão "Solicitar orçamento" na página do produto (https://loja.ipt.br/produto/areia-normal-brasileira-n-30-embalagem-25-kg/) ou formulário https://loja.ipt.br/#contato, informando "Areia Normal Brasileira N.30, Embalagem 25 kg (Produto IPT 81)".
-- **Descrição:** A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade do LMPC.
+- **Descrição:** A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade emitido pelo IPT.
 
 ### Areia Normal Brasileira N.50, Embalagem 25 kg — Produto IPT 82
 
@@ -312,7 +312,7 @@ Situação em 14/11/2026 conforme a loja. Preços publicados valem como oferta e
 - **Código (SKU):** ANB-N50
 - **Preço:** definido após avaliação técnica (sob orçamento).
 - **Como pedir:** botão "Solicitar orçamento" na página do produto (https://loja.ipt.br/produto/areia-normal-brasileira-n-50-embalagem-25-kg/) ou formulário https://loja.ipt.br/#contato, informando "Areia Normal Brasileira N.50, Embalagem 25 kg (Produto IPT 82)".
-- **Descrição:** A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade do LMPC.
+- **Descrição:** A Areia Normal Brasileira é produzida pelo IPT conforme ABNT NBR 7214:2015, material de referência para ensaio de resistência à compressão de cimento Portland (ABNT NBR 7215:1996). Fornecida em embalagem de 25 kg com certificado de conformidade emitido pelo IPT.
 
 ### Diagnóstico e Análise de Risco de Queda de Árvore — Produto IPT 440
 
