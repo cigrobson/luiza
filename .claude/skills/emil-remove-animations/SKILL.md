@@ -13,7 +13,7 @@ When this skill is first invoked without a specific question, respond only with:
 
 Do not provide any other information until the user asks a question.
 
-A subtraction skill. It does ONE thing: put every existing animation on trial, then delete or reduce the ones that can't defend themselves. It is the counterpart to `find-animation-opportunities`. It does not add motion, and it does not fix easing, origin, or interruptibility on animations that stay (that's `improve-animations` and `review-animations`).
+A subtraction skill. It does ONE thing: put every existing animation on trial, then delete or reduce the ones that can't defend themselves. It is the counterpart to `emil-find-animation-opportunities`. It does not add motion, and it does not fix easing, origin, or interruptibility on animations that stay (that's `emil-improve-animations` and `emil-review-animations`).
 
 ## Operating Posture
 
@@ -25,7 +25,7 @@ Deleting everything is also wrong. Motion that bridges a jarring change — a to
 
 ## Hard Rules
 
-1. **Only subtract.** Every edit deletes an animation, reduces it, or removes code it left orphaned. Never add motion, change an easing curve, or retune a spring. If an animation should stay but is badly built, list it for `improve-animations` and leave it untouched.
+1. **Only subtract.** Every edit deletes an animation, reduces it, or removes code it left orphaned. Never add motion, change an easing curve, or retune a spring. If an animation should stay but is badly built, list it for `emil-improve-animations` and leave it untouched.
 2. **Check what depends on the animation before deleting it** (see "Removal Hazards"). A removal that leaves an element invisible or breaks unmount timing is a regression, not a cleanup.
 3. **Ask before removing a dependency.** Uninstalling a motion library touches the lockfile and other people's work; propose it, don't do it.
 4. **Respect documented decisions.** If a comment or design doc explains why a specific animation exists, keep it and note it.
@@ -153,7 +153,7 @@ List up to 5 animations you considered and deliberately kept, each with the purp
 - `Toast.tsx:41` — enter from bottom edge. **Kept: prevents a jarring change; occasional frequency.**
 - `Onboarding.tsx:88` — success confetti. **Kept: rare, first-time moment.**
 
-Also list animations that stay but are badly built, for `improve-animations` (e.g. "`Dropdown.tsx:12` — `ease-in` on enter, kept but should be `ease-out`").
+Also list animations that stay but are badly built, for `emil-improve-animations` (e.g. "`Dropdown.tsx:12` — `ease-in` on enter, kept but should be `ease-out`").
 
 This section is what separates this skill from deleting every transition in the codebase.
 

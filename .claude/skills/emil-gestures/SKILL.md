@@ -109,4 +109,4 @@ Tracking is direct manipulation — the user is producing the motion — so it s
 
 ## When it still feels wrong
 
-A "weird" spring is usually fixed by increasing `damping`. A gesture that stutters is a performance problem — check the track-phase rules above first, then use the `animation-performance` skill. To diagnose a feeling you can't name, record the gesture and scrub it frame by frame.
+A "weird" spring is usually fixed by increasing `damping`. A gesture that stutters is a performance problem — check the track-phase rules above first, then use the `emil-animation-performance` skill. To diagnose a feeling you can't name, record the gesture and scrub it frame by frame.
